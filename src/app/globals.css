@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --luxury-black: #050505;
+  --royal-gold: #d4af37;
+  --charcoal: #1a1a1a;
+  --ivory: #f8f5ef;
+  --champagne: #e8c872;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--luxury-black);
+  color: var(--ivory);
+  font-family: Montserrat, Avenir, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+  color: var(--ivory);
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  outline-color: var(--royal-gold);
+}
+
+.luxury-border {
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #d4af37, #f3df96 45%, #b58922);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.property-image-overlay {
+  background:
+    linear-gradient(180deg, rgba(5, 5, 5, 0) 35%, rgba(5, 5, 5, 0.92) 100%),
+    linear-gradient(90deg, rgba(5, 5, 5, 0.76), rgba(5, 5, 5, 0.15));
+}

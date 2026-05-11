@@ -1,0 +1,7 @@
+name = "chaman-properties-website"
+compatibility_date = "2026-05-11"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".open-next"
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://www.chamanproperties.com"
