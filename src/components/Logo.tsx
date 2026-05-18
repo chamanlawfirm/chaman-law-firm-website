@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label="Chaman Properties home">
+    <Link href="/" className="flex items-center gap-3">
       <Image
         src="/logo.png"
-        alt="Chaman Properties"
+        alt="Chaman Properties Logo"
         width={56}
         height={56}
         priority
@@ -17,6 +17,7 @@ export function Logo() {
         <p className="font-heading text-lg font-bold tracking-[0.18em] text-royalGold">
           CHAMAN
         </p>
+
         <p className="text-xs font-semibold tracking-[0.28em] text-ivory">
           PROPERTIES
         </p>
