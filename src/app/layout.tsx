@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 import { AIChatbotButton } from "@/components/AIChatbotButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -21,6 +22,19 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="en-NG">
       <body>
         <JsonLd data={organizationSchema()} />
+        <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-6HVQYT0SP6"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6HVQYT0SP6');
+  `}
+</Script>
         <Header />
         {children}
         <Footer />
