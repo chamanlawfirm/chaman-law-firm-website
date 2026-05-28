@@ -11,7 +11,7 @@ import { organizationSchema } from "@/lib/schema";
 import "./globals.css";
 
 export const metadata: Metadata = createMetadata({
-  title: "Luxury Real Estate in Nigeria | Chaman Properties",
+  title: "Luxury Real Estate Nigeria | Chaman Properties",
   description:
     "Chaman Properties is a luxury real estate company in Nigeria offering property investment, property management, luxury homes, and diaspora real estate services.",
 
