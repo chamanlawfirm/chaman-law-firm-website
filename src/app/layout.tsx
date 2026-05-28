@@ -11,11 +11,29 @@ import { organizationSchema } from "@/lib/schema";
 import "./globals.css";
 
 export const metadata: Metadata = createMetadata({
-  title: "Premium Real Estate Investment & Property Management in Nigeria",
+  title:
+  Luxury Real Estate Nigeria | Chaman Properties
+
   description:
-    "Chaman Properties helps Nigerians at home and in the diaspora buy, sell, lease, manage, and invest in verified real estate assets with confidence.",
-  path: "/"
+    "Chaman Properties is a premium real estate company in Nigeria helping local and diaspora clients buy, sell, lease, invest, and manage luxury properties in Lagos, Abuja, Ogun State, and across Nigeria.",
+
+  keywords: [
+    "Real Estate Company in Nigeria",
+    "Luxury Real Estate Nigeria",
+    "Property Investment Nigeria",
+    "Diaspora Property Investment",
+    "Lagos Real Estate",
+    "Buy Property in Lagos",
+    "Property Management Nigeria",
+    "Luxury Homes Nigeria",
+    "Real Estate Investment Lagos",
+    "Nigeria Property Consultant",
+    "Chaman Properties"
+  ],
+
+  path: "/",
 });
+
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
