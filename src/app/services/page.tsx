@@ -11,7 +11,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = createMetadata({
   title: "Real Estate Services",
   description:
-    "Explore Chaman Properties services for property sales, letting, diaspora management, investment advisory, verification, shortlets, and property management.",
+"Explore premium real estate services by Chaman Properties including luxury property sales, property management, investment advisory, diaspora property services, land acquisition, and real estate consulting in Nigeria.",
   path: "/services"
 });
 

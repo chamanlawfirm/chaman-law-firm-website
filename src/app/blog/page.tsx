@@ -11,7 +11,7 @@ import { formatDate } from "@/lib/utils";
 export const metadata: Metadata = createMetadata({
   title: "Property Blog, Market Insights and Investment Guides",
   description:
-    "Read Chaman Properties insights on diaspora property investment, title documents, property management, letting, fraud prevention, and Nigerian real estate.",
+"Read expert real estate insights, property investment guides, due diligence tips, diaspora property advice, and luxury real estate updates in Lagos, Ogun State, and across Nigeria.",
   path: "/blog"
 });
 

@@ -13,8 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = createMetadata({
   title: "Contact Chaman Properties",
   description:
-    "Contact Chaman Properties for property sales, letting, shortlets, property management, diaspora services, investment opportunities, and verification support.",
-  path: "/contact"
+"Contact Chaman Properties, a leading luxury real estate and property management company in Lagos and Ogun State, Nigeria. Reach us for property investment, property management, land acquisition, diaspora real estate services, and luxury homes.",
 });
 
 export default function ContactPage() {
