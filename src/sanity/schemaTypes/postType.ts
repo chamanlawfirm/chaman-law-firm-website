@@ -10,6 +10,7 @@ export const postType = defineType({
     defineField({
       name: 'title',
       type: 'string',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
@@ -17,14 +18,27 @@ export const postType = defineType({
       options: {
         source: 'title',
       },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+      rows: 3,
+      validation: (Rule) =>
+        Rule.required()
+          .max(220)
+          .warning('Keep excerpts short for blog cards and search snippets.'),
     }),
     defineField({
       name: 'author',
       type: 'reference',
       to: {type: 'author'},
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'mainImage',
+      title: 'Featured Image',
       type: 'image',
       options: {
         hotspot: true,
@@ -44,11 +58,20 @@ export const postType = defineType({
     }),
     defineField({
       name: 'publishedAt',
+      title: 'Published At',
       type: 'datetime',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'body',
+      title: 'Rich Text Content',
       type: 'blockContent',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'seo',
+      title: 'SEO Fields',
+      type: 'seo',
     }),
   ],
   preview: {
