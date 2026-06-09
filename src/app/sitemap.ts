@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
-import { getBlogPosts, getProperties, getServices } from "@/lib/cms";
+import { getBlogCategories, getBlogPosts, getProperties, getServices } from "@/lib/cms";
 import { siteConfig } from "@/lib/constants";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [properties, services, posts] = await Promise.all([
+  const [properties, services, posts, categories] = await Promise.all([
     getProperties(),
     getServices(),
-    getBlogPosts({ limit: 100 })
+    getBlogPosts({ limit: 100 }),
+    getBlogCategories()
   ]);
 
   const staticRoutes = [
@@ -49,6 +50,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(post.date),
       changeFrequency: "monthly" as const,
       priority: 0.72
+    })),
+    ...categories.map((category) => ({
+      url: `${siteConfig.url}/category/${category.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7
     }))
   ];
 }

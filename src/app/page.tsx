@@ -1,6 +1,6 @@
 import { ArrowRight, FileCheck2, Globe2, KeyRound, ShieldCheck, TrendingUp } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import { BlogCard } from "@/components/BlogCard";
 import { GoogleMapSection } from "@/components/GoogleMapSection";
 import { JsonLd } from "@/components/JsonLd";
 import { PropertyCard } from "@/components/PropertyCard";
@@ -12,7 +12,6 @@ import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ZohoLeadForm } from "@/components/ZohoLeadForm";
 import { getFeaturedProperties, getRecentBlogPosts, getServices } from "@/lib/cms";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
-import { formatDate } from "@/lib/utils";
 
 const homeFaqs = [
   {
@@ -59,7 +58,7 @@ export default async function HomePage() {
   const [featuredProperties, services, posts] = await Promise.all([
     getFeaturedProperties(),
     getServices(),
-    getRecentBlogPosts(3)
+    getRecentBlogPosts(6)
   ]);
 
   return (
@@ -207,32 +206,20 @@ export default async function HomePage() {
 
       <section className="bg-luxuryBlack py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            eyebrow="Market Insight"
-            title="Guides for safer property decisions"
-            description="Educational content improves trust, search visibility, and AI discoverability while helping clients understand real estate decisions."
-          />
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader
+              eyebrow="Market Insight"
+              title="Guides for safer property decisions"
+              description="Educational content improves trust, search visibility, and AI discoverability while helping clients understand real estate decisions."
+            />
+            <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
+              View All Articles <ArrowRight size={16} />
+            </Link>
+          </div>
           {posts.length ? (
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {posts.map((post) => (
-                <Link key={post.slug} href={`/blog/${post.slug}`} className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:border-royalGold/42">
-                  <Image
-                    src={post.image}
-                    alt={post.imageAlt}
-                    width={900}
-                    height={520}
-                    className="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  <div className="p-5">
-                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">
-                      {post.category} | {formatDate(post.date)}
-                    </p>
-                    <h3 className="mt-3 font-heading text-xl font-semibold text-ivory group-hover:text-royalGold">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
-                  </div>
-                </Link>
+            <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {posts.map((post, index) => (
+                <BlogCard key={post.slug} post={post} priority={index < 3} />
               ))}
             </div>
           ) : (

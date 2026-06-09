@@ -2,13 +2,24 @@ import type { Metadata } from "next";
 import { CalendarDays, UserRound } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { AuthorBio } from "@/components/AuthorBio";
+import { BlogArticleGrid } from "@/components/BlogArticleGrid";
+import { BlogLeadCTA } from "@/components/BlogLeadCTA";
+import { BlogSidebar } from "@/components/BlogSidebar";
 import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { PortableTextRenderer } from "@/components/PortableTextRenderer";
-import { ZohoLeadForm } from "@/components/ZohoLeadForm";
-import { getBlogPostBySlug, getBlogPostSlugs } from "@/lib/cms";
+import { SocialShareButtons } from "@/components/SocialShareButtons";
+import {
+  getBlogPostBySlug,
+  getBlogPostSlugs,
+  getBlogSidebarData,
+  getRecommendedBlogPosts,
+  getRelatedBlogPosts
+} from "@/lib/cms";
 import { createMetadata } from "@/lib/seo";
-import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { articleSchema, breadcrumbSchema, faqSchema, organizationSchema } from "@/lib/schema";
 import { formatDate } from "@/lib/utils";
 
 export const revalidate = 60;
@@ -54,17 +65,24 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
     notFound();
   }
 
+  const [relatedPosts, recommendedPosts, sidebarData] = await Promise.all([
+    getRelatedBlogPosts(post, 3),
+    getRecommendedBlogPosts(post.slug, 3),
+    getBlogSidebarData()
+  ]);
+
   return (
     <main>
       <JsonLd
         data={[
+          organizationSchema(),
           articleSchema(post),
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Blog", path: "/blog" },
             { name: post.title, path: `/blog/${post.slug}` }
           ]),
-          ...(post.faqs ? [faqSchema(post.faqs)] : [])
+          ...(post.faqs?.length ? [faqSchema(post.faqs)] : [])
         ]}
       />
       <article>
@@ -98,28 +116,51 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
         </section>
         <section className="bg-luxuryBlack py-16">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_380px] lg:px-8">
-            <div className="rounded-lg border border-royalGold/16 bg-charcoal p-6 sm:p-10">
-              <p className="font-display text-2xl leading-10 text-champagne">{post.excerpt}</p>
-              <div className="mt-8">
-                {post.body.length ? (
-                  <PortableTextRenderer value={post.body} />
-                ) : (
-                  <p className="text-base leading-8 text-ivory/76">
-                    Full article content is being prepared in the CMS. Please check back shortly.
-                  </p>
-                )}
-              </div>
-              {post.faqs ? (
-                <div className="mt-10">
-                  <h2 className="font-heading text-2xl text-ivory">Questions Answered</h2>
-                  <div className="mt-5">
-                    <FaqList faqs={post.faqs} />
-                  </div>
+            <div className="space-y-10">
+              <div className="rounded-lg border border-royalGold/16 bg-charcoal p-6 sm:p-10">
+                <p className="font-display text-2xl leading-10 text-champagne">{post.excerpt}</p>
+                <div className="mt-8">
+                  <BlogLeadCTA source={`Blog article intro - ${post.title}`} />
                 </div>
-              ) : null}
+                <div className="mt-8">
+                  {post.body.length ? (
+                    <PortableTextRenderer value={post.body} />
+                  ) : (
+                    <p className="text-base leading-8 text-ivory/76">
+                      Full article content is being prepared in the CMS. Please check back shortly.
+                    </p>
+                  )}
+                </div>
+                <div className="mt-10">
+                  <BlogLeadCTA source={`Blog article body - ${post.title}`} />
+                </div>
+                {post.faqs?.length ? (
+                  <div className="mt-10">
+                    <h2 className="font-heading text-2xl text-ivory">Questions Answered</h2>
+                    <div className="mt-5">
+                      <FaqList faqs={post.faqs} />
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+              <AuthorBio post={post} />
+              <NewsletterSignup />
+              <BlogArticleGrid
+                eyebrow="Related Articles"
+                title="More from this category"
+                posts={relatedPosts}
+                emptyText="Related articles from this category will appear as more posts are published."
+              />
+              <BlogArticleGrid
+                eyebrow="Recommended Reading"
+                title="Continue learning"
+                posts={recommendedPosts}
+                emptyText="Recommended Chaman Properties articles will appear here soon."
+              />
             </div>
-            <aside>
-              <ZohoLeadForm source={`Blog article - ${post.title}`} title="Need Property Advice?" />
+            <aside className="space-y-5">
+              <SocialShareButtons title={post.title} path={`/blog/${post.slug}`} />
+              <BlogSidebar {...sidebarData} />
             </aside>
           </div>
         </section>

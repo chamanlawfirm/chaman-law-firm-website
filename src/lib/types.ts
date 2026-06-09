@@ -74,6 +74,12 @@ export type BlogPost = {
     title: string;
     slug?: string;
   }>;
+  authorProfile: {
+    name: string;
+    image?: string;
+    imageAlt?: string;
+    bio: Array<Record<string, unknown>>;
+  };
   image: string;
   imageAlt: string;
   readingTime: string;
@@ -97,6 +103,14 @@ export type BlogPostPage = {
   totalPages: number;
   hasNextPage: boolean;
   hasPreviousPage: boolean;
+};
+
+export type BlogCategory = {
+  id: string;
+  title: string;
+  slug: string;
+  description?: string;
+  postCount: number;
 };
 
 export type JobOpening = {

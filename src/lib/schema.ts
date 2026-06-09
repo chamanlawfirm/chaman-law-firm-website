@@ -92,13 +92,15 @@ export function articleSchema(post: BlogPost) {
     datePublished: post.date,
     dateModified: post.updatedAt,
     author: {
-      "@type": "Organization",
-      name: post.author
+      "@type": "Person",
+      name: post.author,
+      image: post.authorProfile.image
     },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name
     },
+    keywords: post.seo?.keywords || post.categories.map((category) => category.title),
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`
   };
 }

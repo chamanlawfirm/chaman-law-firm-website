@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { BlogCard } from "@/components/BlogCard";
+import { BlogPagination } from "@/components/BlogPagination";
+import { BlogSidebar } from "@/components/BlogSidebar";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
-import { getBlogPostsPage } from "@/lib/cms";
+import { getBlogPostsPage, getBlogSidebarData } from "@/lib/cms";
 import { createMetadata } from "@/lib/seo";
-import { breadcrumbSchema } from "@/lib/schema";
-import { formatDate } from "@/lib/utils";
+import { breadcrumbSchema, organizationSchema } from "@/lib/schema";
 
 export const revalidate = 60;
-const pageSize = 20;
+const pageSize = 12;
 
 export const metadata: Metadata = createMetadata({
   title: "Property Blog, Market Insights and Investment Guides",
@@ -22,6 +22,7 @@ export const metadata: Metadata = createMetadata({
 type BlogPageProps = {
   searchParams?: Promise<{
     page?: string;
+    search?: string;
   }>;
 };
 
@@ -33,11 +34,15 @@ function getSafePage(value?: string) {
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const resolvedSearchParams = await searchParams;
   const currentPage = getSafePage(resolvedSearchParams?.page);
-  const { posts, total, totalPages, hasNextPage, hasPreviousPage } = await getBlogPostsPage(currentPage, pageSize);
+  const search = resolvedSearchParams?.search?.trim() || undefined;
+  const [{ posts, total, totalPages }, sidebarData] = await Promise.all([
+    getBlogPostsPage({ page: currentPage, pageSize, search }),
+    getBlogSidebarData()
+  ]);
 
   return (
     <main>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }])} />
+      <JsonLd data={[organizationSchema(), breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }])]} />
       <PageHero
         eyebrow="Chaman Property Insights"
         title="Practical real estate guides for safer decisions"
@@ -51,77 +56,33 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             title="Latest property insights from Chaman Properties"
             description="Fresh articles from the Chaman Properties CMS, ordered by publish date for buyers, landlords, diaspora clients, and investors."
           />
-          {posts.length ? (
-            <>
-              <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {posts.map((post) => (
-                  <article
-                    key={post.slug}
-                    className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:-translate-y-1 hover:border-royalGold/45"
-                  >
-                    <Link href={`/blog/${post.slug}`} className="block overflow-hidden">
-                      <Image
-                        src={post.image}
-                        alt={post.imageAlt}
-                        width={900}
-                        height={560}
-                        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
-                      />
-                    </Link>
-                    <div className="p-6">
-                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-royalGold">
-                        {post.category} | {formatDate(post.date)}
-                      </p>
-                      <h2 className="mt-4 font-heading text-2xl font-semibold leading-snug text-ivory group-hover:text-royalGold">
-                        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                      </h2>
-                      <p className="mt-4 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
-                      <div className="mt-5 flex items-center justify-between gap-4">
-                        <p className="text-sm font-semibold text-ivory/58">
-                          {post.author} | {post.readingTime}
-                        </p>
-                        <Link href={`/blog/${post.slug}`} className="text-sm font-bold text-royalGold hover:text-champagne">
-                          Read More
-                        </Link>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-              {totalPages > 1 ? (
-                <nav className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-royalGold/12 pt-6 sm:flex-row">
-                  <p className="text-sm text-ivory/62">
-                    Showing page {currentPage} of {totalPages} | {total} published posts
-                  </p>
-                  <div className="flex gap-3">
-                    {hasPreviousPage ? (
-                      <Link
-                        href={currentPage - 1 === 1 ? "/blog" : `/blog?page=${currentPage - 1}`}
-                        className="rounded-full border border-royalGold/30 px-5 py-2 text-sm font-bold text-royalGold transition hover:bg-royalGold hover:text-luxuryBlack"
-                      >
-                        Previous
-                      </Link>
-                    ) : null}
-                    {hasNextPage ? (
-                      <Link
-                        href={`/blog?page=${currentPage + 1}`}
-                        className="rounded-full bg-royalGold px-5 py-2 text-sm font-bold text-luxuryBlack transition hover:bg-champagne"
-                      >
-                        Load More
-                      </Link>
-                    ) : null}
-                  </div>
-                </nav>
+          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+            <div>
+              {search ? (
+                <p className="mb-5 text-sm text-ivory/62">
+                  Showing {total} result{total === 1 ? "" : "s"} for <span className="font-semibold text-royalGold">{search}</span>
+                </p>
               ) : null}
-            </>
-          ) : (
-            <div className="mt-10 rounded-lg border border-royalGold/18 bg-charcoal p-8 text-center">
-              <h2 className="font-heading text-2xl font-semibold text-ivory">No blog posts found</h2>
-              <p className="mt-3 text-sm leading-7 text-ivory/68">
-                Published Chaman Properties articles will appear here automatically after they are created in Sanity CMS.
-              </p>
+              {posts.length ? (
+                <>
+                  <div className="grid gap-6 md:grid-cols-2">
+                    {posts.map((post, index) => (
+                      <BlogCard key={post.slug} post={post} priority={index < 2 && currentPage === 1} />
+                    ))}
+                  </div>
+                  <BlogPagination basePath="/blog" currentPage={currentPage} totalPages={totalPages} search={search} />
+                </>
+              ) : (
+                <div className="rounded-lg border border-royalGold/18 bg-charcoal p-8 text-center">
+                  <h2 className="font-heading text-2xl font-semibold text-ivory">No blog posts found</h2>
+                  <p className="mt-3 text-sm leading-7 text-ivory/68">
+                    Published Chaman Properties articles will appear here automatically after they are created in Sanity CMS.
+                  </p>
+                </div>
+              )}
             </div>
-          )}
+            <BlogSidebar {...sidebarData} search={search} />
+          </div>
         </div>
       </section>
     </main>
