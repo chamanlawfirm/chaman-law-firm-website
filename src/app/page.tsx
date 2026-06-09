@@ -1,4 +1,5 @@
 import { ArrowRight, FileCheck2, Globe2, KeyRound, ShieldCheck, TrendingUp } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { GoogleMapSection } from "@/components/GoogleMapSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -9,7 +10,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { StatsBand } from "@/components/StatsBand";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ZohoLeadForm } from "@/components/ZohoLeadForm";
-import { getBlogPosts, getFeaturedProperties, getServices } from "@/lib/cms";
+import { getFeaturedProperties, getRecentBlogPosts, getServices } from "@/lib/cms";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { formatDate } from "@/lib/utils";
 
@@ -58,7 +59,7 @@ export default async function HomePage() {
   const [featuredProperties, services, posts] = await Promise.all([
     getFeaturedProperties(),
     getServices(),
-    getBlogPosts()
+    getRecentBlogPosts(3)
   ]);
 
   return (
@@ -211,22 +212,34 @@ export default async function HomePage() {
             title="Guides for safer property decisions"
             description="Educational content improves trust, search visibility, and AI discoverability while helping clients understand real estate decisions."
           />
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {posts.slice(0, 3).map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:border-royalGold/42">
-                <img src={post.image} alt={post.title} className="h-52 w-full object-cover transition duration-500 group-hover:scale-105" />
-                <div className="p-5">
-                  <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">
-                    {post.category} | {formatDate(post.date)}
-                  </p>
-                  <h3 className="mt-3 font-heading text-xl font-semibold text-ivory group-hover:text-royalGold">
-                    {post.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          {posts.length ? (
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {posts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:border-royalGold/42">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    width={900}
+                    height={520}
+                    className="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div className="p-5">
+                    <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">
+                      {post.category} | {formatDate(post.date)}
+                    </p>
+                    <h3 className="mt-3 font-heading text-xl font-semibold text-ivory group-hover:text-royalGold">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-10 rounded-lg border border-royalGold/18 bg-charcoal p-6 text-sm leading-7 text-ivory/68">
+              Published blog posts from Sanity CMS will appear here automatically.
+            </div>
+          )}
         </div>
       </section>
 

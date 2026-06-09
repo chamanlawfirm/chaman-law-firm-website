@@ -7,6 +7,9 @@ type SeoInput = {
   path?: string;
   image?: string;
   keywords?: string[];
+  canonicalUrl?: string;
+  noIndex?: boolean;
+  type?: "website" | "article";
 };
 
 export function createMetadata({
@@ -14,10 +17,13 @@ export function createMetadata({
   description,
   path = "",
   image = defaultOgImage,
-  keywords = []
+  keywords = [],
+  canonicalUrl,
+  noIndex = false,
+  type = "website"
 }: SeoInput): Metadata {
   const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
-  const url = `${siteConfig.url}${path}`;
+  const url = canonicalUrl || `${siteConfig.url}${path}`;
 
   return {
     title: fullTitle,
@@ -34,6 +40,12 @@ export function createMetadata({
     alternates: {
       canonical: url
     },
+    robots: noIndex
+      ? {
+          index: false,
+          follow: false
+        }
+      : undefined,
     openGraph: {
       title: fullTitle,
       description,
@@ -48,7 +60,7 @@ export function createMetadata({
         }
       ],
       locale: "en_NG",
-      type: "website"
+      type
     },
     twitter: {
       card: "summary_large_image",

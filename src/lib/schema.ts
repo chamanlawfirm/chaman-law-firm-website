@@ -90,7 +90,7 @@ export function articleSchema(post: BlogPost) {
     description: post.excerpt,
     image: post.image,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updatedAt,
     author: {
       "@type": "Organization",
       name: post.author

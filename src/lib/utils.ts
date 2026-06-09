@@ -10,9 +10,15 @@ export function whatsappLink(message: string) {
 }
 
 export function formatDate(date: string) {
+  const value = new Date(date);
+
+  if (Number.isNaN(value.getTime())) {
+    return "Recently published";
+  }
+
   return new Intl.DateTimeFormat("en-NG", {
     month: "long",
     day: "numeric",
     year: "numeric"
-  }).format(new Date(date));
+  }).format(value);
 }

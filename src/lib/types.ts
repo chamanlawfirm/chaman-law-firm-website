@@ -62,16 +62,41 @@ export type Faq = {
 };
 
 export type BlogPost = {
+  id: string;
   slug: string;
   title: string;
   excerpt: string;
   date: string;
+  updatedAt: string;
   author: string;
   category: string;
+  categories: Array<{
+    title: string;
+    slug?: string;
+  }>;
   image: string;
+  imageAlt: string;
   readingTime: string;
-  content: string[];
+  body: Array<Record<string, unknown>>;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string[];
+    canonicalUrl?: string;
+    openGraphImage?: string;
+    noIndex?: boolean;
+  };
   faqs?: Faq[];
+};
+
+export type BlogPostPage = {
+  posts: BlogPost[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+  hasNextPage: boolean;
+  hasPreviousPage: boolean;
 };
 
 export type JobOpening = {

@@ -6,7 +6,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [properties, services, posts] = await Promise.all([
     getProperties(),
     getServices(),
-    getBlogPosts()
+    getBlogPosts({ limit: 100 })
   ]);
 
   const staticRoutes = [
