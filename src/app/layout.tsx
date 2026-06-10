@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Script from "next/script";
 import { AIChatbotButton } from "@/components/AIChatbotButton";
+import { ExitIntentLeadPopup } from "@/components/ExitIntentLeadPopup";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { SiteBreadcrumbs } from "@/components/SiteBreadcrumbs";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { createMetadata } from "@/lib/seo";
 import { organizationSchema } from "@/lib/schema";
@@ -36,6 +38,12 @@ export const metadata: Metadata = createMetadata({
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en-NG">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://cdn.sanity.io" />
+      </head>
       <body>
         <JsonLd data={organizationSchema()} />
         <Script
@@ -52,9 +60,11 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   `}
 </Script>
         <Header />
+        <SiteBreadcrumbs />
         {children}
         <Footer />
         <WhatsAppCTA variant="floating" label="WhatsApp" />
+        <ExitIntentLeadPopup />
         <AIChatbotButton />
       </body>
     </html>

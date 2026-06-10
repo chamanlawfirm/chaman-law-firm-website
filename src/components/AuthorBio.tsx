@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { BlogPost } from "@/lib/types";
 import { PortableTextRenderer } from "@/components/PortableTextRenderer";
 
@@ -36,6 +37,35 @@ export function AuthorBio({ post }: AuthorBioProps) {
                 Chaman Properties shares practical real estate guidance for buyers, landlords, diaspora investors, and property owners seeking safer decisions in Nigeria.
               </p>
             )}
+          </div>
+          <div className="mt-5 rounded-md border border-royalGold/12 bg-luxuryBlack p-4">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-royalGold">Author Expertise</p>
+            <p className="mt-2 text-sm leading-7 text-ivory/66">
+              Practical guidance on {post.category.toLowerCase()}, verified property transactions, real estate documentation,
+              investment advisory, and diaspora property support.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {post.categories.slice(0, 3).map((category) =>
+                category.slug ? (
+                  <Link
+                    key={category.slug}
+                    href={`/category/${category.slug}`}
+                    className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
+                  >
+                    {category.title}
+                  </Link>
+                ) : null
+              )}
+              {post.tags.slice(0, 4).map((tag) => (
+                <Link
+                  key={tag.slug}
+                  href={`/tags/${tag.slug}`}
+                  className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
+                >
+                  {tag.title}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { LeadMagnetDownloads } from "@/components/LeadMagnetDownloads";
 import { siteConfig } from "@/lib/constants";
 import type { BlogAuthor, BlogCategory, BlogPost, BlogTag } from "@/lib/types";
 import { formatDate, whatsappLink } from "@/lib/utils";
@@ -132,6 +133,8 @@ export function BlogSidebar({ categories, tags = [], authors = [], recentPosts, 
           WhatsApp Us
         </a>
       </section>
+
+      <LeadMagnetDownloads source="Blog sidebar downloads" compact />
     </aside>
   );
 }

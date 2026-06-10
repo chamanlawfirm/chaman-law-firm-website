@@ -2,6 +2,7 @@ import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ComponentProps } from "react";
+import { slugifyHeading } from "@/lib/article";
 import { urlFor } from "@/sanity/lib/image";
 
 type PortableTextValue = ComponentProps<typeof PortableText>["value"];
@@ -12,14 +13,20 @@ type PortableTextRendererProps = {
 
 const components: PortableTextComponents = {
   block: {
-    h2: ({ children }) => (
-      <h2 className="pt-4 font-heading text-3xl font-semibold leading-tight text-ivory">{children}</h2>
+    h2: ({ children, value }) => (
+      <h2 id={slugifyHeading(blockText(value))} className="scroll-mt-28 pt-4 font-heading text-3xl font-semibold leading-tight text-ivory">
+        {children}
+      </h2>
     ),
-    h3: ({ children }) => (
-      <h3 className="pt-3 font-heading text-2xl font-semibold leading-tight text-ivory">{children}</h3>
+    h3: ({ children, value }) => (
+      <h3 id={slugifyHeading(blockText(value))} className="scroll-mt-28 pt-3 font-heading text-2xl font-semibold leading-tight text-ivory">
+        {children}
+      </h3>
     ),
-    h4: ({ children }) => (
-      <h4 className="pt-2 font-heading text-xl font-semibold leading-tight text-ivory">{children}</h4>
+    h4: ({ children, value }) => (
+      <h4 id={slugifyHeading(blockText(value))} className="scroll-mt-28 pt-2 font-heading text-xl font-semibold leading-tight text-ivory">
+        {children}
+      </h4>
     ),
     blockquote: ({ children }) => (
       <blockquote className="border-l-2 border-royalGold pl-5 font-display text-2xl leading-10 text-champagne">
@@ -69,6 +76,22 @@ const components: PortableTextComponents = {
     }
   }
 };
+
+function blockText(value: unknown) {
+  if (!value || typeof value !== "object" || !("children" in value) || !Array.isArray(value.children)) {
+    return "";
+  }
+
+  return value.children
+    .map((child) => {
+      if (child && typeof child === "object" && "text" in child) {
+        return String(child.text || "");
+      }
+
+      return "";
+    })
+    .join("");
+}
 
 export function PortableTextRenderer({ value }: PortableTextRendererProps) {
   if (!value.length) {

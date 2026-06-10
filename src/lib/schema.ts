@@ -94,12 +94,18 @@ export function articleSchema(post: BlogPost) {
     author: {
       "@type": "Person",
       name: post.author,
-      image: post.authorProfile.image
+      image: post.authorProfile.image,
+      url: post.authorProfile.slug ? `${siteConfig.url}/authors/${post.authorProfile.slug}` : siteConfig.url
     },
     publisher: {
       "@type": "Organization",
-      name: siteConfig.name
+      name: siteConfig.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo.png`
+      }
     },
+    articleSection: post.category,
     keywords: post.seo?.keywords || [...post.categories.map((category) => category.title), ...post.tags.map((tag) => tag.title)],
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`
   };

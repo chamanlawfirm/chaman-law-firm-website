@@ -64,6 +64,24 @@ export const postType = defineType({
       options: {layout: 'tags'},
     }),
     defineField({
+      name: 'isFeatured',
+      title: 'Feature on Homepage',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'isTrending',
+      title: 'Mark as Trending',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'isMostRead',
+      title: 'Mark as Most Read',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',

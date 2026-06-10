@@ -31,6 +31,9 @@ const blogPostFields = `
     description
   },
   tags,
+  isFeatured,
+  isTrending,
+  isMostRead,
   mainImage,
   body,
   faqs[]{
@@ -62,6 +65,9 @@ type SanityBlogPost = {
   };
   categories?: Array<{ title?: string; slug?: string; description?: string } | null>;
   tags?: string[];
+  isFeatured?: boolean;
+  isTrending?: boolean;
+  isMostRead?: boolean;
   mainImage?: SanityImageSource & { alt?: string };
   body?: Array<Record<string, unknown>>;
   faqs?: Array<{ question?: string; answer?: string }>;
@@ -291,6 +297,9 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
     imageAlt: post.mainImage?.alt || post.title,
     readingTime: readingTimeFor(post),
     body: post.body || [],
+    isFeatured: post.isFeatured,
+    isTrending: post.isTrending,
+    isMostRead: post.isMostRead,
     faqs: post.faqs?.filter((faq) => faq.question && faq.answer).map((faq) => ({
       question: faq.question || "",
       answer: faq.answer || ""
@@ -396,6 +405,43 @@ export async function getRecentBlogPosts(limit = 3) {
 
 export async function getPopularBlogPosts(limit = 5) {
   return getBlogPosts({ limit });
+}
+
+async function getFlaggedBlogPosts(flag: "isFeatured" | "isTrending" | "isMostRead", limit: number) {
+  try {
+    const posts = await client.fetch<SanityBlogPost[]>(
+      `*[${publishedBlogFilter} && ${flag} == true] | order(publishedAt desc, _createdAt desc) [0...$limit] {
+        ${blogPostFields}
+      }`,
+      { limit },
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+    );
+    const normalizedPosts = normalizeBlogPosts(posts);
+
+    if (normalizedPosts.length >= limit) {
+      return normalizedPosts;
+    }
+
+    const fallback = await getBlogPosts({ limit });
+    const seen = new Set(normalizedPosts.map((post) => post.slug));
+
+    return [...normalizedPosts, ...fallback.filter((post) => !seen.has(post.slug))].slice(0, limit);
+  } catch (error) {
+    console.error(`Failed to fetch Sanity ${flag} blog posts`, error);
+    return getBlogPosts({ limit });
+  }
+}
+
+export async function getFeaturedBlogPosts(limit = 3) {
+  return getFlaggedBlogPosts("isFeatured", limit);
+}
+
+export async function getTrendingBlogPosts(limit = 3) {
+  return getFlaggedBlogPosts("isTrending", limit);
+}
+
+export async function getMostReadBlogPosts(limit = 3) {
+  return getFlaggedBlogPosts("isMostRead", limit);
 }
 
 export async function getBlogPostsPage({
@@ -665,29 +711,25 @@ export async function getBlogPostBySlug(slug: string) {
 }
 
 export async function getRelatedBlogPosts(post: BlogPost, limit = 3) {
-  const categorySlug = post.categories.find((category) => category.slug)?.slug;
+  const categorySlugs = new Set(post.categories.map((category) => category.slug).filter(Boolean));
+  const tagSlugs = new Set(post.tags.map((tag) => tag.slug));
+  const candidates = await getBlogPosts({ limit: 500, excludeSlug: post.slug });
+  const scored = candidates
+    .map((candidate) => {
+      const tagScore = candidate.tags.reduce((score, tag) => score + (tagSlugs.has(tag.slug) ? 3 : 0), 0);
+      const categoryScore = candidate.categories.reduce(
+        (score, category) => score + (category.slug && categorySlugs.has(category.slug) ? 2 : 0),
+        0
+      );
 
-  if (!categorySlug) {
-    return getBlogPosts({ limit, excludeSlug: post.slug });
-  }
+      return {
+        post: candidate,
+        score: tagScore + categoryScore
+      };
+    })
+    .sort((a, b) => b.score - a.score || new Date(b.post.date).getTime() - new Date(a.post.date).getTime());
 
-  const related = await getBlogPosts({
-    limit,
-    categorySlug,
-    excludeSlug: post.slug
-  });
-
-  if (related.length >= limit) {
-    return related;
-  }
-
-  const fallback = await getBlogPosts({
-    limit: limit - related.length,
-    excludeSlug: post.slug
-  });
-  const seen = new Set(related.map((item) => item.slug));
-
-  return [...related, ...fallback.filter((item) => !seen.has(item.slug))].slice(0, limit);
+  return scored.slice(0, limit).map((item) => item.post);
 }
 
 export async function getRecommendedBlogPosts(excludeSlug?: string, limit = 3) {

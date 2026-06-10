@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { CalendarDays, UserRound } from "lucide-react";
+import { CalendarDays, RefreshCcw, Tag, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleEngagementStats } from "@/components/ArticleEngagementStats";
 import { AuthorBio } from "@/components/AuthorBio";
 import { BlogArticleGrid } from "@/components/BlogArticleGrid";
 import { BlogLeadCTA } from "@/components/BlogLeadCTA";
 import { BlogSidebar } from "@/components/BlogSidebar";
 import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
+import { LeadMagnetDownloads } from "@/components/LeadMagnetDownloads";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { PortableTextRenderer } from "@/components/PortableTextRenderer";
+import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { SocialShareButtons } from "@/components/SocialShareButtons";
+import { TableOfContents } from "@/components/TableOfContents";
 import {
   getBlogPostBySlug,
   getBlogPostSlugs,
@@ -19,6 +23,7 @@ import {
   getRecommendedBlogPosts,
   getRelatedBlogPosts
 } from "@/lib/cms";
+import { getArticleFaqs, getArticleHeadings } from "@/lib/article";
 import { createMetadata } from "@/lib/seo";
 import { articleSchema, breadcrumbSchema, faqSchema, organizationSchema } from "@/lib/schema";
 import { formatDate } from "@/lib/utils";
@@ -71,9 +76,12 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
     getRecommendedBlogPosts(post.slug, 3),
     getBlogSidebarData()
   ]);
+  const headings = getArticleHeadings(post.body);
+  const articleFaqs = getArticleFaqs(post);
 
   return (
     <main>
+      <ReadingProgressBar />
       <JsonLd
         data={[
           organizationSchema(),
@@ -83,7 +91,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
             { name: "Blog", path: "/blog" },
             { name: post.title, path: `/blog/${post.slug}` }
           ]),
-          ...(post.faqs?.length ? [faqSchema(post.faqs)] : [])
+          faqSchema(articleFaqs)
         ]}
       />
       <article>
@@ -117,6 +125,10 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                 <CalendarDays size={16} className="text-royalGold" />
                 {formatDate(post.date)}
               </span>
+              <span className="inline-flex items-center gap-2">
+                <RefreshCcw size={16} className="text-royalGold" />
+                Updated {formatDate(post.updatedAt)}
+              </span>
               <span>{post.readingTime}</span>
             </div>
           </div>
@@ -126,8 +138,25 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
             <div className="space-y-10">
               <div className="rounded-lg border border-royalGold/16 bg-charcoal p-6 sm:p-10">
                 <p className="font-display text-2xl leading-10 text-champagne">{post.excerpt}</p>
+                {post.tags.length ? (
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {post.tags.slice(0, 8).map((tag) => (
+                      <Link
+                        key={tag.slug}
+                        href={`/tags/${tag.slug}`}
+                        className="inline-flex items-center gap-2 rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
+                      >
+                        <Tag size={13} />
+                        {tag.title}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="mt-8">
                   <BlogLeadCTA source={`Blog article intro - ${post.title}`} />
+                </div>
+                <div className="mt-8">
+                  <TableOfContents headings={headings} />
                 </div>
                 <div className="mt-8">
                   {post.body.length ? (
@@ -141,17 +170,16 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                 <div className="mt-10">
                   <BlogLeadCTA source={`Blog article body - ${post.title}`} />
                 </div>
-                {post.faqs?.length ? (
-                  <div className="mt-10">
-                    <h2 className="font-heading text-2xl text-ivory">Questions Answered</h2>
-                    <div className="mt-5">
-                      <FaqList faqs={post.faqs} />
-                    </div>
+                <div className="mt-10">
+                  <h2 className="font-heading text-2xl text-ivory">Questions Answered</h2>
+                  <div className="mt-5">
+                    <FaqList faqs={articleFaqs} />
                   </div>
-                ) : null}
+                </div>
               </div>
               <AuthorBio post={post} />
-              <NewsletterSignup />
+              <LeadMagnetDownloads source={`Blog article - ${post.title}`} />
+              <NewsletterSignup source={`Blog article newsletter - ${post.title}`} />
               <BlogArticleGrid
                 eyebrow="Related Articles"
                 title="More from this category"
@@ -166,6 +194,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
               />
             </div>
             <aside className="space-y-5">
+              <ArticleEngagementStats slug={post.slug} />
               <SocialShareButtons title={post.title} path={`/blog/${post.slug}`} />
               <BlogSidebar {...sidebarData} />
             </aside>

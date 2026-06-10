@@ -10,7 +10,15 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { StatsBand } from "@/components/StatsBand";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ZohoLeadForm } from "@/components/ZohoLeadForm";
-import { getFeaturedProperties, getRecentBlogPosts, getServices } from "@/lib/cms";
+import {
+  getFeaturedBlogPosts,
+  getFeaturedProperties,
+  getMostReadBlogPosts,
+  getRecentBlogPosts,
+  getServices,
+  getTrendingBlogPosts
+} from "@/lib/cms";
+import type { BlogPost } from "@/lib/types";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 const homeFaqs = [
@@ -54,11 +62,30 @@ const trustItems = [
   }
 ];
 
+function ArticleLinkPanel({ title, posts }: { title: string; posts: BlogPost[] }) {
+  return (
+    <section className="rounded-lg border border-royalGold/16 bg-charcoal p-6">
+      <h3 className="font-heading text-2xl font-semibold text-ivory">{title}</h3>
+      <div className="mt-5 space-y-4">
+        {posts.map((post) => (
+          <Link key={post.slug} href={`/blog/${post.slug}`} className="block border-b border-royalGold/10 pb-4 last:border-0 last:pb-0">
+            <p className="font-heading text-lg font-semibold leading-snug text-ivory transition hover:text-royalGold">{post.title}</p>
+            <p className="mt-2 text-xs font-bold uppercase tracking-[0.16em] text-royalGold/80">{post.category} | {post.readingTime}</p>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default async function HomePage() {
-  const [featuredProperties, services, posts] = await Promise.all([
+  const [featuredProperties, services, posts, featuredArticles, trendingArticles, mostReadArticles] = await Promise.all([
     getFeaturedProperties(),
     getServices(),
-    getRecentBlogPosts(6)
+    getRecentBlogPosts(6),
+    getFeaturedBlogPosts(3),
+    getTrendingBlogPosts(4),
+    getMostReadBlogPosts(4)
   ]);
 
   return (
@@ -208,17 +235,17 @@ export default async function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeader
-              eyebrow="Market Insight"
-              title="Guides for safer property decisions"
+              eyebrow="Featured Articles"
+              title="Editor-selected guides for safer property decisions"
               description="Educational content improves trust, search visibility, and AI discoverability while helping clients understand real estate decisions."
             />
             <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
               View All Articles <ArrowRight size={16} />
             </Link>
           </div>
-          {posts.length ? (
+          {featuredArticles.length ? (
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {posts.map((post, index) => (
+              {featuredArticles.map((post, index) => (
                 <BlogCard key={post.slug} post={post} priority={index < 3} />
               ))}
             </div>
@@ -227,6 +254,29 @@ export default async function HomePage() {
               Published blog posts from Sanity CMS will appear here automatically.
             </div>
           )}
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <ArticleLinkPanel title="Trending Articles" posts={trendingArticles} />
+            <ArticleLinkPanel title="Most Read Articles" posts={mostReadArticles} />
+          </div>
+          <div className="mt-12">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <SectionHeader
+                eyebrow="Latest Articles"
+                title="Fresh insights from the Chaman Properties blog"
+                description="The newest Sanity CMS articles appear here automatically for property buyers, landlords, investors, and diaspora clients."
+              />
+              <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
+                View All Articles <ArrowRight size={16} />
+              </Link>
+            </div>
+            {posts.length ? (
+              <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                {posts.map((post) => (
+                  <BlogCard key={post.slug} post={post} />
+                ))}
+              </div>
+            ) : null}
+          </div>
         </div>
       </section>
 

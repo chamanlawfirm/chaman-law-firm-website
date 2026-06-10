@@ -89,6 +89,9 @@ export type BlogPost = {
   imageAlt: string;
   readingTime: string;
   body: Array<Record<string, unknown>>;
+  isFeatured?: boolean;
+  isTrending?: boolean;
+  isMostRead?: boolean;
   seo?: {
     title?: string;
     description?: string;
