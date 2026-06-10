@@ -12,6 +12,21 @@ type SeoInput = {
   type?: "website" | "article";
 };
 
+function normalizeCanonicalUrl(value: string) {
+  try {
+    const url = new URL(value);
+
+    if (url.hostname === "www.chamanproperties.com") {
+      url.hostname = "chamanproperties.com";
+      url.protocol = "https:";
+    }
+
+    return url.toString();
+  } catch {
+    return value;
+  }
+}
+
 export function createMetadata({
   title,
   description,
@@ -23,7 +38,7 @@ export function createMetadata({
   type = "website"
 }: SeoInput): Metadata {
   const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
-  const url = canonicalUrl || `${siteConfig.url}${path}`;
+  const url = normalizeCanonicalUrl(canonicalUrl || `${siteConfig.url}${path}`);
 
   return {
     title: fullTitle,
