@@ -100,7 +100,7 @@ export function articleSchema(post: BlogPost) {
       "@type": "Organization",
       name: siteConfig.name
     },
-    keywords: post.seo?.keywords || post.categories.map((category) => category.title),
+    keywords: post.seo?.keywords || [...post.categories.map((category) => category.title), ...post.tags.map((tag) => tag.title)],
     mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`
   };
 }

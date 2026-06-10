@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CalendarDays, UserRound } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AuthorBio } from "@/components/AuthorBio";
 import { BlogArticleGrid } from "@/components/BlogArticleGrid";
@@ -104,7 +105,13 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
             <div className="mt-6 flex flex-wrap gap-5 text-sm text-ivory/66">
               <span className="inline-flex items-center gap-2">
                 <UserRound size={16} className="text-royalGold" />
-                {post.author}
+                {post.authorProfile.slug ? (
+                  <Link href={`/authors/${post.authorProfile.slug}`} className="hover:text-royalGold">
+                    {post.author}
+                  </Link>
+                ) : (
+                  post.author
+                )}
               </span>
               <span className="inline-flex items-center gap-2">
                 <CalendarDays size={16} className="text-royalGold" />

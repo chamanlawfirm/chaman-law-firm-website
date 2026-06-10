@@ -2,7 +2,7 @@ import { jobOpenings } from "@/data/jobs";
 import { properties } from "@/data/properties";
 import { services } from "@/data/services";
 import { defaultOgImage } from "@/lib/constants";
-import type { BlogCategory, BlogPost, BlogPostPage } from "@/lib/types";
+import type { BlogAuthor, BlogCategory, BlogPost, BlogPostPage, BlogTag } from "@/lib/types";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
@@ -21,6 +21,7 @@ const blogPostFields = `
   "date": coalesce(publishedAt, _createdAt),
   author->{
     name,
+    "slug": slug.current,
     image,
     bio
   },
@@ -29,6 +30,7 @@ const blogPostFields = `
     "slug": slug.current,
     description
   },
+  tags,
   mainImage,
   body,
   faqs[]{
@@ -54,10 +56,12 @@ type SanityBlogPost = {
   date?: string;
   author?: {
     name?: string;
+    slug?: string;
     image?: SanityImageSource & { alt?: string };
     bio?: Array<Record<string, unknown>>;
   };
   categories?: Array<{ title?: string; slug?: string; description?: string } | null>;
+  tags?: string[];
   mainImage?: SanityImageSource & { alt?: string };
   body?: Array<Record<string, unknown>>;
   faqs?: Array<{ question?: string; answer?: string }>;
@@ -81,6 +85,7 @@ type BlogPostQueryOptions = {
   offset?: number;
   search?: string;
   categorySlug?: string;
+  authorSlug?: string;
   excludeSlug?: string;
 };
 
@@ -89,6 +94,7 @@ type BlogPostPageOptions = {
   pageSize?: number;
   search?: string;
   categorySlug?: string;
+  authorSlug?: string;
 };
 
 type SanityBlogCategory = {
@@ -96,6 +102,15 @@ type SanityBlogCategory = {
   title?: string;
   slug?: string;
   description?: string;
+  postCount?: number;
+};
+
+type SanityBlogAuthor = {
+  _id?: string;
+  name?: string;
+  slug?: string;
+  image?: SanityImageSource & { alt?: string };
+  bio?: Array<Record<string, unknown>>;
   postCount?: number;
 };
 
@@ -136,6 +151,32 @@ function imageUrl(source?: SanityImageSource, width = 1200, height = 800) {
   }
 }
 
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function uniqueStrings(values: Array<string | undefined>) {
+  const seen = new Set<string>();
+  return values
+    .map((value) => value?.trim())
+    .filter((value): value is string => Boolean(value))
+    .filter((value) => {
+      const key = slugify(value);
+
+      if (!key || seen.has(key)) {
+        return false;
+      }
+
+      seen.add(key);
+      return true;
+    });
+}
+
 function sanitizeSearchTerm(search?: string) {
   const normalized = search?.trim().replace(/\s+/g, " ");
 
@@ -146,14 +187,14 @@ function sanitizeSearchTerm(search?: string) {
   return `${normalized}*`;
 }
 
-function buildBlogFilter({ search, categorySlug, excludeSlug }: BlogPostQueryOptions = {}) {
+function buildBlogFilter({ search, categorySlug, authorSlug, excludeSlug }: BlogPostQueryOptions = {}) {
   const filters = [publishedBlogFilter];
   const params: Record<string, string> = {};
   const searchTerm = sanitizeSearchTerm(search);
 
   if (searchTerm) {
     filters.push(
-      `(title match $searchTerm || excerpt match $searchTerm || pt::text(body) match $searchTerm || author->name match $searchTerm || categories[]->title match $searchTerm)`
+      `(title match $searchTerm || excerpt match $searchTerm || pt::text(body) match $searchTerm || author->name match $searchTerm || categories[]->title match $searchTerm || tags[] match $searchTerm || seo.keywords[] match $searchTerm)`
     );
     params.searchTerm = searchTerm;
   }
@@ -161,6 +202,11 @@ function buildBlogFilter({ search, categorySlug, excludeSlug }: BlogPostQueryOpt
   if (categorySlug) {
     filters.push(`$categorySlug in categories[]->slug.current`);
     params.categorySlug = categorySlug;
+  }
+
+  if (authorSlug) {
+    filters.push(`author->slug.current == $authorSlug`);
+    params.authorSlug = authorSlug;
   }
 
   if (excludeSlug) {
@@ -217,6 +263,7 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
     "Read the latest Chaman Properties insight on verified real estate decisions, property investment, and management.";
   const image = imageUrl(post.mainImage);
   const openGraphImage = post.seo?.openGraphImage ? imageUrl(post.seo.openGraphImage, 1600, 900) : undefined;
+  const tagTitles = uniqueStrings([...(post.tags || []), ...(post.seo?.keywords || [])]).slice(0, 12);
 
   return {
     id: post._id || post.slug,
@@ -230,10 +277,12 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
     categories,
     authorProfile: {
       name: post.author?.name || "Chaman Properties",
+      slug: post.author?.slug,
       image: post.author?.image ? imageUrl(post.author.image, 320, 320) : undefined,
       imageAlt: post.author?.image?.alt || post.author?.name || "Chaman Properties author",
       bio: post.author?.bio || []
     },
+    tags: tagTitles.map((title) => ({ title, slug: slugify(title) })),
     image,
     imageAlt: post.mainImage?.alt || post.title,
     readingTime: readingTimeFor(post),
@@ -275,14 +324,51 @@ function normalizeBlogCategories(categories: SanityBlogCategory[] = []) {
   return categories.map(normalizeBlogCategory).filter((category): category is BlogCategory => Boolean(category));
 }
 
+function normalizeBlogAuthor(author: SanityBlogAuthor): BlogAuthor | null {
+  if (!author.slug || !author.name) {
+    return null;
+  }
+
+  return {
+    id: author._id || author.slug,
+    name: author.name,
+    slug: author.slug,
+    image: author.image ? imageUrl(author.image, 320, 320) : undefined,
+    imageAlt: author.image?.alt || author.name,
+    bio: author.bio || [],
+    postCount: author.postCount || 0
+  };
+}
+
+function normalizeBlogAuthors(authors: SanityBlogAuthor[] = []) {
+  return authors.map(normalizeBlogAuthor).filter((author): author is BlogAuthor => Boolean(author));
+}
+
+function aggregateTags(posts: BlogPost[]) {
+  const tags = new Map<string, BlogTag>();
+
+  posts.forEach((post) => {
+    post.tags.forEach((tag) => {
+      const existing = tags.get(tag.slug);
+      tags.set(tag.slug, {
+        ...tag,
+        postCount: (existing?.postCount || 0) + 1
+      });
+    });
+  });
+
+  return Array.from(tags.values()).sort((a, b) => a.title.localeCompare(b.title));
+}
+
 export async function getBlogPosts({
   limit = BLOG_PAGE_SIZE,
   offset = 0,
   search,
   categorySlug,
+  authorSlug,
   excludeSlug
 }: BlogPostQueryOptions = {}) {
-  const { filter, params } = buildBlogFilter({ search, categorySlug, excludeSlug });
+  const { filter, params } = buildBlogFilter({ search, categorySlug, authorSlug, excludeSlug });
 
   try {
     const posts = await client.fetch<SanityBlogPost[]>(
@@ -312,12 +398,13 @@ export async function getBlogPostsPage({
   page = 1,
   pageSize = BLOG_PAGE_SIZE,
   search,
-  categorySlug
+  categorySlug,
+  authorSlug
 }: BlogPostPageOptions = {}): Promise<BlogPostPage> {
   const safePage = Math.max(1, page);
   const safePageSize = Math.max(1, pageSize);
   const offset = (safePage - 1) * safePageSize;
-  const { filter, params } = buildBlogFilter({ search, categorySlug });
+  const { filter, params } = buildBlogFilter({ search, categorySlug, authorSlug });
 
   try {
     const data = await client.fetch<SanityBlogPostPage>(
@@ -432,6 +519,130 @@ export async function getBlogCategorySlugs() {
   }
 }
 
+export async function getBlogAuthors() {
+  try {
+    const authors = await client.fetch<SanityBlogAuthor[]>(
+      `*[_type == "author" && defined(slug.current)] | order(name asc) {
+        _id,
+        name,
+        "slug": slug.current,
+        image,
+        bio,
+        "postCount": count(*[${publishedBlogFilter} && author._ref == ^._id])
+      }`,
+      {},
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+    );
+
+    return normalizeBlogAuthors(authors).filter((author) => author.postCount > 0);
+  } catch (error) {
+    console.error("Failed to fetch Sanity blog authors", error);
+    return [];
+  }
+}
+
+export async function getBlogAuthorBySlug(slug: string) {
+  try {
+    const author = await client.fetch<SanityBlogAuthor | null>(
+      `*[_type == "author" && slug.current == $slug][0] {
+        _id,
+        name,
+        "slug": slug.current,
+        image,
+        bio,
+        "postCount": count(*[${publishedBlogFilter} && author._ref == ^._id])
+      }`,
+      { slug },
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+    );
+
+    return author ? normalizeBlogAuthor(author) : null;
+  } catch (error) {
+    console.error(`Failed to fetch Sanity blog author: ${slug}`, error);
+    return null;
+  }
+}
+
+export async function getBlogAuthorSlugs() {
+  try {
+    const authors = await client.fetch<Array<{ slug: string }>>(
+      `*[_type == "author" && defined(slug.current) && count(*[${publishedBlogFilter} && author._ref == ^._id]) > 0] | order(name asc) {
+        "slug": slug.current
+      }`,
+      {},
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+    );
+
+    return authors.filter((author) => Boolean(author.slug));
+  } catch (error) {
+    console.error("Failed to fetch Sanity blog author slugs", error);
+    return [];
+  }
+}
+
+export async function getBlogTags() {
+  const posts = await getBlogPosts({ limit: 500 });
+  return aggregateTags(posts);
+}
+
+export async function getBlogTagBySlug(slug: string) {
+  const tags = await getBlogTags();
+  return tags.find((tag) => tag.slug === slug) || null;
+}
+
+export async function getBlogTagSlugs() {
+  const tags = await getBlogTags();
+  return tags.map((tag) => ({ slug: tag.slug }));
+}
+
+export async function getBlogPostsByTagPage(tagSlug: string, page = 1, pageSize = BLOG_PAGE_SIZE): Promise<BlogPostPage> {
+  const safePage = Math.max(1, page);
+  const safePageSize = Math.max(1, pageSize);
+  const allPosts = await getBlogPosts({ limit: 500 });
+  const taggedPosts = allPosts.filter((post) => post.tags.some((tag) => tag.slug === tagSlug));
+  const offset = (safePage - 1) * safePageSize;
+  const total = taggedPosts.length;
+  const totalPages = Math.max(1, Math.ceil(total / safePageSize));
+
+  return {
+    posts: taggedPosts.slice(offset, offset + safePageSize),
+    total,
+    page: safePage,
+    pageSize: safePageSize,
+    totalPages,
+    hasNextPage: safePage < totalPages,
+    hasPreviousPage: safePage > 1
+  };
+}
+
+export async function getResourceCenterPosts(keywords: string[], limit = 12) {
+  const allPosts = await getBlogPosts({ limit: 500 });
+  const normalizedKeywords = keywords.map((keyword) => keyword.toLowerCase());
+  const matched = allPosts.filter((post) => {
+    const haystack = [
+      post.title,
+      post.excerpt,
+      post.category,
+      ...post.categories.map((category) => category.title),
+      ...post.tags.map((tag) => tag.title),
+      ...(post.seo?.keywords || [])
+    ]
+      .join(" ")
+      .toLowerCase();
+
+    return normalizedKeywords.some((keyword) => haystack.includes(keyword));
+  });
+
+  if (matched.length >= limit) {
+    return matched.slice(0, limit);
+  }
+
+  const seen = new Set(matched.map((post) => post.slug));
+  const fallback = allPosts.filter((post) => !seen.has(post.slug));
+
+  return [...matched, ...fallback].slice(0, limit);
+}
+
 export async function getBlogPostBySlug(slug: string) {
   try {
     const post = await client.fetch<SanityBlogPost | null>(
@@ -480,14 +691,18 @@ export async function getRecommendedBlogPosts(excludeSlug?: string, limit = 3) {
 }
 
 export async function getBlogSidebarData() {
-  const [categories, recentPosts, popularPosts] = await Promise.all([
+  const [categories, tags, authors, recentPosts, popularPosts] = await Promise.all([
     getBlogCategories(),
+    getBlogTags(),
+    getBlogAuthors(),
     getRecentBlogPosts(5),
     getPopularBlogPosts(5)
   ]);
 
   return {
     categories,
+    tags,
+    authors,
     recentPosts,
     popularPosts
   };

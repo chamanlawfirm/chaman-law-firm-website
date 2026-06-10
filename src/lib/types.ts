@@ -76,10 +76,15 @@ export type BlogPost = {
   }>;
   authorProfile: {
     name: string;
+    slug?: string;
     image?: string;
     imageAlt?: string;
     bio: Array<Record<string, unknown>>;
   };
+  tags: Array<{
+    title: string;
+    slug: string;
+  }>;
   image: string;
   imageAlt: string;
   readingTime: string;
@@ -110,6 +115,22 @@ export type BlogCategory = {
   title: string;
   slug: string;
   description?: string;
+  postCount: number;
+};
+
+export type BlogAuthor = {
+  id: string;
+  name: string;
+  slug: string;
+  image?: string;
+  imageAlt?: string;
+  bio: Array<Record<string, unknown>>;
+  postCount: number;
+};
+
+export type BlogTag = {
+  title: string;
+  slug: string;
   postCount: number;
 };
 

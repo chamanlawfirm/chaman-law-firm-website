@@ -36,12 +36,32 @@ export function BlogCard({ post, priority = false }: BlogCardProps) {
         <p className="mt-4 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
         <div className="mt-5 flex items-center justify-between gap-4">
           <p className="text-sm font-semibold text-ivory/58">
-            {post.author} | {post.readingTime}
+            {post.authorProfile.slug ? (
+              <Link href={`/authors/${post.authorProfile.slug}`} className="hover:text-royalGold">
+                {post.author}
+              </Link>
+            ) : (
+              post.author
+            )}{" "}
+            | {post.readingTime}
           </p>
           <Link href={`/blog/${post.slug}`} className="shrink-0 text-sm font-bold text-royalGold hover:text-champagne">
             Read More
           </Link>
         </div>
+        {post.tags.length ? (
+          <div className="mt-5 flex flex-wrap gap-2">
+            {post.tags.slice(0, 3).map((tag) => (
+              <Link
+                key={tag.slug}
+                href={`/tags/${tag.slug}`}
+                className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/56 transition hover:border-royalGold/40 hover:text-royalGold"
+              >
+                {tag.title}
+              </Link>
+            ))}
+          </div>
+        ) : null}
       </div>
     </article>
   );
