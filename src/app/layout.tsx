@@ -12,6 +12,9 @@ import { createMetadata } from "@/lib/seo";
 import { organizationSchema } from "@/lib/schema";
 import "./globals.css";
 
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION?.trim();
+
 export const metadata: Metadata = createMetadata({
   title: "Luxury Real Estate Nigeria | Chaman Properties",
   description:
@@ -39,6 +42,8 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en-NG">
       <head>
+        {googleSiteVerification ? <meta name="google-site-verification" content={googleSiteVerification} /> : null}
+        {bingSiteVerification ? <meta name="msvalidate.01" content={bingSiteVerification} /> : null}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://images.unsplash.com" />

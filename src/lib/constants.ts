@@ -1,9 +1,30 @@
+function getCanonicalSiteUrl() {
+  const fallback = "https://chamanproperties.com";
+  const rawUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() || fallback;
+
+  try {
+    const url = new URL(rawUrl);
+
+    if (url.hostname === "www.chamanproperties.com") {
+      url.hostname = "chamanproperties.com";
+    }
+
+    url.pathname = "";
+    url.search = "";
+    url.hash = "";
+
+    return url.toString().replace(/\/$/, "");
+  } catch {
+    return fallback;
+  }
+}
+
 export const siteConfig = {
   name: "Chaman Properties",
   tagline: "Your Dream Home, Our Work.",
   description:
     "Premium real estate investment, property sales, letting, short-let, diaspora property management, and verified property advisory in Nigeria.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.chamanproperties.com",
+  url: getCanonicalSiteUrl(),
   email: "info@chamanproperties.com",
   secondaryEmail: "chamanpropertiesltd@gmail.com",
   phones: ["08065553671", "08096888818", "08064722292"],
