@@ -3,20 +3,10 @@ import { siteConfig } from "@/lib/constants";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "Googlebot",
-        allow: "/"
-      },
-      {
-        userAgent: "Bingbot",
-        allow: "/"
-      },
-      {
-        userAgent: "*",
-        allow: "/"
-      }
-    ],
+    rules: {
+      userAgent: "*",
+      allow: "/"
+    },
     sitemap: `${siteConfig.url}/sitemap.xml`
   };
 }
