@@ -263,7 +263,11 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
     "Read the latest Chaman Properties insight on verified real estate decisions, property investment, and management.";
   const image = imageUrl(post.mainImage);
   const openGraphImage = post.seo?.openGraphImage ? imageUrl(post.seo.openGraphImage, 1600, 900) : undefined;
-  const tagTitles = uniqueStrings([...(post.tags || []), ...(post.seo?.keywords || [])]).slice(0, 12);
+  const tagTitles = uniqueStrings([
+    ...(post.tags || []),
+    ...(post.seo?.keywords || []),
+    ...categories.map((item) => item.title)
+  ]).slice(0, 12);
 
   return {
     id: post._id || post.slug,
