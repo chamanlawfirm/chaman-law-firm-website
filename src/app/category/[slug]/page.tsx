@@ -16,7 +16,7 @@ import { createMetadata } from "@/lib/seo";
 import { breadcrumbSchema, organizationSchema } from "@/lib/schema";
 
 export const revalidate = 60;
-const pageSize = 12;
+const pageSize = 24;
 
 type CategoryPageProps = {
   params: Promise<{ slug: string }>;
