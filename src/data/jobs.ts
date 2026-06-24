@@ -2,33 +2,33 @@ import type { JobOpening } from "@/lib/types";
 
 export const jobOpenings: JobOpening[] = [
   {
-    slug: "property-sales-executive",
-    title: "Property Sales Executive",
-    department: "Sales",
+    slug: "legal-associate",
+    title: "Legal Associate",
+    department: "Legal",
     location: "Lagos / Ogun",
     type: "Full-time",
     summary:
-      "Drive property sales, client advisory, inspection follow-up, and investor relationship management.",
+      "Support legal research, drafting, client advisory, court preparation, and practice-area execution.",
     responsibilities: [
-      "Qualify buyers and investors",
-      "Coordinate inspections",
-      "Follow up leads through closing",
-      "Prepare listing and transaction updates"
+      "Prepare legal research and drafting support",
+      "Assist with client matter updates",
+      "Organize matter documents",
+      "Support practice-area delivery"
     ]
   },
   {
-    slug: "property-management-officer",
-    title: "Property Management Officer",
-    department: "Property Management",
+    slug: "legal-research-officer",
+    title: "Legal Research Officer",
+    department: "Research",
     location: "Lagos / Ogun",
     type: "Full-time",
     summary:
-      "Support tenant relations, maintenance coordination, inspections, rent tracking, and owner reporting.",
+      "Support legal research, article preparation, regulatory monitoring, and internal knowledge management.",
     responsibilities: [
-      "Track maintenance requests",
-      "Prepare inspection summaries",
-      "Coordinate tenants and vendors",
-      "Maintain owner communication records"
+      "Research laws, cases, and regulatory updates",
+      "Prepare legal notes and article drafts",
+      "Support resource-centre content",
+      "Maintain research files"
     ]
   },
   {
@@ -38,11 +38,11 @@ export const jobOpenings: JobOpening[] = [
     location: "Hybrid",
     type: "Full-time",
     summary:
-      "Create premium listing content, social media campaigns, market insights, and property video scripts.",
+      "Create legal education content, social media campaigns, media assets, and resource-centre updates.",
     responsibilities: [
-      "Prepare property marketing copy",
+      "Prepare legal education copy",
       "Manage social content calendars",
-      "Coordinate listing photography",
+      "Coordinate approved media assets",
       "Publish blog and SEO content"
     ]
   }

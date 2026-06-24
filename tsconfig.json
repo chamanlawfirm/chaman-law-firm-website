@@ -36,8 +36,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "chaman-command-ai",
-    "chaman-command-ai/**"
+    "node_modules"
   ]
 }

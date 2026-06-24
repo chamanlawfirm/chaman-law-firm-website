@@ -5,9 +5,10 @@ type BlogPaginationProps = {
   currentPage: number;
   totalPages: number;
   search?: string;
+  category?: string;
 };
 
-function pageHref(basePath: string, page: number, search?: string) {
+function pageHref(basePath: string, page: number, search?: string, category?: string) {
   const params = new URLSearchParams();
 
   if (page > 1) {
@@ -18,11 +19,15 @@ function pageHref(basePath: string, page: number, search?: string) {
     params.set("search", search);
   }
 
+  if (category) {
+    params.set("category", category);
+  }
+
   const query = params.toString();
   return query ? `${basePath}?${query}` : basePath;
 }
 
-export function BlogPagination({ basePath, currentPage, totalPages, search }: BlogPaginationProps) {
+export function BlogPagination({ basePath, currentPage, totalPages, search, category }: BlogPaginationProps) {
   if (totalPages <= 1) {
     return null;
   }
@@ -33,7 +38,7 @@ export function BlogPagination({ basePath, currentPage, totalPages, search }: Bl
     <nav className="mt-10 flex flex-wrap items-center justify-center gap-2 border-t border-royalGold/12 pt-6" aria-label="Blog pagination">
       {currentPage > 1 ? (
         <Link
-          href={pageHref(basePath, currentPage - 1, search)}
+          href={pageHref(basePath, currentPage - 1, search, category)}
           className="rounded-full border border-royalGold/30 px-4 py-2 text-sm font-bold text-royalGold transition hover:bg-royalGold hover:text-luxuryBlack"
         >
           Previous
@@ -45,7 +50,7 @@ export function BlogPagination({ basePath, currentPage, totalPages, search }: Bl
       {pages.map((page) => (
         <Link
           key={page}
-          href={pageHref(basePath, page, search)}
+          href={pageHref(basePath, page, search, category)}
           aria-current={page === currentPage ? "page" : undefined}
           className={
             page === currentPage
@@ -59,7 +64,7 @@ export function BlogPagination({ basePath, currentPage, totalPages, search }: Bl
 
       {currentPage < totalPages ? (
         <Link
-          href={pageHref(basePath, currentPage + 1, search)}
+          href={pageHref(basePath, currentPage + 1, search, category)}
           className="rounded-full border border-royalGold/30 px-4 py-2 text-sm font-bold text-royalGold transition hover:bg-royalGold hover:text-luxuryBlack"
         >
           Next

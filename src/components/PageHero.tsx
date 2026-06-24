@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type PageHeroProps = {
@@ -12,10 +13,12 @@ export function PageHero({ eyebrow, title, description, image, cta }: PageHeroPr
   return (
     <section className="relative overflow-hidden border-b border-royalGold/15 bg-charcoal">
       {image ? (
-        <img
+        <Image
           src={image}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-28"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-28"
           aria-hidden="true"
         />
       ) : null}

@@ -9,24 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        luxuryBlack: "#050505",
-        charcoal: "#1A1A1A",
-        royalGold: "#D4AF37",
-        champagne: "#E8C872",
-        ivory: "#F8F5EF",
-        ash: "#B8B3A7"
+        luxuryBlack: "#0B0B0B",
+        charcoal: "#191919",
+        royalGold: "#C8A54B",
+        champagne: "#E8D6A0",
+        ivory: "#FFFFFF",
+        lightGray: "#F5F5F2",
+        ash: "#B8B3A7",
+        ink: "#111111",
+        success: "#1F7A4D",
+        warning: "#B98220",
+        error: "#B42318",
+        info: "#1D4ED8"
       },
       fontFamily: {
-        heading: ["Cinzel", "Georgia", "serif"],
+        heading: ["Playfair Display", "Georgia", "serif"],
         display: ["Playfair Display", "Georgia", "serif"],
-        body: ["Montserrat", "Avenir", "Arial", "sans-serif"]
+        body: ["Inter", "Arial", "sans-serif"]
       },
       boxShadow: {
-        gold: "0 18px 60px rgba(212, 175, 55, 0.16)"
+        gold: "0 18px 60px rgba(200, 165, 75, 0.16)"
       },
       backgroundImage: {
         "gold-sheen":
-          "linear-gradient(135deg, rgba(212,175,55,0.16), rgba(232,200,114,0.04) 45%, rgba(248,245,239,0.08))"
+          "linear-gradient(135deg, rgba(200,165,75,0.16), rgba(232,214,160,0.04) 45%, rgba(255,255,255,0.08))"
       }
     }
   },

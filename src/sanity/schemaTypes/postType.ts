@@ -82,6 +82,15 @@ export const postType = defineType({
       initialValue: false,
     }),
     defineField({
+      name: 'lawFirmApproved',
+      title: 'Approved for Chaman Law Firm Website',
+      type: 'boolean',
+      description:
+        'Publish only after legal, editorial and brand review confirms that this is Chaman Law Firm content and all canonical URLs point to chamanlawfirm.com.',
+      initialValue: false,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',

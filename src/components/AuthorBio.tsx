@@ -34,15 +34,15 @@ export function AuthorBio({ post }: AuthorBioProps) {
               <PortableTextRenderer value={author.bio} />
             ) : (
               <p>
-                Chaman Properties shares practical real estate guidance for buyers, landlords, diaspora investors, and property owners seeking safer decisions in Nigeria.
+                Chaman Law Firm shares practical legal guidance for property clients, business owners, families, diaspora clients, and professionals seeking safer decisions in Nigeria.
               </p>
             )}
           </div>
           <div className="mt-5 rounded-md border border-royalGold/12 bg-luxuryBlack p-4">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-royalGold">Author Expertise</p>
             <p className="mt-2 text-sm leading-7 text-ivory/66">
-              Practical guidance on {post.category.toLowerCase()}, verified property transactions, real estate documentation,
-              investment advisory, and diaspora property support.
+              Practical guidance on {post.category.toLowerCase()}, legal risk, documentation, dispute prevention,
+              business decisions, and diaspora legal support.
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
               {post.categories.slice(0, 3).map((category) =>

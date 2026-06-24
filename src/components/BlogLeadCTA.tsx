@@ -8,14 +8,14 @@ type BlogLeadCTAProps = {
 };
 
 export function BlogLeadCTA({ source }: BlogLeadCTAProps) {
-  const message = `Hello ${siteConfig.name}, I read your article and need professional property advice. Source: ${source}`;
+  const message = `Hello ${siteConfig.name}, I read your article and need legal guidance. Source: ${source}`;
 
   return (
     <section className="rounded-lg border border-royalGold/25 bg-luxuryBlack p-6 sm:p-8">
-      <p className="text-xs font-bold uppercase tracking-[0.24em] text-royalGold">Need Professional Property Advice?</p>
-      <h2 className="mt-3 font-heading text-3xl font-semibold leading-tight text-ivory">Contact Chaman Properties Today.</h2>
+      <p className="text-xs font-bold uppercase tracking-[0.24em] text-royalGold">Need Professional Legal Guidance?</p>
+      <h2 className="mt-3 font-heading text-3xl font-semibold leading-tight text-ivory">Contact Chaman Law Firm Today.</h2>
       <p className="mt-4 max-w-2xl text-sm leading-7 text-ivory/68">
-        Speak with our team about property sales, letting, verification, investment opportunities, property management, or diaspora support.
+        Speak with the firm about property law, business matters, litigation, debt recovery, probate, notary services, or diaspora legal support.
       </p>
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <a

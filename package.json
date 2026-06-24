@@ -1,24 +1,21 @@
 {
-  "name": "chaman-properties-website",
+  "name": "chaman-law-firm-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint .",
-    "deploy:cloudflare": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview:cloudflare": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.0.0",
     "@portabletext/react": "^6.2.0",
     "@sanity/icons": "^3.7.4",
     "@sanity/image-url": "^2.1.1",
     "@sanity/vision": "^5.25.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
-    "next": "^16.2.6",
+    "next": "16.2.9",
     "next-sanity": "^12.4.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -26,16 +23,14 @@
     "styled-components": "^6.4.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.18.0",
-    "eslint-config-next": "^15.1.6",
+    "eslint-config-next": "16.2.9",
     "postcss": "^8.5.14",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3",
-    "wrangler": "^4.95.0"
+    "typescript": "^5.7.3"
   }
 }

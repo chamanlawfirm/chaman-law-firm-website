@@ -8,8 +8,8 @@ type WhatsAppCTAProps = {
 };
 
 export function WhatsAppCTA({
-  message = "Hello Chaman Properties, I would like to speak with your property team.",
-  label = "Speak With Our Property Team",
+  message = "Hello Chaman Law Firm, I would like to speak with a lawyer.",
+  label = "Speak With a Lawyer",
   variant = "inline"
 }: WhatsAppCTAProps) {
   const classes =

@@ -15,12 +15,12 @@ export function LeadMagnetDownloads({ source, compact = false }: LeadMagnetDownl
           <Download size={18} />
         </span>
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Free Property Resources</p>
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Free Legal Resources</p>
           <h2 className={compact ? "mt-2 font-heading text-xl font-semibold text-ivory" : "mt-2 font-heading text-3xl font-semibold text-ivory"}>
-            Download buyer-ready guides
+            Download client-ready guides
           </h2>
           <p className="mt-3 text-sm leading-7 text-ivory/66">
-            Get practical Chaman Properties checklists for investment planning, property verification, and safer purchase decisions.
+            Get practical Chaman Law Firm checklists for property due diligence, diaspora representation, contract review, debt recovery, probate, and safer legal decisions.
           </p>
         </div>
       </div>

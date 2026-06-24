@@ -13,12 +13,12 @@ export function GoogleMapSection() {
         <SectionHeader
           eyebrow="Visit Our Offices"
           title="Ikeja, Lagos and Arepo, Ogun State"
-          description="Meet the Chaman Properties team for property consultation, listing support, verification guidance, and management discussions."
+          description="Meet Chaman Law Firm for legal consultation, document review, property-law support, corporate advisory, dispute guidance, and notary public services."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-lg border border-royalGold/18 bg-luxuryBlack">
             <iframe
-              title="Chaman Properties office map"
+              title="Chaman Law Firm office map"
               src={embedUrl}
               className="h-[420px] w-full"
               loading="lazy"

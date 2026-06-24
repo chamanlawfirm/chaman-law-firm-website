@@ -1,7 +1,9 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { ConsentField, HoneypotField } from "@/components/FormSecurityFields";
 import type { LeadMagnet } from "@/lib/lead-magnets";
+import { submitLeadRequest } from "@/lib/lead-client";
 
 type LeadMagnetFormProps = {
   magnet: LeadMagnet;
@@ -12,58 +14,59 @@ type LeadMagnetFormProps = {
 
 export function LeadMagnetForm({ magnet, source, compact = false, onSuccess }: LeadMagnetFormProps) {
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
+  const [statusMessage, setStatusMessage] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("submitting");
+    setStatusMessage("");
     const form = event.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
 
     try {
-      const response = await fetch("/api/zoho-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...data,
-          source,
-          interest: magnet.title,
-          leadType: "lead-magnet-download",
-          downloadSlug: magnet.slug
-        })
+      const result = await submitLeadRequest({
+        ...data,
+        source,
+        interest: magnet.title,
+        leadType: "lead-magnet-download",
+        downloadSlug: magnet.slug
       });
 
-      if (!response.ok) {
-        throw new Error("Lead capture failed");
+      if (!result.ok) {
+        setStatus("error");
+        setStatusMessage(result.message);
+        return;
       }
 
       form.reset();
       setStatus("sent");
+      setStatusMessage("Your request was securely received. Your download page is opening now.");
       onSuccess?.();
-      window.location.assign(`/api/downloads/${magnet.slug}`);
+      const query = new URLSearchParams({ type: "download", download: magnet.slug });
+      if (result.reference) query.set("ref", result.reference);
+      window.location.assign(`/thank-you?${query.toString()}`);
     } catch {
       setStatus("error");
+      setStatusMessage("The request could not be securely submitted. Please call, email, or use WhatsApp.");
     }
   }
 
   return (
-    <form onSubmit={onSubmit} className={compact ? "space-y-3" : "mt-5 grid gap-3"}>
-      <input
-        name="name"
-        placeholder="Full name"
-        className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm text-ivory outline-none placeholder:text-ivory/40 focus:border-royalGold/55"
-      />
-      <input
-        required
-        type="email"
-        name="email"
-        placeholder="Email address"
-        className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm text-ivory outline-none placeholder:text-ivory/40 focus:border-royalGold/55"
-      />
-      <input
-        name="phone"
-        placeholder="Phone or WhatsApp"
-        className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm text-ivory outline-none placeholder:text-ivory/40 focus:border-royalGold/55"
-      />
+    <form onSubmit={onSubmit} className={`relative ${compact ? "space-y-3" : "mt-5 grid gap-3"}`}>
+      <HoneypotField />
+      <label className="grid gap-1.5 text-xs font-semibold text-ivory/78">
+        Full name
+        <input name="name" maxLength={100} autoComplete="name" className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory outline-none focus:border-royalGold/55" />
+      </label>
+      <label className="grid gap-1.5 text-xs font-semibold text-ivory/78">
+        Email address
+        <input required type="email" name="email" maxLength={254} autoComplete="email" className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory outline-none focus:border-royalGold/55" />
+      </label>
+      <label className="grid gap-1.5 text-xs font-semibold text-ivory/78">
+        Phone or WhatsApp
+        <input type="tel" name="phone" maxLength={30} autoComplete="tel" className="w-full rounded-md border border-royalGold/16 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory outline-none focus:border-royalGold/55" />
+      </label>
+      <ConsentField purpose="download" />
       <button
         type="submit"
         disabled={status === "submitting"}
@@ -72,10 +75,10 @@ export function LeadMagnetForm({ magnet, source, compact = false, onSuccess }: L
         {status === "submitting" ? "Preparing..." : magnet.buttonLabel}
       </button>
       {status === "sent" ? (
-        <p className="text-sm text-champagne">Thank you. Your download is opening now.</p>
+        <p className="text-sm text-champagne" role="status" aria-live="polite">{statusMessage}</p>
       ) : null}
       {status === "error" ? (
-        <p className="text-sm text-red-300">The download form could not submit. Please try again or contact us on WhatsApp.</p>
+        <p className="text-sm text-red-300" role="alert">{statusMessage}</p>
       ) : null}
     </form>
   );

@@ -65,7 +65,7 @@ const components: PortableTextComponents = {
       }
 
       const imageUrl = urlFor(value).width(1100).height(680).fit("crop").auto("format").url();
-      const alt = typeof value.alt === "string" ? value.alt : "Chaman Properties article image";
+      const alt = typeof value.alt === "string" ? value.alt : "Chaman Law Firm article image";
 
       return (
         <figure className="my-8 overflow-hidden rounded-lg border border-royalGold/16 bg-luxuryBlack">

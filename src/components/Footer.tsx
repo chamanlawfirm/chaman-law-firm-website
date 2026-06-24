@@ -1,46 +1,48 @@
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
 import { Logo } from "@/components/Logo";
+import { practiceAreas } from "@/data/practice-areas";
 import { siteConfig } from "@/lib/constants";
 
 const footerColumns = [
   {
-    title: "Company",
+    title: "Firm",
     links: [
-      { label: "About Us", href: "/about" },
+      { label: "About", href: "/about" },
+      { label: "Lawyers", href: "/lawyers" },
       { label: "Careers", href: "/careers" },
-      { label: "Internship", href: "/internship" },
-      { label: "Blog", href: "/blog" },
+      { label: "Book Consultation", href: "/consultation" },
       { label: "Contact", href: "/contact" }
     ]
   },
   {
-    title: "Properties",
-    links: [
-      { label: "All Properties", href: "/properties" },
-      { label: "For Sale", href: "/properties/for-sale" },
-      { label: "For Rent", href: "/properties/for-rent" },
-      { label: "Shortlets", href: "/properties/shortlet" },
-      { label: "Investment", href: "/properties/investment" }
-    ]
+    title: "Practice Areas",
+    links: practiceAreas.map((area) => ({
+      label: area.shortTitle,
+      href: `/practice-areas/${area.slug}`
+    }))
   },
   {
-    title: "Services",
+    title: "Client Needs",
     links: [
-      { label: "Property Sales", href: "/services/property-sales" },
-      { label: "Property Letting", href: "/services/property-letting" },
-      { label: "Diaspora Services", href: "/services/diaspora" },
-      { label: "Property Management", href: "/services/property-management" },
-      { label: "Verification", href: "/services/verification-due-diligence" }
+      { label: "Speak With a Lawyer", href: "/consultation" },
+      { label: "Diaspora Legal Support", href: "/practice-areas/property-real-estate-law" },
+      { label: "Notary Public", href: "/practice-areas/notary-public-services" },
+      { label: "Call Now", href: "/contact" },
+      { label: "WhatsApp", href: "/contact" }
     ]
   },
   {
     title: "Resources",
     links: [
-      { label: "Knowledge Hub", href: "/resources/real-estate-knowledge-hub" },
-      { label: "Investment Center", href: "/resources/investment-resource-center" },
-      { label: "Management Center", href: "/resources/property-management-resource-center" },
-      { label: "Diaspora Center", href: "/resources/diaspora-resource-center" }
+      { label: "Blog", href: "/resources/blog" },
+      { label: "Downloads", href: "/resources/downloads" },
+      { label: "Media", href: "/media" },
+      { label: "FAQs", href: "/resources#faqs" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Cookie Policy", href: "/cookie-policy" },
+      { label: "Terms of Use", href: "/terms-of-use" },
+      { label: "Legal Disclaimer", href: "/legal-disclaimer" }
     ]
   }
 ];
@@ -52,7 +54,7 @@ export function Footer() {
         <div className="space-y-6">
           <Logo />
           <p className="max-w-md text-sm leading-7 text-ivory/70">
-            Luxury Real Estate | Property Investment | Property Management
+            Full-service legal solutions for property, business, disputes, probate, notary public services, and diaspora clients.
             <span className="mt-2 block font-display text-lg text-royalGold">
               {siteConfig.tagline}
             </span>
@@ -100,8 +102,12 @@ export function Footer() {
       </div>
       <div className="border-t border-royalGold/15">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-6 text-sm text-ivory/60 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
-          <p>© {new Date().getFullYear()} Chaman Properties. All rights reserved.</p>
-          <div className="flex items-center gap-3">
+          <p>© {new Date().getFullYear()} Chaman Law Firm. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <Link href="/privacy-policy" className="text-xs text-ivory/60 hover:text-royalGold">Privacy</Link>
+            <Link href="/cookie-policy" className="text-xs text-ivory/60 hover:text-royalGold">Cookies</Link>
+            <Link href="/terms-of-use" className="text-xs text-ivory/60 hover:text-royalGold">Terms</Link>
+            <Link href="/legal-disclaimer" className="text-xs text-ivory/60 hover:text-royalGold">Disclaimer</Link>
             <a href={siteConfig.socials.linkedin} aria-label="LinkedIn" className="text-ivory/70 hover:text-royalGold">
               <Linkedin size={18} />
             </a>

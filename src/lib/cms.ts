@@ -1,5 +1,4 @@
 import { jobOpenings } from "@/data/jobs";
-import { properties } from "@/data/properties";
 import { services } from "@/data/services";
 import { defaultOgImage } from "@/lib/constants";
 import type { BlogAuthor, BlogCategory, BlogPost, BlogPostPage, BlogTag } from "@/lib/types";
@@ -10,7 +9,7 @@ import type { SanityImageSource } from "@sanity/image-url";
 const BLOG_PAGE_SIZE = 24;
 const SANITY_REVALIDATE_SECONDS = 60;
 
-const publishedBlogFilter = `_type == "post" && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
+const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
 
 const blogPostFields = `
   _id,
@@ -121,20 +120,19 @@ type SanityBlogAuthor = {
 };
 
 export async function getProperties() {
-  return properties;
+  return [];
 }
 
 export async function getFeaturedProperties() {
-  return properties.filter((property) => property.featured);
+  return [];
 }
 
-export async function getPropertyBySlug(slug: string) {
-  return properties.find((property) => property.slug === slug) || null;
+export async function getPropertyBySlug() {
+  return null;
 }
 
-export async function getPropertiesByStatus(status: string) {
-  const normalized = status.toLowerCase();
-  return properties.filter((property) => property.status.toLowerCase().replace(" ", "-") === normalized);
+export async function getPropertiesByStatus() {
+  return [];
 }
 
 export async function getServices() {
@@ -266,7 +264,7 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
   const excerpt =
     post.excerpt ||
     getPortableTextPlainText(post.body).slice(0, 180) ||
-    "Read the latest Chaman Properties insight on verified real estate decisions, property investment, and management.";
+    "Read the latest Chaman Law Firm insight on property law, business law, disputes, probate, documentation, and diaspora legal support.";
   const image = imageUrl(post.mainImage);
   const openGraphImage = post.seo?.openGraphImage ? imageUrl(post.seo.openGraphImage, 1600, 900) : undefined;
   const tagTitles = uniqueStrings([
@@ -282,14 +280,14 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
     excerpt,
     date: post.date || post._updatedAt || new Date().toISOString(),
     updatedAt: post._updatedAt || post.date || new Date().toISOString(),
-    author: post.author?.name || "Chaman Properties",
+    author: post.author?.name || "Chaman Law Firm",
     category,
     categories,
     authorProfile: {
-      name: post.author?.name || "Chaman Properties",
+      name: post.author?.name || "Chaman Law Firm",
       slug: post.author?.slug,
       image: post.author?.image ? imageUrl(post.author.image, 320, 320) : undefined,
-      imageAlt: post.author?.image?.alt || post.author?.name || "Chaman Properties author",
+      imageAlt: post.author?.image?.alt || post.author?.name || "Chaman Law Firm author",
       bio: post.author?.bio || []
     },
     tags: tagTitles.map((title) => ({ title, slug: slugify(title) })),

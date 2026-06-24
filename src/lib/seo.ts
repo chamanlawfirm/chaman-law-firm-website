@@ -12,18 +12,23 @@ type SeoInput = {
   type?: "website" | "article";
 };
 
-function normalizeCanonicalUrl(value: string) {
+export function resolveCanonicalUrl(path = "", candidate?: string) {
+  const fallback = new URL(path || "/", siteConfig.url).toString();
+
+  if (!candidate) return fallback;
+
   try {
-    const url = new URL(value);
+    const url = new URL(candidate, siteConfig.url);
+    const approvedHost = new URL(siteConfig.url).hostname.replace(/^www\./, "");
+    const candidateHost = url.hostname.replace(/^www\./, "");
 
-    if (url.hostname === "www.chamanproperties.com") {
-      url.hostname = "chamanproperties.com";
-      url.protocol = "https:";
-    }
+    if (candidateHost !== approvedHost) return fallback;
 
+    url.hostname = approvedHost;
+    url.protocol = "https:";
     return url.toString();
   } catch {
-    return value;
+    return fallback;
   }
 }
 
@@ -38,18 +43,24 @@ export function createMetadata({
   type = "website"
 }: SeoInput): Metadata {
   const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
-  const url = normalizeCanonicalUrl(canonicalUrl || `${siteConfig.url}${path}`);
+  const url = resolveCanonicalUrl(path, canonicalUrl);
 
   return {
     title: fullTitle,
     description,
     keywords: [
-      "Chaman Properties",
-      "Nigeria real estate",
-      "property sales Nigeria",
-      "property management Lagos",
-      "diaspora property management",
-      "verified property investment",
+      "Chaman Law Firm",
+      "law firm in Nigeria",
+      "law firm in Lagos",
+      "property lawyer in Nigeria",
+      "real estate lawyer in Lagos",
+      "corporate lawyer Nigeria",
+      "commercial law firm Nigeria",
+      "litigation lawyer Lagos",
+      "debt recovery lawyer Nigeria",
+      "probate lawyer Nigeria",
+      "notary public Lagos",
+      "diaspora legal services Nigeria",
       ...keywords
     ],
     alternates: {

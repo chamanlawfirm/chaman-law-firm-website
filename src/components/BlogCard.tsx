@@ -11,7 +11,7 @@ type BlogCardProps = {
 export function BlogCard({ post, priority = false }: BlogCardProps) {
   return (
     <article className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:-translate-y-1 hover:border-royalGold/45">
-      <Link href={`/blog/${post.slug}`} className="block overflow-hidden">
+      <Link href={`/resources/blog/${post.slug}`} className="block overflow-hidden">
         <Image
           src={post.image}
           alt={post.imageAlt}
@@ -24,14 +24,14 @@ export function BlogCard({ post, priority = false }: BlogCardProps) {
       </Link>
       <div className="p-6">
         <div className="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-[0.18em] text-royalGold">
-          <Link href={post.categories[0]?.slug ? `/category/${post.categories[0].slug}` : "/blog"} className="hover:text-champagne">
+          <Link href={post.categories[0]?.slug ? `/resources/blog?category=${post.categories[0].slug}` : "/resources/blog"} className="hover:text-champagne">
             {post.category}
           </Link>
           <span>|</span>
           <time dateTime={post.date}>{formatDate(post.date)}</time>
         </div>
         <h2 className="mt-4 font-heading text-2xl font-semibold leading-snug text-ivory group-hover:text-royalGold">
-          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link href={`/resources/blog/${post.slug}`}>{post.title}</Link>
         </h2>
         <p className="mt-4 text-sm leading-7 text-ivory/68">{post.excerpt}</p>
         <div className="mt-5 flex items-center justify-between gap-4">
@@ -45,7 +45,7 @@ export function BlogCard({ post, priority = false }: BlogCardProps) {
             )}{" "}
             | {post.readingTime}
           </p>
-          <Link href={`/blog/${post.slug}`} className="shrink-0 text-sm font-bold text-royalGold hover:text-champagne">
+          <Link href={`/resources/blog/${post.slug}`} className="shrink-0 text-sm font-bold text-royalGold hover:text-champagne">
             Read More
           </Link>
         </div>

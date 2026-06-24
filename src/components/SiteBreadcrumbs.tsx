@@ -7,18 +7,25 @@ const labels: Record<string, string> = {
   about: "About",
   authors: "Authors",
   blog: "Blog",
+  "book-consultation": "Book Consultation",
   careers: "Careers",
   category: "Category",
   contact: "Contact",
-  internship: "Internship",
-  properties: "Properties",
+  consultation: "Consultation",
+  downloads: "Downloads",
+  lawyers: "Lawyers",
+  media: "Media",
+  "practice-areas": "Practice Areas",
+  "property-real-estate-law": "Property & Real Estate Law",
+  "corporate-commercial-law": "Corporate & Commercial Law",
+  "litigation-dispute-resolution": "Litigation & Dispute Resolution",
+  "debt-recovery": "Debt Recovery",
+  "probate-estate-administration": "Probate & Estate Administration",
+  "notary-public-services": "Notary Public Services",
   resources: "Resources",
-  services: "Services",
-  shortlet: "Shortlet",
-  shortlets: "Shortlets",
+  team: "Team",
   tags: "Tags",
-  "for-rent": "For Rent",
-  "for-sale": "For Sale"
+  "charles-chukwuma-nkwoka": "Charles Chukwuma Nkwoka"
 };
 
 function titleCase(segment: string) {

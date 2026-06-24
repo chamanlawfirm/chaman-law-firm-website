@@ -57,17 +57,17 @@ export function getArticleFaqs(post: BlogPost): Faq[] {
     {
       question: `What should I confirm before acting on this ${category} topic?`,
       answer:
-        "Confirm the property's location, seller authority, title documents, inspection condition, pricing, payment trail, and post-purchase management requirements before making a commitment."
+        "Confirm the relevant facts, documents, parties, jurisdiction, deadlines, risk exposure, and practical objectives before taking action."
     },
     {
-      question: "Can Chaman Properties help with verification and property advisory?",
+      question: "Can Chaman Law Firm help with legal review and representation?",
       answer:
-        "Yes. Chaman Properties supports property search, inspection, negotiation, management, investment advisory, and legal due diligence coordination through qualified professionals where required."
+        "Yes. Chaman Law Firm supports legal review, due diligence, advisory, documentation, negotiation, dispute strategy, and representation where appropriate."
     },
     {
-      question: "Can diaspora clients use this guidance when buying property in Nigeria?",
+      question: "Can diaspora clients use this guidance for Nigerian legal matters?",
       answer:
-        "Yes. Chaman Properties works with Nigerians abroad by coordinating property inspection, video reporting, documentation support, tenant sourcing, rent collection, maintenance, and periodic asset reporting."
+        "Yes. The firm supports Nigerians abroad with property, documentation, power of attorney, probate, dispute, and representation needs in Nigeria."
     }
   ];
 }

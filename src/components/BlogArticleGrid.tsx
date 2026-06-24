@@ -17,7 +17,7 @@ export function BlogArticleGrid({ eyebrow, title, posts, emptyText = "More artic
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">{eyebrow}</p>
           <h2 className="mt-2 font-heading text-3xl font-semibold text-ivory">{title}</h2>
         </div>
-        <Link href="/blog" className="text-sm font-bold text-royalGold hover:text-champagne">
+        <Link href="/resources/blog" className="text-sm font-bold text-royalGold hover:text-champagne">
           View All Articles
         </Link>
       </div>

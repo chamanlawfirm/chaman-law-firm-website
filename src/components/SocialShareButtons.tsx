@@ -39,7 +39,7 @@ export function SocialShareButtons({ title, path }: SocialShareButtonsProps) {
 
   return (
     <div className="rounded-lg border border-royalGold/16 bg-charcoal p-5">
-      <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Share Article</p>
+      <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Share This Publication</p>
       <div className="mt-4 flex flex-wrap gap-3">
         {links.map((link) => {
           const Icon = link.icon;

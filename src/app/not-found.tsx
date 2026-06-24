@@ -9,14 +9,14 @@ export default function NotFound() {
           This page is not available
         </h1>
         <p className="mt-5 text-base leading-8 text-ivory/70">
-          The property, article, or service may have moved. You can return to available listings or contact the property team.
+          The legal page, article, or resource may have moved. You can return to practice areas or contact the firm.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Link
-            href="/properties"
+            href="/practice-areas"
             className="rounded-full bg-royalGold px-6 py-3 text-sm font-bold text-luxuryBlack transition hover:bg-champagne"
           >
-            View Properties
+            View Practice Areas
           </Link>
           <Link
             href="/contact"

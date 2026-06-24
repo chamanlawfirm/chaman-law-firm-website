@@ -9,40 +9,40 @@ export type ResourceCenterConfig = {
 
 export const resourceCenters: ResourceCenterConfig[] = [
   {
-    slug: "real-estate-knowledge-hub",
-    title: "Real Estate Knowledge Hub",
-    eyebrow: "Property Education",
+    slug: "legal-knowledge-hub",
+    title: "Legal Knowledge Hub",
+    eyebrow: "Client Education",
     description:
-      "Practical real estate guides for buyers, sellers, tenants, landlords, and investors who want safer property decisions in Nigeria.",
-    keywords: ["real estate", "property", "land", "buying", "selling", "verification", "title"],
-    highlights: ["Property due diligence", "Title document basics", "Buying and selling guidance", "Market education"]
+      "Practical legal guides for individuals, businesses, investors, families, and diaspora clients who need clear Nigerian legal guidance.",
+    keywords: ["legal services", "law firm", "client education", "Nigeria law", "legal guidance"],
+    highlights: ["Legal due diligence", "Client preparation", "Document review", "Consultation guidance"]
   },
   {
-    slug: "investment-resource-center",
-    title: "Investment Resource Center",
-    eyebrow: "Property Investment",
+    slug: "business-law-resource-center",
+    title: "Business Law Resource Center",
+    eyebrow: "Commercial Advisory",
     description:
-      "Investment-focused articles on luxury real estate, land banking, rental yield, market opportunities, and long-term property wealth.",
-    keywords: ["investment", "investor", "luxury", "yield", "market", "land banking", "roi"],
-    highlights: ["Real estate investment strategy", "Luxury property insight", "Market opportunity guides", "Rental-yield education"]
+      "Articles and guides for companies, SMEs, founders, directors, investors, and commercial decision-makers.",
+    keywords: ["business law", "corporate law", "commercial law", "contracts", "governance"],
+    highlights: ["Contract review", "Corporate governance", "Business compliance", "Commercial advisory"]
   },
   {
-    slug: "property-management-resource-center",
-    title: "Property Management Resource Center",
-    eyebrow: "Asset Protection",
+    slug: "dispute-resolution-resource-center",
+    title: "Dispute Resolution Resource Center",
+    eyebrow: "Representation",
     description:
-      "Guides for landlords and property owners covering tenant sourcing, rent management, inspections, maintenance, and reporting.",
-    keywords: ["property management", "landlord", "tenant", "rent", "maintenance", "inspection", "letting"],
-    highlights: ["Tenant and rent management", "Maintenance planning", "Inspection reporting", "Landlord advisory"]
+      "Guides for clients assessing litigation, mediation, arbitration, negotiation, settlement, and enforcement options.",
+    keywords: ["litigation", "dispute resolution", "mediation", "arbitration", "settlement"],
+    highlights: ["Claim assessment", "ADR options", "Court preparation", "Settlement strategy"]
   },
   {
-    slug: "diaspora-resource-center",
-    title: "Diaspora Resource Center",
-    eyebrow: "Diaspora Property Support",
+    slug: "diaspora-legal-resource-center",
+    title: "Diaspora Legal Resource Center",
+    eyebrow: "Diaspora Legal Support",
     description:
-      "Resources for Nigerians abroad who want to buy, verify, manage, lease, or monitor property investments in Nigeria with confidence.",
-    keywords: ["diaspora", "abroad", "remote", "inspection", "verification", "Nigeria property", "management"],
-    highlights: ["Remote property purchase guidance", "Video inspection and reporting", "Title verification support", "Post-purchase management"]
+      "Resources for Nigerians abroad who need trusted legal representation, document execution, probate support, or Nigerian legal guidance.",
+    keywords: ["diaspora legal services", "Nigeria lawyer", "power of attorney", "probate", "legal representation"],
+    highlights: ["Remote consultation", "Document execution", "Probate guidance", "Legal representation"]
   }
 ];
 
