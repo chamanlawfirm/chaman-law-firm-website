@@ -1,0 +1,357 @@
+{
+  "generatedAt": "2026-06-23T08:20:08.011Z",
+  "summary": {
+    "candidatesWithSource": 48,
+    "alreadyHadImageBeforeRun": 5,
+    "attemptedThisRun": 43,
+    "patchedThisRun": 17,
+    "failedThisRun": 26,
+    "withMainImageAfterRun": 22
+  },
+  "results": [
+    {
+      "priority": 2,
+      "slug": "obtaining-a-certificate-of-occupancy-c-of-o",
+      "documentId": "drafts.chamanlawfirm.phase5c.obtaining-a-certificate-of-occupancy-c-of-o",
+      "featuredImageSource": "https://peachpuff-lemur-779915.hostingersite.com/wp-content/uploads/2024/09/download-YBB2rep3kjUyDoy9-m-3.jpg",
+      "status": "failed",
+      "error": "URL did not return an image content-type: text/html"
+    },
+    {
+      "priority": 3,
+      "slug": "cac-public-search-guide-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.cac-public-search-guide-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/07/How-to-Use-CAC-Public-Search-for-Your-Business-Registration.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 4,
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.the-concept-of-rule-of-law-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Rule-of-law.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 5,
+      "slug": "types-of-tenant-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.types-of-tenant-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/658456b526ba8bc52ac4a512_California-Eviction-Laws.jpeg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 6,
+      "slug": "the-jurisdiction-of-courts-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.the-jurisdiction-of-courts-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/THE-JURISDICTION-OF-COURTS-IN-NIGERIA.png",
+      "status": "patched",
+      "assetId": "image-e951bcbed290790ba3b619c0d5392fe72fae6087-1536x1024-png"
+    },
+    {
+      "priority": 7,
+      "slug": "proper-steps-to-eviction-of-tenants",
+      "documentId": "drafts.chamanlawfirm.phase5c.proper-steps-to-eviction-of-tenants",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/658456b526ba8bc52ac4a512_California-Eviction-Laws.jpeg",
+      "status": "patched",
+      "assetId": "image-0cd423d9fa4032e5a377f9507e15af69d01b91cb-1200x800-jpg"
+    },
+    {
+      "priority": 9,
+      "slug": "building-permit-approval-in-ogun-state",
+      "documentId": "drafts.chamanlawfirm.phase5c.building-permit-approval-in-ogun-state",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/05/A2E7F40B-5CBD-42A1-BE99-8525A86B12B3.png",
+      "status": "patched",
+      "assetId": "image-1bb8a686954b3c7bd8fe5785891a6d5af1c7beee-1024x1536-png"
+    },
+    {
+      "priority": 10,
+      "slug": "how-to-change-name-with-deed-poll",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-to-change-name-with-deed-poll",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/how-long-to-change-name.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 11,
+      "slug": "ways-to-prove-ownership-of-land",
+      "documentId": "drafts.chamanlawfirm.phase5c.ways-to-prove-ownership-of-land",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/images-2-1-2.jpeg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 12,
+      "slug": "how-to-notarize-a-document-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-to-notarize-a-document-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/04/crop-ethnic-man-showing-papers_23-2147768597.avif",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 13,
+      "slug": "community-development-associations-law",
+      "documentId": "drafts.chamanlawfirm.phase5c.community-development-associations-law",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/mushin1.webp",
+      "status": "patched",
+      "assetId": "image-4589525e60ec0e3a7c74456b5e7cf50e1b987c27-700x400-webp"
+    },
+    {
+      "priority": 14,
+      "slug": "difference-between-ownership-and-possession",
+      "documentId": "drafts.chamanlawfirm.phase5c.difference-between-ownership-and-possession",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Possession-and-Ownership.png",
+      "status": "patched",
+      "assetId": "image-b93b59c8d439f73dacbf41f2ab17cf6ea3a6c16c-727x377-png"
+    },
+    {
+      "priority": 16,
+      "slug": "the-statutory-right-of-occupancy-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.the-statutory-right-of-occupancy-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-is-the-Statutory-Right-of-Occupancy-in-Nigeria.webp",
+      "status": "patched",
+      "assetId": "image-1f6a927b4d619ddd208e7e5657838497cca28316-1080x900-webp"
+    },
+    {
+      "priority": 18,
+      "slug": "rights-of-tenants-in-ogun-chaman-law-firm",
+      "documentId": "drafts.chamanlawfirm.phase5c.rights-of-tenants-in-ogun-chaman-law-firm",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/03/tenancy-agreement-image-1.jpeg",
+      "status": "patched",
+      "assetId": "image-0dd8313db712024f2f393ba4899d59a3f02e30ec-810x540-jpg"
+    },
+    {
+      "priority": 19,
+      "slug": "transfer-of-company-shares-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.transfer-of-company-shares-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/share-capital-img-1.jpeg",
+      "status": "patched",
+      "assetId": "image-d09ce75ca4c3181ab4d1e8255734d2a84f0c3e43-1024x566-jpg"
+    },
+    {
+      "priority": 20,
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.the-overall-list-of-federal-laws-in-nigeria",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/the-overall-list-of-federal-laws-in-nigeria-AGB71NDJKNIZV6OG-3.webp",
+      "status": "patched",
+      "assetId": "image-ca0eee78ff2afb96b43086260a5ae1deb8ab26a8-1080x608-webp"
+    },
+    {
+      "priority": 21,
+      "slug": "the-duties-of-lawyers-to-client",
+      "documentId": "drafts.chamanlawfirm.phase5c.the-duties-of-lawyers-to-client",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/download-2.jpeg",
+      "status": "patched",
+      "assetId": "image-e42cb03ce37a992e7d14bdfa497e4f290ec84e72-299x168-jpg"
+    },
+    {
+      "priority": 22,
+      "slug": "statute-of-limitations-on-debt-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.statute-of-limitations-on-debt-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/statute-of-limitations_IMG-1170x694-1.png",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 23,
+      "slug": "is-foreign-marriage-under-the-nigerian-law",
+      "documentId": "drafts.chamanlawfirm.phase5c.is-foreign-marriage-under-the-nigerian-law",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Foreign-Marriages-in-Nigeria-Recognition-and-Legal-Implications.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 24,
+      "slug": "powerful-steps-what-is-trespass-to-land-2",
+      "documentId": "drafts.chamanlawfirm.phase5c.powerful-steps-what-is-trespass-to-land-2",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-is-Trespass-to-Land.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 25,
+      "slug": "abandonment-and-withdrew-of-court-action",
+      "documentId": "drafts.chamanlawfirm.phase5c.abandonment-and-withdrew-of-court-action",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/shutterstock_716911261-1500x1000.jpg.webp",
+      "status": "patched",
+      "assetId": "image-44ad1a13d32e9a3333b5e4509d9416b54c7a7f86-1500x1000-webp"
+    },
+    {
+      "priority": 26,
+      "slug": "land-grabbing-the-legal-consequences-of",
+      "documentId": "drafts.chamanlawfirm.phase5c.land-grabbing-the-legal-consequences-of",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/03/freepik__the-style-is-candid-image-photography-with-natural__39951.png",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 28,
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "documentId": "drafts.chamanlawfirm.phase5c.stamping-and-up-stamping-of-a-mortgage-document",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-is-Stamping-and-Up-Stamping-of-a-Mortgage-Document.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 29,
+      "slug": "cost-of-building-approval-chaman-law-firm",
+      "documentId": "drafts.chamanlawfirm.phase5c.cost-of-building-approval-chaman-law-firm",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/low-section-man-holding-paper-table_1048944-12238338.avif",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 30,
+      "slug": "how-to-calculate-stamp-duty-chaman-law-firm",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-to-calculate-stamp-duty-chaman-law-firm",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-is-Stamping-and-Up-Stamping-of-a-Mortgage-Document.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 31,
+      "slug": "dissolution-of-marriage-under-the-nigeria-law",
+      "documentId": "drafts.chamanlawfirm.phase5c.dissolution-of-marriage-under-the-nigeria-law",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Ground-for-Dissolution-of-Marriage-Under-the-Nigeria-Law.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 32,
+      "slug": "deal-with-and-bad-tenant-as-a-landlord",
+      "documentId": "drafts.chamanlawfirm.phase5c.deal-with-and-bad-tenant-as-a-landlord",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/10/how-to-deal-with-Bad-Tenants.jpg",
+      "status": "patched",
+      "assetId": "image-f0f63e550bc0e1632e66d329ca8c10d79b4e5d1b-1280x720-jpg"
+    },
+    {
+      "priority": 33,
+      "slug": "void-and-voidable-marriages-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.void-and-voidable-marriages-in-nigeria",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/1_bJSG2qqDRe5x2IvYHZoXHg.webp",
+      "status": "patched",
+      "assetId": "image-e08f42c6f61952b81adb18459946a3faae67db0a-720x433-webp"
+    },
+    {
+      "priority": 34,
+      "slug": "can-a-minor-enter-into-a-valid-contract-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.can-a-minor-enter-into-a-valid-contract-in-nigeria",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/can-a-minor-make-a-contract-in-nigeria-A3QKLxE4GPcM2lEJ-3.webp",
+      "status": "patched",
+      "assetId": "image-a5cf48632e4f6faa43a2d36d7bd3304bcec03198-1080x607-webp"
+    },
+    {
+      "priority": 35,
+      "slug": "how-to-legally-sublet-a-property-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-to-legally-sublet-a-property-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/12/How-to-Legally-Sublet-a-Property-in-Nigeria.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 36,
+      "slug": "how-do-i-obtain-a-certificate-of-occupancy",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-do-i-obtain-a-certificate-of-occupancy",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2025/04/IMG_6489.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 37,
+      "slug": "annulment-of-marriage-under-the-nigerian-law",
+      "documentId": "drafts.chamanlawfirm.phase5c.annulment-of-marriage-under-the-nigerian-law",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/download-16.jpeg",
+      "status": "patched",
+      "assetId": "image-af5eb531ba4a9cdd492142fa1ea8544f6a368d2e-275x183-jpg"
+    },
+    {
+      "priority": 39,
+      "slug": "communal-land-and-family-land",
+      "documentId": "drafts.chamanlawfirm.phase5c.communal-land-and-family-land",
+      "featuredImageSource": "https://peachpuff-lemur-779915.hostingersite.com/wp-content/uploads/2024/09/communal-land-and-family-land-AMqzeq6849C2Rpjn-3.jpg",
+      "status": "failed",
+      "error": "URL did not return an image content-type: text/html"
+    },
+    {
+      "priority": 40,
+      "slug": "land-ownership-disputes-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.land-ownership-disputes-in-nigeria",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/09/land-titles-13-YbNZ1NNr1KH7NyEw-3.webp",
+      "status": "patched",
+      "assetId": "image-f98895d1515173c5f2785e5b50b73b3b7d1d8c85-1080x900-webp"
+    },
+    {
+      "priority": 41,
+      "slug": "what-are-rights-of-women-to-inheritance-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.what-are-rights-of-women-to-inheritance-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/inheritance-right-of-women-A0xb5Kax3GcZLZqP-3.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 42,
+      "slug": "overview-of-the-concept-recovery-of-premises",
+      "documentId": "drafts.chamanlawfirm.phase5c.overview-of-the-concept-recovery-of-premises",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Overview-of-the-Concept-Recovery-of-Premises-in-Lagos-State.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 43,
+      "slug": "types-of-land-registration-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.types-of-land-registration-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/Types-of-Land-Registration-in-Nigeria.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 44,
+      "slug": "what-to-know-about-company-resolution",
+      "documentId": "drafts.chamanlawfirm.phase5c.what-to-know-about-company-resolution",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-to-Know-About-Company-Resolution.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 45,
+      "slug": "legal-implications-of-joint-property",
+      "documentId": "drafts.chamanlawfirm.phase5c.legal-implications-of-joint-property",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/joint-property-1.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 46,
+      "slug": "what-is-the-process-of-land-acquisition",
+      "documentId": "drafts.chamanlawfirm.phase5c.what-is-the-process-of-land-acquisition",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/What-is-the-Process-of-Land-Acquisition-in-Nigeria.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 48,
+      "slug": "pohistory-of-legal-profession-in-nigeria",
+      "documentId": "drafts.chamanlawfirm.phase5c.pohistory-of-legal-profession-in-nigeria",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/history-of-legal-profession-in-nigeria-YanDveqzJxi3NjB2-3.webp",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 49,
+      "slug": "legal-obligations-for-debt-collectors",
+      "documentId": "drafts.chamanlawfirm.phase5c.legal-obligations-for-debt-collectors",
+      "featuredImageSource": "https://chamanlawfirm.com/wp-content/uploads/2024/09/02-80-1.jpg",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "priority": 50,
+      "slug": "how-to-legally-evict-a-tenant-in-lagos-state",
+      "documentId": "drafts.chamanlawfirm.phase5c.how-to-legally-evict-a-tenant-in-lagos-state",
+      "featuredImageSource": "https://www.chamanlawfirm.com/wp-content/uploads/2024/12/images-13.jpg",
+      "status": "patched",
+      "assetId": "image-a4c6e6c1e167e959a96669c8e1657818f462a986-275x183-jpg"
+    }
+  ]
+}
