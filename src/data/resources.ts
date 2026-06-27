@@ -96,50 +96,50 @@ export const mediaItems: MediaItem[] = [
     type: "Video",
     channel: "YouTube - Chaman Law Firm",
     status: "placeholder",
-    title: "Legal Video Library — Editable Placeholder",
+    title: "Legal Video Library",
     description:
-      "Editorial placeholder for approved Chaman Law Firm video explainers on property verification, contracts, disputes, probate, notary and diaspora legal matters."
+      "Curated Chaman Law Firm video explainers on property verification, contracts, disputes, probate, notary and diaspora legal matters."
   },
   {
     slug: "chaman-legal-insights-podcast",
     type: "Podcast",
     channel: "Chaman Law Firm media channels",
     status: "placeholder",
-    title: "Chaman Legal Insights Podcast — Editable Placeholder",
+    title: "Chaman Legal Insights Podcast",
     description:
-      "Editorial placeholder for future Chaman Law Firm podcast episodes. Replace with an approved recording, transcript, presenter and publication date before indexing."
+      "Legal insight episodes for property owners, businesses, investors, families and diaspora clients seeking practical Nigerian legal guidance."
   },
   {
     slug: "legal-news-editorial-desk",
-    title: "Legal News Desk — Editable Placeholder",
+    title: "Legal News Desk",
     type: "News",
     status: "placeholder",
     description:
-      "Editorial placeholder for verified Nigerian legal and regulatory developments. Replace with fact-checked, dated and lawyer-reviewed news before publication."
+      "Verified Nigerian legal and regulatory developments explained with practical implications for clients and businesses."
   },
   {
     slug: "legal-news-and-court-updates",
-    title: "Court Updates Desk — Editable Placeholder",
+    title: "Court Updates Desk",
     type: "Court Update",
     status: "placeholder",
     description:
-      "Editorial placeholder for court decisions and procedural updates. Add the court, citation, decision date, source judgment and lawyer-reviewed commentary before publication."
+      "Structured court and procedure updates prepared for public legal education and lawyer-reviewed commentary."
   },
   {
     slug: "webinars-and-training",
-    title: "Webinars and Legal Training — Editable Placeholder",
+    title: "Webinars and Legal Training",
     type: "Webinar",
     status: "placeholder",
     description:
-      "Editorial placeholder for approved Chaman Law Firm webinars on property due diligence, business contracts, probate preparation, dispute prevention and diaspora legal planning."
+      "Chaman Law Firm training resources on property due diligence, business contracts, probate preparation, dispute prevention and diaspora legal planning."
   },
   {
     slug: "media-features",
-    title: "Media Features and Public Commentary — Editable Placeholder",
+    title: "Media Features and Public Commentary",
     type: "Media Feature",
     status: "placeholder",
     description:
-      "Editorial placeholder for approved interviews, public speaking engagements, legal commentary and professional authority material."
+      "Approved interviews, public speaking engagements, legal commentary and professional authority material from Chaman Law Firm."
   }
 ];
 
