@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-06-27T15:19:17.459Z",
+  "appendixRows": 1000,
+  "registerRows": 50,
+  "redirectRows": 50,
+  "validationRows": 50,
+  "preparedDrafts": 50,
+  "classCounts": {
+    "A": 297,
+    "E": 93,
+    "B": 591,
+    "C": 7,
+    "D": 12
+  },
+  "selectedArticles": 887,
+  "selectedLegalArticles": 885,
+  "excludedProperty": 9,
+  "redirectOnly": 93,
+  "weakArchive": 12,
+  "missingContent": 837,
+  "missingImages": 882,
+  "seoTitleCoverage": 55,
+  "metaCoverage": 55,
+  "batchBRows": 45,
+  "outputs": {
+    "selection": "docs\\SPRINT-9M-TOP-1000-LEGACY-BLOG-SELECTION.csv",
+    "inventory": "docs\\SPRINT-9M-SOURCE-INVENTORY.md",
+    "batchB": "docs\\SPRINT-9M-BATCH-B-READINESS.csv",
+    "redirects": "docs\\SPRINT-9M-REDIRECT-READINESS.csv"
+  }
+}
