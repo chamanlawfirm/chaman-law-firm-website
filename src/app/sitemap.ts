@@ -4,6 +4,9 @@ import { getBlogPostSlugs } from "@/lib/cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 60;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();
   const staticRoutes = [
