@@ -62,6 +62,7 @@ Author document updated:
 
 - `209c9423-a10c-429d-b4b9-1a7ba8afeaa5`
 - Display name changed to `Charles Chukwuma Nkwoka, Esq.`
+- Public bio cleaned to remove Chaman Properties wording and legacy tracking parameters from the firm link.
 
 Each of the four article documents now has:
 
