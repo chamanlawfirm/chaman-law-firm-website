@@ -26,6 +26,37 @@ const securityHeaders = [
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }
 ];
 
+const emergencyLegacyRedirects = [
+  { source: "/family-law-lawyer-near-me", destination: "/practice-areas/family-law" },
+  { source: "/get-the-top-legal-advice-from-experts-for-free", destination: "/consultation" },
+  { source: "/top-legal-services", destination: "/consultation" },
+  { source: "/obtaining-a-certificate-of-occupancy-c-of-o", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/4-steps-on-how-to-deal-with-a-bad-landlordin", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/joinder-of-parties-misjoinder-of-parties", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/gain-nigerian-citizenship-by-marriage", destination: "/practice-areas/immigration-services" },
+  { source: "/statutory-right-of-occupancy-vs-customary-right", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/5-steps-on-how-to-obtain-restraining-order", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/child-support-and-maintenance-payment", destination: "/practice-areas/family-law" },
+  { source: "/how-to-replace-a-lost-a-marriage-certificate", destination: "/practice-areas/family-law" },
+  { source: "/legal-steps-to-take-when-our-land-has-been", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/rights-of-tenants-in-ogun-chaman-law-firm", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/what-is-the-implication-of-quit-notice", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/polygamy-and-multiple-marriages-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/steps-to-permanent-residency-in-nigeria", destination: "/practice-areas/immigration-services" },
+  { source: "/sharing-of-property-after-divorce-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/challenges-facing-the-nigerian-court-system", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/how-to-secure-child-support-and-maintenance", destination: "/practice-areas/family-law" },
+  { source: "/is-foreign-marriage-under-the-nigerian-law", destination: "/practice-areas/family-law" },
+  { source: "/customary-vs-statutory-marriage-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/void-and-voidable-marriages-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/dissolution-of-marriage-under-the-nigeria-law", destination: "/practice-areas/family-law" },
+  { source: "/annulment-of-marriage-under-the-nigerian-law", destination: "/practice-areas/family-law" },
+  { source: "/complete-guide-to-probate-registry-in-lagos", destination: "/practice-areas/probate-estate-administration" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -110,6 +141,7 @@ const nextConfig = {
         destination: "/resources/downloads",
         permanent: true
       },
+      ...emergencyLegacyRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
