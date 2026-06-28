@@ -10,3 +10,17 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.tsbuildinfo
+
+# Legacy WordPress backups and extracted backup folders
+*.tar
+*.tar.gz
+*.zip
+public_html/
+wp-admin/
+wp-content/
+wp-includes/
+wp-config.php
+Legacy website*/
+Old Wordpress backup*/
+backup*/
+backups*/
