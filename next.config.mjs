@@ -28,6 +28,7 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  skipTrailingSlashRedirect: true,
   images: {
     remotePatterns: [
       {
@@ -110,8 +111,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/landlord-and-tenant-rights-in-nigeria/",
+        destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
+        permanent: true
+      },
+      {
         source: "/landlord-and-tenant-rights-in-nigeria",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
+        permanent: true
+      },
+      {
+        source: "/the-jurisdiction-of-courts-in-nigeria/",
+        destination: "/resources/blog/the-jurisdiction-of-courts-in-nigeria",
         permanent: true
       },
       {
@@ -120,8 +131,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/proper-steps-to-eviction-of-tenants/",
+        destination: "/resources/blog/proper-steps-to-eviction-of-tenants",
+        permanent: true
+      },
+      {
         source: "/proper-steps-to-eviction-of-tenants",
         destination: "/resources/blog/proper-steps-to-eviction-of-tenants",
+        permanent: true
+      },
+      {
+        source: "/the-ogun-state-tenancy-law-chaman-law-firm/",
+        destination: "/resources/blog/the-ogun-state-tenancy-law-chaman-law-firm",
         permanent: true
       },
       {
@@ -130,8 +151,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/building-permit-approval-in-ogun-state/",
+        destination: "/resources/blog/building-permit-approval-in-ogun-state",
+        permanent: true
+      },
+      {
         source: "/building-permit-approval-in-ogun-state",
         destination: "/resources/blog/building-permit-approval-in-ogun-state",
+        permanent: true
+      },
+      {
+        source: "/cac-public-search-guide-nigeria/",
+        destination: "/resources/blog/cac-public-search-guide-nigeria",
         permanent: true
       },
       {
@@ -140,8 +171,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/types-of-tenant-in-nigeria/",
+        destination: "/resources/blog/types-of-tenant-in-nigeria",
+        permanent: true
+      },
+      {
         source: "/types-of-tenant-in-nigeria",
         destination: "/resources/blog/types-of-tenant-in-nigeria",
+        permanent: true
+      },
+      {
+        source: "/how-to-change-name-with-deed-poll/",
+        destination: "/resources/blog/how-to-change-name-with-deed-poll",
         permanent: true
       },
       {
@@ -150,8 +191,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/ways-to-prove-ownership-of-land/",
+        destination: "/resources/blog/ways-to-prove-ownership-of-land",
+        permanent: true
+      },
+      {
         source: "/ways-to-prove-ownership-of-land",
         destination: "/resources/blog/ways-to-prove-ownership-of-land",
+        permanent: true
+      },
+      {
+        source: "/how-to-notarize-a-document-in-nigeria/",
+        destination: "/resources/blog/how-to-notarize-a-document-in-nigeria",
         permanent: true
       },
       {
@@ -160,13 +211,28 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: "/the-statutory-right-of-occupancy-in-nigeria/",
+        destination: "/resources/blog/the-statutory-right-of-occupancy-in-nigeria",
+        permanent: true
+      },
+      {
         source: "/the-statutory-right-of-occupancy-in-nigeria",
         destination: "/resources/blog/the-statutory-right-of-occupancy-in-nigeria",
         permanent: true
       },
       {
+        source: "/transfer-of-company-shares-in-nigeria/",
+        destination: "/resources/blog/transfer-of-company-shares-in-nigeria",
+        permanent: true
+      },
+      {
         source: "/transfer-of-company-shares-in-nigeria",
         destination: "/resources/blog/transfer-of-company-shares-in-nigeria",
+        permanent: true
+      },
+      {
+        source: "/statute-of-limitations-on-debt-in-nigeria/",
+        destination: "/resources/blog/statute-of-limitations-on-debt-in-nigeria",
         permanent: true
       },
       {
