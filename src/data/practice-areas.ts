@@ -32,7 +32,8 @@ const propertyServicePages: ServicePage[] = [
   {
     slug: "property-verification",
     title: "Property Verification",
-    summary: "Legal checks before committing funds to land, housing, commercial property, or real estate investment.",
+    summary:
+      "Legal checks before committing funds to land, housing, commercial property, or real estate investment in Nigeria, including title, seller authority, survey and transaction-risk review.",
     description:
       "Chaman Law Firm helps buyers and investors review seller authority, title documents, survey information, transaction structure, payment trail, and risk indicators before completion.",
     keyPoints: [
@@ -58,7 +59,8 @@ const propertyServicePages: ServicePage[] = [
   {
     slug: "property-due-diligence",
     title: "Property Due Diligence",
-    summary: "Structured legal due diligence for buyers, developers, landlords, investors, and diaspora clients.",
+    summary:
+      "Structured property due diligence for buyers, developers, landlords, investors, and diaspora clients, covering title history, approvals, encumbrances, possession and closing risks.",
     description:
       "The firm reviews title chain, approvals, transaction documents, possession issues, encumbrances, litigation risk, and completion steps so clients can make informed property decisions.",
     keyPoints: [
@@ -84,7 +86,8 @@ const propertyServicePages: ServicePage[] = [
   {
     slug: "governors-consent",
     title: "Governor's Consent",
-    summary: "Advisory and documentation guidance for perfection of property title and consent-related issues.",
+    summary:
+      "Advisory and documentation guidance for Governor's Consent, perfection of property title, consent-related filings, transaction structure and title regularization risks.",
     description:
       "Chaman Law Firm advises clients on Governor's Consent, perfection requirements, documentation readiness, transaction structure, and risk where property interests require regularization.",
     keyPoints: [

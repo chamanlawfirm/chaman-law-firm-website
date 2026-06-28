@@ -15,6 +15,8 @@ pnpm-debug.log*
 *.tar
 *.tar.gz
 *.zip
+*.sql
+*.sql.gz
 public_html/
 wp-admin/
 wp-content/
@@ -22,5 +24,8 @@ wp-includes/
 wp-config.php
 Legacy website*/
 Old Wordpress backup*/
+legacy website*/
 backup*/
 backups*/
+migration-source/
+migration-sources/

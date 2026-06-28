@@ -57,6 +57,57 @@ const emergencyLegacyRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const deepLegacy404Redirects = [
+  { source: "/what-are-elements-of-tax-law", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/tax-administration-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/difference-between-ownership-and-possession", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/community-development-associations-law", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/5-vital-role-of-consumer-protection-agencies", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/taxation-of-the-construction-sector-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/registration-of-trade-union-in-nigeria", destination: "/practice-areas/employment-law" },
+  { source: "/how-to-file-complaint-against-police-officers-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/abandonment-and-withdrew-of-court-action", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/taxation-of-sole-proprietorship", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/powerful-steps-what-is-trespass-to-land-2", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/certificate-of-occupancy-in-rivers-state", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/how-to-legally-change-a-child-surname", destination: "/practice-areas/family-law" },
+  { source: "/the-role-of-the-judiciary-in-nigerian-democracy", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/can-a-minor-enter-into-a-valid-contract-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/family-property-and-right-of-individual-member-in-family-property", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/conditions-for-granting-injunctions-and-types-of-injunctions", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/how-to-verify-land-title-before-buying-land", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/what-are-rights-of-women-to-inheritance-in-nigeria", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/communal-land-and-family-land", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/land-ownership-disputes-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/overview-of-the-concept-recovery-of-premises", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/how-do-i-legally-evict-a-tenant-in-ogun-state", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/types-of-land-registration-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/overview-of-latches-and-acquiescence", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/land-grabbing-the-legal-consequences-of", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/is-police-bail-free-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/what-to-know-about-company-resolution", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/powerful-steps-sources-of-tax-law-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/what-is-the-process-of-land-acquisition", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/the-role-of-family-court-in-relation-to-child-protect-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/cost-of-building-approval-chaman-law-firm", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/property-how-to-place-a-caveat", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/tthe-legal-rights-of-a-wife-after-divorce", destination: "/practice-areas/family-law" },
+  { source: "/how-to-calculate-stamp-duty-chaman-law-firm", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/can-a-landlord-increase-rent-arbitrarily-in-ogun", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/deal-with-and-bad-tenant-as-a-landlord", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/types-of-parties-to-a-civil-action", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/how-to-legally-sublet-a-property-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/how-do-i-obtain-a-certificate-of-occupancy", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/powerful-steps-valid-survey", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/what-governs-contract-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/understanding-rent-increase-laws-in-lagos", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/obtaining-governor-consent-for-land-transactions", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/deed-of-assignment-in-nigeria", destination: "/practice-areas/property-real-estate-law" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -142,6 +193,7 @@ const nextConfig = {
         permanent: true
       },
       ...emergencyLegacyRedirects,
+      ...deepLegacy404Redirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
