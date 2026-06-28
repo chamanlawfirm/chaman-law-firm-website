@@ -1,0 +1,69 @@
+{
+  "redirects": [
+    {
+      "source": "/landlord-and-tenant-rights-in-nigeria/",
+      "destination": "/resources/blog/landlord-and-tenant-rights-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/the-jurisdiction-of-courts-in-nigeria/",
+      "destination": "/resources/blog/the-jurisdiction-of-courts-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/proper-steps-to-eviction-of-tenants/",
+      "destination": "/resources/blog/proper-steps-to-eviction-of-tenants",
+      "statusCode": 308
+    },
+    {
+      "source": "/the-ogun-state-tenancy-law-chaman-law-firm/",
+      "destination": "/resources/blog/the-ogun-state-tenancy-law-chaman-law-firm",
+      "statusCode": 308
+    },
+    {
+      "source": "/building-permit-approval-in-ogun-state/",
+      "destination": "/resources/blog/building-permit-approval-in-ogun-state",
+      "statusCode": 308
+    },
+    {
+      "source": "/cac-public-search-guide-nigeria/",
+      "destination": "/resources/blog/cac-public-search-guide-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/types-of-tenant-in-nigeria/",
+      "destination": "/resources/blog/types-of-tenant-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/how-to-change-name-with-deed-poll/",
+      "destination": "/resources/blog/how-to-change-name-with-deed-poll",
+      "statusCode": 308
+    },
+    {
+      "source": "/ways-to-prove-ownership-of-land/",
+      "destination": "/resources/blog/ways-to-prove-ownership-of-land",
+      "statusCode": 308
+    },
+    {
+      "source": "/how-to-notarize-a-document-in-nigeria/",
+      "destination": "/resources/blog/how-to-notarize-a-document-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/the-statutory-right-of-occupancy-in-nigeria/",
+      "destination": "/resources/blog/the-statutory-right-of-occupancy-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/transfer-of-company-shares-in-nigeria/",
+      "destination": "/resources/blog/transfer-of-company-shares-in-nigeria",
+      "statusCode": 308
+    },
+    {
+      "source": "/statute-of-limitations-on-debt-in-nigeria/",
+      "destination": "/resources/blog/statute-of-limitations-on-debt-in-nigeria",
+      "statusCode": 308
+    }
+  ]
+}
