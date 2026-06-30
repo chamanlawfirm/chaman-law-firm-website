@@ -135,6 +135,19 @@ Build:
 - Build generated 110 static pages.
 - Two older blog pages required static generation retries, but the build completed successfully.
 
+Post-deploy live QA:
+
+- `https://chamanlawfirm.com/resources/blog` returned 200.
+- Blog pagination pages sampled through page 7 returned 200.
+- All 20 Sprint 10I approved article URLs returned 200.
+- All 20 matching old legacy URLs resolved to the exact `/resources/blog/[slug]` targets.
+- `https://chamanlawfirm.com/sitemap.xml` returned 200.
+- Sitemap includes all 20 Sprint 10I approved article URLs.
+- Sitemap excludes sampled hidden/unapproved article URLs.
+- `https://chamanlawfirm.com/robots.txt` returned 200 and points to `https://chamanlawfirm.com/sitemap.xml`.
+- Sample approved article page confirmed title, canonical, public author, and consultation CTA.
+- Sample hidden article URLs under `/resources/blog/[slug]` returned 404.
+
 ## 12. Remaining Hidden / Blocked Content
 
 Examples of articles deliberately kept hidden:
@@ -152,7 +165,7 @@ The full hidden review is in `docs/SPRINT-10I-HIDDEN-DRAFT-CLEANUP.csv`.
 
 ## 13. Production Readiness Status
 
-- Go for post-deploy verification of the 20 newly approved articles.
+- Post-deploy verification of the 20 newly approved articles is complete.
 - Go for next controlled review/preparation batch.
 - No-Go for mass approval of all remaining drafts.
 - No-Go for broad redirect activation beyond approved article targets.
