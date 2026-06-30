@@ -1,0 +1,570 @@
+{
+  "generatedAt": "2026-06-30T18:03:24.703Z",
+  "applied": true,
+  "approvedPublicPostCountBefore": 61,
+  "approvedPublicPostCountAfter": 81,
+  "hiddenDraftsReviewed": 30,
+  "selected": 50,
+  "draftsRecoveredOrRefreshed": 50,
+  "approvalCandidates": 36,
+  "approvalCandidateSlugs": [
+    {
+      "slug": "legal-processofobtaininga-deed-of-assignment",
+      "title": "Legal Process for Obtaining a Deed of Assignment in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-processofobtaininga-deed-of-assignment/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/images-2024-12-17T115949.863.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "land-tenures-and-customary-land-tenure-systems",
+      "title": "Land Tenures and Customary Land Tenure Systems in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-tenures-and-customary-land-tenure-systems/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-are-Land-Tenures-and-Customary-Land-Tenure-Systems-Understood-in-Nigeria-768x640.webp",
+      "warnings": []
+    },
+    {
+      "slug": "property-with-existing-tenants-in-nigeria",
+      "title": "Buying Property With Existing Tenants in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/property-with-existing-tenants-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/07/The-Ultimate-Guide-to-Buying-Property-in-Nigeria-Without-Regrets-768x1152.png",
+      "warnings": []
+    },
+    {
+      "slug": "where-marriage-under-the-act-can-be-conducted",
+      "title": "Where Marriage Under the Act Can Be Conducted in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/where-marriage-under-the-act-can-be-conducted/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Where-Marriage-Under-the-Act-can-be-Conducted-in-Nigeria.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-nigerian-courts-handle-electronic-evidence",
+      "title": "How Nigerian Courts Handle Electronic Evidence",
+      "oldUrl": "https://chamanlawfirm.com/how-nigerian-courts-handle-electronic-evidence/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Police-Prosecution-in-Nigerian-Courts.webp",
+      "warnings": []
+    },
+    {
+      "slug": "types-of-company-in-nigeria",
+      "title": "Types of Companies in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/types-of-company-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/images-1-1.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "contract-breach-and-remedies",
+      "title": "Contract Breach and Remedies in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/contract-breach-and-remedies/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/03-1.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "tax-clearance-certificate-in-nigeria",
+      "title": "Tax Clearance Certificate in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/tax-clearance-certificate-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Tax-clearance-certificate-in-Nigeria-A0xn01BrDet6ozvQ-3.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "legalisation-authentication-of-marriage-certificate-in-nigeria",
+      "title": "Legalisation and Authentication of Marriage Certificates in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legalisation-authentication-of-marriage-certificate-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/authentication-legalization-document-certificate-nigeria-AE0v96PgjrFEjKlG.jpg.webp",
+      "warnings": []
+    },
+    {
+      "slug": "the-morgage-sell-the-mortgaged-property",
+      "title": "The Morgage Sell The Mortgaged Property",
+      "oldUrl": "https://chamanlawfirm.com/the-morgage-sell-the-mortgaged-property/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Under-What-Circumstance-can-the-Morgage-Sell-the-Mortgaged-Property-768x512.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-obtain-dual-citizenship-in-nigeria-a",
+      "title": "How To Obtain Dual Citizenship In Nigeria A",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-dual-citizenship-in-nigeria-a/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/dual.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "what-is-a-deed-of-assent-in-nigeria",
+      "title": "What Is a Deed of Assent in Nigeria?",
+      "oldUrl": "https://chamanlawfirm.com/what-is-a-deed-of-assent-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/download-45.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "legal-remedies-for-breach-of-land-sale-contract",
+      "title": "Legal Remedies For Breach Of Land Sale Contract",
+      "oldUrl": "https://chamanlawfirm.com/legal-remedies-for-breach-of-land-sale-contract/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-Legal-Remedies-Are-Available-for-Breach-of-Property-Contracts-in-Lekki-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-obtain-an-infant-visa-in-nigeria",
+      "title": "How To Obtain An Infant Visa In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-an-infant-visa-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-to-Obtain-an-Infant-Visa-in-Nigeria-1-1200x675.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "real-estate-taxes-in-nigeria-transactions",
+      "title": "Real Estate Taxes In Nigeria Transactions",
+      "oldUrl": "https://chamanlawfirm.com/real-estate-taxes-in-nigeria-transactions/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/taxes-on-real-estate-transactions.-dOq05a1326s6yJ7J-2-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "domestic-violence-ground-for-dissolution-of-marriage-and-its-criminal-implications",
+      "title": "Domestic Violence as a Ground for Dissolution of Marriage in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/domestic-violence-ground-for-dissolution-of-marriage-and-its-criminal-implications/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Ground-for-Dissolution-of-Marriage-Under-the-Nigeria-Law-768x511.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-do-i-process-survey-plan-approval-in-ogun",
+      "title": "How to Process Survey Plan Approval in Ogun State",
+      "oldUrl": "https://chamanlawfirm.com/how-do-i-process-survey-plan-approval-in-ogun/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/09/How-do-I-get-building-approval-in-Ogun-State-1170x694.png",
+      "warnings": []
+    },
+    {
+      "slug": "family-courts-and-specialized-tribunals-2",
+      "title": "Family Courts and Specialized Tribunals in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/family-courts-and-specialized-tribunals-2/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/FamCourt_IMG.png",
+      "warnings": []
+    },
+    {
+      "slug": "immigration-service-in-border-management",
+      "title": "The Role of Immigration Service in Border Management",
+      "oldUrl": "https://chamanlawfirm.com/immigration-service-in-border-management/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/nis-passport_IMG.png",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-occupancy-in-nigeria",
+      "title": "How To Apply For Certificate Of Occupancy In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-occupancy-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/how-to-apply-for-certificate-of-occupancy-in-nigeria-d95ywLbOvOI4PoXK-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "certificate-of-occupancy-in-oyo-state",
+      "title": "Certificate Of Occupancy In Oyo State",
+      "oldUrl": "https://chamanlawfirm.com/certificate-of-occupancy-in-oyo-state/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Guide-to-Obtaining-a-Certificate-of-Occupancy-C-of-O-in-Ogun-State-768x768.webp",
+      "warnings": []
+    },
+    {
+      "slug": "mastering-nigeria-law-for-contract-an-in",
+      "title": "Mastering Nigeria Law For Contract An In",
+      "oldUrl": "https://chamanlawfirm.com/mastering-nigeria-law-for-contract-an-in/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/images-14.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "landlord-and-tenant-relationship",
+      "title": "Landlord and Tenant Relationship in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/landlord-and-tenant-relationship/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/the-Effect-of-Landlord-and-Tenant-Relationship-on-Property-1024x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria",
+      "title": "How To Apply For And Get A Certificate Of Occupancy In Enugu State Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/how-to-apply-for-certificate-of-occupancy-in-nigeria-d95ywLbOvOI4PoXK-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-do-i-regularize-land-documents-in-ogun-state",
+      "title": "How to Regularize Land Documents in Ogun State",
+      "oldUrl": "https://chamanlawfirm.com/how-do-i-regularize-land-documents-in-ogun-state/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/09/What-Documents-Should-I-Check-Before-Purchasing-Land-in-Ogun-State-768x512.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-file-for-child-custody-in-nigeria-a",
+      "title": "How to File for Child Custody in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-file-for-child-custody-in-nigeria-a/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/Custody-Disputes-1.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "right-of-an-illegitimate-child",
+      "title": "Right Of An Illegitimate Child",
+      "oldUrl": "https://chamanlawfirm.com/right-of-an-illegitimate-child/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/05/Rights-of-Illegitimate-Children.webp",
+      "warnings": []
+    },
+    {
+      "slug": "overview-of-statutory-marriage-in-nigeria",
+      "title": "Overview of Statutory Marriage in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/overview-of-statutory-marriage-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/An-Overview-of-Statutory-Marriage-in-Nigeria-1024x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "rights-of-children-born-outside-wedlock",
+      "title": "Rights of Children Born Outside Wedlock in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-children-born-outside-wedlock/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/05/Rights-of-Illegitimate-Children.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-legally-subdivide-and-develop-land",
+      "title": "How to Legally Subdivide and Develop Land in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-legally-subdivide-and-develop-land/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/subdividing-and-develping-1170x423.png",
+      "warnings": []
+    },
+    {
+      "slug": "difference-between-a-parent-company-and-a-subsidiary",
+      "title": "Difference Between a Parent Company and a Subsidiary",
+      "oldUrl": "https://chamanlawfirm.com/difference-between-a-parent-company-and-a-subsidiary/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/What-is-the-Relationship-Between-Parent-and-Subsidiary-Company.webp",
+      "warnings": []
+    },
+    {
+      "slug": "tenancy-law-of-lagos-state-2011",
+      "title": "Tenancy Law Of Lagos State 2011",
+      "oldUrl": "https://chamanlawfirm.com/tenancy-law-of-lagos-state-2011/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-Is-the-Lagos-State-Tenancy-Law-and-How-Does-It-Apply-in-Lekki-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-get-international-passport-in-nigeria",
+      "title": "How to Get an International Passport in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-get-international-passport-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/international-passport-mjED74rG63cl65g1-700x456.jpg.webp",
+      "warnings": []
+    },
+    {
+      "slug": "procedures-for-land-registration-in-nigeria",
+      "title": "Procedures for Land Registration in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/procedures-for-land-registration-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/procedure-for-land-registration-ALpG39peV9uyaZGa-3.webp",
+      "warnings": []
+    },
+    {
+      "slug": "the-le-a-legally-binding-contracts-in-nigeri",
+      "title": "Legally Binding Contracts in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-le-a-legally-binding-contracts-in-nigeri/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/download-11.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "recovery-of-premises",
+      "title": "Recovery Of Premises",
+      "oldUrl": "https://chamanlawfirm.com/recovery-of-premises/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/recovery-of-premises-under-tenancy-law-YKbxOl3QBbu60KKP-3.webp",
+      "warnings": []
+    }
+  ],
+  "approvedThisRun": [
+    {
+      "slug": "legal-processofobtaininga-deed-of-assignment",
+      "oldUrl": "https://chamanlawfirm.com/legal-processofobtaininga-deed-of-assignment/",
+      "newUrl": "/resources/blog/legal-processofobtaininga-deed-of-assignment",
+      "title": "Legal Process for Obtaining a Deed of Assignment in Nigeria",
+      "imageAssetId": "image-5024eda9e18b0b45e9c7456070bfa5e9f2e6ba09-225x225-jpg"
+    },
+    {
+      "slug": "land-tenures-and-customary-land-tenure-systems",
+      "oldUrl": "https://chamanlawfirm.com/land-tenures-and-customary-land-tenure-systems/",
+      "newUrl": "/resources/blog/land-tenures-and-customary-land-tenure-systems",
+      "title": "Land Tenures and Customary Land Tenure Systems in Nigeria",
+      "imageAssetId": "image-89c936fd9fa05163cad7a23548ea91ef751a0f44-768x640-webp"
+    },
+    {
+      "slug": "property-with-existing-tenants-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/property-with-existing-tenants-in-nigeria/",
+      "newUrl": "/resources/blog/property-with-existing-tenants-in-nigeria",
+      "title": "Buying Property With Existing Tenants in Nigeria",
+      "imageAssetId": "image-3aeb6a0706f7b130d07e1c5c8a843caf5ca130f2-768x1152-png"
+    },
+    {
+      "slug": "where-marriage-under-the-act-can-be-conducted",
+      "oldUrl": "https://chamanlawfirm.com/where-marriage-under-the-act-can-be-conducted/",
+      "newUrl": "/resources/blog/where-marriage-under-the-act-can-be-conducted",
+      "title": "Where Marriage Under the Act Can Be Conducted in Nigeria",
+      "imageAssetId": "image-5873b39525fe2ca797d657a4dbc9bba8938104f1-1080x607-webp"
+    },
+    {
+      "slug": "how-nigerian-courts-handle-electronic-evidence",
+      "oldUrl": "https://chamanlawfirm.com/how-nigerian-courts-handle-electronic-evidence/",
+      "newUrl": "/resources/blog/how-nigerian-courts-handle-electronic-evidence",
+      "title": "How Nigerian Courts Handle Electronic Evidence",
+      "imageAssetId": "image-be5797274a4ec75bec455887b576eb8457c705ac-1024x1024-webp"
+    },
+    {
+      "slug": "types-of-company-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/types-of-company-in-nigeria/",
+      "newUrl": "/resources/blog/types-of-company-in-nigeria",
+      "title": "Types of Companies in Nigeria",
+      "imageAssetId": "image-da387960269c72026484f5b76f1f767042cee455-275x183-jpg"
+    },
+    {
+      "slug": "contract-breach-and-remedies",
+      "oldUrl": "https://chamanlawfirm.com/contract-breach-and-remedies/",
+      "newUrl": "/resources/blog/contract-breach-and-remedies",
+      "title": "Contract Breach and Remedies in Nigeria",
+      "imageAssetId": "image-9d5fa91550f2ebbe0a4cba4fe38fd4c9e16e7e5e-283x178-jpg"
+    },
+    {
+      "slug": "tax-clearance-certificate-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/tax-clearance-certificate-in-nigeria/",
+      "newUrl": "/resources/blog/tax-clearance-certificate-in-nigeria",
+      "title": "Tax Clearance Certificate in Nigeria",
+      "imageAssetId": "image-2656dbdc43d2b4dc97ce031f7f3fd34b64c1bac5-183x275-jpg"
+    },
+    {
+      "slug": "legalisation-authentication-of-marriage-certificate-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legalisation-authentication-of-marriage-certificate-in-nigeria/",
+      "newUrl": "/resources/blog/legalisation-authentication-of-marriage-certificate-in-nigeria",
+      "title": "Legalisation and Authentication of Marriage Certificates in Nigeria",
+      "imageAssetId": "image-e67f01021e550c3f1459d8a28438c3b16adec611-700x400-webp"
+    },
+    {
+      "slug": "what-is-a-deed-of-assent-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-is-a-deed-of-assent-in-nigeria/",
+      "newUrl": "/resources/blog/what-is-a-deed-of-assent-in-nigeria",
+      "title": "What Is a Deed of Assent in Nigeria?",
+      "imageAssetId": "image-503c2441f21cd64772eced765260a169d7605ad4-299x168-jpg"
+    },
+    {
+      "slug": "domestic-violence-ground-for-dissolution-of-marriage-and-its-criminal-implications",
+      "oldUrl": "https://chamanlawfirm.com/domestic-violence-ground-for-dissolution-of-marriage-and-its-criminal-implications/",
+      "newUrl": "/resources/blog/domestic-violence-ground-for-dissolution-of-marriage-and-its-criminal-implications",
+      "title": "Domestic Violence as a Ground for Dissolution of Marriage in Nigeria",
+      "imageAssetId": "image-ea6af11e3f931c3d161127717601fc7714984e98-768x511-jpg"
+    },
+    {
+      "slug": "how-do-i-process-survey-plan-approval-in-ogun",
+      "oldUrl": "https://chamanlawfirm.com/how-do-i-process-survey-plan-approval-in-ogun/",
+      "newUrl": "/resources/blog/how-do-i-process-survey-plan-approval-in-ogun",
+      "title": "How to Process Survey Plan Approval in Ogun State",
+      "imageAssetId": "image-927d287fa89703ffb7184749f3054996e13ed38f-1170x694-png"
+    },
+    {
+      "slug": "family-courts-and-specialized-tribunals-2",
+      "oldUrl": "https://chamanlawfirm.com/family-courts-and-specialized-tribunals-2/",
+      "newUrl": "/resources/blog/family-courts-and-specialized-tribunals-2",
+      "title": "Family Courts and Specialized Tribunals in Nigeria",
+      "imageAssetId": "image-61d0c91f2e763c8df47151e7541a7950d798d9e8-284x177-png"
+    },
+    {
+      "slug": "immigration-service-in-border-management",
+      "oldUrl": "https://chamanlawfirm.com/immigration-service-in-border-management/",
+      "newUrl": "/resources/blog/immigration-service-in-border-management",
+      "title": "The Role of Immigration Service in Border Management",
+      "imageAssetId": "image-32d091a49734d3ef448f0ff1d9e0ed8d09c28996-448x295-png"
+    },
+    {
+      "slug": "landlord-and-tenant-relationship",
+      "oldUrl": "https://chamanlawfirm.com/landlord-and-tenant-relationship/",
+      "newUrl": "/resources/blog/landlord-and-tenant-relationship",
+      "title": "Landlord and Tenant Relationship in Nigeria",
+      "imageAssetId": "image-95acada3d8d9aca210f4f2b08e2548d3c7aae0b9-1024x694-webp"
+    },
+    {
+      "slug": "how-do-i-regularize-land-documents-in-ogun-state",
+      "oldUrl": "https://chamanlawfirm.com/how-do-i-regularize-land-documents-in-ogun-state/",
+      "newUrl": "/resources/blog/how-do-i-regularize-land-documents-in-ogun-state",
+      "title": "How to Regularize Land Documents in Ogun State",
+      "imageAssetId": "image-1f712d6f6d3cbe3cf3cefb80a7d069f612457d50-768x512-jpg"
+    },
+    {
+      "slug": "how-to-file-for-child-custody-in-nigeria-a",
+      "oldUrl": "https://chamanlawfirm.com/how-to-file-for-child-custody-in-nigeria-a/",
+      "newUrl": "/resources/blog/how-to-file-for-child-custody-in-nigeria-a",
+      "title": "How to File for Child Custody in Nigeria",
+      "imageAssetId": "image-fcb8dc8bb7b210a84497b15f9ea5ec56b1314ab2-800x599-jpg"
+    },
+    {
+      "slug": "rights-of-children-born-outside-wedlock",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-children-born-outside-wedlock/",
+      "newUrl": "/resources/blog/rights-of-children-born-outside-wedlock",
+      "title": "Rights of Children Born Outside Wedlock in Nigeria",
+      "imageAssetId": "image-1c821029d8c6a0fb16c57f972aeca90942675a59-2000x869-webp"
+    },
+    {
+      "slug": "overview-of-statutory-marriage-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/overview-of-statutory-marriage-in-nigeria/",
+      "newUrl": "/resources/blog/overview-of-statutory-marriage-in-nigeria",
+      "title": "Overview of Statutory Marriage in Nigeria",
+      "imageAssetId": "image-8c43a62f9b5fcfb9d3bb5b10f33d16179cb943b5-1024x694-webp"
+    },
+    {
+      "slug": "how-to-legally-subdivide-and-develop-land",
+      "oldUrl": "https://chamanlawfirm.com/how-to-legally-subdivide-and-develop-land/",
+      "newUrl": "/resources/blog/how-to-legally-subdivide-and-develop-land",
+      "title": "How to Legally Subdivide and Develop Land in Nigeria",
+      "imageAssetId": "image-10be390f0065683f94d737250e0566e15aee9beb-1170x423-png"
+    }
+  ],
+  "keptHidden": [
+    {
+      "slug": "land-use-act-and-land-tenure-systems",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "who-can-be-a-notary-public",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "the-morgage-sell-the-mortgaged-property",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-obtain-dual-citizenship-in-nigeria-a",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "legal-remedies-for-breach-of-land-sale-contract",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-obtain-an-infant-visa-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "individual-tax-clearance-certificate",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "real-estate-taxes-in-nigeria-transactions",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "taxes-on-real-estate-transactions-in-nigeria",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "how-to-resolve-land-disputes-in-nigeria-with",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "defenses-and-bars-to-a-petition-for-divorce-2",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "breach-of-promise-to-marriage-in-nigeria",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-occupancy-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "proven-steps-onoverview-of-the-child-right-act",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "certificate-of-occupancy-in-oyo-state",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "mastering-nigeria-law-for-contract-an-in",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "clauses-for-drafting-a-tenancy-agreement",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "right-of-an-illegitimate-child",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "sell-family-land-without-everyones-consent",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "limitation-of-action-in-nigeria",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "difference-between-a-parent-company-and-a-subsidiary",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "tenancy-law-of-lagos-state-2011",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-get-international-passport-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "procedures-for-land-registration-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "the-le-a-legally-binding-contracts-in-nigeri",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "recovery-of-premises",
+      "reason": "not in controlled approval subset"
+    }
+  ],
+  "files": {
+    "hiddenReviewPath": "docs/SPRINT-10J-HIDDEN-ARTICLE-RISK-REVIEW.csv",
+    "selectionCsvPath": "docs/SPRINT-10J-LEGACY-BLOG-BATCH-SELECTION.csv",
+    "imageMapPath": "docs/SPRINT-10J-LEGACY-IMAGE-RECOVERY-MAP.csv",
+    "resultJsonPath": "docs/sprint10j/sprint10j-restoration-result.json"
+  }
+}

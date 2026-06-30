@@ -49,6 +49,39 @@ const blogPostFields = `
   }
 `;
 
+const blogPostListFields = `
+  _id,
+  _updatedAt,
+  title,
+  "slug": slug.current,
+  "excerpt": coalesce(excerpt, seo.metaDescription, pt::text(body)[0...180]),
+  "date": coalesce(publishedAt, _createdAt),
+  author->{
+    name,
+    "slug": slug.current,
+    image
+  },
+  "categories": categories[]->{
+    title,
+    "slug": slug.current,
+    description
+  },
+  tags,
+  isFeatured,
+  isTrending,
+  isMostRead,
+  mainImage,
+  "bodyPreview": pt::text(body)[0...1400],
+  seo{
+    metaTitle,
+    metaDescription,
+    keywords,
+    canonicalUrl,
+    noIndex,
+    openGraphImage
+  }
+`;
+
 type SanityBlogPost = {
   _id?: string;
   _updatedAt?: string;
@@ -68,6 +101,7 @@ type SanityBlogPost = {
   isTrending?: boolean;
   isMostRead?: boolean;
   mainImage?: SanityImageSource & { alt?: string };
+  bodyPreview?: string;
   body?: Array<Record<string, unknown>>;
   faqs?: Array<{ question?: string; answer?: string }>;
   seo?: {
@@ -243,7 +277,8 @@ function getPortableTextPlainText(blocks: Array<Record<string, unknown>> = []) {
 }
 
 function readingTimeFor(post: SanityBlogPost) {
-  const text = [post.title, post.excerpt, getPortableTextPlainText(post.body)].filter(Boolean).join(" ");
+  const bodyText = post.body?.length ? getPortableTextPlainText(post.body) : post.bodyPreview || "";
+  const text = [post.title, post.excerpt, bodyText].filter(Boolean).join(" ");
   const words = text.trim().split(/\s+/).filter(Boolean).length;
   const minutes = Math.max(1, Math.ceil(words / 220));
   return `${minutes} min read`;
@@ -263,6 +298,7 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
   const category = categories[0]?.title || "Property Insights";
   const excerpt =
     post.excerpt ||
+    post.bodyPreview?.slice(0, 180) ||
     getPortableTextPlainText(post.body).slice(0, 180) ||
     "Read the latest Chaman Law Firm insight on property law, business law, disputes, probate, documentation, and diaspora legal support.";
   const image = imageUrl(post.mainImage);
@@ -384,7 +420,7 @@ export async function getBlogPosts({
   try {
     const posts = await client.fetch<SanityBlogPost[]>(
       `*[${filter}] | order(publishedAt desc, _createdAt desc) [$offset...$end] {
-        ${blogPostFields}
+        ${blogPostListFields}
       }`,
       { ...params, offset, end: offset + limit },
       { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
@@ -409,7 +445,7 @@ async function getFlaggedBlogPosts(flag: "isFeatured" | "isTrending" | "isMostRe
   try {
     const posts = await client.fetch<SanityBlogPost[]>(
       `*[${publishedBlogFilter} && ${flag} == true] | order(publishedAt desc, _createdAt desc) [0...$limit] {
-        ${blogPostFields}
+        ${blogPostListFields}
       }`,
       { limit },
       { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
@@ -458,7 +494,7 @@ export async function getBlogPostsPage({
     const data = await client.fetch<SanityBlogPostPage>(
       `{
         "posts": *[${filter}] | order(publishedAt desc, _createdAt desc) [$offset...$end] {
-          ${blogPostFields}
+          ${blogPostListFields}
         },
         "total": count(*[${filter}])
       }`,
