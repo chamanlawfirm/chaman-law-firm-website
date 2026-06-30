@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-06-30T07:25:35.982Z",
+  "applied": true,
+  "selectedForPublication": [
+    "statutory-right-of-occupancy-vs-customary-right",
+    "what-are-elements-of-tax-law",
+    "tax-administration-in-nigeria",
+    "difference-between-ownership-and-possession",
+    "community-development-associations-law",
+    "5-vital-role-of-consumer-protection-agencies",
+    "4-steps-on-how-to-deal-with-a-bad-landlordin",
+    "5-steps-on-how-to-obtain-restraining-order",
+    "child-support-and-maintenance-payment",
+    "legal-steps-to-take-when-our-land-has-been",
+    "steps-to-permanent-residency-in-nigeria",
+    "joinder-of-parties-misjoinder-of-parties"
+  ],
+  "approvalResults": [
+    {
+      "slug": "statutory-right-of-occupancy-vs-customary-right",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-statutory-right-of-occupancy-vs-customary-right",
+      "imageAssetId": "image-c794d74ba560e0c5dbac78adbbeca14d47a1a38d-1200x561-jpg",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Customary and statutory land rights in Nigeria legal guide"
+    },
+    {
+      "slug": "what-are-elements-of-tax-law",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-what-are-elements-of-tax-law",
+      "imageAssetId": "image-b0f38beb87968cc98da1d72ddf96664e66107fc3-300x168-jpg",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Elements of Nigerian tax law explained for taxpayers and businesses"
+    },
+    {
+      "slug": "tax-administration-in-nigeria",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-tax-administration-in-nigeria",
+      "imageAssetId": "image-7926bb5c669bafb0b057ff3142cd12f19e136a5f-865x360-jpg",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Tax administration in Nigeria legal compliance guide"
+    },
+    {
+      "slug": "difference-between-ownership-and-possession",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-difference-between-ownership-and-possession",
+      "imageAssetId": "image-fc7698ab0cef5623d9a253b0f5595533137be137-727x377-png",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Difference between ownership and possession in Nigerian property law"
+    },
+    {
+      "slug": "community-development-associations-law",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-community-development-associations-law",
+      "imageAssetId": "image-955aea7e3e3c6490e3a4260c729106c7e2ee48f4-1080x608-jpg",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Community development association law and property governance in Nigeria"
+    },
+    {
+      "slug": "5-vital-role-of-consumer-protection-agencies",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10f-5-vital-role-of-consumer-protection-agencies",
+      "imageAssetId": "image-3f500b94fcc7d64c1db6f5617f112cdadd8e82c8-600x556-png",
+      "imageStatus": "existing_asset_reused",
+      "alt": "Consumer protection agencies and consumer rights in Nigeria"
+    },
+    {
+      "slug": "4-steps-on-how-to-deal-with-a-bad-landlordin",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-4-steps-on-how-to-deal-with-a-bad-landlordin",
+      "imageAssetId": "image-f6ee4ceebba9c92c07852d78112b41080476e9f4-1170x694-jpg",
+      "imageStatus": "existing_asset_reused",
+      "alt": "How tenants can deal with a bad landlord through lawful steps in Nigeria"
+    },
+    {
+      "slug": "5-steps-on-how-to-obtain-restraining-order",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-5-steps-on-how-to-obtain-restraining-order",
+      "imageAssetId": "image-e599645c56d2ead18080cccef30b2dde38d7c827-817x428-jpg",
+      "imageStatus": "uploaded",
+      "alt": "Steps to seek a restraining order through lawful court process in Nigeria"
+    },
+    {
+      "slug": "child-support-and-maintenance-payment",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-child-support-and-maintenance-payment",
+      "imageAssetId": "image-db26bb045b34b7889691c1d8adddfbf513fae077-276x183-jpg",
+      "imageStatus": "uploaded",
+      "alt": "Child support and maintenance payment guidance under Nigerian family law"
+    },
+    {
+      "slug": "legal-steps-to-take-when-our-land-has-been",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-legal-steps-to-take-when-our-land-has-been",
+      "imageAssetId": "image-23394a5201a134b82fde068bd1347aff41809b98-300x168-jpg",
+      "imageStatus": "uploaded",
+      "alt": "Legal steps to take when land ownership or possession is affected in Nigeria"
+    },
+    {
+      "slug": "steps-to-permanent-residency-in-nigeria",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-steps-to-permanent-residency-in-nigeria",
+      "imageAssetId": "image-5eee42ff736ae78f768edb01ed06460a4b60da55-297x170-jpg",
+      "imageStatus": "uploaded",
+      "alt": "Steps toward permanent residency in Nigeria immigration law guide"
+    },
+    {
+      "slug": "joinder-of-parties-misjoinder-of-parties",
+      "status": "approved",
+      "documentId": "chamanlawfirm-sprint10g-joinder-of-parties-misjoinder-of-parties",
+      "imageAssetId": "image-ad1e21fe2d67c17ee019b8fb90ca4f7e9c740510-1200x675-jpg",
+      "imageStatus": "uploaded",
+      "alt": "Joinder and misjoinder of parties in Nigerian civil procedure"
+    }
+  ],
+  "publishedPostCount": 25,
+  "restoredDraftCount": 20,
+  "files": {
+    "backupReportPath": "docs/SPRINT-10G-LEGACY-BACKUP-ACCESS-REPORT.md",
+    "imageMapPath": "docs/SPRINT-10G-LEGACY-IMAGE-RECOVERY-MAP.csv",
+    "masterInventoryPath": "docs/SPRINT-10G-LEGACY-BLOG-RESTORATION-MASTER.csv",
+    "resultJsonPath": "docs/sprint10g/sprint10g-restoration-result.json"
+  }
+}
