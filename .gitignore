@@ -29,3 +29,6 @@ backup*/
 backups*/
 migration-source/
 migration-sources/
+
+# Generated legacy recovery body exports; Sanity drafts are the source of review.
+docs/sprint10e/sprint10e-prepared-drafts.json
