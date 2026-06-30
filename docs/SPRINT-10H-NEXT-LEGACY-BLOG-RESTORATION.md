@@ -184,24 +184,24 @@ Build:
 
 ## Deployment / Live QA Status
 
-Pending Vercel redeploy after commit and push.
+Commit pushed:
 
-Live QA to complete after deployment:
+- `41ae043 feat: restore next legacy blog batch with article images`
 
-- `/resources/blog`
-- `/sitemap.xml`
-- `/robots.txt`
-- 16 newly approved article URLs
-- 16 exact old URL redirects
-- sample hidden draft URLs return 404 or remain non-public
+Live QA passed after Vercel redeploy.
+
+- Homepage returned 200.
+- `/resources/blog` returned 200 and displayed newly approved article titles.
+- `/sitemap.xml` returned 200 and included all 16 newly approved article URLs.
+- `/robots.txt` returned 200 and preserved the intended disallow rules for `/studio` and `/api`.
+- All 16 newly approved article URLs returned 200.
+- All 16 old legacy URLs redirected one hop to their exact `/resources/blog/[slug]` target.
+- Sample hidden draft URLs returned 404 at their article routes.
+- Sample article page included canonical, Open Graph image, consultation CTA, and recovered Sanity image.
+- Sanity author governance query confirmed all 16 Sprint 10H public documents are attributed to Charles Chukwuma Nkwoka, Esq.
 
 ## Launch Status
 
 Sprint 10H is safe to push to `preview/chaman-law-firm-mvp` after commit.
 
-Search Console/Bing resubmission should wait until live QA confirms:
-
-- all 16 new article URLs return 200;
-- sitemap includes the 16 new approved article URLs;
-- redirects resolve one hop to exact restored articles;
-- hidden drafts remain hidden.
+Search Console/Bing resubmission is now safe for the newly restored URLs, subject to the Principal's manual submission timing.
