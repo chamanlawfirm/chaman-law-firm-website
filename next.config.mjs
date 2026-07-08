@@ -221,6 +221,44 @@ const sprint10oExactArticleRedirects = [...sprint10oExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint10qExactArticleRedirectSources = new Set([
+  "/how-to-draft-a-commercial-contract-a-proven",
+  "/4-main-guide-to-land-ownership-in-nigeria",
+  "/piracy-and-its-burden-on-copyright",
+  "/how-to-check-if-a-property-title-is-genuine",
+  "/remedies-for-breach-of-property-contracts-in-lagos-a-legal-guide",
+  "/insurance-in-construction-contracts",
+  "/how-does-land-title-insurance-protect-property-owners-in-nigeria",
+  "/corporate-tax-obligations-in-nigeria",
+  "/what-is-the-legal-process-for-land-dispute",
+  "/lawyers-help-you-access-inherited-property",
+  "/how-does-land-title-regularization-affect-p",
+  "/the-land-use-act-protect-the-environment",
+  "/immigration-law-at-chaman-law-firm",
+  "/land-record-keeping-ensure-accurate-land-titles",
+  "/5-proven-roles-of-a-child-adoption-lawyer",
+  "/legal-advice-for-expatriates-in-nigeria-ess",
+  "/different-types-of-marriage-in-nigeria",
+  "/land-titles-in-nigeria",
+  "/reasons-yourland-title-verification-may-fail",
+  "/why-you-need-a-certificate-of-occupancy-in-nigeria",
+  "/what-challenges-are-associated-with-preserving-and-digitizing-historical-land-records",
+  "/real-estate-contracts",
+  "/what-is-the-role-of-the-surveyor-general-in-land-allocation-under-the-land-use-act",
+  "/what-is-the-legal-way-to-safeguard-your-will",
+  "/top-5-intellectual-property-enforcement-stra",
+  "/why-is-public-awareness-important-for-land-ownership-and-titles-in-nigeria",
+  "/steps-to-understanding-financial-crimes",
+  "/review-of-corporate-affairs-commission-share-capital-for-company-registration-in-nigeria",
+  "/register-your-company-with-cac-in-nigeria",
+  "/obtain-a-certificate-of-occupancy-chaman-law"
+]);
+
+const sprint10qExactArticleRedirects = [...sprint10qExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 const deepLegacy404Redirects = [
   { source: "/what-are-elements-of-tax-law", destination: "/resources/blog/what-are-elements-of-tax-law" },
   { source: "/tax-administration-in-nigeria", destination: "/resources/blog/tax-administration-in-nigeria" },
@@ -323,7 +361,8 @@ const deepLegacy404Redirects = [
     ({ source }) =>
       !sprint10lExactArticleRedirectSources.has(source) &&
       !sprint10nExactArticleRedirectSources.has(source) &&
-      !sprint10oExactArticleRedirectSources.has(source)
+      !sprint10oExactArticleRedirectSources.has(source) &&
+      !sprint10qExactArticleRedirectSources.has(source)
   )
   .flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
@@ -418,6 +457,7 @@ const nextConfig = {
       ...sprint10lExactArticleRedirects,
       ...sprint10nExactArticleRedirects,
       ...sprint10oExactArticleRedirects,
+      ...sprint10qExactArticleRedirects,
       ...deepLegacy404Redirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
