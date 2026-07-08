@@ -105,6 +105,64 @@ const sprint10lExactArticleRedirects = [...sprint10lExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint10nExactArticleRedirectSources = new Set([
+  "/navigating-the-probate-registry-in-ogun-state",
+  "/how-to-verify-property-titles-in-nigeria",
+  "/division-in-divorce-proceedings",
+  "/calculate-land-use-charge-chaman-law-firm",
+  "/strategies-to-handle-a-bad-tenant-legally",
+  "/verify-land-titles-before-buying-property",
+  "/business-registration-process-in-lagosa-com",
+  "/difference-between-excision-gazette-c-of-o",
+  "/9-cyber-crime-prosecution-breakthrough-ch",
+  "/how-to-perfect-a-property-title-in-nigeria",
+  "/criteria-for-patent-in-nigeria",
+  "/what-are-the-penalties-for-fake-land-documents",
+  "/estate-administration-in-lagos-state",
+  "/mechanisms-for-the-childs-rights-act",
+  "/drafting-company-bylaws-in-nigeria-a-compre",
+  "/the-essential-ethics-of-debt-recovery",
+  "/4-proven-features-of-customary-marriage-and-the-bill-of-rights-conflicting-interests",
+  "/how-to-register-a-tech-company-in-nigeria",
+  "/understanding-the-land-use-act-in-nigeria",
+  "/modernizing-customary-marriage",
+  "/priority-in-entitlement",
+  "/how-does-the-land-use-act-interact-with-the-petroleum-industry",
+  "/legal-bonds-of-marriage-in-nigeria",
+  "/is-a-woman-a-property-to-be-inherited",
+  "/why-a-certificate-of-occupancy-c-of-o-is",
+  "/legal-research-for-nigerian-litigation-cases",
+  "/how-is-land-registry-practice-in-nigeria",
+  "/effect-of-not-paying-child-support",
+  "/legal-requirements-for-land-purchase",
+  "/lagos-property-succession-without-a-will",
+  "/foreign-wills-and-lagos-property-what-to-know",
+  "/police-prosecution-in-nigerian-courts",
+  "/what-are-the-legal-rights-of-private-property-owners",
+  "/use-arbitration-for-property-disputes-lagos",
+  "/how-to-acquire-citizenship-in-nigeria",
+  "/types-of-wills",
+  "/what-is-trespass-to-land2",
+  "/lawful-methods-to-recover-debt-in-nigeria",
+  "/how-to-handle-land-grabbers-in-lagos",
+  "/land-dispute-resolution-in-nigeria-court-system",
+  "/taxes-exemptions-and-incentives-in-nigeria",
+  "/the-legal-implications-of-breach-of-contract",
+  "/legal-processes-of-transferring-property",
+  "/tax-planning-and-avoidance-in-nigeria",
+  "/verify-land-ownership-with-the-lagos-state",
+  "/probate-for-a-deceased-estate-in-nigeria",
+  "/legally-challenge-forged-land-documents-in-ogun",
+  "/how-can-nigerians-in-the-diaspora-buy-property",
+  "/lagos-property-succession-how-to-transfer-ownership-after-a-death",
+  "/procedures-for-making-a-will-in-nigeria"
+]);
+
+const sprint10nExactArticleRedirects = [...sprint10nExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 const deepLegacy404Redirects = [
   { source: "/what-are-elements-of-tax-law", destination: "/resources/blog/what-are-elements-of-tax-law" },
   { source: "/tax-administration-in-nigeria", destination: "/resources/blog/tax-administration-in-nigeria" },
@@ -203,7 +261,7 @@ const deepLegacy404Redirects = [
   { source: "/what-makes-up-a-valid-employment-contract", destination: "/resources/blog/what-makes-up-a-valid-employment-contract" },
   { source: "/deed-of-assignment-in-nigeria", destination: "/practice-areas/property-real-estate-law" }
 ]
-  .filter(({ source }) => !sprint10lExactArticleRedirectSources.has(source))
+  .filter(({ source }) => !sprint10lExactArticleRedirectSources.has(source) && !sprint10nExactArticleRedirectSources.has(source))
   .flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -295,6 +353,7 @@ const nextConfig = {
       },
       ...emergencyLegacyRedirects,
       ...sprint10lExactArticleRedirects,
+      ...sprint10nExactArticleRedirects,
       ...deepLegacy404Redirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
