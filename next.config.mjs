@@ -163,6 +163,64 @@ const sprint10nExactArticleRedirects = [...sprint10nExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint10oExactArticleRedirectSources = new Set([
+  "/legal-steps-to-perfecting-title-documents",
+  "/how-does-the-land-use-act-affect-land-title",
+  "/legal-remedies-for-breach-of-contract",
+  "/when-a-loved-one-dies-without-a-will",
+  "/contract-of-sale-of-land-and-what-it-takes",
+  "/acquire-and-secure-industrial-land-in-ogun",
+  "/8-steps-to-enforce-court-judgments-innigeria",
+  "/roles-of-a-cybercrime-lawyer-in-nigeria",
+  "/effects-of-exchange-of-contract",
+  "/floodplain-management-under-the-land-use-act",
+  "/what-is-the-cost-of-perfecting-land-titles-2",
+  "/what-is-the-process-of-obtaining-a-c-of-o",
+  "/difference-between-c-of-o-and-governors-consent",
+  "/cyber-crime-investigation-techniques",
+  "/family-law-issues-for-expatriate-families",
+  "/the-role-of-town-planners-in-land-allocation-under-the-land-use-act",
+  "/ways-to-resolve-property-disputes-in-ogun",
+  "/8-step-business-registration-process-in-lag",
+  "/legal-pitfalls-in-debt-recovery",
+  "/proven-steps-how-to-file-patent-in-nigeria",
+  "/debt-recovery-in-banking-sector",
+  "/legal-aspects-of-commercial-litigation",
+  "/proven-steps-on-capacity-to-make-a-will",
+  "/landlord-and-tenant-relationship-on-property",
+  "/the-process-of-transferring-land-in-nigeria",
+  "/4-proven-cross-border-cybercrime-issues",
+  "/contractual-dispute-resolution",
+  "/the-land-use-act-relate-to-land-conflicts",
+  "/mastering-nigerian-company-law-essentialstep",
+  "/how-does-the-land-use-act-influence-real-estate-development",
+  "/company-registration-in-nigeria",
+  "/land-tenure-systems-coexist-with-statutory-land",
+  "/the-cyber-crime-investigation-procedure",
+  "/aim-to-improve-land-titles-and-ownership",
+  "/investigating-title-in-property-transaction",
+  "/challenging-forged-property-documents-in-lagos",
+  "/how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria",
+  "/how-to-register-a-company-in-nigeria-2024",
+  "/duties-of-company-board-of-directors",
+  "/compliance-with-debt-recovery-regulations",
+  "/due-diligence-in-real-estate-transaction",
+  "/the-role-of-lawyers-in-debt-recovery-5-keys",
+  "/intellectual-property-in-franchise-operations",
+  "/disputes-arising-from-property-ownership",
+  "/corporate-fraud-and-mismanagement",
+  "/legal-assistance-for-visa-appeals-5-step",
+  "/thing-you-need-to-know-about-a-legal-will",
+  "/challenges-women-face-in-obtaining-land-titles",
+  "/digitization-impact-land-title-registration",
+  "/legally-binding-contracts"
+]);
+
+const sprint10oExactArticleRedirects = [...sprint10oExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 const deepLegacy404Redirects = [
   { source: "/what-are-elements-of-tax-law", destination: "/resources/blog/what-are-elements-of-tax-law" },
   { source: "/tax-administration-in-nigeria", destination: "/resources/blog/tax-administration-in-nigeria" },
@@ -261,7 +319,12 @@ const deepLegacy404Redirects = [
   { source: "/what-makes-up-a-valid-employment-contract", destination: "/resources/blog/what-makes-up-a-valid-employment-contract" },
   { source: "/deed-of-assignment-in-nigeria", destination: "/practice-areas/property-real-estate-law" }
 ]
-  .filter(({ source }) => !sprint10lExactArticleRedirectSources.has(source) && !sprint10nExactArticleRedirectSources.has(source))
+  .filter(
+    ({ source }) =>
+      !sprint10lExactArticleRedirectSources.has(source) &&
+      !sprint10nExactArticleRedirectSources.has(source) &&
+      !sprint10oExactArticleRedirectSources.has(source)
+  )
   .flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -354,6 +417,7 @@ const nextConfig = {
       ...emergencyLegacyRedirects,
       ...sprint10lExactArticleRedirects,
       ...sprint10nExactArticleRedirects,
+      ...sprint10oExactArticleRedirects,
       ...deepLegacy404Redirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
