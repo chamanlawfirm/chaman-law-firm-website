@@ -57,6 +57,54 @@ const emergencyLegacyRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint10lExactArticleRedirectSources = new Set([
+  "/abandonment-and-withdrew-of-court-action",
+  "/certificate-of-occupancy-in-rivers-state",
+  "/deal-with-and-bad-tenant-as-a-landlord",
+  "/how-do-i-obtain-a-certificate-of-occupancy",
+  "/how-to-register-a-deed-of-assignment-in-ogun",
+  "/how-to-handle-land-grabbers-in-ogun-state",
+  "/how-to-legally-evict-a-tenant-in-lagos-state",
+  "/the-morgage-sell-the-mortgaged-property",
+  "/how-to-obtain-dual-citizenship-in-nigeria-a",
+  "/legal-remedies-for-breach-of-land-sale-contract",
+  "/how-to-obtain-an-infant-visa-in-nigeria",
+  "/real-estate-taxes-in-nigeria-transactions",
+  "/how-to-apply-for-certificate-of-occupancy-in-nigeria",
+  "/certificate-of-occupancy-in-oyo-state",
+  "/mastering-nigeria-law-for-contract-an-in",
+  "/how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria",
+  "/difference-between-a-parent-company-and-a-subsidiary",
+  "/tenancy-law-of-lagos-state-2011",
+  "/how-to-get-international-passport-in-nigeria",
+  "/procedures-for-land-registration-in-nigeria",
+  "/the-le-a-legally-binding-contracts-in-nigeri",
+  "/recovery-of-premises",
+  "/how-to-be-a-good-property-lawyer",
+  "/what-is-the-cost-of-perfecting-land-titles",
+  "/deed-of-assignment-guide-to-register",
+  "/proven-steps-on-land-allocation-and-ownership",
+  "/land-use-act-and-its-role-in-land-allocation",
+  "/how-do-i-draft-tenancy-agreement-in-lagos",
+  "/company-management-in-nigeria",
+  "/legalimplicationsof-co-ownership-of-property",
+  "/lagos-inheritance-law-explained-family-rights",
+  "/roles-of-a-property-lawyer-in-real-estate",
+  "/how-tohandle-land-disputes-withfamilymembers",
+  "/what-is-the-cost-of-perfecting-land-title",
+  "/letters-of-administration-in-lagos-state",
+  "/procedure-for-company-registration-in-nigeria",
+  "/a-complete-guide-on-how-to-register-a-company-in-nigeria",
+  "/how-to-apply-for-certificate-of-occupancy-in-lagos-state-nigeria",
+  "/taxation-vat-and-other-indirect-taxes-in-nigeria",
+  "/transfer-land-ownership-and-land-document"
+]);
+
+const sprint10lExactArticleRedirects = [...sprint10lExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 const deepLegacy404Redirects = [
   { source: "/what-are-elements-of-tax-law", destination: "/resources/blog/what-are-elements-of-tax-law" },
   { source: "/tax-administration-in-nigeria", destination: "/resources/blog/tax-administration-in-nigeria" },
@@ -154,7 +202,9 @@ const deepLegacy404Redirects = [
   { source: "/verify-a-property-title-in-lagos", destination: "/resources/blog/verify-a-property-title-in-lagos" },
   { source: "/what-makes-up-a-valid-employment-contract", destination: "/resources/blog/what-makes-up-a-valid-employment-contract" },
   { source: "/deed-of-assignment-in-nigeria", destination: "/practice-areas/property-real-estate-law" }
-].flatMap(({ source, destination }) => [
+]
+  .filter(({ source }) => !sprint10lExactArticleRedirectSources.has(source))
+  .flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
 ]);
@@ -244,6 +294,7 @@ const nextConfig = {
         permanent: true
       },
       ...emergencyLegacyRedirects,
+      ...sprint10lExactArticleRedirects,
       ...deepLegacy404Redirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",

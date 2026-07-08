@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-06-30T23:16:08.124Z",
-  "applied": false,
-  "approvedPublicPostCountBefore": 101,
-  "approvedPublicPostCountAfter": 101,
-  "hiddenDraftsReviewed": 0,
+  "generatedAt": "2026-07-07T23:59:22.584Z",
+  "applied": true,
+  "approvedPublicPostCountBefore": 93,
+  "approvedPublicPostCountAfter": 133,
+  "hiddenDraftsReviewed": 70,
   "selected": 100,
   "draftsRecoveredOrRefreshed": 100,
-  "approvalCandidates": 44,
+  "approvalCandidates": 40,
   "approvalCandidateSlugs": [
-    {
-      "slug": "steps-on-how-to-confidently-report-acrimelaw",
-      "title": "Steps On How To Confidently Report Acrimelaw",
-      "oldUrl": "https://chamanlawfirm.com/steps-on-how-to-confidently-report-acrimelaw/",
-      "currentRedirectTarget": "",
-      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/images-56.jpeg",
-      "warnings": []
-    },
     {
       "slug": "abandonment-and-withdrew-of-court-action",
       "title": "Abandonment and Withdrawal of Court Actions in Nigeria",
@@ -145,14 +137,6 @@
       "warnings": []
     },
     {
-      "slug": "right-of-an-illegitimate-child",
-      "title": "Right Of An Illegitimate Child",
-      "oldUrl": "https://chamanlawfirm.com/right-of-an-illegitimate-child/",
-      "currentRedirectTarget": "",
-      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/05/Rights-of-Illegitimate-Children.webp",
-      "warnings": []
-    },
-    {
       "slug": "difference-between-a-parent-company-and-a-subsidiary",
       "title": "Difference Between a Parent Company and a Subsidiary",
       "oldUrl": "https://chamanlawfirm.com/difference-between-a-parent-company-and-a-subsidiary/",
@@ -214,14 +198,6 @@
       "oldUrl": "https://chamanlawfirm.com/what-is-the-cost-of-perfecting-land-titles/",
       "currentRedirectTarget": "",
       "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-is-the-Cost-of-Perfecting-Land-Titles-in-Lekki-768x456.png",
-      "warnings": []
-    },
-    {
-      "slug": "how-long-does-it-take-to-get-c-of-o-in-ogun-sta",
-      "title": "How Long Does It Take To Get C Of O In Ogun Sta",
-      "oldUrl": "https://chamanlawfirm.com/how-long-does-it-take-to-get-c-of-o-in-ogun-sta/",
-      "currentRedirectTarget": "",
-      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/11/How-long-does-it-take-to-secure-Governors-Consent-in-Ikoyi-768x456.webp",
       "warnings": []
     },
     {
@@ -305,14 +281,6 @@
       "warnings": []
     },
     {
-      "slug": "police-clearance-certificate-pcc-in-nigeria",
-      "title": "Police Clearance Certificate Pcc In Nigeria",
-      "oldUrl": "https://chamanlawfirm.com/police-clearance-certificate-pcc-in-nigeria/",
-      "currentRedirectTarget": "",
-      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/FIRS-Tax-Clearance-Certificate-HOW-TO-OBTAIN-TAX-CLEARANCE-CERTIFICATE-IN-NIGERIA-dJo7QED6Voi7WMG5-1-768x456.jpg",
-      "warnings": []
-    },
-    {
       "slug": "letters-of-administration-in-lagos-state",
       "title": "Letters of Administration in Lagos State",
       "oldUrl": "https://chamanlawfirm.com/letters-of-administration-in-lagos-state/",
@@ -367,435 +335,283 @@
       "oldUrl": "https://chamanlawfirm.com/abandonment-and-withdrew-of-court-action/",
       "newUrl": "/resources/blog/abandonment-and-withdrew-of-court-action",
       "title": "Abandonment and Withdrawal of Court Actions in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-b3665be9ee4ebbb47f6ed9dca9c7af47b37ce000-650x433-webp"
     },
     {
       "slug": "certificate-of-occupancy-in-rivers-state",
       "oldUrl": "https://chamanlawfirm.com/certificate-of-occupancy-in-rivers-state/",
       "newUrl": "/resources/blog/certificate-of-occupancy-in-rivers-state",
       "title": "Certificate of Occupancy in Rivers State",
-      "imageAssetId": ""
+      "imageAssetId": "image-5645e6b385b19da7a3fe79f4d113481bf8dedce8-768x768-webp"
     },
     {
       "slug": "deal-with-and-bad-tenant-as-a-landlord",
       "oldUrl": "https://chamanlawfirm.com/deal-with-and-bad-tenant-as-a-landlord/",
       "newUrl": "/resources/blog/deal-with-and-bad-tenant-as-a-landlord",
       "title": "How Landlords Can Handle Difficult Tenants in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-29a816a80e62da0100c039a62ce5d906a2f63716-384x384-png"
     },
     {
       "slug": "how-do-i-obtain-a-certificate-of-occupancy",
       "oldUrl": "https://chamanlawfirm.com/how-do-i-obtain-a-certificate-of-occupancy/",
       "newUrl": "/resources/blog/how-do-i-obtain-a-certificate-of-occupancy",
       "title": "How to Obtain a Certificate of Occupancy in Ogun State",
-      "imageAssetId": ""
+      "imageAssetId": "image-5645e6b385b19da7a3fe79f4d113481bf8dedce8-768x768-webp"
     },
     {
       "slug": "how-to-register-a-deed-of-assignment-in-ogun",
       "oldUrl": "https://chamanlawfirm.com/how-to-register-a-deed-of-assignment-in-ogun/",
       "newUrl": "/resources/blog/how-to-register-a-deed-of-assignment-in-ogun",
       "title": "How to Register a Deed of Assignment in Ogun State",
-      "imageAssetId": ""
+      "imageAssetId": "image-20190d02a38267937ced0fda6b95e2415edf67bb-1024x694-png"
     },
     {
       "slug": "how-to-handle-land-grabbers-in-ogun-state",
       "oldUrl": "https://chamanlawfirm.com/how-to-handle-land-grabbers-in-ogun-state/",
       "newUrl": "/resources/blog/how-to-handle-land-grabbers-in-ogun-state",
       "title": "How to Handle Land Grabbers in Ogun State",
-      "imageAssetId": ""
+      "imageAssetId": "image-fcd03d5c78c67a0f29fa9f5ddcfef38b4ba77199-768x456-png"
     },
     {
       "slug": "how-to-legally-evict-a-tenant-in-lagos-state",
       "oldUrl": "https://chamanlawfirm.com/how-to-legally-evict-a-tenant-in-lagos-state/",
       "newUrl": "/resources/blog/how-to-legally-evict-a-tenant-in-lagos-state",
       "title": "How to Legally Evict a Tenant in Lagos State",
-      "imageAssetId": ""
+      "imageAssetId": "image-27bbff1011b4aa107efb648b44109fd85eaa9cbd-275x183-jpg"
     },
     {
       "slug": "the-morgage-sell-the-mortgaged-property",
       "oldUrl": "https://chamanlawfirm.com/the-morgage-sell-the-mortgaged-property/",
       "newUrl": "/resources/blog/the-morgage-sell-the-mortgaged-property",
       "title": "When Can a Mortgagee Sell Mortgaged Property in Nigeria?",
-      "imageAssetId": ""
+      "imageAssetId": "image-66a55c4babbbb2968e93ac89312502fe1ccf1c02-768x512-jpg"
     },
     {
       "slug": "how-to-obtain-dual-citizenship-in-nigeria-a",
       "oldUrl": "https://chamanlawfirm.com/how-to-obtain-dual-citizenship-in-nigeria-a/",
       "newUrl": "/resources/blog/how-to-obtain-dual-citizenship-in-nigeria-a",
       "title": "How to Obtain Dual Citizenship in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-9d5875b82c36042c061121bc608ccd59d85edfef-300x168-jpg"
     },
     {
       "slug": "legal-remedies-for-breach-of-land-sale-contract",
       "oldUrl": "https://chamanlawfirm.com/legal-remedies-for-breach-of-land-sale-contract/",
       "newUrl": "/resources/blog/legal-remedies-for-breach-of-land-sale-contract",
       "title": "Legal Remedies for Breach of Land Sale Contract in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-8886624dc92f6fe95aa2232308a4afcd27f00e8b-768x456-jpg"
     },
     {
       "slug": "how-to-obtain-an-infant-visa-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/how-to-obtain-an-infant-visa-in-nigeria/",
       "newUrl": "/resources/blog/how-to-obtain-an-infant-visa-in-nigeria",
       "title": "How to Obtain an Infant Visa in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-63b8c574545776e1a799a379374915b10255ba07-1200x675-jpg"
     },
     {
       "slug": "real-estate-taxes-in-nigeria-transactions",
       "oldUrl": "https://chamanlawfirm.com/real-estate-taxes-in-nigeria-transactions/",
       "newUrl": "/resources/blog/real-estate-taxes-in-nigeria-transactions",
       "title": "Real Estate Taxes in Nigerian Property Transactions",
-      "imageAssetId": ""
+      "imageAssetId": "image-e6cdc68a890ddee1691068961145e9bea0d6034e-768x456-jpg"
     },
     {
       "slug": "how-to-apply-for-certificate-of-occupancy-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-occupancy-in-nigeria/",
       "newUrl": "/resources/blog/how-to-apply-for-certificate-of-occupancy-in-nigeria",
       "title": "How to Apply for Certificate of Occupancy in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-ac16e91212120da22b365884582d141551364608-768x456-jpg"
     },
     {
       "slug": "certificate-of-occupancy-in-oyo-state",
       "oldUrl": "https://chamanlawfirm.com/certificate-of-occupancy-in-oyo-state/",
       "newUrl": "/resources/blog/certificate-of-occupancy-in-oyo-state",
       "title": "Certificate of Occupancy in Oyo State",
-      "imageAssetId": ""
+      "imageAssetId": "image-5645e6b385b19da7a3fe79f4d113481bf8dedce8-768x768-webp"
     },
     {
       "slug": "mastering-nigeria-law-for-contract-an-in",
       "oldUrl": "https://chamanlawfirm.com/mastering-nigeria-law-for-contract-an-in/",
       "newUrl": "/resources/blog/mastering-nigeria-law-for-contract-an-in",
       "title": "Mastering Contract Law in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-c7dd9b8edbeabb802ab7cc228253b47ef9a048d4-275x183-jpg"
     },
     {
       "slug": "how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria",
       "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria/",
       "newUrl": "/resources/blog/how-to-apply-for-and-get-a-certificate-of-occupancy-in-enugu-state-nigeria",
       "title": "How to Apply for Certificate of Occupancy in Enugu State",
-      "imageAssetId": ""
+      "imageAssetId": "image-ac16e91212120da22b365884582d141551364608-768x456-jpg"
     },
     {
       "slug": "difference-between-a-parent-company-and-a-subsidiary",
       "oldUrl": "https://chamanlawfirm.com/difference-between-a-parent-company-and-a-subsidiary/",
       "newUrl": "/resources/blog/difference-between-a-parent-company-and-a-subsidiary",
       "title": "Difference Between a Parent Company and a Subsidiary",
-      "imageAssetId": ""
+      "imageAssetId": "image-51c0717e4c5a89922f5f0f2708784f4b8fb58885-1080x607-webp"
     },
     {
       "slug": "tenancy-law-of-lagos-state-2011",
       "oldUrl": "https://chamanlawfirm.com/tenancy-law-of-lagos-state-2011/",
       "newUrl": "/resources/blog/tenancy-law-of-lagos-state-2011",
       "title": "Tenancy Law of Lagos State 2011",
-      "imageAssetId": ""
+      "imageAssetId": "image-ebf0479c0c20de0b3bc6034f26622637ea989206-768x456-jpg"
     },
     {
       "slug": "how-to-get-international-passport-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/how-to-get-international-passport-in-nigeria/",
       "newUrl": "/resources/blog/how-to-get-international-passport-in-nigeria",
       "title": "How to Get an International Passport in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-8debb08f6aca5ac8da6899a852e4f10d90594f58-700x456-webp"
     },
     {
       "slug": "procedures-for-land-registration-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/procedures-for-land-registration-in-nigeria/",
       "newUrl": "/resources/blog/procedures-for-land-registration-in-nigeria",
       "title": "Procedures for Land Registration in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-8910081fa28ef07cf577cfcdeded519b48e39460-857x467-webp"
     },
     {
       "slug": "the-le-a-legally-binding-contracts-in-nigeri",
       "oldUrl": "https://chamanlawfirm.com/the-le-a-legally-binding-contracts-in-nigeri/",
       "newUrl": "/resources/blog/the-le-a-legally-binding-contracts-in-nigeri",
       "title": "Legally Binding Contracts in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-3751b8de13e6bd7747824d692319237245b23939-283x178-jpg"
     },
     {
       "slug": "recovery-of-premises",
       "oldUrl": "https://chamanlawfirm.com/recovery-of-premises/",
       "newUrl": "/resources/blog/recovery-of-premises",
       "title": "Recovery of Premises in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-bfbff9373414e16cb0e8591fdcb70cf30d837001-318x159-webp"
     },
     {
       "slug": "how-to-be-a-good-property-lawyer",
       "oldUrl": "https://chamanlawfirm.com/how-to-be-a-good-property-lawyer/",
       "newUrl": "/resources/blog/how-to-be-a-good-property-lawyer",
       "title": "What Makes a Good Property Lawyer in Nigeria?",
-      "imageAssetId": ""
+      "imageAssetId": "image-f0d5afb39d23abf73234bf1fd6ff02fc43144415-1170x596-jpg"
     },
     {
       "slug": "what-is-the-cost-of-perfecting-land-titles",
       "oldUrl": "https://chamanlawfirm.com/what-is-the-cost-of-perfecting-land-titles/",
       "newUrl": "/resources/blog/what-is-the-cost-of-perfecting-land-titles",
       "title": "Cost of Perfecting Land Titles in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-ad3bc7ce86619ea1a82d113ece34c359eff7bab4-768x456-png"
     },
     {
       "slug": "deed-of-assignment-guide-to-register",
       "oldUrl": "https://chamanlawfirm.com/deed-of-assignment-guide-to-register/",
       "newUrl": "/resources/blog/deed-of-assignment-guide-to-register",
       "title": "Guide to Registering a Deed of Assignment in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-20190d02a38267937ced0fda6b95e2415edf67bb-1024x694-png"
     },
     {
       "slug": "proven-steps-on-land-allocation-and-ownership",
       "oldUrl": "https://chamanlawfirm.com/proven-steps-on-land-allocation-and-ownership/",
       "newUrl": "/resources/blog/proven-steps-on-land-allocation-and-ownership",
       "title": "Land Allocation and Ownership in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-e07a2c28ffa2b18f4127922093c1e1714b49cf1e-768x456-webp"
     },
     {
       "slug": "land-use-act-and-its-role-in-land-allocation",
       "oldUrl": "https://chamanlawfirm.com/land-use-act-and-its-role-in-land-allocation/",
       "newUrl": "/resources/blog/land-use-act-and-its-role-in-land-allocation",
       "title": "Land Use Act and Its Role in Land Allocation",
-      "imageAssetId": ""
+      "imageAssetId": "image-e07a2c28ffa2b18f4127922093c1e1714b49cf1e-768x456-webp"
     },
     {
       "slug": "how-do-i-draft-tenancy-agreement-in-lagos",
       "oldUrl": "https://chamanlawfirm.com/how-do-i-draft-tenancy-agreement-in-lagos/",
       "newUrl": "/resources/blog/how-do-i-draft-tenancy-agreement-in-lagos",
       "title": "How to Draft a Tenancy Agreement in Lagos",
-      "imageAssetId": ""
+      "imageAssetId": "image-c79f03aef187482095c52fc67778999c75ae5567-768x456-jpg"
     },
     {
       "slug": "company-management-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/company-management-in-nigeria/",
       "newUrl": "/resources/blog/company-management-in-nigeria",
       "title": "Company Management in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-953ad3b1240d9d67ab232d1ee4c0b7572f4106ae-768x640-webp"
     },
     {
       "slug": "legalimplicationsof-co-ownership-of-property",
       "oldUrl": "https://chamanlawfirm.com/legalimplicationsof-co-ownership-of-property/",
       "newUrl": "/resources/blog/legalimplicationsof-co-ownership-of-property",
       "title": "Legal Implications of Co-Ownership of Property in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-48870cbf2f20a6c667b2d7c60a8c08f6ba746bef-300x168-jpg"
     },
     {
       "slug": "lagos-inheritance-law-explained-family-rights",
       "oldUrl": "https://chamanlawfirm.com/lagos-inheritance-law-explained-family-rights/",
       "newUrl": "/resources/blog/lagos-inheritance-law-explained-family-rights",
       "title": "Lagos Inheritance Law and Family Property Rights",
-      "imageAssetId": ""
+      "imageAssetId": "image-90633d9f7d8d78c23effddc55cf47a64e43e9d25-768x512-jpg"
     },
     {
       "slug": "roles-of-a-property-lawyer-in-real-estate",
       "oldUrl": "https://chamanlawfirm.com/roles-of-a-property-lawyer-in-real-estate/",
       "newUrl": "/resources/blog/roles-of-a-property-lawyer-in-real-estate",
       "title": "Roles of a Property Lawyer in Real Estate Transactions",
-      "imageAssetId": ""
+      "imageAssetId": "image-0b4897df9a43dc6c9ceb9faf69711728fe3b1296-1024x536-jpg"
     },
     {
       "slug": "how-tohandle-land-disputes-withfamilymembers",
       "oldUrl": "https://chamanlawfirm.com/how-tohandle-land-disputes-withfamilymembers/",
       "newUrl": "/resources/blog/how-tohandle-land-disputes-withfamilymembers",
       "title": "How to Handle Land Disputes With Family Members",
-      "imageAssetId": ""
+      "imageAssetId": "image-1e0c89538f3d4176433a7fd513aa80375f04a7b0-275x183-jpg"
     },
     {
       "slug": "what-is-the-cost-of-perfecting-land-title",
       "oldUrl": "https://chamanlawfirm.com/what-is-the-cost-of-perfecting-land-title/",
       "newUrl": "/resources/blog/what-is-the-cost-of-perfecting-land-title",
       "title": "Cost of Perfecting a Land Title in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-ad3bc7ce86619ea1a82d113ece34c359eff7bab4-768x456-png"
     },
     {
       "slug": "letters-of-administration-in-lagos-state",
       "oldUrl": "https://chamanlawfirm.com/letters-of-administration-in-lagos-state/",
       "newUrl": "/resources/blog/letters-of-administration-in-lagos-state",
       "title": "Letters of Administration in Lagos State",
-      "imageAssetId": ""
+      "imageAssetId": "image-5dc04778ec4fe25b4418b99b2793b14b29c1ff79-1024x694-png"
     },
     {
       "slug": "procedure-for-company-registration-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/procedure-for-company-registration-in-nigeria/",
       "newUrl": "/resources/blog/procedure-for-company-registration-in-nigeria",
       "title": "Procedure for Company Registration in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-73860abf17d076120981c67c828e70956c10769f-768x432-jpg"
     },
     {
       "slug": "a-complete-guide-on-how-to-register-a-company-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/a-complete-guide-on-how-to-register-a-company-in-nigeria/",
       "newUrl": "/resources/blog/a-complete-guide-on-how-to-register-a-company-in-nigeria",
       "title": "Complete Guide to Registering a Company in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-d51b59c687676c67ff997f1625ce18ef7f163a7d-768x432-png"
     },
     {
       "slug": "how-to-apply-for-certificate-of-occupancy-in-lagos-state-nigeria",
       "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-occupancy-in-lagos-state-nigeria/",
       "newUrl": "/resources/blog/how-to-apply-for-certificate-of-occupancy-in-lagos-state-nigeria",
       "title": "How to Apply for Certificate of Occupancy in Lagos State",
-      "imageAssetId": ""
+      "imageAssetId": "image-ac16e91212120da22b365884582d141551364608-768x456-jpg"
     },
     {
       "slug": "taxation-vat-and-other-indirect-taxes-in-nigeria",
       "oldUrl": "https://chamanlawfirm.com/taxation-vat-and-other-indirect-taxes-in-nigeria/",
       "newUrl": "/resources/blog/taxation-vat-and-other-indirect-taxes-in-nigeria",
       "title": "VAT and Other Indirect Taxes in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-8d8c9116e103eba699de29a3de2e8021facc2fc6-611x413-webp"
     },
     {
       "slug": "transfer-land-ownership-and-land-document",
       "oldUrl": "https://chamanlawfirm.com/transfer-land-ownership-and-land-document/",
       "newUrl": "/resources/blog/transfer-land-ownership-and-land-document",
       "title": "Transfer of Land Ownership and Land Documents in Nigeria",
-      "imageAssetId": ""
+      "imageAssetId": "image-c6ad69cf4a74aad1da247b6e7a1f0723a8a215ed-768x512-jpg"
     }
   ],
   "keptHidden": [
-    {
-      "slug": "steps-on-how-to-confidently-report-acrimelaw",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "polygamy-and-multiple-marriages-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "how-to-file-complaint-against-police-officers-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "void-and-voidable-marriages-in-nigeria",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "can-a-minor-enter-into-a-valid-contract-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "conditions-for-granting-injunctions-and-types-of-injunctions",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "overview-of-the-concept-recovery-of-premises",
-      "reason": "Possible eviction self-help language requires lawyer review."
-    },
-    {
-      "slug": "how-do-i-legally-evict-a-tenant-in-ogun-state",
-      "reason": "Misleading free-service language requires manual revision.; Possible eviction self-help language requires lawyer review."
-    },
-    {
-      "slug": "land-grabbing-the-legal-consequences-of",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "powerful-steps-sources-of-tax-law-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "property-how-to-place-a-caveat",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "can-a-landlord-increase-rent-arbitrarily-in-ogun",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "deed-of-assignment-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "legal-implications-of-joint-property",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "how-to-obtain-tax-clearance-certificate",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "land-registration-system-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
-      "reason": "Possible eviction self-help language requires lawyer review."
-    },
-    {
-      "slug": "expert-witnesses-in-nigeria-court-proceeding",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "deed-of-partition-in-nigeria",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "landlords-and-tenants-in-nigeria",
-      "reason": "Possible eviction self-help language requires lawyer review.; Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "probate-in-lagos-everything-you-need-to-know",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "legally-combat-police-harassment-in-nigeria",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "challenges-of-implementing-the-land-use-act",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "land-use-act-and-land-tenure-systems",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "who-can-be-a-notary-public",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "how-to-calculate-and-pay-land-use-charge",
-      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
-    },
-    {
-      "slug": "selling-a-family-land-without-everyones-consent",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "individual-tax-clearance-certificate",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "taxes-on-real-estate-transactions-in-nigeria",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "how-to-resolve-land-disputes-in-nigeria-with",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "defenses-and-bars-to-a-petition-for-divorce-2",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "breach-of-promise-to-marriage-in-nigeria",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "proven-steps-onoverview-of-the-child-right-act",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "clauses-for-drafting-a-tenancy-agreement",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
-    {
-      "slug": "right-of-an-illegitimate-child",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "sell-family-land-without-everyones-consent",
-      "reason": "not in controlled approval subset"
-    },
-    {
-      "slug": "limitation-of-action-in-nigeria",
-      "reason": "Placeholder/plugin debris requires cleanup."
-    },
     {
       "slug": "legal-title-versus-equity-title",
       "reason": "not in controlled approval subset"
@@ -849,7 +665,31 @@
       "reason": "Placeholder/plugin debris requires cleanup."
     },
     {
+      "slug": "obtaining-a-c-of-o-in-ogun-state",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "legal-aspects-of-employment-contracts",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "probate-vs-letter-of-administration-in-nigeria-key-differences-you-must-know",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-appoint-a-company-secretary-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "accountability-in-corporate-governance",
+      "reason": "not in controlled approval subset"
+    },
+    {
       "slug": "0btain-guide-on-how-to-obtain-tax",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "business-name-and-a-company-limited-by-shares",
       "reason": "not in controlled approval subset"
     },
     {
@@ -857,7 +697,15 @@
       "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
     },
     {
+      "slug": "verify-a-property-title-in-lagos",
+      "reason": "not in controlled approval subset"
+    },
+    {
       "slug": "police-clearance-certificate-pcc-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "what-makes-up-a-valid-employment-contract",
       "reason": "not in controlled approval subset"
     },
     {
@@ -883,6 +731,126 @@
     {
       "slug": "land-use-planning-and-development-regulation",
       "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "property-valuation-in-nigerian-real-estate",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "registration-of-a-money-lending-company",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-conduct-due-diligence-in-nigeria",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected.; Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "4-proven-steps-on-how-to-enforce-a-contract",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "defense-of-fair-dealing-in-nigeria-copyright",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "7-step-citizenship-application-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-increase-a-company-share",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "what-tenancy-laws-apply-to-landlords",
+      "reason": "Possible eviction self-help language requires lawyer review."
+    },
+    {
+      "slug": "land-use-charge-in-ogun-state-chaman-law-firm",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "consequences-of-fail-to-pay-taxes-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "consequences-of-not-paying-land-use-charge",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "survey-plan-registration-how-do-i-process-it",
+      "reason": "Possible eviction self-help language requires lawyer review."
+    },
+    {
+      "slug": "how-to-open-a-company-bank-account-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-terminate-a-tenancy-relationship-in",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "obtaining-a-certificate-of-occupancy",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "legal-implications-of-overstaying-a-visa-inn",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "nigerian-citizens-in-government-surveillance",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "corporate-governance-and-business-ethics",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "7-steps-on-how-to-use-small-claims-court",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "legal-requirementsfor-registering-a-property",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "cyber-crime-awareness-campaigns-10-powerful",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "inheritance-rights-under-ogun-customary-law",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "family-property-disputes-in-lagos",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "defenses-and-bars-to-a-petition-for-divorce",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "challenges-in-debt-recovery-and-solutions",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "land-use-act-impact-land-ownership-and-titles",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "filing-for-divorce-in-nigeria-a-comprehen",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "registering-a-private-security-company",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "powerful-steps-grant-of-probate-in-lagos-state",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "family-disputes-with-international-dimension",
+      "reason": "not in controlled approval subset"
     }
   ],
   "files": {

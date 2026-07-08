@@ -5,11 +5,13 @@ import path from "node:path";
 import readline from "node:readline";
 import { promisify } from "node:util";
 import zlib from "node:zlib";
-import { getCliClient } from "sanity/cli";
+import { createClient } from "@sanity/client";
 
 const execFileAsync = promisify(execFile);
 
 const API_VERSION = "2026-05-17";
+const PROJECT_ID = "eeuefmhu";
+const DATASET = "production";
 const AUTHOR_ID = "author.charles-chukwuma-nkwoka";
 const AUTHOR_NAME = "Charles Chukwuma Nkwoka, Esq.";
 const DRAFT_PREFIX = "drafts.chamanlawfirm.sprint10l.";
@@ -233,6 +235,45 @@ const imageEntryOverrides = new Map([
 
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function loadDotEnvLocal() {
+  if (!fs.existsSync(".env.local")) return;
+
+  const text = fs.readFileSync(".env.local", "utf8");
+  for (const rawLine of text.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+
+    const separatorIndex = line.indexOf("=");
+    if (separatorIndex === -1) continue;
+
+    const key = line.slice(0, separatorIndex).trim();
+    let value = line.slice(separatorIndex + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+
+    if (key && !process.env[key]) process.env[key] = value;
+  }
+}
+
+function createSanityWriteClient() {
+  loadDotEnvLocal();
+  const token = process.env.SANITY_AUTH_TOKEN || process.env.CMS_API_TOKEN || process.env.SANITY_API_TOKEN;
+
+  if (!token) {
+    throw new Error("Sanity write token missing. Set SANITY_AUTH_TOKEN or CMS_API_TOKEN locally before running --apply.");
+  }
+
+  return createClient({
+    projectId: PROJECT_ID,
+    dataset: DATASET,
+    apiVersion: API_VERSION,
+    useCdn: false,
+    perspective: "raw",
+    token
+  });
 }
 
 async function withRetry(label, operation, attempts = 4) {
@@ -1038,7 +1079,7 @@ function reviewHiddenDrafts(drafts, redirectMap) {
 }
 
 async function main() {
-  const client = getCliClient({ apiVersion: API_VERSION }).withConfig({ perspective: "raw" });
+  const client = createSanityWriteClient();
   await fsp.mkdir(outDir, { recursive: true });
 
   const [topRows, rankRows, nextConfigText, sprint10iResultText, sprint10jResultText, sprint10kResultText] = await Promise.all([
