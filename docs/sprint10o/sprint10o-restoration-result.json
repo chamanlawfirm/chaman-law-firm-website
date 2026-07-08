@@ -1,0 +1,972 @@
+{
+  "generatedAt": "2026-07-08T08:22:32.557Z",
+  "applied": true,
+  "approvedPublicPostCountBefore": 233,
+  "approvedPublicPostCountAfter": 233,
+  "hiddenDraftsReviewed": 212,
+  "selected": 100,
+  "draftsRecoveredOrRefreshed": 100,
+  "approvalCandidates": 50,
+  "approvalCandidateSlugs": [
+    {
+      "slug": "legal-steps-to-perfecting-title-documents",
+      "title": "Legal Steps to Perfecting Title Documents in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-steps-to-perfecting-title-documents/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/Legal-Steps-to-Perfecting-Title-Documents-1024x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-does-the-land-use-act-affect-land-title",
+      "title": "How the Land Use Act Affects Land Title in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-affect-land-title/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-Does-the-Land-Use-Act-Impact-Land-Ownership-and-Titles-in-Nigeria-1024x694.png",
+      "warnings": []
+    },
+    {
+      "slug": "legal-remedies-for-breach-of-contract",
+      "title": "Legal Remedies for Breach of Contract in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-remedies-for-breach-of-contract/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-Legal-Remedies-Are-Available-for-Breach-of-Property-Contracts-in-Lekki-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "when-a-loved-one-dies-without-a-will",
+      "title": "What Happens When a Loved One Dies Without a Will in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/when-a-loved-one-dies-without-a-will/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-Happens-to-Lekki-Property-When-Owner-Dies-Without-Will-768x1152.png",
+      "warnings": []
+    },
+    {
+      "slug": "contract-of-sale-of-land-and-what-it-takes",
+      "title": "Contract of Sale of Land in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/contract-of-sale-of-land-and-what-it-takes/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/images-8-1.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "acquire-and-secure-industrial-land-in-ogun",
+      "title": "How to Acquire and Secure Industrial Land in Ogun State",
+      "oldUrl": "https://chamanlawfirm.com/acquire-and-secure-industrial-land-in-ogun/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/portrait-native-american-engineer-technician-wearing-safty-uniform-hand-contril-automation-robot-arm-welding-machine-with-laptop-industrial-40-factory-background-concept-2-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "8-steps-to-enforce-court-judgments-innigeria",
+      "title": "Steps to Enforce Court Judgments in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/8-steps-to-enforce-court-judgments-innigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/court-1.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "roles-of-a-cybercrime-lawyer-in-nigeria",
+      "title": "Roles of a Cybercrime Lawyer in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/roles-of-a-cybercrime-lawyer-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/cybercrime-jpg-1170x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "effects-of-exchange-of-contract",
+      "title": "Effects of Exchange of Contract in Property Transactions",
+      "oldUrl": "https://chamanlawfirm.com/effects-of-exchange-of-contract/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/what-does-exchange-of-contracts-in-conveyancing-mean-768x456.webp",
+      "warnings": []
+    },
+    {
+      "slug": "floodplain-management-under-the-land-use-act",
+      "title": "Floodplain Management Under the Land Use Act in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/floodplain-management-under-the-land-use-act/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Floodplain-Management-under-the-Land-Use-Act-in-Nigeria-768x640.webp",
+      "warnings": []
+    },
+    {
+      "slug": "what-is-the-cost-of-perfecting-land-titles-2",
+      "title": "Cost of Perfecting Land Titles in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-cost-of-perfecting-land-titles-2/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-is-the-Cost-of-Perfecting-Land-Titles-in-Lekki-768x456.png",
+      "warnings": []
+    },
+    {
+      "slug": "what-is-the-process-of-obtaining-a-c-of-o",
+      "title": "Process of Obtaining a Certificate of Occupancy in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-process-of-obtaining-a-c-of-o/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/11/What-is-the-process-of-obtaining-a-C-of-O-in-Ikoyi-768x480.webp",
+      "warnings": []
+    },
+    {
+      "slug": "difference-between-c-of-o-and-governors-consent",
+      "title": "Difference Between C of O and Governor's Consent",
+      "oldUrl": "https://chamanlawfirm.com/difference-between-c-of-o-and-governors-consent/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-is-the-difference-between-Excision-Gazette-C-of-O-and-Governors-Consent-in-Lekki-properties-1170x694.png",
+      "warnings": []
+    },
+    {
+      "slug": "cyber-crime-investigation-techniques",
+      "title": "Cybercrime Investigation Techniques in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/cyber-crime-investigation-techniques/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/01-12.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "family-law-issues-for-expatriate-families",
+      "title": "Family Law Issues for Expatriate Families in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/family-law-issues-for-expatriate-families/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/01-66.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "the-role-of-town-planners-in-land-allocation-under-the-land-use-act",
+      "title": "Role of Town Planners in Land Allocation Under the Land Use Act",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-town-planners-in-land-allocation-under-the-land-use-act/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Understanding-the-Land-Use-Act-and-Its-Role-in-Land-Allocation-for-Public-Private-Partnership-Projects-768x512.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "ways-to-resolve-property-disputes-in-ogun",
+      "title": "Ways to Resolve Property Disputes in Ogun State",
+      "oldUrl": "https://chamanlawfirm.com/ways-to-resolve-property-disputes-in-ogun/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/Common-Property-Ownership-Disputes-in-Nigeria-and-How-to-Resolve-Them.webp",
+      "warnings": []
+    },
+    {
+      "slug": "8-step-business-registration-process-in-lag",
+      "title": "Business Registration Process in Lagos",
+      "oldUrl": "https://chamanlawfirm.com/8-step-business-registration-process-in-lag/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/business-registration-in-Nigeria.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "legal-pitfalls-in-debt-recovery",
+      "title": "Legal Pitfalls in Debt Recovery in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-pitfalls-in-debt-recovery/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/01-13.png",
+      "warnings": []
+    },
+    {
+      "slug": "proven-steps-how-to-file-patent-in-nigeria",
+      "title": "How to File a Patent in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-how-to-file-patent-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-to-File-Patent-in-Nigeria.webp",
+      "warnings": []
+    },
+    {
+      "slug": "debt-recovery-in-banking-sector",
+      "title": "Debt Recovery in the Banking Sector in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/debt-recovery-in-banking-sector/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/01-51.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "legal-aspects-of-commercial-litigation",
+      "title": "Legal Aspects of Commercial Litigation in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-aspects-of-commercial-litigation/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/images-4.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "proven-steps-on-capacity-to-make-a-will",
+      "title": "Capacity to Make a Will in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-on-capacity-to-make-a-will/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Capacity-to-Make-a-Wil.webp",
+      "warnings": []
+    },
+    {
+      "slug": "landlord-and-tenant-relationship-on-property",
+      "title": "Landlord and Tenant Relationship in Property Law",
+      "oldUrl": "https://chamanlawfirm.com/landlord-and-tenant-relationship-on-property/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/image-13-768x433-1.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "the-process-of-transferring-land-in-nigeria",
+      "title": "Process of Transferring Land in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-process-of-transferring-land-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/What-is-the-Process-for-Transferring-Land-titles-from-one-Individual-to-Another-in-Nigeria-768x640.webp",
+      "warnings": []
+    },
+    {
+      "slug": "4-proven-cross-border-cybercrime-issues",
+      "title": "Cross-Border Cybercrime Issues in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/4-proven-cross-border-cybercrime-issues/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/images-82.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "contractual-dispute-resolution",
+      "title": "Contractual Dispute Resolution in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/contractual-dispute-resolution/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Capture1-1-1170x694.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "the-land-use-act-relate-to-land-conflicts",
+      "title": "How the Land Use Act Relates to Land Conflicts",
+      "oldUrl": "https://chamanlawfirm.com/the-land-use-act-relate-to-land-conflicts/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-Does-the-Land-Use-Act-Relate-to-Land-Conflicts-in-Nigeria-1080x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "mastering-nigerian-company-law-essentialstep",
+      "title": "Essential Steps in Nigerian Company Law",
+      "oldUrl": "https://chamanlawfirm.com/mastering-nigerian-company-law-essentialstep/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/mnb.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "how-does-the-land-use-act-influence-real-estate-development",
+      "title": "How the Land Use Act Influences Real Estate Development",
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-influence-real-estate-development/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-Does-the-Land-Use-Act-Influence-Infrastructure-Development-1024x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "company-registration-in-nigeria",
+      "title": "Company Registration in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/company-registration-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/procedure-for-company-registration-in-nigeria-mjEkrWwVkouG1a9o-768x432.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "land-tenure-systems-coexist-with-statutory-land",
+      "title": "How Land Tenure Systems Coexist With Statutory Land Ownership",
+      "oldUrl": "https://chamanlawfirm.com/land-tenure-systems-coexist-with-statutory-land/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/How-Can-Customary-Land-Tenure-Systems-Coexist-with-Statutory-Land-Ownership-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "the-cyber-crime-investigation-procedure",
+      "title": "Cybercrime Investigation Procedure in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-cyber-crime-investigation-procedure/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/images-3-1.png",
+      "warnings": []
+    },
+    {
+      "slug": "aim-to-improve-land-titles-and-ownership",
+      "title": "Reforms to Improve Land Titles and Ownership in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/aim-to-improve-land-titles-and-ownership/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/What-Proposed-Reforms-Aim-to-Improve-Land-Titles-and-Ownership-in-Nigeria-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "investigating-title-in-property-transaction",
+      "title": "Investigating Title in Property Transactions",
+      "oldUrl": "https://chamanlawfirm.com/investigating-title-in-property-transaction/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/How-do-I-appoint-a-lawyer-to-represent-me-in-a-Lekki-property-transaction-while-abroad-1170x694.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "challenging-forged-property-documents-in-lagos",
+      "title": "Challenging Forged Property Documents in Lagos",
+      "oldUrl": "https://chamanlawfirm.com/challenging-forged-property-documents-in-lagos/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/How-to-Verify-a-Property-Title-in-Lagos.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria",
+      "title": "Addressing Land Fraud and Illegal Land Transactions in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Process-for-Obtaining-Governors-Consent-for-Land-Transactions-in-Nigeria-1-768x456.webp",
+      "warnings": []
+    },
+    {
+      "slug": "how-to-register-a-company-in-nigeria-2024",
+      "title": "How to Register a Company in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-register-a-company-in-nigeria-2024/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/company-registration-in-nigeria-A85gZByM4OH8qREZ-3.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "duties-of-company-board-of-directors",
+      "title": "Duties of Company Board Directors in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/duties-of-company-board-of-directors/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/duties-of-company-board-of-directors-m2WoM3yRXyiblRLr-1-768x432.jpg.webp",
+      "warnings": []
+    },
+    {
+      "slug": "compliance-with-debt-recovery-regulations",
+      "title": "Compliance With Debt Recovery Regulations in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/compliance-with-debt-recovery-regulations/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/01-75.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "due-diligence-in-real-estate-transaction",
+      "title": "Due Diligence in Real Estate Transactions",
+      "oldUrl": "https://chamanlawfirm.com/due-diligence-in-real-estate-transaction/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/taxes-on-real-estate-transactions.-dOq05a1326s6yJ7J-2-768x456.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "the-role-of-lawyers-in-debt-recovery-5-keys",
+      "title": "Role of Lawyers in Debt Recovery in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-lawyers-in-debt-recovery-5-keys/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/debtrecovery_IMG.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "intellectual-property-in-franchise-operations",
+      "title": "Intellectual Property in Franchise Operations",
+      "oldUrl": "https://chamanlawfirm.com/intellectual-property-in-franchise-operations/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/intellectualproperty_IMG.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "disputes-arising-from-property-ownership",
+      "title": "Disputes Arising From Property Ownership in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/disputes-arising-from-property-ownership/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/images-23.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "corporate-fraud-and-mismanagement",
+      "title": "Corporate Fraud and Mismanagement in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/corporate-fraud-and-mismanagement/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/corporate-fraud-1078x694.webp",
+      "warnings": []
+    },
+    {
+      "slug": "legal-assistance-for-visa-appeals-5-step",
+      "title": "Legal Assistance for Visa Appeals in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-assistance-for-visa-appeals-5-step/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/10/image-40.png",
+      "warnings": []
+    },
+    {
+      "slug": "thing-you-need-to-know-about-a-legal-will",
+      "title": "What to Know About a Legal Will in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/thing-you-need-to-know-about-a-legal-will/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/images-2024-12-10T095757.415.jpeg",
+      "warnings": []
+    },
+    {
+      "slug": "challenges-women-face-in-obtaining-land-titles",
+      "title": "Challenges Women Face in Obtaining Land Titles in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/challenges-women-face-in-obtaining-land-titles/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/What-Challenges-do-Women-Face-in-Obtaining-Land-Titles-in-Nigeria-768x640.webp",
+      "warnings": []
+    },
+    {
+      "slug": "digitization-impact-land-title-registration",
+      "title": "Impact of Digitization on Land Title Registration",
+      "oldUrl": "https://chamanlawfirm.com/digitization-impact-land-title-registration/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/procedure-for-land-registration-ALpG39peV9uyaZGa-3.webp",
+      "warnings": []
+    },
+    {
+      "slug": "legally-binding-contracts",
+      "title": "Legally Binding Contracts in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-binding-contracts/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/05.webp",
+      "warnings": []
+    }
+  ],
+  "approvedThisRun": [
+    {
+      "slug": "legal-steps-to-perfecting-title-documents",
+      "oldUrl": "https://chamanlawfirm.com/legal-steps-to-perfecting-title-documents/",
+      "newUrl": "/resources/blog/legal-steps-to-perfecting-title-documents",
+      "title": "Legal Steps to Perfecting Title Documents in Nigeria",
+      "imageAssetId": "image-d432fc810fb33bb49b2ef0c75d3511d84b4e1bac-1024x694-webp"
+    },
+    {
+      "slug": "how-does-the-land-use-act-affect-land-title",
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-affect-land-title/",
+      "newUrl": "/resources/blog/how-does-the-land-use-act-affect-land-title",
+      "title": "How the Land Use Act Affects Land Title in Nigeria",
+      "imageAssetId": "image-61bea2879aaea0549ed92c144d86a7dd8f2d40ec-1024x694-png"
+    },
+    {
+      "slug": "legal-remedies-for-breach-of-contract",
+      "oldUrl": "https://chamanlawfirm.com/legal-remedies-for-breach-of-contract/",
+      "newUrl": "/resources/blog/legal-remedies-for-breach-of-contract",
+      "title": "Legal Remedies for Breach of Contract in Nigeria",
+      "imageAssetId": "image-8886624dc92f6fe95aa2232308a4afcd27f00e8b-768x456-jpg"
+    },
+    {
+      "slug": "when-a-loved-one-dies-without-a-will",
+      "oldUrl": "https://chamanlawfirm.com/when-a-loved-one-dies-without-a-will/",
+      "newUrl": "/resources/blog/when-a-loved-one-dies-without-a-will",
+      "title": "What Happens When a Loved One Dies Without a Will in Nigeria",
+      "imageAssetId": "image-c44900c84ed197e36a5b527f436e7c5ad996a8b4-768x1152-png"
+    },
+    {
+      "slug": "contract-of-sale-of-land-and-what-it-takes",
+      "oldUrl": "https://chamanlawfirm.com/contract-of-sale-of-land-and-what-it-takes/",
+      "newUrl": "/resources/blog/contract-of-sale-of-land-and-what-it-takes",
+      "title": "Contract of Sale of Land in Nigeria",
+      "imageAssetId": "image-264629cec6bc4034bd5583857cd1b56ea017537c-298x169-jpg"
+    },
+    {
+      "slug": "acquire-and-secure-industrial-land-in-ogun",
+      "oldUrl": "https://chamanlawfirm.com/acquire-and-secure-industrial-land-in-ogun/",
+      "newUrl": "/resources/blog/acquire-and-secure-industrial-land-in-ogun",
+      "title": "How to Acquire and Secure Industrial Land in Ogun State",
+      "imageAssetId": "image-f1fc43aabaa052e207d434566f275fdd140742ef-768x456-jpg"
+    },
+    {
+      "slug": "8-steps-to-enforce-court-judgments-innigeria",
+      "oldUrl": "https://chamanlawfirm.com/8-steps-to-enforce-court-judgments-innigeria/",
+      "newUrl": "/resources/blog/8-steps-to-enforce-court-judgments-innigeria",
+      "title": "Steps to Enforce Court Judgments in Nigeria",
+      "imageAssetId": "image-4a45241b5fb58735810ef6d2ed8669b53ef89680-880x587-jpg"
+    },
+    {
+      "slug": "roles-of-a-cybercrime-lawyer-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/roles-of-a-cybercrime-lawyer-in-nigeria/",
+      "newUrl": "/resources/blog/roles-of-a-cybercrime-lawyer-in-nigeria",
+      "title": "Roles of a Cybercrime Lawyer in Nigeria",
+      "imageAssetId": "image-d1706b56b2c2cf8170390f8c185b8bda210b034c-1170x694-webp"
+    },
+    {
+      "slug": "effects-of-exchange-of-contract",
+      "oldUrl": "https://chamanlawfirm.com/effects-of-exchange-of-contract/",
+      "newUrl": "/resources/blog/effects-of-exchange-of-contract",
+      "title": "Effects of Exchange of Contract in Property Transactions",
+      "imageAssetId": "image-64968a06e5717c1c1e7336a05b4cf4efb2258dc2-768x456-webp"
+    },
+    {
+      "slug": "floodplain-management-under-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/floodplain-management-under-the-land-use-act/",
+      "newUrl": "/resources/blog/floodplain-management-under-the-land-use-act",
+      "title": "Floodplain Management Under the Land Use Act in Nigeria",
+      "imageAssetId": "image-953ad3b1240d9d67ab232d1ee4c0b7572f4106ae-768x640-webp"
+    },
+    {
+      "slug": "what-is-the-cost-of-perfecting-land-titles-2",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-cost-of-perfecting-land-titles-2/",
+      "newUrl": "/resources/blog/what-is-the-cost-of-perfecting-land-titles-2",
+      "title": "Cost of Perfecting Land Titles in Nigeria",
+      "imageAssetId": "image-ad3bc7ce86619ea1a82d113ece34c359eff7bab4-768x456-png"
+    },
+    {
+      "slug": "what-is-the-process-of-obtaining-a-c-of-o",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-process-of-obtaining-a-c-of-o/",
+      "newUrl": "/resources/blog/what-is-the-process-of-obtaining-a-c-of-o",
+      "title": "Process of Obtaining a Certificate of Occupancy in Nigeria",
+      "imageAssetId": "image-a5abdec097dc8648dfc395b64b57eb4832c5d65f-768x480-webp"
+    },
+    {
+      "slug": "difference-between-c-of-o-and-governors-consent",
+      "oldUrl": "https://chamanlawfirm.com/difference-between-c-of-o-and-governors-consent/",
+      "newUrl": "/resources/blog/difference-between-c-of-o-and-governors-consent",
+      "title": "Difference Between C of O and Governor's Consent",
+      "imageAssetId": "image-87712bb52a47e3475e30638056d8454d72393f5b-1170x694-png"
+    },
+    {
+      "slug": "cyber-crime-investigation-techniques",
+      "oldUrl": "https://chamanlawfirm.com/cyber-crime-investigation-techniques/",
+      "newUrl": "/resources/blog/cyber-crime-investigation-techniques",
+      "title": "Cybercrime Investigation Techniques in Nigeria",
+      "imageAssetId": "image-5334996bd7c112e4c5ef02b4d97b898ee805807e-268x188-jpg"
+    },
+    {
+      "slug": "family-law-issues-for-expatriate-families",
+      "oldUrl": "https://chamanlawfirm.com/family-law-issues-for-expatriate-families/",
+      "newUrl": "/resources/blog/family-law-issues-for-expatriate-families",
+      "title": "Family Law Issues for Expatriate Families in Nigeria",
+      "imageAssetId": "image-6a3260c3939c7c748dc3466921e0892fe1c16b10-318x159-jpg"
+    },
+    {
+      "slug": "the-role-of-town-planners-in-land-allocation-under-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-town-planners-in-land-allocation-under-the-land-use-act/",
+      "newUrl": "/resources/blog/the-role-of-town-planners-in-land-allocation-under-the-land-use-act",
+      "title": "Role of Town Planners in Land Allocation Under the Land Use Act",
+      "imageAssetId": "image-799e4049133b691212f5ca03ba281e2a20112f07-768x512-jpg"
+    },
+    {
+      "slug": "ways-to-resolve-property-disputes-in-ogun",
+      "oldUrl": "https://chamanlawfirm.com/ways-to-resolve-property-disputes-in-ogun/",
+      "newUrl": "/resources/blog/ways-to-resolve-property-disputes-in-ogun",
+      "title": "Ways to Resolve Property Disputes in Ogun State",
+      "imageAssetId": "image-e2bfa0b2cfa2a8d6e5494739ded4278f8095b8fd-1024x694-webp"
+    },
+    {
+      "slug": "8-step-business-registration-process-in-lag",
+      "oldUrl": "https://chamanlawfirm.com/8-step-business-registration-process-in-lag/",
+      "newUrl": "/resources/blog/8-step-business-registration-process-in-lag",
+      "title": "Business Registration Process in Lagos",
+      "imageAssetId": "image-8b61f07a45b9c2bf4c1b6c8392d57f07a363b468-870x537-jpg"
+    },
+    {
+      "slug": "legal-pitfalls-in-debt-recovery",
+      "oldUrl": "https://chamanlawfirm.com/legal-pitfalls-in-debt-recovery/",
+      "newUrl": "/resources/blog/legal-pitfalls-in-debt-recovery",
+      "title": "Legal Pitfalls in Debt Recovery in Nigeria",
+      "imageAssetId": "image-b683d053a16a503566df3d6587c452f1646a72af-298x169-png"
+    },
+    {
+      "slug": "proven-steps-how-to-file-patent-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-how-to-file-patent-in-nigeria/",
+      "newUrl": "/resources/blog/proven-steps-how-to-file-patent-in-nigeria",
+      "title": "How to File a Patent in Nigeria",
+      "imageAssetId": "image-5a00f97d0415548addce7fb9f0037fbb0d111944-750x460-webp"
+    },
+    {
+      "slug": "debt-recovery-in-banking-sector",
+      "oldUrl": "https://chamanlawfirm.com/debt-recovery-in-banking-sector/",
+      "newUrl": "/resources/blog/debt-recovery-in-banking-sector",
+      "title": "Debt Recovery in the Banking Sector in Nigeria",
+      "imageAssetId": "image-2b71ae5e09f4f958bbaecaf0dfb6ddaaf71ef939-275x183-jpg"
+    },
+    {
+      "slug": "legal-aspects-of-commercial-litigation",
+      "oldUrl": "https://chamanlawfirm.com/legal-aspects-of-commercial-litigation/",
+      "newUrl": "/resources/blog/legal-aspects-of-commercial-litigation",
+      "title": "Legal Aspects of Commercial Litigation in Nigeria",
+      "imageAssetId": "image-03744389bb036ee214e9a96be6cd779eed3d9de3-295x171-jpg"
+    },
+    {
+      "slug": "proven-steps-on-capacity-to-make-a-will",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-on-capacity-to-make-a-will/",
+      "newUrl": "/resources/blog/proven-steps-on-capacity-to-make-a-will",
+      "title": "Capacity to Make a Will in Nigeria",
+      "imageAssetId": "image-42d5b6a180fb5ed41cedbcd4ffac87cc2e402826-1024x1024-webp"
+    },
+    {
+      "slug": "landlord-and-tenant-relationship-on-property",
+      "oldUrl": "https://chamanlawfirm.com/landlord-and-tenant-relationship-on-property/",
+      "newUrl": "/resources/blog/landlord-and-tenant-relationship-on-property",
+      "title": "Landlord and Tenant Relationship in Property Law",
+      "imageAssetId": "image-e76966c70ce731add697f5fb94f841b0c66a0c8f-768x433-jpg"
+    },
+    {
+      "slug": "the-process-of-transferring-land-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-process-of-transferring-land-in-nigeria/",
+      "newUrl": "/resources/blog/the-process-of-transferring-land-in-nigeria",
+      "title": "Process of Transferring Land in Nigeria",
+      "imageAssetId": "image-5b5ab3e4c01beb14cd7cbc071fb67b8d31475c25-768x640-webp"
+    },
+    {
+      "slug": "4-proven-cross-border-cybercrime-issues",
+      "oldUrl": "https://chamanlawfirm.com/4-proven-cross-border-cybercrime-issues/",
+      "newUrl": "/resources/blog/4-proven-cross-border-cybercrime-issues",
+      "title": "Cross-Border Cybercrime Issues in Nigeria",
+      "imageAssetId": "image-88c5c62729de3be3f35df4bcecf1ae1b6d19e0f0-389x129-jpg"
+    },
+    {
+      "slug": "contractual-dispute-resolution",
+      "oldUrl": "https://chamanlawfirm.com/contractual-dispute-resolution/",
+      "newUrl": "/resources/blog/contractual-dispute-resolution",
+      "title": "Contractual Dispute Resolution in Nigeria",
+      "imageAssetId": "image-627f11b0dceda47a969f860ec87865dad5cc66c8-1170x694-jpg"
+    },
+    {
+      "slug": "the-land-use-act-relate-to-land-conflicts",
+      "oldUrl": "https://chamanlawfirm.com/the-land-use-act-relate-to-land-conflicts/",
+      "newUrl": "/resources/blog/the-land-use-act-relate-to-land-conflicts",
+      "title": "How the Land Use Act Relates to Land Conflicts",
+      "imageAssetId": "image-c51cc9d480229a70a80041b92d5405507de679cd-1080x694-webp"
+    },
+    {
+      "slug": "mastering-nigerian-company-law-essentialstep",
+      "oldUrl": "https://chamanlawfirm.com/mastering-nigerian-company-law-essentialstep/",
+      "newUrl": "/resources/blog/mastering-nigerian-company-law-essentialstep",
+      "title": "Essential Steps in Nigerian Company Law",
+      "imageAssetId": "image-f40e2a38c68cb8f3778fdfc1c12413515d8f78f1-820x400-jpg"
+    },
+    {
+      "slug": "how-does-the-land-use-act-influence-real-estate-development",
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-influence-real-estate-development/",
+      "newUrl": "/resources/blog/how-does-the-land-use-act-influence-real-estate-development",
+      "title": "How the Land Use Act Influences Real Estate Development",
+      "imageAssetId": "image-a7b5da2ad01e9211ce398288a31e456f4d4c9967-1024x694-webp"
+    },
+    {
+      "slug": "company-registration-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/company-registration-in-nigeria/",
+      "newUrl": "/resources/blog/company-registration-in-nigeria",
+      "title": "Company Registration in Nigeria",
+      "imageAssetId": "image-73860abf17d076120981c67c828e70956c10769f-768x432-jpg"
+    },
+    {
+      "slug": "land-tenure-systems-coexist-with-statutory-land",
+      "oldUrl": "https://chamanlawfirm.com/land-tenure-systems-coexist-with-statutory-land/",
+      "newUrl": "/resources/blog/land-tenure-systems-coexist-with-statutory-land",
+      "title": "How Land Tenure Systems Coexist With Statutory Land Ownership",
+      "imageAssetId": "image-7063488192012fd29acc9138658f4e9db4b15cea-768x456-jpg"
+    },
+    {
+      "slug": "the-cyber-crime-investigation-procedure",
+      "oldUrl": "https://chamanlawfirm.com/the-cyber-crime-investigation-procedure/",
+      "newUrl": "/resources/blog/the-cyber-crime-investigation-procedure",
+      "title": "Cybercrime Investigation Procedure in Nigeria",
+      "imageAssetId": "image-dd994d0a0ba7354e4087b2faf2512459a832c2c3-213x237-png"
+    },
+    {
+      "slug": "aim-to-improve-land-titles-and-ownership",
+      "oldUrl": "https://chamanlawfirm.com/aim-to-improve-land-titles-and-ownership/",
+      "newUrl": "/resources/blog/aim-to-improve-land-titles-and-ownership",
+      "title": "Reforms to Improve Land Titles and Ownership in Nigeria",
+      "imageAssetId": "image-a8240cc3cc89575acdee3717ee26c7a709b03458-768x456-jpg"
+    },
+    {
+      "slug": "investigating-title-in-property-transaction",
+      "oldUrl": "https://chamanlawfirm.com/investigating-title-in-property-transaction/",
+      "newUrl": "/resources/blog/investigating-title-in-property-transaction",
+      "title": "Investigating Title in Property Transactions",
+      "imageAssetId": "image-a1a055b2819ffef28bcec317dcb856fd0b40f1a5-1170x694-jpg"
+    },
+    {
+      "slug": "challenging-forged-property-documents-in-lagos",
+      "oldUrl": "https://chamanlawfirm.com/challenging-forged-property-documents-in-lagos/",
+      "newUrl": "/resources/blog/challenging-forged-property-documents-in-lagos",
+      "title": "Challenging Forged Property Documents in Lagos",
+      "imageAssetId": "image-6c7ca1401e6015716890413afe652ba4c3941683-1024x1024-webp"
+    },
+    {
+      "slug": "how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria/",
+      "newUrl": "/resources/blog/how-can-issues-of-land-fraud-and-illegal-land-transactions-be-addressed-in-nigeria",
+      "title": "Addressing Land Fraud and Illegal Land Transactions in Nigeria",
+      "imageAssetId": "image-317290dc6c5ce2188314b11919c02cd69769db28-768x456-webp"
+    },
+    {
+      "slug": "how-to-register-a-company-in-nigeria-2024",
+      "oldUrl": "https://chamanlawfirm.com/how-to-register-a-company-in-nigeria-2024/",
+      "newUrl": "/resources/blog/how-to-register-a-company-in-nigeria-2024",
+      "title": "How to Register a Company in Nigeria",
+      "imageAssetId": "image-f94c2c1b6abcd6da9e561a41171c08c48c2d66e4-577x313-jpg"
+    },
+    {
+      "slug": "duties-of-company-board-of-directors",
+      "oldUrl": "https://chamanlawfirm.com/duties-of-company-board-of-directors/",
+      "newUrl": "/resources/blog/duties-of-company-board-of-directors",
+      "title": "Duties of Company Board Directors in Nigeria",
+      "imageAssetId": "image-f6be5d8c04e95f786e9b5a2f305cc736a9369748-768x432-webp"
+    },
+    {
+      "slug": "compliance-with-debt-recovery-regulations",
+      "oldUrl": "https://chamanlawfirm.com/compliance-with-debt-recovery-regulations/",
+      "newUrl": "/resources/blog/compliance-with-debt-recovery-regulations",
+      "title": "Compliance With Debt Recovery Regulations in Nigeria",
+      "imageAssetId": "image-9e1d499285a3735222ebe6bead7528f68c364fe7-275x183-jpg"
+    },
+    {
+      "slug": "due-diligence-in-real-estate-transaction",
+      "oldUrl": "https://chamanlawfirm.com/due-diligence-in-real-estate-transaction/",
+      "newUrl": "/resources/blog/due-diligence-in-real-estate-transaction",
+      "title": "Due Diligence in Real Estate Transactions",
+      "imageAssetId": "image-e6cdc68a890ddee1691068961145e9bea0d6034e-768x456-jpg"
+    },
+    {
+      "slug": "the-role-of-lawyers-in-debt-recovery-5-keys",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-lawyers-in-debt-recovery-5-keys/",
+      "newUrl": "/resources/blog/the-role-of-lawyers-in-debt-recovery-5-keys",
+      "title": "Role of Lawyers in Debt Recovery in Nigeria",
+      "imageAssetId": "image-24a8eb7cbbd9da064592a7b32cdf5b817fce1e05-800x500-jpg"
+    },
+    {
+      "slug": "intellectual-property-in-franchise-operations",
+      "oldUrl": "https://chamanlawfirm.com/intellectual-property-in-franchise-operations/",
+      "newUrl": "/resources/blog/intellectual-property-in-franchise-operations",
+      "title": "Intellectual Property in Franchise Operations",
+      "imageAssetId": "image-5d469de6e030adf04f2e82903ab73b2091fc01d9-400x300-jpg"
+    },
+    {
+      "slug": "disputes-arising-from-property-ownership",
+      "oldUrl": "https://chamanlawfirm.com/disputes-arising-from-property-ownership/",
+      "newUrl": "/resources/blog/disputes-arising-from-property-ownership",
+      "title": "Disputes Arising From Property Ownership in Nigeria",
+      "imageAssetId": "image-a7e8a02e7018179eff031856e2a2218fa22c963f-318x159-jpg"
+    },
+    {
+      "slug": "corporate-fraud-and-mismanagement",
+      "oldUrl": "https://chamanlawfirm.com/corporate-fraud-and-mismanagement/",
+      "newUrl": "/resources/blog/corporate-fraud-and-mismanagement",
+      "title": "Corporate Fraud and Mismanagement in Nigeria",
+      "imageAssetId": "image-c73826e8efca9ea6500882d645981d72884309b9-1078x694-webp"
+    },
+    {
+      "slug": "legal-assistance-for-visa-appeals-5-step",
+      "oldUrl": "https://chamanlawfirm.com/legal-assistance-for-visa-appeals-5-step/",
+      "newUrl": "/resources/blog/legal-assistance-for-visa-appeals-5-step",
+      "title": "Legal Assistance for Visa Appeals in Nigeria",
+      "imageAssetId": "image-d230c4e9855a1742b8f1b05955a2904185ded1c8-512x340-png"
+    },
+    {
+      "slug": "thing-you-need-to-know-about-a-legal-will",
+      "oldUrl": "https://chamanlawfirm.com/thing-you-need-to-know-about-a-legal-will/",
+      "newUrl": "/resources/blog/thing-you-need-to-know-about-a-legal-will",
+      "title": "What to Know About a Legal Will in Nigeria",
+      "imageAssetId": "image-6cbe035954b4ebbad0d91d504d3ddc83f1ce7aeb-275x184-jpg"
+    },
+    {
+      "slug": "challenges-women-face-in-obtaining-land-titles",
+      "oldUrl": "https://chamanlawfirm.com/challenges-women-face-in-obtaining-land-titles/",
+      "newUrl": "/resources/blog/challenges-women-face-in-obtaining-land-titles",
+      "title": "Challenges Women Face in Obtaining Land Titles in Nigeria",
+      "imageAssetId": "image-5d322ffd3038167c8875584f5537c0148d3dc034-768x640-webp"
+    },
+    {
+      "slug": "digitization-impact-land-title-registration",
+      "oldUrl": "https://chamanlawfirm.com/digitization-impact-land-title-registration/",
+      "newUrl": "/resources/blog/digitization-impact-land-title-registration",
+      "title": "Impact of Digitization on Land Title Registration",
+      "imageAssetId": "image-8910081fa28ef07cf577cfcdeded519b48e39460-857x467-webp"
+    },
+    {
+      "slug": "legally-binding-contracts",
+      "oldUrl": "https://chamanlawfirm.com/legally-binding-contracts/",
+      "newUrl": "/resources/blog/legally-binding-contracts",
+      "title": "Legally Binding Contracts in Nigeria",
+      "imageAssetId": "image-a4b7497b9712ca8ce42afd14d41e3b29dfecb514-1024x512-webp"
+    }
+  ],
+  "keptHidden": [
+    {
+      "slug": "subcontracting-in-nigerian-construction-projects",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "rights-of-citizens-in-government-surveillance",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "corporate-finance-laws-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "first-aid-certificate-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "remedies-for-breach-of-maritime-contracts",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "the-impact-of-the-land-use-act-on-land-allocation-for-public-marketplaces-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "intellectual-property-rights",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "dealing-with-land-encroachment-in-ogun-state",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "hidden-costs-when-buying-land-in-lagos",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "the-central-bank-of-nigeria-in-debt-recovery",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "ways-nigerian-lawprotectstherightsofchildren",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "the-custody-of-a-child-under-nigerian-law",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "what-are-the-best-mechanism-in-recovery-of-debt",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "what-is-the-relationship-between-mining-activities-and-the-land-use-act",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-to-handle-land-encroachment-in-lagos",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "land-encumbrances-and-burdens-be-addressed",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "tax-clearance-in-lagos-for-property-sales",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "capital-gains-tax-a-step-by-step-guide",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "property-recovery-reclaim-your-rental-space",
+      "reason": "Possible eviction self-help language requires lawyer review."
+    },
+    {
+      "slug": "what-are-the-property-taxes-in-ogun-state",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "nigeria-visa-on-arrival-policy-eligibility",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "fast-track-your-probate-process-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "why-do-i-need-a-family-lawyer-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "consumer-contracts-and-guarantee",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "letter-of-administration-vs-grant-of-probate",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "effective-legal-framework-for-loan-recovery",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "child-education-and-religious-upbringing",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "process-probate-in-ogun-state-chaman-law-firm",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "how-long-does-a-title-search-take-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "how-do-i-process-probate-for-an-estate",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "10-proven-insights-into-tenancy-law-in-lago",
+      "reason": "Possible eviction self-help language requires lawyer review."
+    },
+    {
+      "slug": "termination-of-construction-contracts",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "steps-on-how-to-company-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "foreigners-visa-challenges-in-nigeria",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "invest-in-land-banking-or-developed-estates",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "key-differences-explained-deeds-chaman-law-firm",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "powerful-step-buying-family-land-in-lagos",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "the-role-of-real-estate-investment-trusts",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "5-ways-to-avoid-property-scam-in-nigeria",
+      "reason": "Disallowed Chaman Properties, luxury, casino, or off-brand signal detected."
+    },
+    {
+      "slug": "environmental-law-and-corporate",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "corporate-governance-failures-on-debt",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "available-remedies-in-civil-litigation",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    },
+    {
+      "slug": "matrimonial-reliefs-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "obtaining-land-titles-in-rural-areas",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "obtaining-letters-of-administration-in-ogun",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "what-are-the-implications-of-land-use-conversion-on-land-ownership-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "newblogpost-ztnezvare-non-resident-companies-liable-to-tax-in-nigeria",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "a-will-made-abroad-cover-property-in-ogun",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "why-is-lekki-the-best-location-for-luxury",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "ultimate-legal-guide-to-buying-land-in-niger",
+      "reason": "not in controlled approval subset"
+    }
+  ],
+  "files": {
+    "hiddenReviewPath": "docs/SPRINT-10O-HIDDEN-RISK-CLEANUP.csv",
+    "selectionCsvPath": "docs/SPRINT-10O-100-BLOG-RECOVERY-SELECTION.csv",
+    "imageMapPath": "docs/SPRINT-10O-IMAGE-RECOVERY-AND-REFRESH-MAP.csv",
+    "resultJsonPath": "docs/sprint10o/sprint10o-restoration-result.json"
+  }
+}
