@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-07-09T08:57:36.607Z",
+  "gscPagesRows": 1000,
+  "gscQueriesRows": 1000,
+  "gscLatestLocalTimestamp": "2026-06-20T14:22:24.000Z",
+  "bingCsvFound": false,
+  "staticPlanRows": 40,
+  "firstStaticBatchRows": 15,
+  "remainingPriorityRows": 80,
+  "implementedStaticRedirects": [
+    "/about-chaman-law-firm/ -> /about",
+    "/contact-for-legal-consultation/ -> /consultation",
+    "/how-to-verify-land-title-before-buying-land/ -> /practice-areas/property-real-estate-law/property-verification"
+  ]
+}

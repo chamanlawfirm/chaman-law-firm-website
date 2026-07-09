@@ -278,7 +278,10 @@ const deepLegacy404Redirects = [
   { source: "/can-a-minor-enter-into-a-valid-contract-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/family-property-and-right-of-individual-member-in-family-property", destination: "/resources/blog/family-property-and-right-of-individual-member-in-family-property" },
   { source: "/conditions-for-granting-injunctions-and-types-of-injunctions", destination: "/practice-areas/litigation-dispute-resolution" },
-  { source: "/how-to-verify-land-title-before-buying-land", destination: "/practice-areas/property-real-estate-law" },
+  {
+    source: "/how-to-verify-land-title-before-buying-land",
+    destination: "/practice-areas/property-real-estate-law/property-verification"
+  },
   { source: "/what-are-rights-of-women-to-inheritance-in-nigeria", destination: "/resources/blog/what-are-rights-of-women-to-inheritance-in-nigeria" },
   { source: "/communal-land-and-family-land", destination: "/resources/blog/communal-land-and-family-land" },
   { source: "/land-ownership-disputes-in-nigeria", destination: "/resources/blog/land-ownership-disputes-in-nigeria" },
@@ -396,6 +399,26 @@ const nextConfig = {
       {
         source: "/about-us",
         destination: "/about",
+        permanent: true
+      },
+      {
+        source: "/about-chaman-law-firm/",
+        destination: "/about",
+        permanent: true
+      },
+      {
+        source: "/about-chaman-law-firm",
+        destination: "/about",
+        permanent: true
+      },
+      {
+        source: "/contact-for-legal-consultation/",
+        destination: "/consultation",
+        permanent: true
+      },
+      {
+        source: "/contact-for-legal-consultation",
+        destination: "/consultation",
         permanent: true
       },
       {
