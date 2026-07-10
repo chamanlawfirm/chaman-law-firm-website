@@ -251,7 +251,17 @@ const sprint10qExactArticleRedirectSources = new Set([
   "/steps-to-understanding-financial-crimes",
   "/review-of-corporate-affairs-commission-share-capital-for-company-registration-in-nigeria",
   "/register-your-company-with-cac-in-nigeria",
-  "/obtain-a-certificate-of-occupancy-chaman-law"
+  "/obtain-a-certificate-of-occupancy-chaman-law",
+  "/ultimate-legal-guide-to-buying-land-in-niger",
+  "/managing-corporate-reputation",
+  "/land-registration-in-lagos",
+  "/what-property-taxes-must-i-pay-when-buying",
+  "/enhancing-nigerian-immigration-security-2",
+  "/challenge-a-fraudulent-probate-application",
+  "/corporate-debt-management-practices",
+  "/of-immigration-compliance-lawyers",
+  "/top-10-legal-mistakes-property-buyers-make-i",
+  "/debt-recovery-and-consumer-protection-laws"
 ]);
 
 const sprint10qExactArticleRedirects = [...sprint10qExactArticleRedirectSources].flatMap((source) => [
