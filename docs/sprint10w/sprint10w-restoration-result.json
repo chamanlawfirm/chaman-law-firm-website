@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-07-10T18:50:52.937Z",
+  "applied": true,
+  "approvedPublicPostCountBefore": 280,
+  "approvedPublicPostCountAfter": 282,
+  "hiddenDraftsReviewed": 300,
+  "selected": 3,
+  "draftsRecoveredOrRefreshed": 3,
+  "approvalCandidates": 2,
+  "approvalCandidateSlugs": [
+    {
+      "slug": "force-majeure-clauses-in-business-contracts",
+      "title": "Force Majeure Clauses in Business Contracts in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/force-majeure-clauses-in-business-contracts/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/Real-Estate-Contracts_-Key-Clauses-to-Watch-Out-For-768x768.webp",
+      "warnings": []
+    },
+    {
+      "slug": "3-proven-steps-on-how-to-rolve-land-disputes",
+      "title": "How to Resolve Land Disputes in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/3-proven-steps-on-how-to-rolve-land-disputes/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/US-Court-1-e1601547880697.jpg",
+      "warnings": []
+    }
+  ],
+  "approvedThisRun": [
+    {
+      "slug": "force-majeure-clauses-in-business-contracts",
+      "oldUrl": "https://chamanlawfirm.com/force-majeure-clauses-in-business-contracts/",
+      "newUrl": "/resources/blog/force-majeure-clauses-in-business-contracts",
+      "title": "Force Majeure Clauses in Business Contracts in Nigeria",
+      "imageAssetId": "image-29ed7049e2c3a25aad62752ad64d4097eff4fec9-768x768-webp"
+    },
+    {
+      "slug": "3-proven-steps-on-how-to-rolve-land-disputes",
+      "oldUrl": "https://chamanlawfirm.com/3-proven-steps-on-how-to-rolve-land-disputes/",
+      "newUrl": "/resources/blog/3-proven-steps-on-how-to-rolve-land-disputes",
+      "title": "How to Resolve Land Disputes in Nigeria",
+      "imageAssetId": "image-4f6cda9fcc4d36a333692e3585fc42575199f32d-727x450-jpg"
+    }
+  ],
+  "keptHidden": [
+    {
+      "slug": "land-documentation-excision-vs-gazette",
+      "reason": "Placeholder/plugin debris requires cleanup."
+    }
+  ],
+  "files": {
+    "hiddenReviewPath": "docs/SPRINT-10W-HIDDEN-RISK-CLEANUP.csv",
+    "selectionCsvPath": "docs/SPRINT-10W-HIDDEN-DRAFT-CLEANUP-SELECTION.csv",
+    "imageMapPath": "docs/SPRINT-10W-IMAGE-RECOVERY-AND-REFRESH-MAP.csv",
+    "resultJsonPath": "docs/sprint10w/sprint10w-restoration-result.json"
+  }
+}

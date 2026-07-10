@@ -268,7 +268,9 @@ const sprint10qExactArticleRedirectSources = new Set([
   "/can-a-foreigner-buy-property-chaman-law-firm",
   "/what-is-the-significan-and-titles-in-nigeria",
   "/what-you-need-to-know-when-buying-a-family-g",
-  "/evaluating-real-estate-investment-returns"
+  "/evaluating-real-estate-investment-returns",
+  "/force-majeure-clauses-in-business-contracts",
+  "/3-proven-steps-on-how-to-rolve-land-disputes"
 ]);
 
 const sprint10qExactArticleRedirects = [...sprint10qExactArticleRedirectSources].flatMap((source) => [
@@ -298,6 +300,10 @@ const deepLegacy404Redirects = [
   {
     source: "/how-to-verify-land-title-before-buying-land",
     destination: "/practice-areas/property-real-estate-law/property-verification"
+  },
+  {
+    source: "/documents-to-verify-before-buying-property",
+    destination: "/practice-areas/property-real-estate-law/property-due-diligence"
   },
   { source: "/what-are-rights-of-women-to-inheritance-in-nigeria", destination: "/resources/blog/what-are-rights-of-women-to-inheritance-in-nigeria" },
   { source: "/communal-land-and-family-land", destination: "/resources/blog/communal-land-and-family-land" },
