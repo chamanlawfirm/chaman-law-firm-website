@@ -39,6 +39,19 @@ The following Sprint 10W candidate remained hidden:
 
 Reason: placeholder/plugin debris still requires cleanup. It must not receive a redirect until it is approved, live, indexable, sitemap-included, and canonical-safe.
 
+## Author Governance Correction
+
+After live metadata verification, the two newly approved Sprint 10W public posts were patched in Sanity so their public author reference is:
+
+- `Charles Chukwuma Nkwoka, Esq.`
+
+Affected approved posts:
+
+- `force-majeure-clauses-in-business-contracts`
+- `3-proven-steps-on-how-to-rolve-land-disputes`
+
+No other article approval field was changed during this author-governance correction.
+
 ## Remaining Risks
 
 - Fresh post-launch GSC and Bing exports are still needed to confirm newly discovered 404s, indexing gaps, redirect errors, and crawl behavior.
