@@ -261,7 +261,14 @@ const sprint10qExactArticleRedirectSources = new Set([
   "/corporate-debt-management-practices",
   "/of-immigration-compliance-lawyers",
   "/top-10-legal-mistakes-property-buyers-make-i",
-  "/debt-recovery-and-consumer-protection-laws"
+  "/debt-recovery-and-consumer-protection-laws",
+  "/lekki-property-when-owner-dies-without-will",
+  "/risk-management-strategies-for-real-estate-investment-in-nigeria",
+  "/what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act",
+  "/can-a-foreigner-buy-property-chaman-law-firm",
+  "/what-is-the-significan-and-titles-in-nigeria",
+  "/what-you-need-to-know-when-buying-a-family-g",
+  "/evaluating-real-estate-investment-returns"
 ]);
 
 const sprint10qExactArticleRedirects = [...sprint10qExactArticleRedirectSources].flatMap((source) => [

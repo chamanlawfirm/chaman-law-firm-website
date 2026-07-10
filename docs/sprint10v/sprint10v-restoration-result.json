@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-07-10T17:52:53.430Z",
+  "applied": true,
+  "approvedPublicPostCountBefore": 273,
+  "approvedPublicPostCountAfter": 280,
+  "hiddenDraftsReviewed": 291,
+  "selected": 9,
+  "draftsRecoveredOrRefreshed": 9,
+  "approvalCandidates": 7,
+  "approvalCandidateSlugs": [
+    {
+      "slug": "lekki-property-when-owner-dies-without-will",
+      "title": "What Happens to Lekki Property When the Owner Dies Without a Will?",
+      "oldUrl": "https://chamanlawfirm.com/lekki-property-when-owner-dies-without-will/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2025/10/What-Happens-to-Lekki-Property-When-Owner-Dies-Without-Will-768x1152.png",
+      "warnings": []
+    },
+    {
+      "slug": "what-is-the-significan-and-titles-in-nigeria",
+      "title": "What Is the Significance of Land Titles in Nigeria?",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-significan-and-titles-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/c6a707_7596446342a340478ed04dbbff6b1369mv2.webp",
+      "warnings": []
+    },
+    {
+      "slug": "risk-management-strategies-for-real-estate-investment-in-nigeria",
+      "title": "Risk Management Strategies for Real Estate Investment in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/risk-management-strategies-for-real-estate-investment-in-nigeria/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Evaluating-Real-Estate-Investment-Returns-and-Performance-Metrics-in-Nigeria-768x456.webp",
+      "warnings": []
+    },
+    {
+      "slug": "what-you-need-to-know-when-buying-a-family-g",
+      "title": "What to Know When Buying Family Property in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-you-need-to-know-when-buying-a-family-g/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/12/real-estate-1.png",
+      "warnings": []
+    },
+    {
+      "slug": "can-a-foreigner-buy-property-chaman-law-firm",
+      "title": "Can a Foreigner Buy Property in Nigeria?",
+      "oldUrl": "https://chamanlawfirm.com/can-a-foreigner-buy-property-chaman-law-firm/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/05/real-estate-accommodation-property-investment-graphic-word-1170x694.jpg",
+      "warnings": []
+    },
+    {
+      "slug": "what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act",
+      "title": "Land Allocation for Agricultural Purposes Under the Land Use Act",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/What-is-the-Impact-of-Land-Titles-on-the-Allocation-of-Land-for-Cultural-Festivals-and-Events-768x456.webp",
+      "warnings": []
+    },
+    {
+      "slug": "evaluating-real-estate-investment-returns",
+      "title": "Evaluating Real Estate Investment Returns in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/evaluating-real-estate-investment-returns/",
+      "currentRedirectTarget": "",
+      "imageEntry": "./domains/chamanlawfirm.com/public_html/wp-content/uploads/2024/09/Evaluating-Real-Estate-Investment-Returns-and-Performance-Metrics-in-Nigeria-768x456.webp",
+      "warnings": []
+    }
+  ],
+  "approvedThisRun": [
+    {
+      "slug": "lekki-property-when-owner-dies-without-will",
+      "oldUrl": "https://chamanlawfirm.com/lekki-property-when-owner-dies-without-will/",
+      "newUrl": "/resources/blog/lekki-property-when-owner-dies-without-will",
+      "title": "What Happens to Lekki Property When the Owner Dies Without a Will?",
+      "imageAssetId": "image-c44900c84ed197e36a5b527f436e7c5ad996a8b4-768x1152-png"
+    },
+    {
+      "slug": "risk-management-strategies-for-real-estate-investment-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/risk-management-strategies-for-real-estate-investment-in-nigeria/",
+      "newUrl": "/resources/blog/risk-management-strategies-for-real-estate-investment-in-nigeria",
+      "title": "Risk Management Strategies for Real Estate Investment in Nigeria",
+      "imageAssetId": "image-51189d33439c7f97f443563a479d77655550e892-768x456-webp"
+    },
+    {
+      "slug": "what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act/",
+      "newUrl": "/resources/blog/what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act",
+      "title": "Land Allocation for Agricultural Purposes Under the Land Use Act",
+      "imageAssetId": "image-ed6efd375cb1bf358b5a47eec16ee8d808ef36d4-768x456-webp"
+    },
+    {
+      "slug": "can-a-foreigner-buy-property-chaman-law-firm",
+      "oldUrl": "https://chamanlawfirm.com/can-a-foreigner-buy-property-chaman-law-firm/",
+      "newUrl": "/resources/blog/can-a-foreigner-buy-property-chaman-law-firm",
+      "title": "Can a Foreigner Buy Property in Nigeria?",
+      "imageAssetId": "image-965451172a32c16a5c34e534c12fddc46919cdfd-1170x694-jpg"
+    },
+    {
+      "slug": "what-is-the-significan-and-titles-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-significan-and-titles-in-nigeria/",
+      "newUrl": "/resources/blog/what-is-the-significan-and-titles-in-nigeria",
+      "title": "What Is the Significance of Land Titles in Nigeria?",
+      "imageAssetId": "image-59d2e2f8f33658c3c7ce36a70c27ba748bd25322-568x324-webp"
+    },
+    {
+      "slug": "what-you-need-to-know-when-buying-a-family-g",
+      "oldUrl": "https://chamanlawfirm.com/what-you-need-to-know-when-buying-a-family-g/",
+      "newUrl": "/resources/blog/what-you-need-to-know-when-buying-a-family-g",
+      "title": "What to Know When Buying Family Property in Nigeria",
+      "imageAssetId": "image-960a67653ac1c2e96c1e4968e64551e97a9f4654-700x400-png"
+    },
+    {
+      "slug": "evaluating-real-estate-investment-returns",
+      "oldUrl": "https://chamanlawfirm.com/evaluating-real-estate-investment-returns/",
+      "newUrl": "/resources/blog/evaluating-real-estate-investment-returns",
+      "title": "Evaluating Real Estate Investment Returns in Nigeria",
+      "imageAssetId": "image-51189d33439c7f97f443563a479d77655550e892-768x456-webp"
+    }
+  ],
+  "keptHidden": [
+    {
+      "slug": "force-majeure-clauses-in-business-contracts",
+      "reason": "not in controlled approval subset"
+    },
+    {
+      "slug": "3-proven-steps-on-how-to-rolve-land-disputes",
+      "reason": "not in controlled approval subset"
+    }
+  ],
+  "files": {
+    "hiddenReviewPath": "docs/SPRINT-10V-HIDDEN-RISK-CLEANUP.csv",
+    "selectionCsvPath": "docs/SPRINT-10V-50-BLOG-RECOVERY-SELECTION.csv",
+    "imageMapPath": "docs/SPRINT-10V-IMAGE-RECOVERY-AND-REFRESH-MAP.csv",
+    "resultJsonPath": "docs/sprint10v/sprint10v-restoration-result.json"
+  }
+}
