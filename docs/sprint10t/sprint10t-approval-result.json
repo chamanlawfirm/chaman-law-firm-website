@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-07-10T06:42:38.459Z",
+  "applied": true,
+  "tokenDetected": true,
+  "tokenPrinted": false,
+  "publicPostCountBefore": 273,
+  "publicPostCountAfter": 273,
+  "repairedDraftsReviewed": 40,
+  "imagesAttachedOrReused": 24,
+  "approvedCount": 10,
+  "approved": [
+    {
+      "title": "Ultimate Legal Guide to Buying Land in Nigeria",
+      "slug": "ultimate-legal-guide-to-buying-land-in-niger",
+      "oldUrl": "https://chamanlawfirm.com/ultimate-legal-guide-to-buying-land-in-niger/",
+      "newUrl": "/resources/blog/ultimate-legal-guide-to-buying-land-in-niger",
+      "imageAssetId": "image-285e04967d6197375011fb35309ce3fb72bf98c2-309x163-jpg"
+    },
+    {
+      "title": "Managing Corporate Reputation",
+      "slug": "managing-corporate-reputation",
+      "oldUrl": "https://chamanlawfirm.com/managing-corporate-reputation/",
+      "newUrl": "/resources/blog/managing-corporate-reputation",
+      "imageAssetId": "image-d0988496c80382cfe1d55ed166aefa995986757a-335x150-jpg"
+    },
+    {
+      "title": "Land Registration In Lagos",
+      "slug": "land-registration-in-lagos",
+      "oldUrl": "https://chamanlawfirm.com/land-registration-in-lagos/",
+      "newUrl": "/resources/blog/land-registration-in-lagos",
+      "imageAssetId": "image-8910081fa28ef07cf577cfcdeded519b48e39460-857x467-webp"
+    },
+    {
+      "title": "Property Taxes to Consider When Buying Real Estate in Nigeria",
+      "slug": "what-property-taxes-must-i-pay-when-buying",
+      "oldUrl": "https://chamanlawfirm.com/what-property-taxes-must-i-pay-when-buying/",
+      "newUrl": "/resources/blog/what-property-taxes-must-i-pay-when-buying",
+      "imageAssetId": "image-a0e2887ad66f2e8bf860c938f716a49d4b16082b-768x456-png"
+    },
+    {
+      "title": "Enhancing Nigerian Immigration Security",
+      "slug": "enhancing-nigerian-immigration-security-2",
+      "oldUrl": "https://chamanlawfirm.com/enhancing-nigerian-immigration-security-2/",
+      "newUrl": "/resources/blog/enhancing-nigerian-immigration-security-2",
+      "imageAssetId": "image-2394540e4b59100ee6740cd7d3be2b2374f10c10-642x360-png"
+    },
+    {
+      "title": "Challenge A Fraudulent Probate Application",
+      "slug": "challenge-a-fraudulent-probate-application",
+      "oldUrl": "https://chamanlawfirm.com/challenge-a-fraudulent-probate-application/",
+      "newUrl": "/resources/blog/challenge-a-fraudulent-probate-application",
+      "imageAssetId": "image-ec775ce28d0d1505cd75305bc9063d1b51375e10-768x508-jpg"
+    },
+    {
+      "title": "Corporate Debt Management Practices",
+      "slug": "corporate-debt-management-practices",
+      "oldUrl": "https://chamanlawfirm.com/corporate-debt-management-practices/",
+      "newUrl": "/resources/blog/corporate-debt-management-practices",
+      "imageAssetId": "image-f4f09b743ce06f8754f50eb98cf3f13b800f2ecf-300x168-jpg"
+    },
+    {
+      "title": "Role of Immigration Compliance Lawyers in Nigeria",
+      "slug": "of-immigration-compliance-lawyers",
+      "oldUrl": "https://chamanlawfirm.com/of-immigration-compliance-lawyers/",
+      "newUrl": "/resources/blog/of-immigration-compliance-lawyers",
+      "imageAssetId": "image-a0eb1196a9301dcf7cad3c2bf7b17e54a70b267d-616x428-jpg"
+    },
+    {
+      "title": "Top Legal Mistakes Property Buyers Make in Nigeria",
+      "slug": "top-10-legal-mistakes-property-buyers-make-i",
+      "oldUrl": "https://chamanlawfirm.com/top-10-legal-mistakes-property-buyers-make-i/",
+      "newUrl": "/resources/blog/top-10-legal-mistakes-property-buyers-make-i",
+      "imageAssetId": "image-56ce0573737d49fc39b3b5fd3690c5b860de0e71-278x182-jpg"
+    },
+    {
+      "title": "Debt Recovery And Consumer Protection Laws",
+      "slug": "debt-recovery-and-consumer-protection-laws",
+      "oldUrl": "https://chamanlawfirm.com/debt-recovery-and-consumer-protection-laws/",
+      "newUrl": "/resources/blog/debt-recovery-and-consumer-protection-laws",
+      "imageAssetId": "image-ac9fce496edb5625a0e3b406ed6970a32e0348d5-293x172-png"
+    }
+  ],
+  "keptHidden": [
+    {
+      "title": "How To Start A Private Lending Company",
+      "slug": "how-to-start-a-private-lending-company",
+      "oldUrl": "https://chamanlawfirm.com/how-to-start-a-private-lending-company/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Lekki Property When Owner Dies Without Will",
+      "slug": "lekki-property-when-owner-dies-without-will",
+      "oldUrl": "https://chamanlawfirm.com/lekki-property-when-owner-dies-without-will/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Property Developers Guide To Tax Compliance",
+      "slug": "property-developers-guide-to-tax-compliance",
+      "oldUrl": "https://chamanlawfirm.com/property-developers-guide-to-tax-compliance/",
+      "reason": "off-brand/property-sales risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "How To Licence A Trademark In Nigeria",
+      "slug": "how-to-licence-a-trademark-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-licence-a-trademark-in-nigeria/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Top 10 Questions About Probate In Nigeria",
+      "slug": "top-10-questions-about-probate-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/top-10-questions-about-probate-in-nigeria/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "What Is The Significan And Titles In Nigeria",
+      "slug": "what-is-the-significan-and-titles-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-significan-and-titles-in-nigeria/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Real Estate And Property Law",
+      "slug": "real-estate-and-property-law",
+      "oldUrl": "https://chamanlawfirm.com/real-estate-and-property-law/",
+      "reason": "misleading free-service risk; not selected for Sprint 10T controlled batch; high - broad practice-area duplicate"
+    },
+    {
+      "title": "Breach Of Property Contracts In Lekki",
+      "slug": "breach-of-property-contracts-in-lekki",
+      "oldUrl": "https://chamanlawfirm.com/breach-of-property-contracts-in-lekki/",
+      "reason": "not selected for Sprint 10T controlled batch; high - overlaps approved breach/remedies article"
+    },
+    {
+      "title": "Risk Management Strategies For Real Estate Investment In Nigeria",
+      "slug": "risk-management-strategies-for-real-estate-investment-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/risk-management-strategies-for-real-estate-investment-in-nigeria/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Legally Terminate Shipping Contract In Nigeria",
+      "slug": "legally-terminate-shipping-contract-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-terminate-shipping-contract-in-nigeria/",
+      "reason": "plugin debris risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "What You Need To Know When Buying A Family G",
+      "slug": "what-you-need-to-know-when-buying-a-family-g",
+      "oldUrl": "https://chamanlawfirm.com/what-you-need-to-know-when-buying-a-family-g/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Can A Foreigner Buy Property",
+      "slug": "can-a-foreigner-buy-property-chaman-law-firm",
+      "oldUrl": "https://chamanlawfirm.com/can-a-foreigner-buy-property-chaman-law-firm/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Registering Property Titles In Nigeria",
+      "slug": "registering-property-titles-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/registering-property-titles-in-nigeria/",
+      "reason": "off-brand/property-sales risk; plugin debris risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Land Documentation Excision Vs Gazette",
+      "slug": "land-documentation-excision-vs-gazette",
+      "oldUrl": "https://chamanlawfirm.com/land-documentation-excision-vs-gazette/",
+      "reason": "plugin debris risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Consequences Of Defaulting On Property Tax",
+      "slug": "consequences-of-defaulting-on-property-tax",
+      "oldUrl": "https://chamanlawfirm.com/consequences-of-defaulting-on-property-tax/",
+      "reason": "off-brand/property-sales risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Setting Up A Fintech Company In Nigeria",
+      "slug": "setting-up-a-fintech-company-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/setting-up-a-fintech-company-in-nigeria/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Nigerian Shipping Contracts",
+      "slug": "nigerian-shipping-contracts",
+      "oldUrl": "https://chamanlawfirm.com/nigerian-shipping-contracts/",
+      "reason": "off-brand/property-sales risk; plugin debris risk; not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Land Valuation Under The Land Use Act",
+      "slug": "land-valuation-under-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/land-valuation-under-the-land-use-act/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "What Is The Process For Land Allocation For Agricultural Purposes Under The Land Use Act",
+      "slug": "what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/what-is-the-process-for-land-allocation-for-agricultural-purposes-under-the-land-use-act/",
+      "reason": "not selected for Sprint 10T controlled batch"
+    },
+    {
+      "title": "Acquire Land For Real Estate Development",
+      "slug": "acquire-land-for-real-estate-development",
+      "oldUrl": "https://chamanlawfirm.com/acquire-land-for-real-estate-development/",
+      "reason": "off-brand/property-sales risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Child Custody And Visitations Emergencies",
+      "slug": "child-custody-and-visitations-emergencies",
+      "oldUrl": "https://chamanlawfirm.com/child-custody-and-visitations-emergencies/",
+      "reason": "legal self-help/procedure risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Strategies For Preventing Corporate Collapse",
+      "slug": "strategies-for-preventing-corporate-collapse",
+      "oldUrl": "https://chamanlawfirm.com/strategies-for-preventing-corporate-collapse/",
+      "reason": "plugin debris risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Force Majeure Clauses In Business Contracts",
+      "slug": "force-majeure-clauses-in-business-contracts",
+      "oldUrl": "https://chamanlawfirm.com/force-majeure-clauses-in-business-contracts/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Evaluating Real Estate Investment Returns",
+      "slug": "evaluating-real-estate-investment-returns",
+      "oldUrl": "https://chamanlawfirm.com/evaluating-real-estate-investment-returns/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Protect Your Properties From Family Disputes",
+      "slug": "protect-your-properties-from-family-disputes",
+      "oldUrl": "https://chamanlawfirm.com/protect-your-properties-from-family-disputes/",
+      "reason": "off-brand/property-sales risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Notary Services",
+      "slug": "notary-services-chaman-law-firm",
+      "oldUrl": "https://chamanlawfirm.com/notary-services-chaman-law-firm/",
+      "reason": "misleading free-service risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "How Does The Land Use Act Affect Forest Reserves",
+      "slug": "how-does-the-land-use-act-affect-forest-reserves",
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-affect-forest-reserves/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "3 Proven Steps On How To Rolve Land Disputes",
+      "slug": "3-proven-steps-on-how-to-rolve-land-disputes",
+      "oldUrl": "https://chamanlawfirm.com/3-proven-steps-on-how-to-rolve-land-disputes/",
+      "reason": "not selected for Sprint 10T controlled batch; article-specific image missing"
+    },
+    {
+      "title": "Land Use Act In Nigeria",
+      "slug": "land-use-act-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-in-nigeria/",
+      "reason": "legal self-help/procedure risk; not selected for Sprint 10T controlled batch; article-specific image missing; high - overlaps existing Land Use Act article and has legal-risk flag"
+    },
+    {
+      "title": "Powerful Ways On Property Ownership In Nigeria",
+      "slug": "powerful-ways-on-property-ownership-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/powerful-ways-on-property-ownership-in-nigeria/",
+      "reason": "misleading free-service risk; not selected for Sprint 10T controlled batch; article-specific image missing"
+    }
+  ],
+  "files": {
+    "approvalReviewPath": "docs/SPRINT-10T-REPAIRED-DRAFT-APPROVAL-REVIEW.csv",
+    "imageMapOutPath": "docs/SPRINT-10T-IMAGE-RECOVERY-COMPLETION-MAP.csv",
+    "legalReviewPath": "docs/SPRINT-10T-LEGAL-CLEANUP-REVIEW.csv",
+    "resultJsonPath": "docs/sprint10t/sprint10t-approval-result.json"
+  }
+}
