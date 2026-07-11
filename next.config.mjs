@@ -30,7 +30,7 @@ const emergencyLegacyRedirects = [
   { source: "/family-law-lawyer-near-me", destination: "/practice-areas/family-law" },
   { source: "/get-the-top-legal-advice-from-experts-for-free", destination: "/consultation" },
   { source: "/top-legal-services", destination: "/consultation" },
-  { source: "/obtaining-a-certificate-of-occupancy-c-of-o", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/obtaining-a-certificate-of-occupancy-c-of-o", destination: "/resources/blog/how-do-i-obtain-a-certificate-of-occupancy" },
   { source: "/4-steps-on-how-to-deal-with-a-bad-landlordin", destination: "/resources/blog/4-steps-on-how-to-deal-with-a-bad-landlordin" },
   { source: "/joinder-of-parties-misjoinder-of-parties", destination: "/resources/blog/joinder-of-parties-misjoinder-of-parties" },
   { source: "/gain-nigerian-citizenship-by-marriage", destination: "/practice-areas/immigration-services" },

@@ -1,0 +1,13 @@
+slug,status,reason,next action
+abandonment-and-withdrew-of-court-action,kept hidden / no new approval,Already has a live approved article target and exact redirect; older hidden drafts remain duplicate records.,Do not approve duplicate drafts. Monitor live URL and sitemap only.
+rights-of-tenants-in-ogun-chaman-law-firm,kept hidden / no new approval,Already has a live approved public post; older hidden drafts remain duplicate records.,Do not approve duplicate drafts.
+certificate-of-occupancy-in-rivers-state,kept hidden / no new approval,Already has a live approved public post; older hidden drafts remain duplicate records.,Do not approve duplicate drafts.
+how-to-calculate-stamp-duty-chaman-law-firm,kept hidden / no new approval,Live target exists; hidden copies include category/version inconsistencies and require current stamp-duty review before any replacement.,Keep current live target; lawyer review before future edits.
+property-how-to-place-a-caveat,kept hidden,Hidden drafts have image and metadata but wrong category mapping to probate and need title/meta cleanup.,Repair category to Property and Real Estate Law and review caveat procedure before approval.
+can-a-landlord-increase-rent-arbitrarily-in-ogun,kept hidden,Wrong category mapping to probate and tenancy-law wording requires legal review.,Repair category and confirm Ogun tenancy-law wording before approval.
+land-grabbing-the-legal-consequences-of,kept hidden,Body is thin and category mapping is wrong in repaired drafts.,Recover fuller source body and remap to Property and Real Estate Law before approval.
+challenges-of-implementing-the-land-use-act,kept hidden,Potential duplicate/cannibalization with existing Land Use Act content.,Decide pillar-vs-merge architecture before approval.
+can-a-minor-enter-into-a-valid-contract-in-nigeria,kept hidden,Some drafts include old brand/placeholder-like "OUR STORY" content and title formatting needs cleanup.,Rewrite title/body intro and confirm contract capacity wording before approval.
+void-and-voidable-marriages-in-nigeria,kept hidden,Family-law sensitivity and meta description needs polish.,Lawyer review required before approval.
+the-role-of-family-court-in-relation-to-child-protect-in-nigeria,kept hidden,Child/family-law sensitivity and title cleanup required.,Lawyer review required before approval.
+how-do-i-obtain-a-certificate-of-occupancy,kept public as existing article; no hidden approval,Live article already returns 200 and is sitemap-included.,Used as exact-intent target for Sprint 10Y C of O redirect refinement.
