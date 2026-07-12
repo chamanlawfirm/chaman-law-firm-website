@@ -395,6 +395,28 @@ const deepLegacy404Redirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11dStaticAuthorityRedirects = [
+  { source: "/charles-chukwuma-nkwoka", destination: "/lawyers/charles-chukwuma-nkwoka" },
+  { source: "/governors-consent", destination: "/practice-areas/property-real-estate-law/governors-consent" },
+  { source: "/duration-to-get-governors-consent", destination: "/practice-areas/property-real-estate-law/governors-consent" },
+  { source: "/how-to-apply-and-get-a-governors-consent", destination: "/practice-areas/property-real-estate-law/governors-consent" },
+  { source: "/why-is-governors-consent-compulsory", destination: "/practice-areas/property-real-estate-law/governors-consent" },
+  { source: "/governors-consent-how-long-does-it-take", destination: "/practice-areas/property-real-estate-law/governors-consent" },
+  { source: "/labour-relations-and-employment-law", destination: "/practice-areas/employment-law" },
+  { source: "/labour-relations-in-nigerian-construction", destination: "/practice-areas/employment-law" },
+  { source: "/employment-disputes-and-grievances", destination: "/practice-areas/employment-law" },
+  { source: "/notary-services-chaman-law-firm", destination: "/practice-areas/notary-public-services" },
+  { source: "/nigerian-visa-requirements-and-legal-guide", destination: "/practice-areas/immigration-services" },
+  { source: "/startup-legal-services-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/banking-and-finance-law-in-lagos", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/roles-of-a-mediator", destination: "/practice-areas/adr-mediation" },
+  { source: "/enforcement-of-arbitral-awards", destination: "/practice-areas/adr-mediation" },
+  { source: "/gallery", destination: "/media" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -505,6 +527,7 @@ const nextConfig = {
       ...sprint10oExactArticleRedirects,
       ...sprint10qExactArticleRedirects,
       ...deepLegacy404Redirects,
+      ...sprint11dStaticAuthorityRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
