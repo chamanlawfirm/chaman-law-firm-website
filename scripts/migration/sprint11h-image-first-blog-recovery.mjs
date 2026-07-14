@@ -6,7 +6,7 @@ const SITE_URL = "https://chamanlawfirm.com";
 const PROJECT_ID = "eeuefmhu";
 const DATASET = "production";
 const API_VERSION = "2026-05-17";
-const AUTHOR_ID = "author.charles-chukwuma-nkwoka";
+const AUTHOR_ID = "author-charles-chukwuma-nkwoka";
 const AUTHOR_NAME = "Charles Chukwuma Nkwoka, Esq.";
 const PUBLIC_PREFIX = "chamanlawfirm-sprint11h-";
 
@@ -554,6 +554,8 @@ async function main() {
   const legalRows = [];
   const metadataRows = [];
   const approvalRows = [];
+  const deduplicatedPublicDocs = [];
+  const remainingDuplicatePublicDocs = [];
 
   if (shouldApply) {
     await client.createIfNotExists({
@@ -562,30 +564,51 @@ async function main() {
       name: AUTHOR_NAME,
       slug: { _type: "slug", current: "charles-chukwuma-nkwoka" }
     });
+    await client.patch(AUTHOR_ID).set({
+      name: AUTHOR_NAME,
+      slug: { _type: "slug", current: "charles-chukwuma-nkwoka" }
+    }).commit();
   }
 
   for (const row of blogRows) {
     const docs = docsBySlug.get(row.slug) || [];
     const { hidden, publicDoc } = chooseSourceDoc(docs);
-    const sourceDoc = hidden || publicDoc;
+    const sprint11hPublicDoc = docs.find((doc) => doc._id === `${PUBLIC_PREFIX}${row.slug}` && doc.lawFirmApproved === true);
+    const sourceDoc = hidden || sprint11hPublicDoc || publicDoc;
     const title = titleFor(row.slug, sourceDoc?.title || row.title);
     const rawText = bodyText(sourceDoc?.body || []);
     const textRisks = detectTextRisks(`${row.slug} ${title} ${rawText}`);
     const selected = controlledApprovalSlugs.has(row.slug);
-    const blockers = approvalBlockers({
-      row,
-      doc: hidden,
-      selected,
-      textRisks,
-      body: sourceDoc?.body || [],
-      imageAssetCounts
-    });
-    const canApprove = selected && blockers.length === 0;
+    const blockers = sprint11hPublicDoc
+      ? []
+      : approvalBlockers({
+          row,
+          doc: hidden,
+          selected,
+          textRisks,
+          body: sourceDoc?.body || [],
+          imageAssetCounts
+        });
+    const canApprove = selected && (Boolean(sprint11hPublicDoc) || blockers.length === 0);
     const legalRisk = legalRiskFor(row.slug, title, rawText);
     const targetPath = `/resources/blog/${row.slug}`;
     const targetUrl = absoluteUrl(targetPath);
 
-    if (canApprove && shouldApply) {
+    if (sprint11hPublicDoc) {
+      if (shouldApply) {
+        await client.patch(sprint11hPublicDoc._id).set({
+          author: { _type: "reference", _ref: AUTHOR_ID },
+          lawFirmApproved: true
+        }).commit();
+      }
+      approved.push({
+        slug: row.slug,
+        title: titleFor(row.slug, sprint11hPublicDoc.title || row.title),
+        oldUrl: row["old URL"],
+        targetPath,
+        targetUrl
+      });
+    } else if (canApprove && shouldApply) {
       const approvedDoc = buildApprovedDoc(hidden, row);
       await client.createOrReplace(approvedDoc);
       await client.patch(hidden._id).set({
@@ -593,7 +616,7 @@ async function main() {
         author: { _type: "reference", _ref: AUTHOR_ID },
         mainImage: approvedDoc.mainImage,
         seo: approvedDoc.seo,
-        lawFirmApproved: true
+        lawFirmApproved: hidden._id.startsWith("drafts.") ? true : false
       }).commit({ autoGenerateArrayKeys: true });
       approved.push({
         slug: row.slug,
@@ -687,6 +710,27 @@ async function main() {
       "redirect status": canApprove ? "ready for exact redirect after target is live and sitemap-included" : "not eligible",
       notes: blockers.join("; ")
     });
+  }
+
+  if (shouldApply && approved.length) {
+    const approvedSlugs = approved.map((item) => item.slug);
+    const approvedIds = new Set(approved.map((item) => `${PUBLIC_PREFIX}${item.slug}`));
+    const approvedPublicDocs = await client.fetch(
+      `*[_type == "post" && slug.current in $slugs && lawFirmApproved == true && !(_id in path("drafts.**"))]{_id,"slug":slug.current}`,
+      { slugs: approvedSlugs }
+    );
+    const duplicatePublicDocs = approvedPublicDocs.filter((doc) => !approvedIds.has(doc._id));
+    for (const doc of duplicatePublicDocs) {
+      await client.patch(doc._id).set({ lawFirmApproved: false }).commit();
+      deduplicatedPublicDocs.push(doc);
+    }
+    const remainingApprovedPublicDocs = await client.fetch(
+      `*[_type == "post" && slug.current in $slugs && lawFirmApproved == true && !(_id in path("drafts.**"))]{_id,"slug":slug.current}`,
+      { slugs: approvedSlugs }
+    );
+    remainingDuplicatePublicDocs.push(
+      ...remainingApprovedPublicDocs.filter((doc) => !approvedIds.has(doc._id))
+    );
   }
 
   const staticContinuationRows = staticRows.slice(10, 20).map((row, index) => {
@@ -912,6 +956,8 @@ Generated: 2026-07-14
         controlledApprovalSlugs: [...controlledApprovalSlugs],
         approvedCount: approved.length,
         approved,
+        deduplicatedPublicDocs,
+        remainingDuplicatePublicDocs,
         keptHiddenCount: keptHidden.length,
         keptHidden,
         staticContinuationRows: staticContinuationRows.length,
@@ -938,6 +984,8 @@ Generated: 2026-07-14
     selectedForControlledApproval: controlledApprovalSlugs.size,
     approvedCount: approved.length,
     approvedSlugs: approved.map((item) => item.slug),
+    deduplicatedPublicDocs,
+    remainingDuplicatePublicDocs,
     keptHiddenCount: keptHidden.length,
     redirectRows: redirectRows.length,
     sitemapStatus: sitemap.status,
