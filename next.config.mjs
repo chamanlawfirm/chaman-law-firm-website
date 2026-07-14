@@ -435,6 +435,25 @@ const sprint11eStaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11fStaticAuthorityRedirects = [
+  { source: "/how-to-register-a-business-name-in-nigeria-2024", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/requirements-for-starting-a-business-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/employment-law-7-compliance-for-nigerian", destination: "/practice-areas/employment-law" },
+  { source: "/how-to-draft-legal-contract", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/trademark-classes-in-nigeria-a-strategic-legal-guide-for-businesses", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/enforcement-of-arbitral-award", destination: "/practice-areas/adr-mediation" },
+  { source: "/how-to-obtain-letter-of-administration-in-nigeria", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/impact-of-regulatory-changes-on-business", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/corporate-governance-and-ethical-responsibility", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/impact-of-trade-policies-on-nigerian-business", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/corporate-affairs-commission-and-its-functions-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/proven-steps-qualities-of-good-mediator", destination: "/practice-areas/adr-mediation" },
+  { source: "/regulations-understanding-of-nigerian-employment", destination: "/practice-areas/employment-law" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -547,6 +566,7 @@ const nextConfig = {
       ...deepLegacy404Redirects,
       ...sprint11dStaticAuthorityRedirects,
       ...sprint11eStaticAuthorityRedirects,
+      ...sprint11fStaticAuthorityRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
