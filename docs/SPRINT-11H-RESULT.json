@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-07-14T21:15:27.156Z",
+  "applied": true,
+  "tokenDetected": true,
+  "tokenPrinted": false,
+  "blogCandidatesReviewed": 50,
+  "controlledApprovalSlugs": [
+    "the-duties-of-lawyers-to-client",
+    "legal-implications-of-joint-property",
+    "land-registration-system-in-nigeria",
+    "landlords-and-tenants-in-nigeria",
+    "expert-witnesses-in-nigeria-court-proceeding",
+    "challenges-of-implementing-the-land-use-act",
+    "land-use-act-and-land-tenure-systems"
+  ],
+  "approvedCount": 2,
+  "approved": [
+    {
+      "slug": "the-duties-of-lawyers-to-client",
+      "title": "Duties of Lawyers to Clients in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-duties-of-lawyers-to-client",
+      "targetPath": "/resources/blog/the-duties-of-lawyers-to-client",
+      "targetUrl": "https://chamanlawfirm.com/resources/blog/the-duties-of-lawyers-to-client"
+    },
+    {
+      "slug": "land-use-act-and-land-tenure-systems",
+      "title": "Land Use Act and Land Tenure Systems in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-and-land-tenure-systems",
+      "targetPath": "/resources/blog/land-use-act-and-land-tenure-systems",
+      "targetUrl": "https://chamanlawfirm.com/resources/blog/land-use-act-and-land-tenure-systems"
+    }
+  ],
+  "keptHiddenCount": 48,
+  "keptHidden": [
+    {
+      "slug": "obtaining-a-certificate-of-occupancy-c-of-o",
+      "title": "REQUIREMENTS FOR OBTAINING A CERTIFICATE OF OCCUPANCY (CofO) IN NIGERIA (LAGOS AND OGUN STATE)",
+      "oldUrl": "https://chamanlawfirm.com/obtaining-a-certificate-of-occupancy-c-of-o",
+      "reason": "not selected for Sprint 11H controlled approval batch; body too short or missing; featured image missing; alt text missing/review needed; high - likely duplicate/cannibalization risk"
+    },
+    {
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "title": "THE CONCEPT OF RULE OF LAW IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-rule-of-law-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; overpromising; high - likely duplicate/cannibalization risk"
+    },
+    {
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "title": "How To Change Car Ownership In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-change-car-ownership-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "title": "How To Track A Stolen Phone In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-track-a-stolen-phone-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "list-of-government-agencies-of-nigeria",
+      "title": "List Of Government Agencies Of Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/list-of-government-agencies-of-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "title": "Apply For Drivers Licence In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/apply-for-drivers-licence-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "title": "Steps On How To Confidently Report Acrimelaw",
+      "oldUrl": "https://chamanlawfirm.com/steps-on-how-to-confidently-report-acrimelaw",
+      "reason": "not selected for Sprint 11H controlled approval batch; high - lawyer review required before approval"
+    },
+    {
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "title": "THE OVERALL LIST OF FEDERAL LAWS IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/the-overall-list-of-federal-laws-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; body too short or missing; internal link missing; high - likely duplicate/cannibalization risk"
+    },
+    {
+      "slug": "what-are-the-sources-of-nigerian-law",
+      "title": "What Are The Sources Of Nigerian Law",
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-sources-of-nigerian-law",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "duties-of-correctional-institutions-in-nigeria",
+      "title": "Duties Of Correctional Institutions In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/duties-of-correctional-institutions-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "the-role-of-technology-in-nigerian-education",
+      "title": "The Role Of Technology In Nigerian Education",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-technology-in-nigerian-education",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "title": "What is Stamping and Up-Stamping of a Mortgage Document",
+      "oldUrl": "https://chamanlawfirm.com/stamping-and-up-stamping-of-a-mortgage-document",
+      "reason": "not selected for Sprint 11H controlled approval batch; featured image missing; alt text missing/review needed"
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "title": "How To Apply For Certificate Of Good Conduct In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "the-nigerian-legal-system",
+      "title": "The Nigerian Legal System",
+      "oldUrl": "https://chamanlawfirm.com/the-nigerian-legal-system",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "nigeria-prohibited-items-list",
+      "title": "Nigeria Prohibited Items List",
+      "oldUrl": "https://chamanlawfirm.com/nigeria-prohibited-items-list",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "legal-implications-of-joint-property",
+      "title": "Legal Implications of Joint Property Ownership in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-implications-of-joint-property",
+      "reason": "featured image missing; alt text missing/review needed; property-sales/luxury wording; high - lawyer review required before approval"
+    },
+    {
+      "slug": "how-to-obtain-tax-clearance-certificate",
+      "title": "How To Obtain Tax Clearance Certificate",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-tax-clearance-certificate",
+      "reason": "not selected for Sprint 11H controlled approval batch"
+    },
+    {
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "title": "Laspppa What It Is And Why It Matters In Lagos",
+      "oldUrl": "https://chamanlawfirm.com/laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "land-registration-system-in-nigeria",
+      "title": "Land Registration System in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-registration-system-in-nigeria",
+      "reason": "body too short or missing"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "title": "Land Use Act 1978",
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-1978",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing; high - likely duplicate/cannibalization risk"
+    },
+    {
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "title": "The Concept Of Restitution Of Conjugal Rights",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-restitution-of-conjugal-rights",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "5-lis-pendens-understanding-the-doctrine",
+      "title": "5 Lis Pendens Understanding The Doctrine",
+      "oldUrl": "https://chamanlawfirm.com/5-lis-pendens-understanding-the-doctrine",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "title": "Lagos Tenancy Fixed And Periodic Tenancies",
+      "oldUrl": "https://chamanlawfirm.com/lagos-tenancy-fixed-and-periodic-tenancies",
+      "reason": "not selected for Sprint 11H controlled approval batch; featured image missing; alt text missing/review needed; internal link missing; unsafe self-help wording; high - lawyer review required before approval; high - likely duplicate/cannibalization risk"
+    },
+    {
+      "slug": "enforcing-fundamental-human-right",
+      "title": "Enforcing Fundamental Human Right",
+      "oldUrl": "https://chamanlawfirm.com/enforcing-fundamental-human-right",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "landlords-and-tenants-in-nigeria",
+      "title": "Landlords and Tenants in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/landlords-and-tenants-in-nigeria",
+      "reason": "property-sales/luxury wording; unsafe self-help wording; high - lawyer review required before approval"
+    },
+    {
+      "slug": "proven-steps-the-canons-of-interpretation",
+      "title": "Proven Steps The Canons Of Interpretation",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-the-canons-of-interpretation",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "title": "How To File A Lawsuit In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-file-a-lawsuit-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "title": "Rights Of A Property Owner In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-a-property-owner-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "title": "Expert Witnesses in Nigerian Court Proceedings",
+      "oldUrl": "https://chamanlawfirm.com/expert-witnesses-in-nigeria-court-proceeding",
+      "reason": "high - lawyer review required before approval"
+    },
+    {
+      "slug": "maxims-of-equity",
+      "title": "Maxims Of Equity",
+      "oldUrl": "https://chamanlawfirm.com/maxims-of-equity",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "revocation-of-power-of-attorney",
+      "title": "Revocation Of Power Of Attorney",
+      "oldUrl": "https://chamanlawfirm.com/revocation-of-power-of-attorney",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "deed-of-partition-in-nigeria",
+      "title": "Deed Of Partition In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/deed-of-partition-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; featured image missing; alt text missing/review needed"
+    },
+    {
+      "slug": "the-role-of-regulatory-bodies",
+      "title": "The Role Of Regulatory Bodies",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-regulatory-bodies",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "title": "How To Calculate And Pay Land Use Charge",
+      "oldUrl": "https://chamanlawfirm.com/how-to-calculate-and-pay-land-use-charge",
+      "reason": "not selected for Sprint 11H controlled approval batch; internal link missing"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "title": "Of The Securities And Exchange Commission",
+      "oldUrl": "https://chamanlawfirm.com/of-the-securities-and-exchange-commission",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "digital-evidence-admissibility-in-nigeria",
+      "title": "Digital Evidence Admissibility In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/digital-evidence-admissibility-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "title": "Doctrine Of Ultra Vires",
+      "oldUrl": "https://chamanlawfirm.com/doctrine-of-ultra-vires",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "title": "Board Of Directors In Nigerian Companies",
+      "oldUrl": "https://chamanlawfirm.com/board-of-directors-in-nigerian-companies",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "pohistory-of-legal-profession-in-nigeria",
+      "title": "HISTORY OF LEGAL PROFESSION IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/pohistory-of-legal-profession-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; featured image missing; alt text missing/review needed; high - lawyer review required before approval"
+    },
+    {
+      "slug": "can-a-member-be-expelled-from-a-trade-union",
+      "title": "Can A Member Be Expelled From A Trade Union",
+      "oldUrl": "https://chamanlawfirm.com/can-a-member-be-expelled-from-a-trade-union",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "title": "Selling A Family Land Without Everyones Consent",
+      "oldUrl": "https://chamanlawfirm.com/selling-a-family-land-without-everyones-consent",
+      "reason": "not selected for Sprint 11H controlled approval batch; featured image missing; alt text missing/review needed; internal link missing; high - lawyer review required before approval"
+    },
+    {
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "title": "Challenges of Implementing the Land Use Act in Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/challenges-of-implementing-the-land-use-act",
+      "reason": "high - lawyer review required before approval"
+    },
+    {
+      "slug": "international-law-in-conflict-resolution",
+      "title": "International Law In Conflict Resolution",
+      "oldUrl": "https://chamanlawfirm.com/international-law-in-conflict-resolution",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "title": "Powerful Steps Who Is Mercantile Agent",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-who-is-mercantile-agent",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "title": "Rights Of Parties To A Mortgage",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-parties-to-a-mortgage",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "powerful-steps-nimasacertificate",
+      "title": "Powerful Steps Nimasacertificate",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-nimasacertificate",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    },
+    {
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "title": "Legally Combat Police Harassment In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-combat-police-harassment-in-nigeria",
+      "reason": "not selected for Sprint 11H controlled approval batch; overpromising; high - lawyer review required before approval"
+    },
+    {
+      "slug": "employers-vicarious-liability",
+      "title": "Employers Vicarious Liability",
+      "oldUrl": "https://chamanlawfirm.com/employers-vicarious-liability",
+      "reason": "not selected for Sprint 11H controlled approval batch; hidden/unapproved Sanity source document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing/review needed; category/practice relationship missing; SEO title missing; meta description missing; internal link missing"
+    }
+  ],
+  "staticContinuationRows": 10,
+  "redirectRows": 2,
+  "coreStatus": {
+    "homepage": 200,
+    "www": 308,
+    "blog": 200,
+    "sitemap": 200,
+    "robots": 200
+  },
+  "files": {
+    "blogBatch": "docs\\SPRINT-11G-BLOG-RECOVERY-BATCH.csv",
+    "staticBatch": "docs\\SPRINT-11G-STATIC-SERVICE-RESTORATION-BATCH.csv",
+    "nextConfig": "next.config.mjs",
+    "freshEvidence": "docs\\SPRINT-11H-FRESH-SEARCH-EVIDENCE-STATUS.md",
+    "imageRecovery": "docs\\SPRINT-11H-IMAGE-FIRST-BLOG-RECOVERY.csv",
+    "legalReview": "docs\\SPRINT-11H-LEGAL-CURRENT-LAW-REVIEW.csv",
+    "metadataCompletion": "docs\\SPRINT-11H-METADATA-LINKING-AEO-GEO-COMPLETION.csv",
+    "approvalBatch": "docs\\SPRINT-11H-BLOG-APPROVAL-BATCH.csv",
+    "staticContinuation": "docs\\SPRINT-11H-STATIC-SERVICE-AUTHORITY-CONTINUATION.csv",
+    "redirectBatch": "docs\\SPRINT-11H-REDIRECT-ACTIVATION-BATCH.csv",
+    "report": "docs\\SPRINT-11H-IMAGE-FIRST-BLOG-RECOVERY-REPORT.md",
+    "resultJson": "docs\\SPRINT-11H-RESULT.json"
+  }
+}

@@ -470,6 +470,16 @@ const sprint11gStaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11hExactArticleRedirectSources = new Set([
+  "/the-duties-of-lawyers-to-client",
+  "/land-use-act-and-land-tenure-systems"
+]);
+
+const sprint11hExactArticleRedirects = [...sprint11hExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -584,6 +594,7 @@ const nextConfig = {
       ...sprint11eStaticAuthorityRedirects,
       ...sprint11fStaticAuthorityRedirects,
       ...sprint11gStaticAuthorityRedirects,
+      ...sprint11hExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
