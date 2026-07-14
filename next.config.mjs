@@ -454,6 +454,22 @@ const sprint11fStaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11gStaticAuthorityRedirects = [
+  { source: "/who-can-be-a-notary-public", destination: "/practice-areas/notary-public-services" },
+  { source: "/corporate-affairs-commission-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/7-step-citizenship-application-in-nigeria", destination: "/practice-areas/immigration-services" },
+  { source: "/registering-a-private-security-company", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/how-to-open-a-company-bank-account-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/corporate-governance-challenges-in-companies", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/registration-of-a-money-lending-company", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/how-to-increase-a-company-share", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/4-proven-steps-on-how-to-enforce-a-contract", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/corporate-governance-and-business-ethics", destination: "/practice-areas/corporate-commercial-law" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -567,6 +583,7 @@ const nextConfig = {
       ...sprint11dStaticAuthorityRedirects,
       ...sprint11eStaticAuthorityRedirects,
       ...sprint11fStaticAuthorityRedirects,
+      ...sprint11gStaticAuthorityRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
