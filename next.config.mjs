@@ -417,6 +417,24 @@ const sprint11dStaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11eStaticAuthorityRedirects = [
+  { source: "/documents-apostilled-in-nigeria", destination: "/practice-areas/notary-public-services" },
+  { source: "/letter-of-administration-in-ogun-state", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/how-to-legalize-or-attest-a-document-in-nigeria", destination: "/practice-areas/notary-public-services" },
+  { source: "/role-of-shareholder-in-corporate-decision-making", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/how-to-apply-for-letter-of-administration", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/appointment-of-arbitrators-in-nigeria", destination: "/practice-areas/adr-mediation" },
+  { source: "/rules-and-regulations-of-doing-business-in-niger", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/obtain-letter-of-administration", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/poven-steps-on-what-are-the-stages-of-mediation", destination: "/practice-areas/adr-mediation" },
+  { source: "/when-is-summary-dismissal-appropriate-in-nigeria-labour-law", destination: "/practice-areas/employment-law" },
+  { source: "/labour-and-employment-law-in-nigeria", destination: "/practice-areas/employment-law" },
+  { source: "/secure-governors-consent-in-ikoyi", destination: "/practice-areas/property-real-estate-law/governors-consent" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -528,6 +546,7 @@ const nextConfig = {
       ...sprint10qExactArticleRedirects,
       ...deepLegacy404Redirects,
       ...sprint11dStaticAuthorityRedirects,
+      ...sprint11eStaticAuthorityRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
