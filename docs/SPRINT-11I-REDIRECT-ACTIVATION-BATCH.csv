@@ -1,0 +1,2 @@
+old URL,old source path,new URL,new target path,redirect type,activation status,sitemap status,notes
+https://chamanlawfirm.com/deed-of-partition-in-nigeria,/deed-of-partition-in-nigeria,https://chamanlawfirm.com/resources/blog/deed-of-partition-in-nigeria,/resources/blog/deed-of-partition-in-nigeria,one-hop 308,selected for next.config.mjs activation after code patch/deploy,verify after production deploy/cache refresh,Activate only after public target returns 200 and appears in sitemap.
