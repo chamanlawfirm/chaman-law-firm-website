@@ -1,0 +1,275 @@
+{
+  "result": {
+    "applied": true,
+    "tokenDetected": true,
+    "tokenPrinted": false,
+    "recoveredHiddenCandidatesReviewed": 49,
+    "approvedCount": 4,
+    "approvedSlugs": [
+      "what-are-the-sources-of-nigerian-law",
+      "maxims-of-equity",
+      "the-role-of-regulatory-bodies",
+      "pohistory-of-legal-profession-in-nigeria"
+    ],
+    "keptHiddenCount": 45,
+    "patchesApplied": 4,
+    "staticRowsReviewed": 10,
+    "redirectRows": 4,
+    "approvedPublicPostsAfterApply": 288,
+    "sitemapStatus": 200,
+    "robotsStatus": 200
+  },
+  "approved": [
+    {
+      "slug": "what-are-the-sources-of-nigerian-law",
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-sources-of-nigerian-law",
+      "target": "https://chamanlawfirm.com/resources/blog/what-are-the-sources-of-nigerian-law",
+      "title": "What Are the Sources of Nigerian Law?"
+    },
+    {
+      "slug": "maxims-of-equity",
+      "oldUrl": "https://chamanlawfirm.com/maxims-of-equity",
+      "target": "https://chamanlawfirm.com/resources/blog/maxims-of-equity",
+      "title": "Maxims of Equity in Nigerian Legal Practice"
+    },
+    {
+      "slug": "the-role-of-regulatory-bodies",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-regulatory-bodies",
+      "target": "https://chamanlawfirm.com/resources/blog/the-role-of-regulatory-bodies",
+      "title": "The Role of Regulatory Bodies in Nigeria"
+    },
+    {
+      "slug": "pohistory-of-legal-profession-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/pohistory-of-legal-profession-in-nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/pohistory-of-legal-profession-in-nigeria",
+      "title": "History of the Legal Profession in Nigeria"
+    }
+  ],
+  "hidden": [
+    {
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-rule-of-law-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; high legal-risk flag; duplicate/thin-content flag; overpromising/editorial hype"
+    },
+    {
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-change-car-ownership-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-track-a-stolen-phone-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; high legal-risk flag; overpromising/editorial hype"
+    },
+    {
+      "slug": "list-of-government-agencies-of-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/list-of-government-agencies-of-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; internal links missing"
+    },
+    {
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/apply-for-drivers-licence-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "oldUrl": "https://chamanlawfirm.com/steps-on-how-to-confidently-report-acrimelaw",
+      "reason": "not in Sprint 11L low-risk controlled subset; high legal-risk flag"
+    },
+    {
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/the-overall-list-of-federal-laws-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; body too short; consultation CTA missing; internal links missing; high legal-risk flag; duplicate/thin-content flag"
+    },
+    {
+      "slug": "duties-of-correctional-institutions-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/duties-of-correctional-institutions-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; misleading free-service wording; high legal-risk flag"
+    },
+    {
+      "slug": "the-role-of-technology-in-nigerian-education",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-technology-in-nigerian-education",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; off-brand/property-sales wording; overpromising/editorial hype"
+    },
+    {
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "oldUrl": "https://chamanlawfirm.com/stamping-and-up-stamping-of-a-mortgage-document",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "the-nigerian-legal-system",
+      "oldUrl": "https://chamanlawfirm.com/the-nigerian-legal-system",
+      "reason": "overpromising/editorial hype"
+    },
+    {
+      "slug": "nigeria-prohibited-items-list",
+      "oldUrl": "https://chamanlawfirm.com/nigeria-prohibited-items-list",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; overpromising/editorial hype"
+    },
+    {
+      "slug": "legal-implications-of-joint-property",
+      "oldUrl": "https://chamanlawfirm.com/legal-implications-of-joint-property",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; off-brand/property-sales wording"
+    },
+    {
+      "slug": "how-to-obtain-tax-clearance-certificate",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-tax-clearance-certificate",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "oldUrl": "https://chamanlawfirm.com/laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "land-registration-system-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-registration-system-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-1978",
+      "reason": "not in Sprint 11L low-risk controlled subset; high legal-risk flag; duplicate/thin-content flag; overpromising/editorial hype"
+    },
+    {
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-restitution-of-conjugal-rights",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; high legal-risk flag"
+    },
+    {
+      "slug": "5-lis-pendens-understanding-the-doctrine",
+      "oldUrl": "https://chamanlawfirm.com/5-lis-pendens-understanding-the-doctrine",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; off-brand/property-sales wording"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "oldUrl": "https://chamanlawfirm.com/lagos-tenancy-fixed-and-periodic-tenancies",
+      "reason": "not in Sprint 11L low-risk controlled subset; unsafe self-help wording; high legal-risk flag; duplicate/thin-content flag"
+    },
+    {
+      "slug": "enforcing-fundamental-human-right",
+      "oldUrl": "https://chamanlawfirm.com/enforcing-fundamental-human-right",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "landlords-and-tenants-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/landlords-and-tenants-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; off-brand/property-sales wording; unsafe self-help wording"
+    },
+    {
+      "slug": "proven-steps-the-canons-of-interpretation",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-the-canons-of-interpretation",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-file-a-lawsuit-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; misleading free-service wording"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-a-property-owner-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; overpromising/editorial hype"
+    },
+    {
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "oldUrl": "https://chamanlawfirm.com/expert-witnesses-in-nigeria-court-proceeding",
+      "reason": "not in Sprint 11L low-risk controlled subset; overpromising/editorial hype"
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "oldUrl": "https://chamanlawfirm.com/how-to-calculate-and-pay-land-use-charge",
+      "reason": "not in Sprint 11L low-risk controlled subset; internal links missing; off-brand/property-sales wording"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "oldUrl": "https://chamanlawfirm.com/of-the-securities-and-exchange-commission",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "digital-evidence-admissibility-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/digital-evidence-admissibility-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; off-brand/property-sales wording; overpromising/editorial hype"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "oldUrl": "https://chamanlawfirm.com/doctrine-of-ultra-vires",
+      "reason": "overpromising/editorial hype"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "oldUrl": "https://chamanlawfirm.com/board-of-directors-in-nigerian-companies",
+      "reason": "not in Sprint 11L low-risk controlled subset; internal links missing"
+    },
+    {
+      "slug": "can-a-member-be-expelled-from-a-trade-union",
+      "oldUrl": "https://chamanlawfirm.com/can-a-member-be-expelled-from-a-trade-union",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; overpromising/editorial hype"
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "oldUrl": "https://chamanlawfirm.com/selling-a-family-land-without-everyones-consent",
+      "reason": "not in Sprint 11L low-risk controlled subset; internal links missing"
+    },
+    {
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "oldUrl": "https://chamanlawfirm.com/challenges-of-implementing-the-land-use-act",
+      "reason": "not in Sprint 11L low-risk controlled subset; overpromising/editorial hype"
+    },
+    {
+      "slug": "international-law-in-conflict-resolution",
+      "oldUrl": "https://chamanlawfirm.com/international-law-in-conflict-resolution",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; overpromising/editorial hype"
+    },
+    {
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-who-is-mercantile-agent",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; internal links missing; overpromising/editorial hype"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-parties-to-a-mortgage",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "powerful-steps-nimasacertificate",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-nimasacertificate",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; internal links missing"
+    },
+    {
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-combat-police-harassment-in-nigeria",
+      "reason": "not in Sprint 11L low-risk controlled subset; high legal-risk flag; overpromising/editorial hype"
+    },
+    {
+      "slug": "employers-vicarious-liability",
+      "oldUrl": "https://chamanlawfirm.com/employers-vicarious-liability",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing"
+    },
+    {
+      "slug": "legal-restrictions-to-sale-of-land",
+      "oldUrl": "https://chamanlawfirm.com/legal-restrictions-to-sale-of-land",
+      "reason": "not in Sprint 11L low-risk controlled subset"
+    },
+    {
+      "slug": "establishing-paternity-and-maternity-under",
+      "oldUrl": "https://chamanlawfirm.com/establishing-paternity-and-maternity-under",
+      "reason": "not in Sprint 11L low-risk controlled subset; high legal-risk flag"
+    },
+    {
+      "slug": "how-to-obtain-standard-organisat-certificate",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-standard-organisat-certificate",
+      "reason": "not in Sprint 11L low-risk controlled subset; image missing; alt text missing; overpromising/editorial hype"
+    },
+    {
+      "slug": "minority-protection-rights-and-remedies",
+      "oldUrl": "https://chamanlawfirm.com/minority-protection-rights-and-remedies",
+      "reason": "not in Sprint 11L low-risk controlled subset; overpromising/editorial hype"
+    }
+  ]
+}

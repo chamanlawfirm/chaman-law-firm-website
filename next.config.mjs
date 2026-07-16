@@ -498,6 +498,18 @@ const sprint11kExactArticleRedirects = [...sprint11kExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11lExactArticleRedirectSources = new Set([
+  "/what-are-the-sources-of-nigerian-law",
+  "/maxims-of-equity",
+  "/the-role-of-regulatory-bodies",
+  "/pohistory-of-legal-profession-in-nigeria"
+]);
+
+const sprint11lExactArticleRedirects = [...sprint11lExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -615,6 +627,7 @@ const nextConfig = {
       ...sprint11hExactArticleRedirects,
       ...sprint11iExactArticleRedirects,
       ...sprint11kExactArticleRedirects,
+      ...sprint11lExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
