@@ -1,0 +1,2 @@
+old URL,old source path,new URL,new target path,redirect type,activation status,sitemap status,notes
+https://chamanlawfirm.com/revocation-of-power-of-attorney,/revocation-of-power-of-attorney,https://chamanlawfirm.com/resources/blog/revocation-of-power-of-attorney,/resources/blog/revocation-of-power-of-attorney,one-hop 308,pending live 200 + sitemap verification before next.config activation,verify after production revalidation,Activate only after public target returns 200 and appears in sitemap.

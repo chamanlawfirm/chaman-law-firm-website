@@ -1,0 +1,393 @@
+{
+  "generatedAt": "2026-07-16T01:17:50.388Z",
+  "applied": true,
+  "tokenDetected": true,
+  "tokenPrinted": false,
+  "sqlAvailable": true,
+  "blockedCandidatesReviewed": 50,
+  "sourceBodiesFound": 50,
+  "hiddenDocsRecovered": 50,
+  "imagePatchResults": [
+    {
+      "slug": "what-are-the-sources-of-nigerian-law",
+      "assetId": "image-ac0cc9195dd9a93c5d0ecb32a46ebf21db8de029-5048x3786-jpg"
+    },
+    {
+      "slug": "the-nigerian-legal-system",
+      "assetId": "image-ac0cc9195dd9a93c5d0ecb32a46ebf21db8de029-5048x3786-jpg"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "assetId": "image-3cb04465eb6d1ac914f632f2ed7e33769a88bfca-652x437-webp"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "assetId": "image-955aea7e3e3c6490e3a4260c729106c7e2ee48f4-1080x608-jpg"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "assetId": "image-ac0cc9195dd9a93c5d0ecb32a46ebf21db8de029-5048x3786-jpg"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "assetId": "image-3cb04465eb6d1ac914f632f2ed7e33769a88bfca-652x437-webp"
+    },
+    {
+      "slug": "maxims-of-equity",
+      "assetId": "image-ac0cc9195dd9a93c5d0ecb32a46ebf21db8de029-5048x3786-jpg"
+    },
+    {
+      "slug": "revocation-of-power-of-attorney",
+      "assetId": "image-2c590e646e84b74d76b10bf0d8d7226a5fe991be-768x456-png"
+    },
+    {
+      "slug": "the-role-of-regulatory-bodies",
+      "assetId": "image-ac0cc9195dd9a93c5d0ecb32a46ebf21db8de029-5048x3786-jpg"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "assetId": "image-3f500b94fcc7d64c1db6f5617f112cdadd8e82c8-600x556-png"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "assetId": "image-3f500b94fcc7d64c1db6f5617f112cdadd8e82c8-600x556-png"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "assetId": "image-3f500b94fcc7d64c1db6f5617f112cdadd8e82c8-600x556-png"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "assetId": "image-3cb04465eb6d1ac914f632f2ed7e33769a88bfca-652x437-webp"
+    },
+    {
+      "slug": "legal-restrictions-to-sale-of-land",
+      "assetId": "image-3cb04465eb6d1ac914f632f2ed7e33769a88bfca-652x437-webp"
+    },
+    {
+      "slug": "establishing-paternity-and-maternity-under",
+      "assetId": "image-db26bb045b34b7889691c1d8adddfbf513fae077-276x183-jpg"
+    },
+    {
+      "slug": "minority-protection-rights-and-remedies",
+      "assetId": "image-3f500b94fcc7d64c1db6f5617f112cdadd8e82c8-600x556-png"
+    }
+  ],
+  "approvedPublicPostsBefore": 283,
+  "approvedPublicPostsAfter": 284,
+  "approvedCount": 1,
+  "approvedThisRun": [
+    {
+      "slug": "revocation-of-power-of-attorney",
+      "title": "REVOCATION OF POWER OF ATTORNEY",
+      "oldUrl": "https://chamanlawfirm.com/revocation-of-power-of-attorney",
+      "targetPath": "/resources/blog/revocation-of-power-of-attorney",
+      "targetUrl": "https://chamanlawfirm.com/resources/blog/revocation-of-power-of-attorney"
+    }
+  ],
+  "keptHiddenCount": 49,
+  "keptHidden": [
+    {
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "title": "THE CONCEPT OF RULE OF LAW IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-rule-of-law-in-nigeria",
+      "reason": "overpromising; medium - current-law review required before approval; high - likely cannibalization with existing stronger content"
+    },
+    {
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "title": "How To Change Car Ownership In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-change-car-ownership-in-nigeria",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "title": "How To Track A Stolen Phone In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-track-a-stolen-phone-in-nigeria",
+      "reason": "featured image missing; alt text missing; overpromising; high - lawyer review required before approval"
+    },
+    {
+      "slug": "list-of-government-agencies-of-nigeria",
+      "title": "LIST OF GOVERNMENT AGENCIES OF NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/list-of-government-agencies-of-nigeria",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "title": "Essential Guide: How To Apply For A Driver'S Licence In Nigeria Without Stress",
+      "oldUrl": "https://chamanlawfirm.com/apply-for-drivers-licence-in-nigeria",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "title": "Steps On How To Confidently Report Acrimelaw",
+      "oldUrl": "https://chamanlawfirm.com/steps-on-how-to-confidently-report-acrimelaw",
+      "reason": "high - lawyer review required before approval"
+    },
+    {
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "title": "THE OVERALL LIST OF FEDERAL LAWS IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/the-overall-list-of-federal-laws-in-nigeria",
+      "reason": "body too short or missing; high - likely cannibalization with existing stronger content"
+    },
+    {
+      "slug": "what-are-the-sources-of-nigerian-law",
+      "title": "WHAT ARE THE SOURCES OF NIGERIAN LAW",
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-sources-of-nigerian-law",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "duties-of-correctional-institutions-in-nigeria",
+      "title": "What Are The Duties Of Correctional Institutions In Nigeria?",
+      "oldUrl": "https://chamanlawfirm.com/duties-of-correctional-institutions-in-nigeria",
+      "reason": "featured image missing; alt text missing; high - lawyer review required before approval"
+    },
+    {
+      "slug": "the-role-of-technology-in-nigerian-education",
+      "title": "Revolutionizing Learning: The Powerful Impact Of Technology On Nigerian Education",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-technology-in-nigerian-education",
+      "reason": "featured image missing; alt text missing; property-sales/luxury wording; medium - current-law review required before approval"
+    },
+    {
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "title": "What Is Stamping And Up-Stamping Of A Mortgage Document",
+      "oldUrl": "https://chamanlawfirm.com/stamping-and-up-stamping-of-a-mortgage-document",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "title": "HOW TO APPLY FOR CERTIFICATE OF GOOD CONDUCT IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "the-nigerian-legal-system",
+      "title": "Cracking The Code: The Hidden Strengths And Weaknesses Of The Nigerian Legal System",
+      "oldUrl": "https://chamanlawfirm.com/the-nigerian-legal-system",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "nigeria-prohibited-items-list",
+      "title": "Shocking Truths Behind Nigeria'S Prohibited Items List; What You Must Know!",
+      "oldUrl": "https://chamanlawfirm.com/nigeria-prohibited-items-list",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "legal-implications-of-joint-property",
+      "title": "The Critical Legal Implications Of Joint Property Ownership In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legal-implications-of-joint-property",
+      "reason": "featured image missing; alt text missing; property-sales/luxury wording; medium - current-law review required before approval"
+    },
+    {
+      "slug": "how-to-obtain-tax-clearance-certificate",
+      "title": "How To Obtain Tax Clearance Certificate",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-tax-clearance-certificate",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "title": "LASPPPA: What It Is And Why It Matters For Property Owners In Lagos",
+      "oldUrl": "https://chamanlawfirm.com/laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "land-registration-system-in-nigeria",
+      "title": "Land Registration System In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/land-registration-system-in-nigeria",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "title": "Understanding The Land Use Act: How It Affects You",
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-1978",
+      "reason": "overpromising; medium - current-law review required before approval; high - likely cannibalization with existing stronger content"
+    },
+    {
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "title": "The Concept Of Restitution Of Conjugal Rights",
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-restitution-of-conjugal-rights",
+      "reason": "featured image missing; alt text missing; high - lawyer review required before approval"
+    },
+    {
+      "slug": "5-lis-pendens-understanding-the-doctrine",
+      "title": "5 Critical Insights Into The Doctrine Of Lis Pendens In Real Estate Transactions; Legal Implications And Protection",
+      "oldUrl": "https://chamanlawfirm.com/5-lis-pendens-understanding-the-doctrine",
+      "reason": "featured image missing; alt text missing; property-sales/luxury wording; medium - current-law review required before approval"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "title": "Lagos Tenancy Fixed And Periodic Tenancies",
+      "oldUrl": "https://chamanlawfirm.com/lagos-tenancy-fixed-and-periodic-tenancies",
+      "reason": "unsafe self-help wording; medium - current-law review required before approval; high - likely cannibalization with existing stronger content"
+    },
+    {
+      "slug": "enforcing-fundamental-human-right",
+      "title": "FUNDAMENTAL HUMAN RIGHT; WHAT ARE THE PROCEDURES FOR ENFORCING FUNDAMENTAL HUMAN RIGHT?",
+      "oldUrl": "https://chamanlawfirm.com/enforcing-fundamental-human-right",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "landlords-and-tenants-in-nigeria",
+      "title": "Landlords And Tenants In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/landlords-and-tenants-in-nigeria",
+      "reason": "property-sales/luxury wording; unsafe self-help wording; medium - current-law review required before approval"
+    },
+    {
+      "slug": "proven-steps-the-canons-of-interpretation",
+      "title": "What Are The Canons Of Interpretation",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-the-canons-of-interpretation",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "title": "HOW TO FILE A LAWSUIT IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/how-to-file-a-lawsuit-in-nigeria",
+      "reason": "misleading free-service wording; medium - current-law review required before approval"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "title": "Your Rights As A Property Owner In Nigeria: What The Law Says",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-a-property-owner-in-nigeria",
+      "reason": "overpromising; medium - current-law review required before approval"
+    },
+    {
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "title": "Expert Witnesses In Nigeria Court Proceeding",
+      "oldUrl": "https://chamanlawfirm.com/expert-witnesses-in-nigeria-court-proceeding",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "maxims-of-equity",
+      "title": "MAXIMS OF EQUITY",
+      "oldUrl": "https://chamanlawfirm.com/maxims-of-equity",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "the-role-of-regulatory-bodies",
+      "title": "Unmasking Power And Accountability; A Comprehensive Analysis On The Role Of Regulatory Bodies",
+      "oldUrl": "https://chamanlawfirm.com/the-role-of-regulatory-bodies",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "title": "How To Calculate And Pay Land Use Charge",
+      "oldUrl": "https://chamanlawfirm.com/how-to-calculate-and-pay-land-use-charge",
+      "reason": "Chaman Properties reference; medium - current-law review required before approval"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "title": "5 FUNCTIONS OF THE SECURITIES AND EXCHANGE COMMISSION",
+      "oldUrl": "https://chamanlawfirm.com/of-the-securities-and-exchange-commission",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "digital-evidence-admissibility-in-nigeria",
+      "title": "Powerful Insight: Challenges And Solutions In Digital Evidence Admissibility In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/digital-evidence-admissibility-in-nigeria",
+      "reason": "featured image missing; alt text missing; property-sales/luxury wording; overpromising; medium - current-law review required before approval"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "title": "Understanding The Doctrine Of Ultra Vires: A Powerful Legal Safeguard For Businesses",
+      "oldUrl": "https://chamanlawfirm.com/doctrine-of-ultra-vires",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "title": "Unlocking The Strategic Power Of The Board Directors In Nigerian Companies- For A Successful Business",
+      "oldUrl": "https://chamanlawfirm.com/board-of-directors-in-nigerian-companies",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "pohistory-of-legal-profession-in-nigeria",
+      "title": "HISTORY OF LEGAL PROFESSION IN NIGERIA",
+      "oldUrl": "https://chamanlawfirm.com/pohistory-of-legal-profession-in-nigeria",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "can-a-member-be-expelled-from-a-trade-union",
+      "title": "5 Powerful Reasons A Member Can Be Expelled From A Trade Union",
+      "oldUrl": "https://chamanlawfirm.com/can-a-member-be-expelled-from-a-trade-union",
+      "reason": "featured image missing; alt text missing; overpromising; medium - current-law review required before approval"
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "title": "Selling A Family Land Without Everyones Consent",
+      "oldUrl": "https://chamanlawfirm.com/selling-a-family-land-without-everyones-consent",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "title": "Challenges Of Implementing The Land Use Act",
+      "oldUrl": "https://chamanlawfirm.com/challenges-of-implementing-the-land-use-act",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "international-law-in-conflict-resolution",
+      "title": "Powerful Impact Of International Law In Resolving Global Conflicts",
+      "oldUrl": "https://chamanlawfirm.com/international-law-in-conflict-resolution",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "title": "Who Is Mercantile Agent",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-who-is-mercantile-agent",
+      "reason": "featured image missing; alt text missing; overpromising; medium - current-law review required before approval"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "title": "RIGHTS OF PARTIES TO A MORTGAGE",
+      "oldUrl": "https://chamanlawfirm.com/rights-of-parties-to-a-mortgage",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "powerful-steps-nimasacertificate",
+      "title": "The Necessary Documents To Submit To Obtain The Nigeria Maritime Administration And Safety Agency (NIMASA)Certificate",
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-nimasacertificate",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "title": "Legally Combat Police Harassment In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-combat-police-harassment-in-nigeria",
+      "reason": "overpromising; high - lawyer review required before approval"
+    },
+    {
+      "slug": "employers-vicarious-liability",
+      "title": "Critical Insight: Understanding Employer’S Vicarious Liability In Nigeria",
+      "oldUrl": "https://chamanlawfirm.com/employers-vicarious-liability",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "legal-restrictions-to-sale-of-land",
+      "title": "Crucial Insights: Understanding The Legal Restrictions To Sale Of Land",
+      "oldUrl": "https://chamanlawfirm.com/legal-restrictions-to-sale-of-land",
+      "reason": "medium - current-law review required before approval"
+    },
+    {
+      "slug": "establishing-paternity-and-maternity-under",
+      "title": "Establishing Paternity And Maternity Under Nigerian Law: A Comprehensive 3 Steps Guide",
+      "oldUrl": "https://chamanlawfirm.com/establishing-paternity-and-maternity-under",
+      "reason": "high - lawyer review required before approval"
+    },
+    {
+      "slug": "how-to-obtain-standard-organisat-certificate",
+      "title": "How To Obtain Standard Organization Of Nigeria Product Certificate: 4 Powerful Steps For Positive Product Certification",
+      "oldUrl": "https://chamanlawfirm.com/how-to-obtain-standard-organisat-certificate",
+      "reason": "featured image missing; alt text missing; medium - current-law review required before approval"
+    },
+    {
+      "slug": "minority-protection-rights-and-remedies",
+      "title": "MINORITY PROTECTION: RIGHTS AND REMEDIES OF MINORITIES",
+      "oldUrl": "https://chamanlawfirm.com/minority-protection-rights-and-remedies",
+      "reason": "medium - current-law review required before approval"
+    }
+  ],
+  "staticRowsReviewed": 10,
+  "redirectRows": 1,
+  "sitemapStatus": 200,
+  "robotsStatus": 200,
+  "sitemapHasPreviewUrls": false,
+  "robotsProductionSitemap": true,
+  "robotsBlocksStudio": true,
+  "robotsBlocksApi": true
+}

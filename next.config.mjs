@@ -489,6 +489,15 @@ const sprint11iExactArticleRedirects = [...sprint11iExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11kExactArticleRedirectSources = new Set([
+  "/revocation-of-power-of-attorney"
+]);
+
+const sprint11kExactArticleRedirects = [...sprint11kExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -605,6 +614,7 @@ const nextConfig = {
       ...sprint11gStaticAuthorityRedirects,
       ...sprint11hExactArticleRedirects,
       ...sprint11iExactArticleRedirects,
+      ...sprint11kExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
