@@ -1,0 +1,449 @@
+{
+  "result": {
+    "applied": false,
+    "tokenDetected": true,
+    "tokenPrinted": false,
+    "totalSanityPosts": 981,
+    "approvedPublicPosts": 288,
+    "hiddenOrDraftSlugs": 566,
+    "fullBatchRows": 100,
+    "blogRecoveryRows": 100,
+    "staticRows": 20,
+    "redirectRows": 0,
+    "sanityApprovalsApplied": 0,
+    "keptHiddenCount": 100,
+    "sitemapStatus": 200,
+    "robotsStatus": 200,
+    "coreChecks": [
+      {
+        "status": 200,
+        "location": "",
+        "cache": "HIT"
+      },
+      {
+        "status": 308,
+        "location": "https://chamanlawfirm.com/",
+        "cache": ""
+      },
+      {
+        "status": 200,
+        "location": "",
+        "cache": "MISS"
+      },
+      {
+        "status": 200,
+        "location": "",
+        "cache": "MISS"
+      },
+      {
+        "status": 200,
+        "location": "",
+        "cache": "HIT"
+      }
+    ]
+  },
+  "approved": [],
+  "hidden": [
+    {
+      "slug": "obtaining-a-certificate-of-occupancy-c-of-o",
+      "reason": "body too short or missing; featured image missing; alt text missing or too thin; consultation CTA missing; old source already redirects to /resources/blog/how-do-i-obtain-a-certificate-of-occupancy; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "list-of-government-agencies-of-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; internal link missing; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "reason": "high - lawyer review required before publication"
+    },
+    {
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "reason": "body too short or missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "duties-of-correctional-institutions-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication; misleading free-service wording"
+    },
+    {
+      "slug": "the-role-of-technology-in-nigerian-education",
+      "reason": "featured image missing; alt text missing or too thin; blocked - off-brand/property-sales or spam signal; editorial hype/overclaim"
+    },
+    {
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "the-nigerian-legal-system",
+      "reason": "high - lawyer review required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "nigeria-prohibited-items-list",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "legal-implications-of-joint-property",
+      "reason": "featured image missing; alt text missing or too thin; blocked - off-brand/property-sales or spam signal; editorial hype/overclaim"
+    },
+    {
+      "slug": "land-registration-system-in-nigeria",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "reason": "featured image missing; alt text missing or too thin; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "5-lis-pendens-understanding-the-doctrine",
+      "reason": "featured image missing; alt text missing or too thin; blocked - off-brand/property-sales or spam signal"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "reason": "high - lawyer review required before publication"
+    },
+    {
+      "slug": "how-to-obtain-tax-clearance-certificate",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "reason": "featured image missing; alt text missing or too thin; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "reason": "high - lawyer review required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "proven-steps-the-canons-of-interpretation",
+      "reason": "featured image missing; alt text missing or too thin; blocked - off-brand/property-sales or spam signal"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "reason": "medium - current-law verification required before publication; misleading free-service wording"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "enforcing-fundamental-human-right",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "reason": "high - lawyer review required before publication"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "reason": "high - lawyer review required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "landlords-and-tenants-in-nigeria",
+      "reason": "blocked - off-brand/property-sales or spam signal"
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "reason": "internal link missing; blocked - off-brand/property-sales or spam signal"
+    },
+    {
+      "slug": "can-a-member-be-expelled-from-a-trade-union",
+      "reason": "featured image missing; alt text missing or too thin; medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "reason": "internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "digital-evidence-admissibility-in-nigeria",
+      "reason": "featured image missing; alt text missing or too thin; blocked - off-brand/property-sales or spam signal; editorial hype/overclaim"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "reason": "internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "methods-of-transfer-of-shares",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "international-law-in-conflict-resolution",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "employers-vicarious-liability",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "proven-steps-onoverview-of-the-child-right-act",
+      "reason": "featured image missing; alt text missing or too thin; high - lawyer review required before publication"
+    },
+    {
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "reason": "featured image missing; alt text missing or too thin; internal link missing; medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "how-to-legally-evict-a-tenant-in-lagos-state",
+      "reason": "old source already redirects to /resources/blog/how-to-legally-evict-a-tenant-in-lagos-state; blocked - off-brand/property-sales or spam signal"
+    },
+    {
+      "slug": "how-to-obtain-legal-guardianship-of-a-child",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "right-of-an-illegitimate-child",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "how-to-obtain-standard-organisat-certificate",
+      "reason": "featured image missing; alt text missing or too thin; medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "procedure-and-guprivate-placement-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "the-valid-procession-of-a-statutory-marriage",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "powerful-steps-nimasacertificate",
+      "reason": "featured image missing; alt text missing or too thin; internal link missing; medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "legal-restrictions-to-sale-of-land",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "the-defence-of-laches-in-customary-law-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "establishing-paternity-and-maternity-under",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "minority-protection-rights-and-remedies",
+      "reason": "medium - current-law verification required before publication; editorial hype/overclaim"
+    },
+    {
+      "slug": "two-years-rule-as-regards-dissolution-of",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "what-are-the-top-gated-estates-in-lekki",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "the-difference-between-adoption-and-fostering-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "analysis-of-the-nigerian-legal-system",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "successfully-obtain-a-building-plan-approval",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "sell-family-land-without-everyones-consent",
+      "reason": "featured image missing; alt text missing or too thin; internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "government-acquisition-in-ogun-state",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "fencing-approval-in-lagos-key-requirements",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-to-replace-a-national-identification-number",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "limitations-to-testamentary-freedom",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "or-filing-interlocutory-applications",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "child-custody-in-customary-marriage",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "individual-tax-clearance-certificate",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "chaman-legal-team-2",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "taxes-on-real-estate-transactions-in-nigeria",
+      "reason": "blocked - off-brand/property-sales or spam signal; editorial hype/overclaim"
+    },
+    {
+      "slug": "statute-limitations-and-limitation-periods",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "what-is-the-legal-status-of-collective-agreement",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "digital-rights-and-freedom-of-expression",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "careers",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "basic-elements-of-defamatory-statement",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "breach-of-promise-to-marriage-in-nigeria",
+      "reason": "consultation CTA missing; internal link missing; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "procedure-for-ejecting-a-squatter-in-lagos",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "tenancy-dispute-resolution-in-ogun-state",
+      "reason": "internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "how-to-resolve-land-disputes-in-nigeria-with",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "building-completion-certificate-in-lagos",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "steps-taken-in-registering-an-ngo-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "challenges-of-customary-marriage",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-to-get-travel-insurance-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "clauses-for-drafting-a-tenancy-agreement",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "how-long-does-it-take-to-get-c-of-o-in-ogun-sta",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "procedure-for-mergers-and-acquisitions-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-to-make-complaint-for-estimated-bills-in-nigeria",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "defenses-and-bars-to-a-petition-for-divorce-2",
+      "reason": "featured image missing; alt text missing or too thin; internal link missing; high - lawyer review required before publication"
+    },
+    {
+      "slug": "how-to-file-a-complaint-with-nigerian-civil-aviation-authority",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-do-i-get-building-approval-in-ogun-state",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "transfer-property-ownership-to-my-children",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "what-is-the-importance-of-certifi-occupancy",
+      "reason": "featured image missing; alt text missing or too thin; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "safest-estates-in-ogun-for-diaspora-investors",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "limitation-of-action-in-nigeria",
+      "reason": "medium - current-law verification required before publication"
+    },
+    {
+      "slug": "title-documents-much-does-it-cost-in-lagos",
+      "reason": "featured image missing; alt text missing or too thin; consultation CTA missing; internal link missing; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "registration-with-the-nigerian-investment",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-to-apply-for-south-africa-qualification",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "how-do-i-resolve-landlord-tenant-disputes",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing; medium - current-law verification required before publication"
+    },
+    {
+      "slug": "what-are-the-required-permits-for-estate-development-in-ogun",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    },
+    {
+      "slug": "5-reasonsthe-importance-of-pleading",
+      "reason": "hidden/public-safe Sanity document missing; body too short or missing; publishedAt missing or future-dated; featured image missing; alt text missing or too thin; SEO title missing; meta description missing; category/practice relationship missing; consultation CTA missing; internal link missing"
+    }
+  ],
+  "redirectRows": []
+}

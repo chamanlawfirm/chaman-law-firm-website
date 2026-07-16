@@ -1,0 +1,147 @@
+{
+  "coreChecks": {
+    "homepage": {
+      "url": "https://chamanlawfirm.com/",
+      "status": 200,
+      "location": "",
+      "cache": "HIT",
+      "attempt": 1
+    },
+    "www": {
+      "url": "https://www.chamanlawfirm.com/",
+      "status": 308,
+      "location": "https://chamanlawfirm.com/",
+      "cache": "",
+      "attempt": 1
+    },
+    "blog": {
+      "url": "https://chamanlawfirm.com/resources/blog",
+      "status": 200,
+      "location": "",
+      "cache": "MISS",
+      "attempt": 1
+    }
+  },
+  "sitemap": {
+    "status": 200,
+    "hasPreviewUrls": false,
+    "productionUrls": true,
+    "newRedirectTargets": []
+  },
+  "robots": {
+    "status": 200,
+    "productionSitemap": true,
+    "blocksStudio": true,
+    "blocksApi": true
+  },
+  "redirectChecks": [],
+  "hiddenChecks": [
+    {
+      "url": "https://chamanlawfirm.com/resources/blog/obtaining-a-certificate-of-occupancy-c-of-o",
+      "status": 404,
+      "location": "",
+      "cache": "STALE",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/resources/blog/the-concept-of-rule-of-law-in-nigeria",
+      "status": 404,
+      "location": "",
+      "cache": "STALE",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/resources/blog/how-to-change-car-ownership-in-nigeria",
+      "status": 404,
+      "location": "",
+      "cache": "STALE",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/resources/blog/how-to-track-a-stolen-phone-in-nigeria",
+      "status": 404,
+      "location": "",
+      "cache": "STALE",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/resources/blog/list-of-government-agencies-of-nigeria",
+      "status": 404,
+      "location": "",
+      "cache": "MISS",
+      "attempt": 1
+    }
+  ],
+  "regressionChecks": [
+    {
+      "url": "https://chamanlawfirm.com/what-are-the-sources-of-nigerian-law",
+      "status": 308,
+      "location": "/resources/blog/what-are-the-sources-of-nigerian-law",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/maxims-of-equity",
+      "status": 308,
+      "location": "/resources/blog/maxims-of-equity",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/the-role-of-regulatory-bodies",
+      "status": 308,
+      "location": "/resources/blog/the-role-of-regulatory-bodies",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/pohistory-of-legal-profession-in-nigeria",
+      "status": 308,
+      "location": "/resources/blog/pohistory-of-legal-profession-in-nigeria",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/revocation-of-power-of-attorney",
+      "status": 308,
+      "location": "/resources/blog/revocation-of-power-of-attorney",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/deed-of-partition-in-nigeria",
+      "status": 308,
+      "location": "/resources/blog/deed-of-partition-in-nigeria",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/the-duties-of-lawyers-to-client",
+      "status": 308,
+      "location": "/resources/blog/the-duties-of-lawyers-to-client",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/land-use-act-and-land-tenure-systems",
+      "status": 308,
+      "location": "/resources/blog/land-use-act-and-land-tenure-systems",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/who-can-be-a-notary-public",
+      "status": 308,
+      "location": "/practice-areas/notary-public-services",
+      "cache": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://chamanlawfirm.com/governors-consent",
+      "status": 308,
+      "location": "/practice-areas/property-real-estate-law/governors-consent",
+      "cache": "",
+      "attempt": 1
+    }
+  ]
+}
