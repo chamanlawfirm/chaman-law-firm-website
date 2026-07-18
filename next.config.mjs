@@ -510,6 +510,17 @@ const sprint11lExactArticleRedirects = [...sprint11lExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11nExactArticleRedirectSources = new Set([
+  "/the-concept-of-rule-of-law-in-nigeria",
+  "/the-nigerian-legal-system",
+  "/basic-elements-of-defamatory-statement"
+]);
+
+const sprint11nExactArticleRedirects = [...sprint11nExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -628,6 +639,7 @@ const nextConfig = {
       ...sprint11iExactArticleRedirects,
       ...sprint11kExactArticleRedirects,
       ...sprint11lExactArticleRedirects,
+      ...sprint11nExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",
