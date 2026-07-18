@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-07-18T22:08:30.841Z",
+  "staticRedirectsReviewed": 20,
+  "staticRestorationCandidates": 19,
+  "staticImplementationBriefs": 5,
+  "hiddenBlogCandidatesReviewed": 46,
+  "approvedInSprint11P": 0,
+  "redirectActivationsInSprint11P": 0,
+  "coreChecks": {
+    "/": {
+      "url": "https://chamanlawfirm.com",
+      "status": 200,
+      "location": "",
+      "cache": "STALE"
+    },
+    "/resources/blog": {
+      "url": "https://chamanlawfirm.com/resources/blog",
+      "status": 200,
+      "location": "",
+      "cache": "MISS"
+    },
+    "/sitemap.xml": {
+      "url": "https://chamanlawfirm.com/sitemap.xml",
+      "status": 200,
+      "location": "",
+      "cache": "MISS"
+    },
+    "/robots.txt": {
+      "url": "https://chamanlawfirm.com/robots.txt",
+      "status": 200,
+      "location": "",
+      "cache": "HIT"
+    },
+    "https://www.chamanlawfirm.com/": {
+      "url": "https://www.chamanlawfirm.com/",
+      "status": 308,
+      "location": "https://chamanlawfirm.com/",
+      "cache": ""
+    }
+  },
+  "sitemapStatus": 200,
+  "sitemapHasPreviewUrls": false,
+  "robotsStatus": 200,
+  "robotsProductionSitemap": true,
+  "robotsBlocksStudio": true,
+  "robotsBlocksApi": true,
+  "redirectQaFailures": [],
+  "hiddenDraftFailures": [],
+  "filesWritten": [
+    "docs\\SPRINT-11P-FRESH-GSC-BING-EXPORT-STATUS.md",
+    "docs\\SPRINT-11P-SPRINT-11O-STATIC-REDIRECT-MONITORING.csv",
+    "docs\\SPRINT-11P-STATIC-SERVICE-RESTORATION-PLAN.csv",
+    "docs\\SPRINT-11P-STATIC-SERVICE-IMPLEMENTATION-BATCH.csv",
+    "docs\\SPRINT-11P-LAWYER-SAFE-BLOG-RECOVERY.csv",
+    "docs\\SPRINT-11P-SEO-AEO-GEO-ENHANCEMENT.csv",
+    "docs\\SPRINT-11P-REDIRECT-ACTIVATION-BATCH.csv",
+    "docs\\SPRINT-11P-GSC-BING-INDEXING-PACK.md",
+    "docs\\SPRINT-11P-SEARCH-STATIC-BLOG-RECOVERY-REPORT.md",
+    "docs\\SPRINT-11P-RESULT.json"
+  ]
+}

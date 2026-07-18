@@ -1,0 +1,2 @@
+old URL,new URL,redirect type,status,activation condition
+none,none,none,no new Sprint 11P redirects activated,"future targets must return 200, be sitemap/canonical safe, and pass live QA"
