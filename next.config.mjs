@@ -470,6 +470,32 @@ const sprint11gStaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const sprint11oStaticAuthorityRedirects = [
+  { source: "/stamping-and-up-stamping-of-a-mortgage-document", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/legal-implications-of-joint-property", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/how-to-obtain-tax-clearance-certificate", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/rights-of-a-property-owner-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/land-use-act-1978", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/land-registration-system-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/landlords-and-tenants-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/of-the-securities-and-exchange-commission", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/enforcing-fundamental-human-right", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/probate-in-lagos-everything-you-need-to-know", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/board-of-directors-in-nigerian-companies", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/challenges-of-implementing-the-land-use-act", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/rights-of-parties-to-a-mortgage", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/methods-of-transfer-of-shares", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/can-a-member-be-expelled-from-a-trade-union", destination: "/practice-areas/employment-law" },
+  { source: "/expert-witnesses-in-nigeria-court-proceeding", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/how-to-calculate-and-pay-land-use-charge", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/legal-restrictions-to-sale-of-land", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/selling-a-family-land-without-everyones-consent", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/digital-evidence-admissibility-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 const sprint11hExactArticleRedirectSources = new Set([
   "/the-duties-of-lawyers-to-client",
   "/land-use-act-and-land-tenure-systems"
@@ -517,6 +543,15 @@ const sprint11nExactArticleRedirectSources = new Set([
 ]);
 
 const sprint11nExactArticleRedirects = [...sprint11nExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
+const sprint11oExactArticleRedirectSources = new Set([
+  "/proven-steps-the-canons-of-interpretation"
+]);
+
+const sprint11oExactArticleRedirects = [...sprint11oExactArticleRedirectSources].flatMap((source) => [
   { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
@@ -635,11 +670,13 @@ const nextConfig = {
       ...sprint11eStaticAuthorityRedirects,
       ...sprint11fStaticAuthorityRedirects,
       ...sprint11gStaticAuthorityRedirects,
+      ...sprint11oStaticAuthorityRedirects,
       ...sprint11hExactArticleRedirects,
       ...sprint11iExactArticleRedirects,
       ...sprint11kExactArticleRedirects,
       ...sprint11lExactArticleRedirects,
       ...sprint11nExactArticleRedirects,
+      ...sprint11oExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",

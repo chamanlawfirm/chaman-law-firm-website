@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-07-18T21:36:14.371Z",
+  "applied": true,
+  "tokenDetected": true,
+  "tokenPrinted": false,
+  "staticCandidatesReviewed": 100,
+  "staticRedirectCandidates": 20,
+  "staticBriefs": 20,
+  "blogCandidatesReviewed": 47,
+  "approvedCount": 1,
+  "approvedThisRun": [
+    {
+      "slug": "proven-steps-the-canons-of-interpretation",
+      "title": "What Are the Canons of Interpretation",
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-the-canons-of-interpretation",
+      "targetPath": "/resources/blog/proven-steps-the-canons-of-interpretation",
+      "targetUrl": "https://chamanlawfirm.com/resources/blog/proven-steps-the-canons-of-interpretation"
+    }
+  ],
+  "keptHiddenCount": 46,
+  "keptHidden": [
+    {
+      "slug": "list-of-government-agencies-of-nigeria",
+      "title": "List of Government Agencies of Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing; consultation CTA missing; internal links missing"
+    },
+    {
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "title": "How To Track A Stolen Phone In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "title": "How To Change Car Ownership In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "title": "Guide: How To Apply For A Driver'S Licence In Nigeria Without Stress",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "title": "Steps On How To Confidently Report Acrimelaw",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "the-overall-list-of-federal-laws-in-nigeria",
+      "title": "The Overall List of Federal Laws In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; body too short or missing"
+    },
+    {
+      "slug": "duties-of-correctional-institutions-in-nigeria",
+      "title": "What Are the Duties of Correctional Institutions In Nigeria?",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "the-role-of-technology-in-nigerian-education",
+      "title": "Learning: the Impact of Technology On Nigerian Education",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing; property-sales/luxury wording"
+    },
+    {
+      "slug": "stamping-and-up-stamping-of-a-mortgage-document",
+      "title": "What Is Stamping and Up-Stamping of A Mortgage Document",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; consultation CTA missing; internal links missing"
+    },
+    {
+      "slug": "land-use-act-1978",
+      "title": "Understanding the Land Use Act: How It Affects You",
+      "reason": "legal/current-law gate not cleared"
+    },
+    {
+      "slug": "how-to-obtain-tax-clearance-certificate",
+      "title": "How To Obtain Tax Clearance Certificate",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "nigeria-prohibited-items-list",
+      "title": "Nigeria'S Prohibited Items List; What You Must Know!",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "landlords-and-tenants-in-nigeria",
+      "title": "Landlords and Tenants In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; property-sales/luxury wording; unsafe self-help wording"
+    },
+    {
+      "slug": "rights-of-a-property-owner-in-nigeria",
+      "title": "Your Rights As A Property Owner In Nigeria: What the Law Says",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "doctrine-of-ultra-vires",
+      "title": "Understanding the Doctrine of Ultra Vires: A Legal Safeguard For Businesses",
+      "reason": "legal/current-law gate not cleared"
+    },
+    {
+      "slug": "land-registration-system-in-nigeria",
+      "title": "Land Registration System In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "lagos-tenancy-fixed-and-periodic-tenancies",
+      "title": "Lagos Tenancy Fixed and Periodic Tenancies",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing; unsafe self-help wording"
+    },
+    {
+      "slug": "board-of-directors-in-nigerian-companies",
+      "title": "The Strategic Power of the Board Directors In Nigerian Companies- For A Successful Business",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "how-to-file-a-lawsuit-in-nigeria",
+      "title": "How To File A Lawsuit In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; misleading free-service wording"
+    },
+    {
+      "slug": "analysis-of-the-nigerian-legal-system",
+      "title": "Unmasking the Flaws and Triumphs of the Nigerian Legal System: A Power Analysis",
+      "reason": "not in Sprint 11O preferred tiny approval subset; property-sales/luxury wording"
+    },
+    {
+      "slug": "how-to-apply-for-certificate-of-good-conduct-in-nigeria",
+      "title": "How To Apply For Certificate of Good Conduct In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "how-to-legally-evict-a-tenant-in-lagos-state",
+      "title": "How To Legally Evict A Tenant In Lagos State Without Breaking the Law",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; consultation CTA missing; internal links missing; unsafe self-help wording"
+    },
+    {
+      "slug": "of-the-securities-and-exchange-commission",
+      "title": "5 Functions of the Securities and Exchange Commission",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "title": "Challenges of Implementing the Land Use Act",
+      "reason": "legal/current-law gate not cleared"
+    },
+    {
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "title": "Expert Witnesses In Nigeria Court Proceeding",
+      "reason": "legal/current-law gate not cleared"
+    },
+    {
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "title": "How To Calculate and Pay Land Use Charge",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; consultation CTA missing; internal links missing"
+    },
+    {
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "title": "Legally Combat Police Harassment In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "legal-restrictions-to-sale-of-land",
+      "title": "Crucial Insights: Understanding the Legal Restrictions To Sale of Land",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "establishing-paternity-and-maternity-under",
+      "title": "Establishing Paternity and Maternity Under Nigerian Law: A Comprehensive 3 Steps Guide",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "title": "Selling A Family Land Without Everyones Consent",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "rights-of-parties-to-a-mortgage",
+      "title": "Rights of Parties To A Mortgage",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "right-of-an-illegitimate-child",
+      "title": "Right of An Illegitimate Child",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "minority-protection-rights-and-remedies",
+      "title": "Minority Protection: Rights and Remedies of Minorities",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "taxes-on-real-estate-transactions-in-nigeria",
+      "title": "Taxes On Real Estate Transactions In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; property-sales/luxury wording"
+    },
+    {
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "title": "The Concept of Restitution of Conjugal Rights",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "breach-of-promise-to-marriage-in-nigeria",
+      "title": "Breach of Promise To Marriage In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "individual-tax-clearance-certificate",
+      "title": "Individual Tax Clearance Certificate",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
+      "title": "7 Effective Steps To Take When A Landlord Refuses To Return Your Rent Deposit",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "title": "Laspppa: What It Is and Why It Matters For Property Owners In Lagos",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "proven-steps-onoverview-of-the-child-right-act",
+      "title": "Onoverview of the Child Right Act",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "clauses-for-drafting-a-tenancy-agreement",
+      "title": "Clauses For Drafting A Tenancy Agreement",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "how-to-resolve-land-disputes-in-nigeria-with",
+      "title": "How To Resolve Land Disputes In Nigeria With",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "limitation-of-action-in-nigeria",
+      "title": "Limitation of Action In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared"
+    },
+    {
+      "slug": "legal-implications-of-joint-property",
+      "title": "The Legal Implications of Joint Property Ownership In Nigeria",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; property-sales/luxury wording"
+    },
+    {
+      "slug": "enforcing-fundamental-human-right",
+      "title": "Fundamental Human Right; What Are the Procedures For Enforcing Fundamental Human Right?",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    },
+    {
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "title": "Who Is Mercantile Agent",
+      "reason": "not in Sprint 11O preferred tiny approval subset; legal/current-law gate not cleared; featured image missing; alt text missing"
+    }
+  ],
+  "approvedPublicPostsAfter": 292,
+  "staticRedirectsPendingConfig": [
+    {
+      "source": "/stamping-and-up-stamping-of-a-mortgage-document",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/legal-implications-of-joint-property",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/how-to-obtain-tax-clearance-certificate",
+      "destination": "/practice-areas/corporate-commercial-law"
+    },
+    {
+      "source": "/rights-of-a-property-owner-in-nigeria",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/land-use-act-1978",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/land-registration-system-in-nigeria",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/landlords-and-tenants-in-nigeria",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/of-the-securities-and-exchange-commission",
+      "destination": "/practice-areas/corporate-commercial-law"
+    },
+    {
+      "source": "/enforcing-fundamental-human-right",
+      "destination": "/practice-areas/litigation-dispute-resolution"
+    },
+    {
+      "source": "/probate-in-lagos-everything-you-need-to-know",
+      "destination": "/practice-areas/probate-estate-administration"
+    },
+    {
+      "source": "/board-of-directors-in-nigerian-companies",
+      "destination": "/practice-areas/corporate-commercial-law"
+    },
+    {
+      "source": "/challenges-of-implementing-the-land-use-act",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/rights-of-parties-to-a-mortgage",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/methods-of-transfer-of-shares",
+      "destination": "/practice-areas/corporate-commercial-law"
+    },
+    {
+      "source": "/can-a-member-be-expelled-from-a-trade-union",
+      "destination": "/practice-areas/employment-law"
+    },
+    {
+      "source": "/expert-witnesses-in-nigeria-court-proceeding",
+      "destination": "/practice-areas/litigation-dispute-resolution"
+    },
+    {
+      "source": "/how-to-calculate-and-pay-land-use-charge",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/legal-restrictions-to-sale-of-land",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/selling-a-family-land-without-everyones-consent",
+      "destination": "/practice-areas/property-real-estate-law"
+    },
+    {
+      "source": "/digital-evidence-admissibility-in-nigeria",
+      "destination": "/practice-areas/litigation-dispute-resolution"
+    }
+  ],
+  "filesWritten": [
+    "docs\\SPRINT-11O-FRESH-SEARCH-EVIDENCE-STATUS.md",
+    "docs\\SPRINT-11O-STATIC-AUTHORITY-PRIORITY-REVIEW.csv",
+    "docs\\SPRINT-11O-STATIC-SERVICE-RESTORATION-BATCH.csv",
+    "docs\\SPRINT-11O-STATIC-EXACT-REDIRECT-RESCUE-BATCH.csv",
+    "docs\\SPRINT-11O-LAWYER-REVIEWED-BLOG-CONTINUATION.csv",
+    "docs\\SPRINT-11O-SEO-AEO-GEO-ENHANCEMENT.csv",
+    "docs\\SPRINT-11O-GSC-BING-INDEXING-PACK.md",
+    "docs\\SPRINT-11O-STATIC-AUTHORITY-AND-BLOG-RECOVERY-REPORT.md",
+    "docs\\SPRINT-11O-RESULT.json"
+  ]
+}
