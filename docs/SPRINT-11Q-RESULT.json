@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-07-19T23:11:47.452Z",
+  "implementedStaticServicePages": 5,
+  "approvedBlogPosts": 0,
+  "redirectsActivated": 5,
+  "buildGeneratedPages": 366,
+  "core": {
+    "home": 200,
+    "wwwToApex": 308,
+    "blog": 200,
+    "sitemap": 200,
+    "robots": 200
+  },
+  "serviceResults": [
+    {
+      "target": "/practice-areas/property-real-estate-law/mortgage-document-review",
+      "targetStatus": 200,
+      "canonical": true,
+      "cta": true,
+      "imageAlt": true,
+      "sitemapCount": 1,
+      "oldStatus": 308,
+      "slashStatus": 308
+    },
+    {
+      "target": "/practice-areas/property-real-estate-law/legal-implications-of-joint-property",
+      "targetStatus": 200,
+      "canonical": true,
+      "cta": true,
+      "imageAlt": true,
+      "sitemapCount": 1,
+      "oldStatus": 308,
+      "slashStatus": 308
+    },
+    {
+      "target": "/practice-areas/corporate-commercial-law/tax-clearance-certificate",
+      "targetStatus": 200,
+      "canonical": true,
+      "cta": true,
+      "imageAlt": true,
+      "sitemapCount": 1,
+      "oldStatus": 308,
+      "slashStatus": 308
+    },
+    {
+      "target": "/practice-areas/property-real-estate-law/property-owner-rights",
+      "targetStatus": 200,
+      "canonical": true,
+      "cta": true,
+      "imageAlt": true,
+      "sitemapCount": 1,
+      "oldStatus": 308,
+      "slashStatus": 308
+    },
+    {
+      "target": "/practice-areas/property-real-estate-law/land-use-act-advisory",
+      "targetStatus": 200,
+      "canonical": true,
+      "cta": true,
+      "imageAlt": true,
+      "sitemapCount": 1,
+      "oldStatus": 308,
+      "slashStatus": 308
+    }
+  ],
+  "sitemapHasPreviewUrls": false,
+  "robotsProductionSitemap": true,
+  "robotsBlocksStudio": true,
+  "robotsBlocksApi": true,
+  "hiddenDraftGuardrailFailures": 0,
+  "olderRedirectRegressionFailures": 0
+}
