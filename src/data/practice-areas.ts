@@ -279,6 +279,176 @@ const propertyServicePages: ServicePage[] = [
           "Yes. The firm can review the documents, transaction facts, and location-specific concerns before advising on risk and safer next steps."
       }
     ]
+  },
+  {
+    slug: "land-registration",
+    title: "Land Registration Advisory",
+    summary:
+      "Legal guidance for clients reviewing land registration records, registry-facing documents, title history, perfection questions, and transaction-risk indicators in Nigeria.",
+    description:
+      "Chaman Law Firm assists buyers, landowners, developers, families, and diaspora clients with land registration questions, title-document review, registry search results, regularization concerns, and safer documentation steps before transfer, sale, mortgage, or development decisions.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for Nigerian land registration and title review",
+    keyPoints: [
+      "Land registry and title-document review",
+      "Registered interest, deed, survey, and perfection-risk guidance",
+      "Advice before purchase, transfer, mortgage, or development steps",
+      "Support for local and diaspora clients seeking clearer title records"
+    ],
+    process: [
+      "Collect available title documents, survey information, registry evidence, and transaction history",
+      "Review registration status, document consistency, ownership trail, and visible risk indicators",
+      "Identify gaps, conflicting information, and areas requiring registry or professional verification",
+      "Advise on safer next steps for documentation, regularization, purchase, transfer, or dispute prevention"
+    ],
+    faqs: [
+      {
+        question: "Why should land registration records be reviewed before purchase?",
+        answer:
+          "Registration records and supporting documents can reveal title gaps, inconsistent ownership history, unperfected interests, or issues that should be clarified before payment or completion."
+      },
+      {
+        question: "Can Chaman Law Firm advise on land registration problems?",
+        answer:
+          "Yes. The firm can review the documents and facts, advise on visible legal risks, and recommend appropriate next steps for verification, regularization, or representation."
+      }
+    ]
+  },
+  {
+    slug: "landlords-and-tenants-in-nigeria",
+    title: "Landlord and Tenant Advisory",
+    summary:
+      "Legal guidance for landlords, tenants, property managers, and investors handling tenancy agreements, notices, deposits, rent issues, repairs, possession, and dispute prevention.",
+    description:
+      "Chaman Law Firm advises on landlord and tenant issues in Nigeria, including tenancy-document review, rent and deposit disputes, notices, recovery-of-premises concerns, occupier communication, and lawful dispute-resolution options. The firm emphasizes proper documentation and lawful process rather than self-help action.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm lawyers advising on landlord and tenant matters in Nigeria",
+    keyPoints: [
+      "Tenancy agreement and notice review",
+      "Rent, deposit, repair, possession, and occupier-dispute guidance",
+      "Lawful recovery-of-premises and settlement strategy",
+      "Advice for landlords, tenants, property managers, and investors"
+    ],
+    process: [
+      "Confirm the tenancy facts, agreement, payment history, notices, and dispute timeline",
+      "Review documentation for legal risk, unclear terms, communication gaps, and process concerns",
+      "Advise on negotiation, documentation, notice strategy, settlement, or lawful escalation",
+      "Support correspondence, representation, dispute resolution, or proceedings where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can a landlord remove a tenant without lawful process?",
+        answer:
+          "A landlord should seek legal advice before taking possession steps. The proper route depends on the agreement, notices, facts, and applicable tenancy rules."
+      },
+      {
+        question: "Can tenants get legal advice before responding to a notice?",
+        answer:
+          "Yes. Tenants can seek advice on the agreement, notice, payment history, repair issues, and the lawful options available before responding or escalating the dispute."
+      }
+    ]
+  },
+  {
+    slug: "land-use-charge",
+    title: "Land Use Charge Advisory",
+    summary:
+      "Legal and document-readiness guidance for property owners, occupiers, companies, and investors reviewing land-use-charge issues, notices, assessments, and property-tax concerns.",
+    description:
+      "Chaman Law Firm helps clients review land-use-charge notices, property records, ownership documents, assessment concerns, compliance questions, and dispute options. The service is framed as legal and document-risk guidance and does not replace assessment by the relevant authority.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal and property advisory image for land use charge review in Nigeria",
+    keyPoints: [
+      "Land-use-charge notice and document review",
+      "Ownership, occupier, assessment, and property-record guidance",
+      "Compliance, dispute, and correspondence support",
+      "Practical advice for property owners, companies, and investors"
+    ],
+    process: [
+      "Collect the assessment notice, property documents, payment evidence, correspondence, and client objective",
+      "Review the property records, taxpayer information, ownership facts, and visible compliance questions",
+      "Identify documentation gaps, appeal or correction issues, and points requiring authority clarification",
+      "Advise on correspondence, payment-risk decisions, professional coordination, or dispute steps"
+    ],
+    faqs: [
+      {
+        question: "Can a lawyer review a land-use-charge notice?",
+        answer:
+          "Yes. A lawyer can review the notice, property documents, correspondence, and facts before advising on legal risk, documentation gaps, and possible next steps."
+      },
+      {
+        question: "Does this service calculate government charges?",
+        answer:
+          "The firm can review legal and document-readiness issues, but official assessment and payment requirements remain subject to the relevant authority and applicable facts."
+      }
+    ]
+  },
+  {
+    slug: "legal-restrictions-to-sale-of-land",
+    title: "Legal Restrictions to Sale of Land",
+    summary:
+      "Property-law advice on restrictions that may affect the sale of land, including title defects, family consent, encumbrances, court disputes, government acquisition, and authority gaps.",
+    description:
+      "Chaman Law Firm advises owners, buyers, families, developers, and investors on legal restrictions that may affect land sale transactions in Nigeria. The firm reviews title documents, seller authority, family or community interests, encumbrances, pending disputes, government-acquisition risk, and transaction documents before sale or purchase steps proceed.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm property lawyers reviewing restrictions to sale of land",
+    keyPoints: [
+      "Seller authority, family consent, and title restriction review",
+      "Encumbrance, litigation, acquisition, and possession-risk guidance",
+      "Document support before sale, purchase, mortgage, or transfer",
+      "Practical advice to reduce invalid-sale and dispute risk"
+    ],
+    process: [
+      "Confirm the proposed sale, parties, ownership history, and available documents",
+      "Review title, consent, possession, encumbrances, disputes, and government-facing issues",
+      "Identify restrictions, unresolved authority questions, and documents needing correction",
+      "Advise on safer transaction steps, documentation, negotiation, or dispute-prevention strategy"
+    ],
+    faqs: [
+      {
+        question: "What can restrict a land sale in Nigeria?",
+        answer:
+          "Restrictions can arise from title defects, missing authority, family or community interests, encumbrances, pending disputes, acquisition issues, consent requirements, or unclear transaction documents."
+      },
+      {
+        question: "Should buyers review restrictions before payment?",
+        answer:
+          "Yes. Buyers should review title, authority, possession, restrictions, and transaction documents before paying or signing completion documents."
+      }
+    ]
+  },
+  {
+    slug: "selling-a-family-land-without-everyones-consent",
+    title: "Family Land Sale Consent Advisory",
+    summary:
+      "Legal guidance for families, purchasers, administrators, and beneficiaries dealing with family land sale authority, consent, title control, representation, and dispute risk.",
+    description:
+      "Chaman Law Firm advises on family land transactions where consent, authority, succession, beneficiary interests, or representation questions may affect the validity and safety of a sale. The firm helps clients review documents and facts before selling, buying, challenging, or regularizing a family-land transaction.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm lawyers advising on family land sale consent and property disputes",
+    keyPoints: [
+      "Family land authority and consent-risk review",
+      "Beneficiary, administrator, and representative capacity guidance",
+      "Advice for buyers before completing family-land transactions",
+      "Dispute-prevention, negotiation, and documentation support"
+    ],
+    process: [
+      "Confirm the family ownership history, parties, documents, approvals, and proposed transaction",
+      "Review authority, consent, succession, possession, and beneficiary-interest questions",
+      "Identify legal-risk areas and documents requiring clarification or correction",
+      "Advise on transaction structure, negotiation, documentation, representation, or dispute steps"
+    ],
+    faqs: [
+      {
+        question: "Is family consent important in family land transactions?",
+        answer:
+          "Consent and authority questions can be critical. The legal position depends on the family structure, title history, representatives, documents, and transaction facts."
+      },
+      {
+        question: "Can a buyer reduce family-land dispute risk?",
+        answer:
+          "Yes. A buyer can reduce risk by conducting legal due diligence, confirming authority, reviewing consent evidence, documenting the transaction properly, and seeking advice before payment."
+      }
+    ]
   }
 ];
 
@@ -301,6 +471,11 @@ export const practiceAreas: PracticeArea[] = [
       "Joint property advisory",
       "Property-owner rights advisory",
       "Land Use Act advisory",
+      "Land registration advisory",
+      "Landlord and tenant advisory",
+      "Land Use Charge advisory",
+      "Land sale restrictions",
+      "Family land sale consent",
       "Property documentation",
       "Property acquisition advisory",
       "Land transactions",
@@ -373,6 +548,9 @@ export const practiceAreas: PracticeArea[] = [
       "Commercial transactions",
       "Regulatory compliance",
       "Tax clearance certificate guidance",
+      "Securities regulatory compliance",
+      "Board governance advisory",
+      "Share transfer advisory",
       "Contract drafting",
       "Business advisory",
       "Retainership support"
@@ -443,6 +621,108 @@ export const practiceAreas: PracticeArea[] = [
               "Yes. A lawyer can help review the legal and document-readiness issues, coordinate with appropriate professionals where needed, and advise on transaction or compliance risk."
           }
         ]
+      },
+      {
+        slug: "securities-regulatory-compliance",
+        title: "Securities Regulatory Compliance",
+        summary:
+          "Legal guidance for companies, founders, directors, investors, and regulated businesses reviewing securities, investment, disclosure, fundraising, and regulatory-compliance questions.",
+        description:
+          "Chaman Law Firm advises clients on securities and capital-market-facing legal questions, including investment documentation, fundraising structure, disclosure issues, board authority, shareholder approvals, and regulatory risk. The service is framed as legal and compliance guidance and should be reviewed against the client's exact transaction and regulatory context.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Corporate legal advisory image for securities and regulatory compliance in Nigeria",
+        keyPoints: [
+          "Investment, fundraising, and disclosure-risk review",
+          "Board, shareholder, and transaction-authority guidance",
+          "Regulatory-compliance and document-readiness support",
+          "Legal advice for companies, investors, directors, and founders"
+        ],
+        process: [
+          "Confirm the business model, transaction, investor profile, documents, and compliance concern",
+          "Review governance, disclosure, authorization, contract, and regulatory-risk questions",
+          "Identify gaps requiring further legal, accounting, or regulator-facing clarification",
+          "Advise on safer documentation, transaction structure, approvals, and compliance next steps"
+        ],
+        faqs: [
+          {
+            question: "When should a business seek securities compliance advice?",
+            answer:
+              "A business should seek advice before fundraising, issuing investment documents, changing ownership structure, making public-facing investment claims, or entering regulated capital-market transactions."
+          },
+          {
+            question: "Does this service replace regulator approval?",
+            answer:
+              "No. The firm provides legal and document-readiness guidance. Any required regulator filing, approval, or professional clearance depends on the specific facts and applicable rules."
+          }
+        ]
+      },
+      {
+        slug: "board-governance",
+        title: "Board Governance Advisory",
+        summary:
+          "Corporate governance advice for directors, shareholders, founders, company secretaries, investors, and organizations managing board authority, resolutions, meetings, and compliance records.",
+        description:
+          "Chaman Law Firm assists businesses with board-governance questions, director duties, company records, resolutions, meeting documentation, authority to act, shareholder relationships, and dispute-prevention systems.",
+        image: serviceHeroImages.firmTeam,
+        imageAlt: "Chaman Law Firm corporate lawyers advising on board governance and company records",
+        keyPoints: [
+          "Director, board, and shareholder authority review",
+          "Resolution, minutes, meeting, and record-keeping support",
+          "Governance-risk guidance for founders, investors, and SMEs",
+          "Dispute-prevention and compliance-document advisory"
+        ],
+        process: [
+          "Review the company structure, records, shareholders, directors, and governance concern",
+          "Identify authority gaps, missing resolutions, record-keeping issues, and conflict risks",
+          "Advise on required governance documents, approvals, meeting steps, or internal controls",
+          "Support implementation through documents, correspondence, negotiation, or ongoing advisory"
+        ],
+        faqs: [
+          {
+            question: "Why is board governance important for SMEs?",
+            answer:
+              "Clear governance helps companies document authority, reduce founder or shareholder disputes, improve compliance, and support lender or investor confidence."
+          },
+          {
+            question: "Can Chaman Law Firm prepare board resolutions?",
+            answer:
+              "Yes. The firm can review the company facts and prepare or review resolutions, minutes, notices, and related documents where appropriate."
+          }
+        ]
+      },
+      {
+        slug: "share-transfer",
+        title: "Share Transfer Advisory",
+        summary:
+          "Legal support for share transfer, shareholder changes, board approvals, transfer documents, corporate records, and transaction-risk review for Nigerian companies.",
+        description:
+          "Chaman Law Firm advises companies, founders, shareholders, directors, investors, and buyers on share-transfer processes, authority, documentation, company-record updates, restrictions, and dispute-risk questions.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Corporate law image for share transfer advisory and company documentation",
+        keyPoints: [
+          "Share-transfer document and authority review",
+          "Board, shareholder, and company-record guidance",
+          "Transfer restrictions, consideration, and dispute-risk checks",
+          "Support for buyers, sellers, founders, directors, and investors"
+        ],
+        process: [
+          "Confirm the company structure, shareholders, proposed transfer, documents, and objectives",
+          "Review authority, restrictions, approvals, consideration, tax or compliance questions, and records",
+          "Identify missing documents, unclear rights, and issues requiring professional coordination",
+          "Advise on safer completion steps, record updates, filings, and transaction documentation"
+        ],
+        faqs: [
+          {
+            question: "Can shares be transferred without reviewing company documents?",
+            answer:
+              "Company records, agreements, articles, restrictions, approvals, and transaction documents should be reviewed before completing a share transfer."
+          },
+          {
+            question: "Who may need share-transfer legal advice?",
+            answer:
+              "Founders, shareholders, directors, investors, buyers, sellers, and companies may need advice before changing ownership records or completing investment-related transfers."
+          }
+        ]
       }
     ],
     commonIssues: [
@@ -484,7 +764,18 @@ export const practiceAreas: PracticeArea[] = [
       "Strategic representation in civil litigation, commercial disputes, property disputes, ADR, mediation, arbitration, and negotiation.",
     description:
       "Chaman Law Firm represents clients in civil litigation, commercial litigation, alternative dispute resolution, mediation, arbitration, negotiation, enforcement, and settlement strategy.",
-    services: ["Civil litigation", "Commercial litigation", "ADR", "Mediation", "Arbitration", "Negotiation", "Settlement strategy"],
+    services: [
+      "Civil litigation",
+      "Commercial litigation",
+      "Fundamental rights enforcement",
+      "Expert witness advisory",
+      "Digital evidence review",
+      "ADR",
+      "Mediation",
+      "Arbitration",
+      "Negotiation",
+      "Settlement strategy"
+    ],
     servicePages: [
       {
         slug: "commercial-litigation",
@@ -499,6 +790,108 @@ export const practiceAreas: PracticeArea[] = [
             question: "Can commercial disputes be settled before trial?",
             answer:
               "Yes. Settlement, negotiation, mediation, or arbitration may be appropriate depending on the facts and client objectives."
+          }
+        ]
+      },
+      {
+        slug: "fundamental-rights-enforcement",
+        title: "Fundamental Rights Enforcement",
+        summary:
+          "Legal advice and representation for clients considering fundamental-rights complaints, civil-rights claims, unlawful detention concerns, harassment issues, and court or settlement strategy.",
+        description:
+          "Chaman Law Firm advises individuals, families, organizations, and businesses on fundamental-rights enforcement concerns in Nigeria. The firm reviews facts, evidence, urgency, parties involved, available remedies, limitation and jurisdiction questions, and safer representation options before any action is taken.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Litigation advisory image for fundamental rights enforcement in Nigeria",
+        keyPoints: [
+          "Rights-violation fact and evidence review",
+          "Urgency, remedy, party, and forum-risk guidance",
+          "Pre-action, negotiation, filing, and representation strategy",
+          "Advice for individuals, families, organizations, and businesses"
+        ],
+        process: [
+          "Confirm the incident, dates, documents, evidence, parties, urgency, and desired outcome",
+          "Assess visible legal issues, possible remedies, forum concerns, and procedural risk",
+          "Advise on correspondence, settlement, urgent relief, filing, or other lawful next steps",
+          "Support representation, negotiation, court filings, or resolution strategy where appropriate"
+        ],
+        faqs: [
+          {
+            question: "Should a rights complaint be reviewed before filing?",
+            answer:
+              "Yes. Facts, evidence, urgency, parties, remedy, and forum questions should be reviewed before deciding the correct enforcement strategy."
+          },
+          {
+            question: "Can rights matters be urgent?",
+            answer:
+              "Some rights concerns may require urgent advice. The appropriate step depends on the facts, evidence, safety concerns, and available legal remedies."
+          }
+        ]
+      },
+      {
+        slug: "expert-witnesses",
+        title: "Expert Witness Advisory",
+        summary:
+          "Litigation support for matters requiring expert evidence, technical reports, professional opinions, admissibility review, witness preparation, and case-strategy coordination.",
+        description:
+          "Chaman Law Firm helps clients and litigation teams review expert-witness needs in civil, commercial, property, corporate, family, and technical disputes. The firm advises on relevance, evidence planning, report review, witness coordination, and how expert evidence fits into the broader case strategy.",
+        image: serviceHeroImages.firmTeam,
+        imageAlt: "Chaman Law Firm litigation team reviewing expert witness evidence",
+        keyPoints: [
+          "Expert-evidence relevance and document review",
+          "Technical report and professional-opinion coordination",
+          "Litigation strategy for cases involving specialist evidence",
+          "Witness preparation and evidence-risk guidance"
+        ],
+        process: [
+          "Identify the technical issue, pleadings, documents, reports, and case objective",
+          "Review whether expert evidence may assist the dispute and what gaps remain",
+          "Coordinate report questions, evidence organization, and witness-preparation strategy",
+          "Advise on how the expert evidence supports negotiation, trial, or settlement decisions"
+        ],
+        faqs: [
+          {
+            question: "When might expert evidence be useful?",
+            answer:
+              "Expert evidence may help where a dispute involves technical, professional, valuation, medical, engineering, property, accounting, or other specialist questions."
+          },
+          {
+            question: "Does the court decide whether expert evidence is accepted?",
+            answer:
+              "The admissibility and weight of evidence depend on the applicable rules, facts, documents, and the court or tribunal considering the matter."
+          }
+        ]
+      },
+      {
+        slug: "digital-evidence",
+        title: "Digital Evidence Review",
+        summary:
+          "Litigation advice on digital evidence, electronic records, messages, emails, screenshots, metadata, authenticity concerns, and evidence preservation in Nigerian disputes.",
+        description:
+          "Chaman Law Firm advises clients on the legal-risk and case-strategy issues connected with digital evidence. The firm helps review electronic records, communication trails, screenshots, emails, transaction logs, authenticity concerns, privacy questions, and preservation steps before negotiation, filing, or trial.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Legal advisory image for digital evidence review and litigation strategy",
+        keyPoints: [
+          "Electronic record and communication-evidence review",
+          "Authenticity, preservation, and admissibility-risk guidance",
+          "Digital evidence strategy for civil, commercial, and property disputes",
+          "Advice before sharing, filing, relying on, or challenging records"
+        ],
+        process: [
+          "Collect the digital records, source context, dates, parties, and dispute background",
+          "Review authenticity, relevance, preservation, chain-of-custody, and privacy-risk questions",
+          "Advise on whether further verification or expert support may be required",
+          "Integrate the digital evidence into correspondence, negotiation, filings, or trial strategy"
+        ],
+        faqs: [
+          {
+            question: "Can screenshots be used as evidence?",
+            answer:
+              "Screenshots may be relevant, but their use depends on authenticity, context, supporting records, applicable evidence rules, and the forum considering the dispute."
+          },
+          {
+            question: "Should digital evidence be preserved early?",
+            answer:
+              "Yes. Parties should avoid altering or losing relevant records and should seek advice before relying on or challenging digital evidence."
           }
         ]
       }
@@ -578,7 +971,14 @@ export const practiceAreas: PracticeArea[] = [
       "Guidance on wills, probate applications, letters of administration, inheritance matters, estate planning, and estate administration.",
     description:
       "Chaman Law Firm assists families, beneficiaries, executors, administrators, and diaspora clients with probate applications, letters of administration, inheritance matters, estate planning, will administration, and estate disputes.",
-    services: ["Letters of administration", "Probate applications", "Inheritance matters", "Estate planning", "Will administration"],
+    services: [
+      "Letters of administration",
+      "Probate applications",
+      "Probate in Lagos advisory",
+      "Inheritance matters",
+      "Estate planning",
+      "Will administration"
+    ],
     servicePages: [
       {
         slug: "letters-of-administration",
@@ -593,6 +993,40 @@ export const practiceAreas: PracticeArea[] = [
             question: "Who may need letters of administration?",
             answer:
               "Families may need letters of administration where estate assets require lawful authority to administer or distribute them."
+          }
+        ]
+      },
+      {
+        slug: "probate-in-lagos-everything-you-need-to-know",
+        title: "Probate in Lagos Advisory",
+        summary:
+          "Legal guidance for executors, administrators, beneficiaries, families, and diaspora clients handling probate, estate documents, asset identification, and administration questions in Lagos.",
+        description:
+          "Chaman Law Firm assists clients with probate and estate-administration questions connected to Lagos assets, wills, executors, beneficiaries, administrators, family structure, estate documents, and practical representation needs. The firm reviews the facts before advising on the appropriate probate or administration pathway.",
+        image: serviceHeroImages.firmTeam,
+        imageAlt: "Chaman Law Firm private-client lawyers advising on probate in Lagos",
+        keyPoints: [
+          "Probate, will, and estate-document review",
+          "Executor, administrator, beneficiary, and family-structure guidance",
+          "Asset, representation, and application-readiness support",
+          "Advice for local and diaspora families handling Lagos estate matters"
+        ],
+        process: [
+          "Confirm the deceased person's details, family structure, assets, will status, and available documents",
+          "Review executor or administrator questions, beneficiary interests, and document gaps",
+          "Advise on probate, letters of administration, representation, or dispute-prevention steps",
+          "Support application preparation, correspondence, coordination, or estate-administration strategy"
+        ],
+        faqs: [
+          {
+            question: "Who should seek probate advice in Lagos?",
+            answer:
+              "Executors, administrators, beneficiaries, families, and diaspora relatives may need probate advice where Lagos assets require lawful administration or transfer."
+          },
+          {
+            question: "Can Chaman Law Firm assist diaspora families with probate?",
+            answer:
+              "Yes. The firm can guide diaspora clients on documents, representation, communication, and practical next steps for Nigerian probate and estate matters."
           }
         ]
       }
@@ -773,9 +1207,45 @@ export const practiceAreas: PracticeArea[] = [
       "Disciplinary process advisory",
       "Settlement negotiation",
       "Employment dispute resolution",
-      "Employer compliance support"
+      "Employer compliance support",
+      "Trade union membership disputes"
     ],
-    servicePages: [],
+    servicePages: [
+      {
+        slug: "trade-union-membership-disputes",
+        title: "Trade Union Membership Disputes",
+        summary:
+          "Employment-law guidance for workers, employers, unions, and organizations dealing with trade union membership, workplace representation, disciplinary concerns, and labour-dispute risk.",
+        description:
+          "Chaman Law Firm advises employers, employees, executives, unions, and organizations on workplace issues connected to trade union membership, representation, internal disciplinary concerns, collective workplace questions, and dispute-resolution options. The service is framed as legal-risk guidance and requires review of the specific employment documents and facts.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Employment law advisory image for trade union membership disputes in Nigeria",
+        keyPoints: [
+          "Employment contract, policy, and union-document review",
+          "Workplace representation and membership-dispute guidance",
+          "Employer compliance and employee-rights risk assessment",
+          "Settlement, correspondence, and dispute-resolution strategy"
+        ],
+        process: [
+          "Confirm the workplace facts, contract, policy documents, union materials, correspondence, and urgency",
+          "Review membership, representation, disciplinary, collective, and employment-risk questions",
+          "Advise on correspondence, negotiation, settlement, compliance, or dispute-resolution options",
+          "Support documentation, representation, or escalation where appropriate"
+        ],
+        faqs: [
+          {
+            question: "Can Chaman Law Firm advise on trade union membership disputes?",
+            answer:
+              "Yes. The firm can review the employment documents, union materials, facts, and correspondence before advising on legal-risk and dispute-resolution options."
+          },
+          {
+            question: "Should employers review union-related issues before taking action?",
+            answer:
+              "Yes. Employers should review employment contracts, policies, applicable documents, and procedural risk before taking decisions that may lead to workplace disputes."
+          }
+        ]
+      }
+    ],
     commonIssues: [
       "Unclear employment contracts",
       "Wrongful termination concerns",
