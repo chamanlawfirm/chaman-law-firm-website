@@ -471,11 +471,11 @@ const sprint11gStaticAuthorityRedirects = [
 ]);
 
 const sprint11oStaticAuthorityRedirects = [
-  { source: "/stamping-and-up-stamping-of-a-mortgage-document", destination: "/practice-areas/property-real-estate-law" },
-  { source: "/legal-implications-of-joint-property", destination: "/practice-areas/property-real-estate-law" },
-  { source: "/how-to-obtain-tax-clearance-certificate", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/rights-of-a-property-owner-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
-  { source: "/land-use-act-1978", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/stamping-and-up-stamping-of-a-mortgage-document", destination: "/practice-areas/property-real-estate-law/mortgage-document-review" },
+  { source: "/legal-implications-of-joint-property", destination: "/practice-areas/property-real-estate-law/legal-implications-of-joint-property" },
+  { source: "/how-to-obtain-tax-clearance-certificate", destination: "/practice-areas/corporate-commercial-law/tax-clearance-certificate" },
+  { source: "/rights-of-a-property-owner-in-nigeria", destination: "/practice-areas/property-real-estate-law/property-owner-rights" },
+  { source: "/land-use-act-1978", destination: "/practice-areas/property-real-estate-law/land-use-act-advisory" },
   { source: "/land-registration-system-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
   { source: "/landlords-and-tenants-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
   { source: "/of-the-securities-and-exchange-commission", destination: "/practice-areas/corporate-commercial-law" },

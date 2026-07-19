@@ -6,20 +6,21 @@ type PageHeroProps = {
   title: string;
   description: string;
   image?: string;
+  imageAlt?: string;
   cta?: { label: string; href: string };
 };
 
-export function PageHero({ eyebrow, title, description, image, cta }: PageHeroProps) {
+export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden border-b border-royalGold/15 bg-charcoal">
       {image ? (
         <Image
           src={image}
-          alt=""
+          alt={imageAlt || ""}
           fill
           sizes="100vw"
           className="object-cover opacity-28"
-          aria-hidden="true"
+          aria-hidden={imageAlt ? undefined : true}
         />
       ) : null}
       <div className="absolute inset-0 bg-gradient-to-r from-luxuryBlack via-luxuryBlack/84 to-luxuryBlack/36" />

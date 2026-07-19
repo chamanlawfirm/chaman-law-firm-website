@@ -5,6 +5,8 @@ export type ServicePage = {
   title: string;
   summary: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
   keyPoints: string[];
   process: string[];
   faqs: Faq[];
@@ -26,6 +28,12 @@ export type PracticeArea = {
   relatedDownloads: string[];
   seoKeywords: string[];
   featured?: boolean;
+};
+
+const serviceHeroImages = {
+  legalService: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80",
+  firmTeam: "/images/firm/firm-team.jpg",
+  managingPartnerOffice: "/images/firm/managing-partner-office.png"
 };
 
 const propertyServicePages: ServicePage[] = [
@@ -135,6 +143,142 @@ const propertyServicePages: ServicePage[] = [
           "Yes. The firm can guide diaspora clients remotely and advise on legal representation, document execution, property verification, and transaction protection in Nigeria."
       }
     ]
+  },
+  {
+    slug: "mortgage-document-review",
+    title: "Mortgage Document Review",
+    summary:
+      "Legal review for mortgage documents, stamping, up-stamping, title security, lender requirements, borrower obligations, and property-document risk in Nigerian transactions.",
+    description:
+      "Chaman Law Firm helps clients review mortgage documents before signing, perfection, stamping, up-stamping, release, enforcement, or refinancing decisions. The service is framed as document-risk guidance because stamp duty, registration, lender conditions, and state-specific title issues can depend on the transaction facts and documents.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Chaman Law Firm managing partner office for mortgage document review and property-law advisory",
+    keyPoints: [
+      "Mortgage deed and facility-document review",
+      "Stamping, up-stamping, and perfection-risk guidance",
+      "Borrower, lender, guarantor, and security-document checks",
+      "Advice before signing, release, enforcement, or refinancing steps"
+    ],
+    process: [
+      "Collect the mortgage deed, facility letter, title documents, transaction history, and the client's objective",
+      "Review execution, parties, title consistency, security terms, stamp-duty/perfection questions, and visible transaction risks",
+      "Identify document gaps, unclear obligations, enforcement exposure, and issues requiring lender or registry clarification",
+      "Provide practical advice on safer signing, completion, amendment, release, or further verification steps"
+    ],
+    faqs: [
+      {
+        question: "Why should a mortgage document be reviewed before signing?",
+        answer:
+          "A review can help identify unclear obligations, title inconsistencies, perfection questions, borrower or guarantor exposure, and document gaps before the transaction becomes harder to correct."
+      },
+      {
+        question: "Can Chaman Law Firm advise on stamping or up-stamping a mortgage document?",
+        answer:
+          "Yes. The firm can review the documents and advise on legal-risk questions connected to stamping, up-stamping, registration, perfection, and related transaction steps."
+      }
+    ]
+  },
+  {
+    slug: "legal-implications-of-joint-property",
+    title: "Legal Implications of Joint Property",
+    summary:
+      "Property-law guidance for co-owners, spouses, families, investors, and business partners dealing with joint ownership, title control, contribution, transfer, sale, and dispute risk.",
+    description:
+      "Chaman Law Firm advises clients on the legal implications of jointly owned property in Nigeria, including title structure, authority to sell or mortgage, contribution records, inheritance concerns, family-property risk, and dispute-prevention documentation.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm team supporting joint property ownership and real estate advisory",
+    keyPoints: [
+      "Joint ownership and contribution-document review",
+      "Sale, transfer, mortgage, and consent-risk guidance",
+      "Family, spouse, investor, and business-partner property issues",
+      "Dispute-prevention documents and representation strategy"
+    ],
+    process: [
+      "Confirm the ownership facts, parties, documents, contribution records, and intended action",
+      "Review title wording, transaction history, authority questions, and any family or partnership context",
+      "Advise on risks around sale, mortgage, transfer, inheritance, dispute, or documentation gaps",
+      "Prepare or review documents that clarify rights, authority, contribution, and next steps"
+    ],
+    faqs: [
+      {
+        question: "Can one co-owner sell jointly owned property alone?",
+        answer:
+          "The answer depends on the title structure, authority, agreements, family context, and applicable facts. A document review is important before any sale, transfer, or mortgage step."
+      },
+      {
+        question: "What documents help prevent joint property disputes?",
+        answer:
+          "Clear title documents, written contribution records, co-ownership agreements, powers of attorney where appropriate, and properly reviewed transaction documents can help reduce dispute risk."
+      }
+    ]
+  },
+  {
+    slug: "property-owner-rights",
+    title: "Property Owner Rights",
+    summary:
+      "Legal guidance for property owners seeking to understand ownership rights, possession, documentation, transfer, development, tenancy, encumbrances, and dispute-protection options.",
+    description:
+      "Chaman Law Firm helps property owners review ownership documents, possession issues, tenant or occupier concerns, sale or mortgage plans, development decisions, and title-protection risks before taking legal or commercial steps.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm lawyers advising property owners on Nigerian real estate rights",
+    keyPoints: [
+      "Ownership, possession, and title-document review",
+      "Sale, lease, mortgage, and development-risk guidance",
+      "Tenant, occupier, family, and boundary-dispute support",
+      "Practical advice before enforcement, transfer, or documentation steps"
+    ],
+    process: [
+      "Review the owner's documents, possession facts, occupier details, transaction history, and intended action",
+      "Identify gaps in title, authority, consent, tenancy, boundaries, encumbrances, or dispute history",
+      "Advise on lawful options for documentation, negotiation, transfer, protection, or representation",
+      "Support document preparation, correspondence, settlement, litigation, or perfection where appropriate"
+    ],
+    faqs: [
+      {
+        question: "What should a property owner review before selling or leasing property?",
+        answer:
+          "The owner should review title documents, authority, encumbrances, possession, tenancy status, tax or consent questions, and the proposed transaction documents before completion."
+      },
+      {
+        question: "Can a lawyer help if another person is challenging ownership?",
+        answer:
+          "Yes. A lawyer can review the ownership documents, facts, evidence, and dispute pathway, then advise on negotiation, documentation, representation, or litigation strategy."
+      }
+    ]
+  },
+  {
+    slug: "land-use-act-advisory",
+    title: "Land Use Act Advisory",
+    summary:
+      "Property-law advisory on Land Use Act issues, statutory and customary rights of occupancy, Governor's Consent, allocation, title regularization, and transaction-risk questions.",
+    description:
+      "Chaman Law Firm advises buyers, owners, developers, families, and investors on Land Use Act issues that affect Nigerian property transactions, including rights of occupancy, consent, allocation, revocation risk, perfection questions, and documentation strategy.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for Land Use Act and Nigerian property title guidance",
+    keyPoints: [
+      "Statutory and customary right-of-occupancy guidance",
+      "Governor's Consent, perfection, and title-regularization advice",
+      "Allocation, acquisition, revocation, and compensation-risk review",
+      "Transaction planning for buyers, owners, developers, and families"
+    ],
+    process: [
+      "Collect title documents, allocation records, survey information, transaction history, and client objectives",
+      "Review how Land Use Act issues may affect ownership, consent, perfection, transfer, or development plans",
+      "Identify document gaps, government-facing questions, and risk areas requiring further verification",
+      "Advise on practical next steps for due diligence, consent, documentation, representation, or dispute prevention"
+    ],
+    faqs: [
+      {
+        question: "Why does the Land Use Act matter in property transactions?",
+        answer:
+          "Land Use Act issues can affect title structure, rights of occupancy, consent, allocation, perfection, transfer, and government-facing steps in Nigerian property transactions."
+      },
+      {
+        question: "Can Chaman Law Firm review Land Use Act issues before a purchase?",
+        answer:
+          "Yes. The firm can review the documents, transaction facts, and location-specific concerns before advising on risk and safer next steps."
+      }
+    ]
   }
 ];
 
@@ -153,6 +297,10 @@ export const practiceAreas: PracticeArea[] = [
       "Due diligence",
       "Title investigation",
       "Governor's Consent",
+      "Mortgage document review",
+      "Joint property advisory",
+      "Property-owner rights advisory",
+      "Land Use Act advisory",
       "Property documentation",
       "Property acquisition advisory",
       "Land transactions",
@@ -224,6 +372,7 @@ export const practiceAreas: PracticeArea[] = [
       "Corporate governance",
       "Commercial transactions",
       "Regulatory compliance",
+      "Tax clearance certificate guidance",
       "Contract drafting",
       "Business advisory",
       "Retainership support"
@@ -258,6 +407,40 @@ export const practiceAreas: PracticeArea[] = [
             question: "Do SMEs need corporate governance support?",
             answer:
               "Yes. Clear governance helps reduce disputes, clarify authority, protect founders, and support investor confidence."
+          }
+        ]
+      },
+      {
+        slug: "tax-clearance-certificate",
+        title: "Tax Clearance Certificate",
+        summary:
+          "Legal and compliance guidance for individuals, companies, directors, investors, and businesses preparing tax-clearance certificate applications or document reviews in Nigeria.",
+        description:
+          "Chaman Law Firm helps clients organize legal and compliance questions connected to tax-clearance certificate requests, business documentation, corporate transactions, tender preparation, immigration or regulatory needs, and related document review. Requirements can vary by taxpayer type, authority, and transaction context, so the firm reviews the facts before advising.",
+        image: serviceHeroImages.legalService,
+        imageAlt: "Legal and compliance advisory image for tax clearance certificate guidance in Nigeria",
+        keyPoints: [
+          "Tax-clearance document and compliance-readiness review",
+          "Company, director, investor, and individual advisory",
+          "Regulatory, tender, immigration, and transaction-support context",
+          "Practical guidance without replacing tax-authority assessment"
+        ],
+        process: [
+          "Confirm the taxpayer profile, purpose of the certificate, relevant authority, and urgency",
+          "Review available tax, company, identification, transaction, or regulatory documents",
+          "Identify documentation gaps, compliance questions, and issues needing accountant or tax-authority coordination",
+          "Advise on next steps, supporting documents, correspondence, or transaction-risk management"
+        ],
+        faqs: [
+          {
+            question: "Who may need a tax clearance certificate?",
+            answer:
+              "Individuals, companies, directors, investors, contractors, and regulated businesses may need tax-clearance evidence depending on the transaction, tender, regulatory, immigration, or compliance purpose."
+          },
+          {
+            question: "Can a lawyer assist with tax-clearance readiness?",
+            answer:
+              "Yes. A lawyer can help review the legal and document-readiness issues, coordinate with appropriate professionals where needed, and advise on transaction or compliance risk."
           }
         ]
       }

@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   return createMetadata({
     title: `${service.title} | ${area.title}`,
     description: service.summary,
+    image: service.image,
     path: `/practice-areas/${area.slug}/${service.slug}`,
     keywords: [service.title, area.title, ...service.keyPoints, "Chaman Law Firm"]
   });
@@ -77,7 +78,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         eyebrow={area.title}
         title={service.title}
         description={service.description}
-        image="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80"
+        image={service.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80"}
+        imageAlt={service.imageAlt || `${service.title} legal service by Chaman Law Firm`}
         cta={{ label: "Book Consultation", href: "/consultation" }}
       />
       <section className="bg-luxuryBlack py-16">
