@@ -36,6 +36,8 @@ const serviceHeroImages = {
   managingPartnerOffice: "/images/firm/managing-partner-office.png"
 };
 
+const createAuthorityServicePage = (service: ServicePage): ServicePage => service;
+
 const propertyServicePages: ServicePage[] = [
   {
     slug: "property-verification",
@@ -452,6 +454,608 @@ const propertyServicePages: ServicePage[] = [
   }
 ];
 
+const sprint11sPropertyServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "quit-notice-advisory",
+    title: "Quit Notice Legal Advisory",
+    summary:
+      "Tenancy-law guidance for landlords, tenants, property managers, and businesses reviewing quit notices, possession demands, and dispute risk.",
+    description:
+      "Chaman Law Firm helps clients review quit notices, tenancy documents, correspondence, payment history, occupation facts, and possession-risk issues before any legal step is taken. The service is framed as fact-specific legal guidance and does not encourage self-help eviction.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for quit notice and tenancy dispute review in Nigeria",
+    keyPoints: [
+      "Quit notice and tenancy-document review",
+      "Landlord and tenant rights assessment",
+      "Possession, arrears, and correspondence-risk guidance",
+      "Pre-action strategy before escalation or court steps"
+    ],
+    process: [
+      "Review the tenancy agreement, notices, rent records, and correspondence",
+      "Identify the tenancy type, dispute history, and possession objective",
+      "Advise on lawful next steps and settlement options",
+      "Support correspondence, negotiation, or representation where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can a quit notice be reviewed before action is taken?",
+        answer:
+          "Yes. A lawyer can review the notice, tenancy facts, documents, and dispute context before advising on the appropriate legal path."
+      },
+      {
+        question: "Does this service support self-help eviction?",
+        answer:
+          "No. Chaman Law Firm advises clients to use lawful procedures and to avoid actions that may create civil or criminal risk."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "lagos-physical-planning-compliance",
+    title: "Lagos Physical Planning Compliance Advisory",
+    summary:
+      "Legal and document-readiness advice for clients reviewing planning approvals, development-control issues, building permits, and Lagos property compliance risk.",
+    description:
+      "Chaman Law Firm advises property owners, developers, buyers, and businesses on legal-risk issues connected with planning documents, building approval concerns, regulatory correspondence, development control, and property due diligence. The firm reviews facts and documents before advising on available compliance or dispute options.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm lawyers advising on Lagos physical planning and property compliance",
+    keyPoints: [
+      "Planning approval and development-control document review",
+      "Building permit and property-compliance risk assessment",
+      "Due diligence support before acquisition or development",
+      "Regulatory correspondence and dispute-prevention guidance"
+    ],
+    process: [
+      "Review the property, approval documents, notices, and development facts",
+      "Identify missing records, compliance questions, and transaction risks",
+      "Advise on legal options, representation needs, and risk containment",
+      "Support correspondence, negotiation, or further due diligence"
+    ],
+    faqs: [
+      {
+        question: "Should planning approvals be checked before buying or developing property?",
+        answer:
+          "Yes. Planning and approval records can affect risk, use, financing, development, and dispute exposure."
+      },
+      {
+        question: "Can the firm obtain an approval automatically?",
+        answer:
+          "No result can be guaranteed. The firm reviews documents and advises on the appropriate legal and compliance pathway."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "land-tenure-systems",
+    title: "Land Tenure Systems Advisory",
+    summary:
+      "Legal guidance for families, buyers, investors, and property owners reviewing customary tenure, statutory rights, family land, and title-risk questions.",
+    description:
+      "Chaman Law Firm helps clients understand land-tenure and title-risk issues before acquisition, development, family-land decisions, perfection, or dispute resolution. The service focuses on document review, seller authority, family consent, tenure history, and practical legal-risk assessment.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Chaman Law Firm office setting for land tenure and title-risk advisory",
+    keyPoints: [
+      "Customary, statutory, and family-land risk review",
+      "Seller authority, consent, and title-history assessment",
+      "Property due diligence before acquisition or development",
+      "Dispute-prevention advice for families and investors"
+    ],
+    process: [
+      "Review title documents, family history, seller authority, and transaction records",
+      "Identify tenure, consent, and perfection questions",
+      "Advise on risks, missing documents, and next steps",
+      "Support negotiation, correspondence, due diligence, or dispute strategy"
+    ],
+    faqs: [
+      {
+        question: "Why does land tenure matter in a property transaction?",
+        answer:
+          "The tenure history can affect ownership, authority to sell, consent requirements, perfection, and future dispute risk."
+      },
+      {
+        question: "Can this service help with family land?",
+        answer:
+          "Yes. The firm can review family-land facts, consent issues, documents, and dispute risk before advising on next steps."
+      }
+    ]
+  })
+];
+
+const sprint11sCorporateServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "minor-contract-capacity",
+    title: "Minor Contract Capacity Advisory",
+    summary:
+      "Contract-law guidance for businesses, families, schools, service providers, and organizations assessing agreement risk where a minor may be involved.",
+    description:
+      "Chaman Law Firm advises clients on contract-risk questions connected with age, capacity, guardianship, enforceability, consent, service arrangements, and commercial documentation. The firm reviews the facts before advising whether a contract, policy, or transaction needs revision or further protection.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for contract capacity and commercial documentation review",
+    keyPoints: [
+      "Contract capacity and enforceability-risk review",
+      "Guardian, consent, and documentation guidance",
+      "Commercial agreement and service-policy review",
+      "Risk management before signing or enforcement"
+    ],
+    process: [
+      "Review the parties, agreement, purpose, and supporting documents",
+      "Assess capacity, consent, and enforceability questions",
+      "Recommend revisions, safeguards, or alternative documentation",
+      "Support implementation, negotiation, or dispute prevention"
+    ],
+    faqs: [
+      {
+        question: "Can a contract involving a minor create legal risk?",
+        answer:
+          "Yes. Capacity, consent, and enforceability questions can affect the legal position and should be reviewed before relying on the agreement."
+      },
+      {
+        question: "Can Chaman Law Firm review an agreement before signing?",
+        answer:
+          "Yes. The firm can review the proposed agreement and advise on legal risk, protective clauses, and next steps."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "ultra-vires-corporate-powers",
+    title: "Ultra Vires and Corporate Powers Advisory",
+    summary:
+      "Corporate-law guidance for companies, directors, shareholders, lenders, and investors reviewing company authority, objects, approvals, and transaction powers.",
+    description:
+      "Chaman Law Firm assists clients with questions about corporate authority, director powers, board approvals, shareholder resolutions, company objects, transaction documentation, and governance records. The service helps reduce avoidable disputes over whether a company or officer had authority to act.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Corporate lawyers reviewing company authority and governance records",
+    keyPoints: [
+      "Company authority and object-clause review",
+      "Board, shareholder, and director-power assessment",
+      "Resolution and approval-document guidance",
+      "Transaction-risk review before execution or dispute"
+    ],
+    process: [
+      "Review company records, constitutional documents, resolutions, and transaction papers",
+      "Identify authority gaps or approval concerns",
+      "Advise on corrective documentation or risk controls",
+      "Support implementation, negotiation, or dispute strategy"
+    ],
+    faqs: [
+      {
+        question: "Why should company authority be checked before a transaction?",
+        answer:
+          "Authority checks help confirm whether the company and its officers have the legal and governance basis to enter the transaction."
+      },
+      {
+        question: "Can this service help lenders or investors?",
+        answer:
+          "Yes. Lenders and investors often need company-authority and approval documents reviewed before relying on a transaction."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "regulatory-bodies-compliance",
+    title: "Regulatory Bodies and Compliance Advisory",
+    summary:
+      "Legal guidance for businesses dealing with Nigerian regulators, compliance notices, licensing concerns, reporting obligations, and governance risk.",
+    description:
+      "Chaman Law Firm helps businesses identify regulatory touchpoints, review notices and correspondence, assess compliance documents, and prepare a practical response plan. The service is not a substitute for regulator-issued decisions and is based on the client's facts and documents.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal service image for business regulatory compliance advisory in Nigeria",
+    keyPoints: [
+      "Regulatory notice and correspondence review",
+      "Licensing, reporting, and documentation-risk guidance",
+      "Business compliance and governance assessment",
+      "Response strategy before escalation or enforcement"
+    ],
+    process: [
+      "Review the business activity, regulator, notice, and compliance history",
+      "Identify document gaps, response deadlines, and legal-risk areas",
+      "Advise on practical response, correspondence, or corrective steps",
+      "Support implementation or representation where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can a lawyer help with regulator correspondence?",
+        answer:
+          "Yes. A lawyer can review the correspondence, identify risks, and help prepare an appropriate response."
+      },
+      {
+        question: "Does this service guarantee regulator approval?",
+        answer:
+          "No. The firm provides legal guidance and representation support, but regulator decisions depend on the applicable facts and requirements."
+      }
+    ]
+  })
+];
+
+const sprint11sLitigationServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "police-complaint-and-rights-advisory",
+    title: "Police Complaint and Rights Advisory",
+    summary:
+      "Rights-focused legal guidance for individuals, families, and businesses reviewing police complaints, harassment concerns, detention risk, and evidence records.",
+    description:
+      "Chaman Law Firm advises clients on police-complaint and rights issues after reviewing the facts, documents, messages, witnesses, and urgency. The service focuses on lawful reporting, correspondence, representation, settlement where appropriate, and protection from escalation.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for police complaint and rights representation",
+    keyPoints: [
+      "Complaint, detention, and harassment-risk review",
+      "Evidence, correspondence, and witness-record assessment",
+      "Rights-focused representation and escalation guidance",
+      "Lawful reporting and dispute-resolution strategy"
+    ],
+    process: [
+      "Review the incident facts, documents, witnesses, and urgency",
+      "Identify immediate safety, rights, and evidence concerns",
+      "Advise on lawful reporting, correspondence, or representation",
+      "Support follow-up, negotiation, or formal legal steps"
+    ],
+    faqs: [
+      {
+        question: "Should a police complaint be reviewed before escalation?",
+        answer:
+          "Yes. Legal review helps identify the safest route, evidence needs, and whether urgent representation is required."
+      },
+      {
+        question: "Does the page give a universal complaint formula?",
+        answer:
+          "No. Police and rights issues are fact-sensitive, so the firm reviews the facts before advising on a specific path."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "injunctions-and-interim-reliefs",
+    title: "Injunctions and Interim Reliefs Advisory",
+    summary:
+      "Litigation strategy advice for clients considering urgent court protection, interim reliefs, restraint orders, preservation orders, or dispute containment.",
+    description:
+      "Chaman Law Firm helps clients assess whether urgent court protection or interim relief may be appropriate after reviewing the facts, documents, harm, timing, evidence, and dispute context. The service avoids generic promises because interim relief depends on the court, facts, and applicable rules.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Litigation strategy setting for injunctions and interim relief advisory",
+    keyPoints: [
+      "Urgency, harm, and evidence-risk assessment",
+      "Interim relief and dispute-containment strategy",
+      "Document and affidavit-readiness review",
+      "Representation planning before court or settlement"
+    ],
+    process: [
+      "Review the dispute, urgency, documents, and evidence",
+      "Assess whether interim relief may be suitable",
+      "Prepare strategy, documents, and representation plan",
+      "Support filing, negotiation, or dispute containment where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can every dispute qualify for an injunction?",
+        answer:
+          "No. Interim relief depends on the facts, evidence, urgency, applicable rules, and the court's assessment."
+      },
+      {
+        question: "When should a client seek urgent advice?",
+        answer:
+          "Early advice is important where assets, property, rights, evidence, or business operations may be at immediate risk."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "civil-lawsuit-pre-action-review",
+    title: "Civil Lawsuit Pre-Action Review",
+    summary:
+      "Pre-action legal review for individuals and businesses considering civil claims, commercial disputes, property disputes, or court proceedings in Nigeria.",
+    description:
+      "Chaman Law Firm reviews claims, documents, parties, limitation concerns, evidence, settlement possibilities, and court-readiness before proceedings are filed. The service helps clients avoid weak claims, premature filing, and avoidable procedural risk.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm litigation team reviewing civil lawsuit documents",
+    keyPoints: [
+      "Claim, evidence, and party-identification review",
+      "Pre-action correspondence and settlement strategy",
+      "Court-readiness and procedural-risk guidance",
+      "Litigation, mediation, or negotiation pathway advice"
+    ],
+    process: [
+      "Review the claim facts, documents, parties, and desired outcome",
+      "Assess evidence, limitation, jurisdiction, and settlement options",
+      "Recommend a pre-action or dispute-resolution strategy",
+      "Support correspondence, negotiation, filing, or representation"
+    ],
+    faqs: [
+      {
+        question: "Should a lawsuit be reviewed before filing?",
+        answer:
+          "Yes. Pre-action review can reveal evidence gaps, party issues, settlement opportunities, and procedural risks."
+      },
+      {
+        question: "Can litigation be avoided?",
+        answer:
+          "Sometimes. Negotiation, mediation, settlement, or other dispute-resolution routes may be suitable depending on the matter."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "court-system-and-judiciary-advisory",
+    title: "Court System and Judiciary Advisory",
+    summary:
+      "Practical litigation orientation for clients trying to understand Nigerian court structure, jurisdiction questions, and the right forum for a dispute.",
+    description:
+      "Chaman Law Firm advises clients on court-system and forum questions after reviewing the dispute, parties, documents, location, remedies, and urgency. The service is useful where a matter may involve jurisdiction, procedure, appeal risk, enforcement, or alternative dispute resolution.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Legal advisory image for Nigerian court system and jurisdiction review",
+    keyPoints: [
+      "Court, forum, and jurisdiction-risk review",
+      "Dispute pathway and remedy assessment",
+      "Procedure, timing, and evidence-readiness guidance",
+      "Litigation or ADR route selection"
+    ],
+    process: [
+      "Review the dispute, parties, documents, and desired remedy",
+      "Identify forum, jurisdiction, and procedure questions",
+      "Advise on litigation, ADR, or settlement pathway",
+      "Support next steps through correspondence or representation"
+    ],
+    faqs: [
+      {
+        question: "Why does forum selection matter?",
+        answer:
+          "The wrong forum or procedural route can create delay, cost, jurisdictional objections, or enforcement problems."
+      },
+      {
+        question: "Can this service help before a case starts?",
+        answer:
+          "Yes. Early review can help determine the suitable route before filing or responding to a claim."
+      }
+    ]
+  })
+];
+
+const sprint11sProbateServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "letters-of-administration-ogun-state",
+    title: "Letters of Administration in Ogun State",
+    summary:
+      "Estate-administration guidance for families, administrators, beneficiaries, and diaspora clients dealing with Ogun State assets or family estate questions.",
+    description:
+      "Chaman Law Firm assists clients with document review, family structure, estate information, asset details, representation needs, and administration-risk questions connected with Ogun State estate matters. The appropriate pathway depends on the facts and available documents.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Private-client legal advisory for letters of administration in Ogun State",
+    keyPoints: [
+      "Estate and family-document review",
+      "Administrator, beneficiary, and asset-information guidance",
+      "Application-readiness and representation support",
+      "Diaspora and cross-state estate-administration advice"
+    ],
+    process: [
+      "Review the deceased person's records, family details, and asset information",
+      "Identify application-readiness, representation, and document gaps",
+      "Advise on the appropriate administration pathway",
+      "Support preparation, correspondence, or representation where required"
+    ],
+    faqs: [
+      {
+        question: "Who may need letters of administration?",
+        answer:
+          "Families may need them where a deceased person's assets require lawful authority for administration or distribution."
+      },
+      {
+        question: "Can diaspora family members seek help?",
+        answer:
+          "Yes. The firm can review documents and advise on representation, documentation, and practical estate-administration steps."
+      }
+    ]
+  })
+];
+
+const sprint11sNotaryServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "notary-public-eligibility-and-document-advisory",
+    title: "Notary Public Eligibility and Document Advisory",
+    summary:
+      "Notary and document-authentication guidance for clients who need notarization, certification, document execution, or clarity on notarial requirements in Nigeria.",
+    description:
+      "Chaman Law Firm advises clients on notarization, certification, authentication, powers of attorney, affidavits, and document-use questions. The service helps clients understand what type of notarial or supporting legal step may be required for local or international use.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Notary public document advisory at Chaman Law Firm",
+    keyPoints: [
+      "Document notarization and certification guidance",
+      "Power of attorney and affidavit-document review",
+      "Local and international document-use support",
+      "Execution, authentication, and legalization pathway advice"
+    ],
+    process: [
+      "Review the document, destination, purpose, and identity requirements",
+      "Identify notarization, certification, or authentication needs",
+      "Advise on execution and supporting legal steps",
+      "Support notarization or document-readiness where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can the firm advise what notarization step is needed?",
+        answer:
+          "Yes. The required step depends on the document type, destination, and purpose for which it will be used."
+      },
+      {
+        question: "Is this only for Nigerian use?",
+        answer:
+          "No. The firm also assists clients with documents intended for use abroad, subject to destination requirements."
+      }
+    ]
+  })
+];
+
+const sprint11sImmigrationServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "citizenship-by-marriage-advisory",
+    title: "Citizenship by Marriage Advisory",
+    summary:
+      "Immigration and documentation guidance for clients reviewing Nigerian citizenship, marriage-related status questions, eligibility documents, and application readiness.",
+    description:
+      "Chaman Law Firm advises clients on immigration-document readiness, marriage records, eligibility questions, identity documents, residence history, and related legal-risk issues. The service does not promise approval and depends on the applicable facts, law, and government process.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Immigration legal advisory image for citizenship by marriage questions",
+    keyPoints: [
+      "Marriage, identity, and immigration-document review",
+      "Eligibility and application-readiness guidance",
+      "Status, residence, and supporting-record assessment",
+      "Legal advice before submission or follow-up"
+    ],
+    process: [
+      "Review marriage, identity, residence, and immigration records",
+      "Identify eligibility questions and missing documents",
+      "Advise on application-readiness and legal-risk issues",
+      "Support documentation, correspondence, or representation where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Does marriage automatically guarantee citizenship?",
+        answer:
+          "No. Citizenship and immigration questions depend on the applicable law, facts, eligibility requirements, and government process."
+      },
+      {
+        question: "Can Chaman Law Firm review documents before application?",
+        answer:
+          "Yes. The firm can review documents and advise on readiness, risk, and next steps."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "certificate-of-good-conduct-advisory",
+    title: "Certificate of Good Conduct Advisory",
+    summary:
+      "Document-readiness guidance for clients who need certificate-of-good-conduct support, police character documentation, or immigration-related record review.",
+    description:
+      "Chaman Law Firm advises individuals, employers, families, and diaspora clients on document-readiness questions connected with certificates of good conduct, police character documentation, immigration records, and supporting legal documents. The firm reviews the facts before advising on next steps.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Chaman Law Firm lawyers advising on certificate of good conduct documentation",
+    keyPoints: [
+      "Identity, police-record, and supporting-document review",
+      "Immigration and employment-document readiness guidance",
+      "Corrections, inconsistencies, and representation-risk assessment",
+      "Advice before submission, use, or follow-up"
+    ],
+    process: [
+      "Review the client's purpose, identity documents, and record history",
+      "Identify documentation gaps, inconsistencies, or risk points",
+      "Advise on a practical document-readiness pathway",
+      "Support correspondence or related legal documentation where appropriate"
+    ],
+    faqs: [
+      {
+        question: "Can a lawyer help review certificate-of-good-conduct documents?",
+        answer:
+          "Yes. A lawyer can review the documents and advise on legal or documentation issues before use."
+      },
+      {
+        question: "Is approval guaranteed?",
+        answer:
+          "No. The firm provides legal guidance, but official outcomes depend on the applicable facts and authority."
+      }
+    ]
+  })
+];
+
+const sprint11sFamilyServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "child-surname-change-advisory",
+    title: "Child Surname Change Advisory",
+    summary:
+      "Family-law guidance for parents, guardians, and families reviewing child surname changes, consent concerns, documentation, and dispute risk.",
+    description:
+      "Chaman Law Firm advises clients on child surname-change questions after reviewing parental status, guardianship, consent, birth records, school records, identity documents, and dispute concerns. The service is handled carefully because children's matters are fact-sensitive.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Family law advisory image for child surname change documentation",
+    keyPoints: [
+      "Child identity, parental status, and consent review",
+      "Birth, school, and supporting-document assessment",
+      "Guardianship and family-dispute risk guidance",
+      "Document-readiness and representation support"
+    ],
+    process: [
+      "Review the child's records, parental facts, and purpose of change",
+      "Identify consent, guardianship, and documentation questions",
+      "Advise on lawful options and dispute-risk controls",
+      "Support documentation, correspondence, or representation"
+    ],
+    faqs: [
+      {
+        question: "Can a child's surname be changed without legal review?",
+        answer:
+          "Legal review is advisable because consent, guardianship, identity records, and dispute risk may affect the appropriate route."
+      },
+      {
+        question: "Does the firm handle sensitive family matters discreetly?",
+        answer:
+          "Yes. Family matters are handled with care, privacy, and fact-specific legal guidance."
+      }
+    ]
+  }),
+  createAuthorityServicePage({
+    slug: "void-and-voidable-marriage-advisory",
+    title: "Void and Voidable Marriage Advisory",
+    summary:
+      "Family-law advice for clients reviewing marriage validity, annulment concerns, documentation, capacity, consent, and related private-client risk.",
+    description:
+      "Chaman Law Firm advises clients on marriage-validity and family-law questions after reviewing marriage records, parties, capacity, consent, ceremony facts, location, and related documents. The service avoids generic conclusions because validity questions depend on the specific facts and applicable law.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Private family law consultation for marriage-validity advisory",
+    keyPoints: [
+      "Marriage certificate and ceremony-document review",
+      "Capacity, consent, and validity-risk assessment",
+      "Annulment, divorce, and family-law pathway guidance",
+      "Private-client advice before action or settlement"
+    ],
+    process: [
+      "Review marriage records, identity documents, and relationship facts",
+      "Identify validity, consent, capacity, or documentation concerns",
+      "Advise on appropriate family-law options",
+      "Support correspondence, settlement, or representation where required"
+    ],
+    faqs: [
+      {
+        question: "Are marriage-validity questions fact-sensitive?",
+        answer:
+          "Yes. The relevant facts, documents, capacity, consent, and applicable law must be reviewed before advice is given."
+      },
+      {
+        question: "Can the firm advise before a public dispute starts?",
+        answer:
+          "Yes. Early private advice can help clients understand options and reduce unnecessary escalation."
+      }
+    ]
+  })
+];
+
+const sprint11sEmploymentServicePages: ServicePage[] = [
+  createAuthorityServicePage({
+    slug: "trade-union-registration-advisory",
+    title: "Trade Union Registration Advisory",
+    summary:
+      "Employment-law guidance for workers, unions, employers, and organizations reviewing trade union registration, membership, workplace representation, and labour-risk questions.",
+    description:
+      "Chaman Law Firm advises clients on trade union registration and labour-relations issues after reviewing the organization, workplace facts, documents, correspondence, membership concerns, and dispute context. The service is framed as legal-risk and compliance guidance.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Employment law advisory image for trade union registration and labour relations",
+    keyPoints: [
+      "Trade union registration and membership-document review",
+      "Workplace representation and labour-relations guidance",
+      "Employer compliance and employee-rights risk assessment",
+      "Correspondence, settlement, and dispute-resolution strategy"
+    ],
+    process: [
+      "Review the workplace facts, union documents, and correspondence",
+      "Identify registration, representation, and compliance questions",
+      "Advise on legal risk, communication, and dispute options",
+      "Support documentation, negotiation, or representation"
+    ],
+    faqs: [
+      {
+        question: "Can employers and employees both seek trade union advice?",
+        answer:
+          "Yes. The firm advises employers, employees, unions, and organizations based on the specific facts and documents."
+      },
+      {
+        question: "Does this replace official registration decisions?",
+        answer:
+          "No. The firm provides legal guidance and representation support; official decisions depend on the applicable process and authority."
+      }
+    ]
+  })
+];
+
 export const practiceAreas: PracticeArea[] = [
   {
     slug: "property-real-estate-law",
@@ -476,13 +1080,16 @@ export const practiceAreas: PracticeArea[] = [
       "Land Use Charge advisory",
       "Land sale restrictions",
       "Family land sale consent",
+      "Quit notice advisory",
+      "Planning compliance advisory",
+      "Land tenure systems review",
       "Property documentation",
       "Property acquisition advisory",
       "Land transactions",
       "Property dispute resolution",
       "Diaspora property services"
     ],
-    servicePages: propertyServicePages,
+    servicePages: [...propertyServicePages, ...sprint11sPropertyServicePages],
     commonIssues: [
       "Unverified title documents",
       "Family land and seller-authority disputes",
@@ -551,11 +1158,15 @@ export const practiceAreas: PracticeArea[] = [
       "Securities regulatory compliance",
       "Board governance advisory",
       "Share transfer advisory",
+      "Minor contract capacity advisory",
+      "Ultra vires and corporate powers",
+      "Regulatory bodies and compliance",
       "Contract drafting",
       "Business advisory",
       "Retainership support"
     ],
     servicePages: [
+      ...sprint11sCorporateServicePages,
       {
         slug: "contract-drafting-review",
         title: "Contract Drafting & Review",
@@ -770,6 +1381,10 @@ export const practiceAreas: PracticeArea[] = [
       "Fundamental rights enforcement",
       "Expert witness advisory",
       "Digital evidence review",
+      "Police complaint and rights advisory",
+      "Injunctions and interim reliefs",
+      "Civil lawsuit pre-action review",
+      "Court system advisory",
       "ADR",
       "Mediation",
       "Arbitration",
@@ -777,6 +1392,7 @@ export const practiceAreas: PracticeArea[] = [
       "Settlement strategy"
     ],
     servicePages: [
+      ...sprint11sLitigationServicePages,
       {
         slug: "commercial-litigation",
         title: "Commercial Litigation",
@@ -975,11 +1591,13 @@ export const practiceAreas: PracticeArea[] = [
       "Letters of administration",
       "Probate applications",
       "Probate in Lagos advisory",
+      "Letters of administration in Ogun State",
       "Inheritance matters",
       "Estate planning",
       "Will administration"
     ],
     servicePages: [
+      ...sprint11sProbateServicePages,
       {
         slug: "letters-of-administration",
         title: "Letters of Administration",
@@ -1059,8 +1677,17 @@ export const practiceAreas: PracticeArea[] = [
       "Notarization, certification, legalization, authentication, power of attorney, and document execution support.",
     description:
       "The firm supports clients who need documents notarized, certified, authenticated, legalized, or prepared for use in Nigeria or abroad, including powers of attorney and document execution for diaspora clients.",
-    services: ["Notarization", "Certification", "Legalization", "Authentication", "Power of attorney", "Document execution"],
+    services: [
+      "Notarization",
+      "Certification",
+      "Legalization",
+      "Authentication",
+      "Power of attorney",
+      "Document execution",
+      "Notary public eligibility and document advisory"
+    ],
     servicePages: [
+      ...sprint11sNotaryServicePages,
       {
         slug: "power-of-attorney",
         title: "Power of Attorney",
@@ -1106,8 +1733,16 @@ export const practiceAreas: PracticeArea[] = [
       "Visa advisory, business immigration, residence documentation, immigration compliance, and practical support for clients with Nigerian immigration needs.",
     description:
       "Chaman Law Firm supports individuals, businesses, investors, and foreign clients with visa advisory, business immigration, residence documentation, and immigration compliance.",
-    services: ["Visa advisory", "Business immigration", "Residence documentation", "Immigration compliance"],
+    services: [
+      "Visa advisory",
+      "Business immigration",
+      "Residence documentation",
+      "Immigration compliance",
+      "Citizenship by marriage advisory",
+      "Certificate of good conduct advisory"
+    ],
     servicePages: [
+      ...sprint11sImmigrationServicePages,
       {
         slug: "business-immigration",
         title: "Business Immigration",
@@ -1153,8 +1788,17 @@ export const practiceAreas: PracticeArea[] = [
       "Legal guidance on divorce, custody, guardianship, matrimonial advisory, family-property issues, and related private-client matters.",
     description:
       "Chaman Law Firm supports clients with family law matters including divorce, custody, guardianship, matrimonial advisory, family-property concerns, and related disputes.",
-    services: ["Divorce", "Custody", "Guardianship", "Matrimonial advisory", "Family-property support"],
+    services: [
+      "Divorce",
+      "Custody",
+      "Guardianship",
+      "Matrimonial advisory",
+      "Family-property support",
+      "Child surname change advisory",
+      "Void and voidable marriage advisory"
+    ],
     servicePages: [
+      ...sprint11sFamilyServicePages,
       {
         slug: "matrimonial-advisory",
         title: "Matrimonial Advisory",
@@ -1208,9 +1852,11 @@ export const practiceAreas: PracticeArea[] = [
       "Settlement negotiation",
       "Employment dispute resolution",
       "Employer compliance support",
-      "Trade union membership disputes"
+      "Trade union membership disputes",
+      "Trade union registration advisory"
     ],
     servicePages: [
+      ...sprint11sEmploymentServicePages,
       {
         slug: "trade-union-membership-disputes",
         title: "Trade Union Membership Disputes",

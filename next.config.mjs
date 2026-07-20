@@ -33,14 +33,14 @@ const emergencyLegacyRedirects = [
   { source: "/obtaining-a-certificate-of-occupancy-c-of-o", destination: "/resources/blog/how-do-i-obtain-a-certificate-of-occupancy" },
   { source: "/4-steps-on-how-to-deal-with-a-bad-landlordin", destination: "/resources/blog/4-steps-on-how-to-deal-with-a-bad-landlordin" },
   { source: "/joinder-of-parties-misjoinder-of-parties", destination: "/resources/blog/joinder-of-parties-misjoinder-of-parties" },
-  { source: "/gain-nigerian-citizenship-by-marriage", destination: "/practice-areas/immigration-services" },
+  { source: "/gain-nigerian-citizenship-by-marriage", destination: "/practice-areas/immigration-services/citizenship-by-marriage-advisory" },
   { source: "/statutory-right-of-occupancy-vs-customary-right", destination: "/resources/blog/statutory-right-of-occupancy-vs-customary-right" },
   { source: "/5-steps-on-how-to-obtain-restraining-order", destination: "/resources/blog/5-steps-on-how-to-obtain-restraining-order" },
   { source: "/child-support-and-maintenance-payment", destination: "/resources/blog/child-support-and-maintenance-payment" },
   { source: "/how-to-replace-a-lost-a-marriage-certificate", destination: "/resources/blog/how-to-replace-a-lost-a-marriage-certificate" },
   { source: "/legal-steps-to-take-when-our-land-has-been", destination: "/resources/blog/legal-steps-to-take-when-our-land-has-been" },
   { source: "/rights-of-tenants-in-ogun-chaman-law-firm", destination: "/resources/blog/rights-of-tenants-in-ogun-chaman-law-firm" },
-  { source: "/what-is-the-implication-of-quit-notice", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/what-is-the-implication-of-quit-notice", destination: "/practice-areas/property-real-estate-law/quit-notice-advisory" },
   { source: "/polygamy-and-multiple-marriages-in-nigeria", destination: "/practice-areas/family-law" },
   { source: "/steps-to-permanent-residency-in-nigeria", destination: "/resources/blog/steps-to-permanent-residency-in-nigeria" },
   { source: "/sharing-of-property-after-divorce-in-nigeria", destination: "/resources/blog/sharing-of-property-after-divorce-in-nigeria" },
@@ -48,7 +48,7 @@ const emergencyLegacyRedirects = [
   { source: "/how-to-secure-child-support-and-maintenance", destination: "/resources/blog/how-to-secure-child-support-and-maintenance" },
   { source: "/is-foreign-marriage-under-the-nigerian-law", destination: "/resources/blog/is-foreign-marriage-under-the-nigerian-law" },
   { source: "/customary-vs-statutory-marriage-in-nigeria", destination: "/resources/blog/customary-vs-statutory-marriage-in-nigeria" },
-  { source: "/void-and-voidable-marriages-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/void-and-voidable-marriages-in-nigeria", destination: "/practice-areas/family-law/void-and-voidable-marriage-advisory" },
   { source: "/dissolution-of-marriage-under-the-nigeria-law", destination: "/resources/blog/dissolution-of-marriage-under-the-nigeria-law" },
   { source: "/annulment-of-marriage-under-the-nigerian-law", destination: "/resources/blog/annulment-of-marriage-under-the-nigerian-law" },
   { source: "/complete-guide-to-probate-registry-in-lagos", destination: "/resources/blog/complete-guide-to-probate-registry-in-lagos" }
@@ -285,18 +285,18 @@ const deepLegacy404Redirects = [
   { source: "/community-development-associations-law", destination: "/resources/blog/community-development-associations-law" },
   { source: "/5-vital-role-of-consumer-protection-agencies", destination: "/resources/blog/5-vital-role-of-consumer-protection-agencies" },
   { source: "/taxation-of-the-construction-sector-in-nigeria", destination: "/resources/blog/taxation-of-the-construction-sector-in-nigeria" },
-  { source: "/registration-of-trade-union-in-nigeria", destination: "/practice-areas/employment-law" },
-  { source: "/how-to-file-complaint-against-police-officers-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/registration-of-trade-union-in-nigeria", destination: "/practice-areas/employment-law/trade-union-registration-advisory" },
+  { source: "/how-to-file-complaint-against-police-officers-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution/police-complaint-and-rights-advisory" },
   { source: "/abandonment-and-withdrew-of-court-action", destination: "/practice-areas/litigation-dispute-resolution" },
   { source: "/taxation-of-sole-proprietorship", destination: "/resources/blog/taxation-of-sole-proprietorship" },
   { source: "/powerful-steps-what-is-trespass-to-land-2", destination: "/resources/blog/powerful-steps-what-is-trespass-to-land-2" },
   { source: "/certificate-of-occupancy-in-rivers-state", destination: "/practice-areas/property-real-estate-law" },
   { source: "/to-apply-for-and-get-certificate-of-occupancy", destination: "/resources/blog/to-apply-for-and-get-certificate-of-occupancy" },
-  { source: "/how-to-legally-change-a-child-surname", destination: "/practice-areas/family-law" },
-  { source: "/the-role-of-the-judiciary-in-nigerian-democracy", destination: "/practice-areas/litigation-dispute-resolution" },
-  { source: "/can-a-minor-enter-into-a-valid-contract-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/how-to-legally-change-a-child-surname", destination: "/practice-areas/family-law/child-surname-change-advisory" },
+  { source: "/the-role-of-the-judiciary-in-nigerian-democracy", destination: "/practice-areas/litigation-dispute-resolution/court-system-and-judiciary-advisory" },
+  { source: "/can-a-minor-enter-into-a-valid-contract-in-nigeria", destination: "/practice-areas/corporate-commercial-law/minor-contract-capacity" },
   { source: "/family-property-and-right-of-individual-member-in-family-property", destination: "/resources/blog/family-property-and-right-of-individual-member-in-family-property" },
-  { source: "/conditions-for-granting-injunctions-and-types-of-injunctions", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/conditions-for-granting-injunctions-and-types-of-injunctions", destination: "/practice-areas/litigation-dispute-resolution/injunctions-and-interim-reliefs" },
   {
     source: "/how-to-verify-land-title-before-buying-land",
     destination: "/practice-areas/property-real-estate-law/property-verification"
@@ -419,7 +419,7 @@ const sprint11dStaticAuthorityRedirects = [
 
 const sprint11eStaticAuthorityRedirects = [
   { source: "/documents-apostilled-in-nigeria", destination: "/practice-areas/notary-public-services" },
-  { source: "/letter-of-administration-in-ogun-state", destination: "/practice-areas/probate-estate-administration" },
+  { source: "/letter-of-administration-in-ogun-state", destination: "/practice-areas/probate-estate-administration/letters-of-administration-ogun-state" },
   { source: "/how-to-legalize-or-attest-a-document-in-nigeria", destination: "/practice-areas/notary-public-services" },
   { source: "/role-of-shareholder-in-corporate-decision-making", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/how-to-apply-for-letter-of-administration", destination: "/practice-areas/probate-estate-administration" },
@@ -455,7 +455,7 @@ const sprint11fStaticAuthorityRedirects = [
 ]);
 
 const sprint11gStaticAuthorityRedirects = [
-  { source: "/who-can-be-a-notary-public", destination: "/practice-areas/notary-public-services" },
+  { source: "/who-can-be-a-notary-public", destination: "/practice-areas/notary-public-services/notary-public-eligibility-and-document-advisory" },
   { source: "/corporate-affairs-commission-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/7-step-citizenship-application-in-nigeria", destination: "/practice-areas/immigration-services" },
   { source: "/registering-a-private-security-company", destination: "/practice-areas/corporate-commercial-law" },
@@ -491,6 +491,16 @@ const sprint11oStaticAuthorityRedirects = [
   { source: "/legal-restrictions-to-sale-of-land", destination: "/practice-areas/property-real-estate-law/legal-restrictions-to-sale-of-land" },
   { source: "/selling-a-family-land-without-everyones-consent", destination: "/practice-areas/property-real-estate-law/selling-a-family-land-without-everyones-consent" },
   { source: "/digital-evidence-admissibility-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution/digital-evidence" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
+const sprint11sStaticAuthorityRedirects = [
+  { source: "/how-to-apply-for-certificate-of-good-conduct-in-nigeria", destination: "/practice-areas/immigration-services/certificate-of-good-conduct-advisory" },
+  { source: "/laspppa-what-it-is-and-why-it-matters-in-lagos", destination: "/practice-areas/property-real-estate-law/lagos-physical-planning-compliance" },
+  { source: "/doctrine-of-ultra-vires", destination: "/practice-areas/corporate-commercial-law/ultra-vires-corporate-powers" },
+  { source: "/how-to-file-a-lawsuit-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution/civil-lawsuit-pre-action-review" }
 ].flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -671,6 +681,7 @@ const nextConfig = {
       ...sprint11fStaticAuthorityRedirects,
       ...sprint11gStaticAuthorityRedirects,
       ...sprint11oStaticAuthorityRedirects,
+      ...sprint11sStaticAuthorityRedirects,
       ...sprint11hExactArticleRedirects,
       ...sprint11iExactArticleRedirects,
       ...sprint11kExactArticleRedirects,
