@@ -590,6 +590,15 @@ const sprint11oExactArticleRedirects = [...sprint11oExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11uExactArticleRedirectSources = new Set([
+  "/minority-protection-rights-and-remedies"
+]);
+
+const sprint11uExactArticleRedirects = [...sprint11uExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -713,6 +722,7 @@ const nextConfig = {
       ...sprint11lExactArticleRedirects,
       ...sprint11nExactArticleRedirects,
       ...sprint11oExactArticleRedirects,
+      ...sprint11uExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",

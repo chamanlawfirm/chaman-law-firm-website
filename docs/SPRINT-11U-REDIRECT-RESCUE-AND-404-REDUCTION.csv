@@ -1,0 +1,2 @@
+old URL,final URL,content type,final URL status,canonical safe,sitemap included,redirect action,redirect type,homepage dump,hidden draft target,404 target,notes
+https://chamanlawfirm.com/minority-protection-rights-and-remedies/,https://chamanlawfirm.com/resources/blog/minority-protection-rights-and-remedies,blog post,200,yes,yes,configured in next.config.mjs,one-hop 308,no,no,no,Final target returned 200 and appeared in sitemap before exact redirect activation.
