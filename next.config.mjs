@@ -409,8 +409,8 @@ const sprint11dStaticAuthorityRedirects = [
   { source: "/nigerian-visa-requirements-and-legal-guide", destination: "/practice-areas/immigration-services" },
   { source: "/startup-legal-services-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/banking-and-finance-law-in-lagos", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/roles-of-a-mediator", destination: "/practice-areas/adr-mediation" },
-  { source: "/enforcement-of-arbitral-awards", destination: "/practice-areas/adr-mediation" },
+  { source: "/roles-of-a-mediator", destination: "/practice-areas/adr-mediation/mediator-selection-and-quality-advisory" },
+  { source: "/enforcement-of-arbitral-awards", destination: "/practice-areas/adr-mediation/arbitral-award-enforcement-advisory" },
   { source: "/gallery", destination: "/media" }
 ].flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
@@ -418,10 +418,10 @@ const sprint11dStaticAuthorityRedirects = [
 ]);
 
 const sprint11eStaticAuthorityRedirects = [
-  { source: "/documents-apostilled-in-nigeria", destination: "/practice-areas/notary-public-services" },
+  { source: "/documents-apostilled-in-nigeria", destination: "/practice-areas/notary-public-services/apostille-and-document-legalization" },
   { source: "/letter-of-administration-in-ogun-state", destination: "/practice-areas/probate-estate-administration/letters-of-administration-ogun-state" },
-  { source: "/how-to-legalize-or-attest-a-document-in-nigeria", destination: "/practice-areas/notary-public-services" },
-  { source: "/role-of-shareholder-in-corporate-decision-making", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/how-to-legalize-or-attest-a-document-in-nigeria", destination: "/practice-areas/notary-public-services/document-legalization-and-attestation" },
+  { source: "/role-of-shareholder-in-corporate-decision-making", destination: "/practice-areas/corporate-commercial-law/shareholder-decision-making-advisory" },
   { source: "/how-to-apply-for-letter-of-administration", destination: "/practice-areas/probate-estate-administration" },
   { source: "/appointment-of-arbitrators-in-nigeria", destination: "/practice-areas/adr-mediation" },
   { source: "/rules-and-regulations-of-doing-business-in-niger", destination: "/practice-areas/corporate-commercial-law" },
@@ -436,9 +436,9 @@ const sprint11eStaticAuthorityRedirects = [
 ]);
 
 const sprint11fStaticAuthorityRedirects = [
-  { source: "/how-to-register-a-business-name-in-nigeria-2024", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/requirements-for-starting-a-business-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/employment-law-7-compliance-for-nigerian", destination: "/practice-areas/employment-law" },
+  { source: "/how-to-register-a-business-name-in-nigeria-2024", destination: "/practice-areas/corporate-commercial-law/business-name-registration-advisory" },
+  { source: "/requirements-for-starting-a-business-in-nigeria", destination: "/practice-areas/corporate-commercial-law/company-startup-compliance-advisory" },
+  { source: "/employment-law-7-compliance-for-nigerian", destination: "/practice-areas/employment-law/workplace-compliance-advisory" },
   { source: "/how-to-draft-legal-contract", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/trademark-classes-in-nigeria-a-strategic-legal-guide-for-businesses", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/enforcement-of-arbitral-award", destination: "/practice-areas/adr-mediation" },
@@ -446,9 +446,9 @@ const sprint11fStaticAuthorityRedirects = [
   { source: "/impact-of-regulatory-changes-on-business", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/corporate-governance-and-ethical-responsibility", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/impact-of-trade-policies-on-nigerian-business", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/corporate-affairs-commission-and-its-functions-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/proven-steps-qualities-of-good-mediator", destination: "/practice-areas/adr-mediation" },
-  { source: "/regulations-understanding-of-nigerian-employment", destination: "/practice-areas/employment-law" }
+  { source: "/corporate-affairs-commission-and-its-functions-in-nigeria", destination: "/practice-areas/corporate-commercial-law/cac-compliance-and-company-records" },
+  { source: "/proven-steps-qualities-of-good-mediator", destination: "/practice-areas/adr-mediation/mediator-selection-and-quality-advisory" },
+  { source: "/regulations-understanding-of-nigerian-employment", destination: "/practice-areas/employment-law/workplace-compliance-advisory" }
 ].flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -456,15 +456,15 @@ const sprint11fStaticAuthorityRedirects = [
 
 const sprint11gStaticAuthorityRedirects = [
   { source: "/who-can-be-a-notary-public", destination: "/practice-areas/notary-public-services/notary-public-eligibility-and-document-advisory" },
-  { source: "/corporate-affairs-commission-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/7-step-citizenship-application-in-nigeria", destination: "/practice-areas/immigration-services" },
+  { source: "/corporate-affairs-commission-in-nigeria", destination: "/practice-areas/corporate-commercial-law/cac-compliance-and-company-records" },
+  { source: "/7-step-citizenship-application-in-nigeria", destination: "/practice-areas/immigration-services/citizenship-application-advisory" },
   { source: "/registering-a-private-security-company", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/how-to-open-a-company-bank-account-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/corporate-governance-challenges-in-companies", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/registration-of-a-money-lending-company", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/how-to-increase-a-company-share", destination: "/practice-areas/corporate-commercial-law" },
   { source: "/4-proven-steps-on-how-to-enforce-a-contract", destination: "/practice-areas/corporate-commercial-law" },
-  { source: "/corporate-governance-and-business-ethics", destination: "/practice-areas/corporate-commercial-law" }
+  { source: "/corporate-governance-and-business-ethics", destination: "/practice-areas/corporate-commercial-law/corporate-governance-and-ethics-advisory" }
 ].flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -501,6 +501,30 @@ const sprint11sStaticAuthorityRedirects = [
   { source: "/laspppa-what-it-is-and-why-it-matters-in-lagos", destination: "/practice-areas/property-real-estate-law/lagos-physical-planning-compliance" },
   { source: "/doctrine-of-ultra-vires", destination: "/practice-areas/corporate-commercial-law/ultra-vires-corporate-powers" },
   { source: "/how-to-file-a-lawsuit-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution/civil-lawsuit-pre-action-review" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
+const sprint11tStaticAuthorityRedirects = [
+  { source: "/land-title-document-check-in-nigeria", destination: "/practice-areas/property-real-estate-law/land-title-document-check" },
+  { source: "/due-diligence-before-buying-land", destination: "/practice-areas/property-real-estate-law/land-purchase-due-diligence" },
+  { source: "/tenancy-agreement-lawyer-in-lagos", destination: "/practice-areas/property-real-estate-law/tenancy-agreement-review" },
+  { source: "/procedure-for-ejecting-a-squatter-in-lagos", destination: "/practice-areas/property-real-estate-law/property-dispute-and-squatter-advisory" },
+  { source: "/government-acquisition-in-ogun-state", destination: "/practice-areas/property-real-estate-law/government-acquisition-ogun-state-advisory" },
+  { source: "/building-completion-certificate-in-lagos", destination: "/practice-areas/property-real-estate-law/building-completion-certificate-lagos" },
+  { source: "/fencing-approval-in-lagos-key-requirements", destination: "/practice-areas/property-real-estate-law/fencing-approval-lagos" },
+  { source: "/procedure-for-mergers-and-acquisitions-in-nigeria", destination: "/practice-areas/corporate-commercial-law/mergers-and-acquisitions-advisory" },
+  { source: "/business-law-advisory", destination: "/practice-areas/corporate-commercial-law/company-startup-compliance-advisory" },
+  { source: "/regulatory-compliance-nigeria", destination: "/practice-areas/corporate-commercial-law/regulatory-bodies-compliance" },
+  { source: "/how-to-write-a-demand-letter", destination: "/practice-areas/debt-recovery/debt-demand-letter-advisory" },
+  { source: "/employment-contract-review-in-nigeria", destination: "/practice-areas/employment-law/employment-contract-review" },
+  { source: "/statute-limitations-and-limitation-periods", destination: "/practice-areas/litigation-dispute-resolution/limitation-periods-and-pre-action-advisory" },
+  { source: "/or-filing-interlocutory-applications", destination: "/practice-areas/litigation-dispute-resolution/interlocutory-applications-advisory" },
+  { source: "/challenges-of-customary-marriage", destination: "/practice-areas/family-law/customary-marriage-advisory" },
+  { source: "/inheritance-rights-of-step-children", destination: "/practice-areas/probate-estate-administration/inheritance-rights-stepchildren-advisory" },
+  { source: "/limitations-to-testamentary-freedom", destination: "/practice-areas/probate-estate-administration/testamentary-freedom-advisory" },
+  { source: "/legal-document-review", destination: "/practice-areas/notary-public-services/legal-document-review" }
 ].flatMap(({ source, destination }) => [
   { source: `${source}/`, destination, permanent: true },
   { source, destination, permanent: true }
@@ -676,6 +700,7 @@ const nextConfig = {
       ...sprint10oExactArticleRedirects,
       ...sprint10qExactArticleRedirects,
       ...deepLegacy404Redirects,
+      ...sprint11tStaticAuthorityRedirects,
       ...sprint11dStaticAuthorityRedirects,
       ...sprint11eStaticAuthorityRedirects,
       ...sprint11fStaticAuthorityRedirects,
