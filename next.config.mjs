@@ -599,6 +599,15 @@ const sprint11uExactArticleRedirects = [...sprint11uExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11vExactArticleRedirectSources = new Set([
+  "/list-of-government-agencies-of-nigeria"
+]);
+
+const sprint11vExactArticleRedirects = [...sprint11vExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -723,6 +732,7 @@ const nextConfig = {
       ...sprint11nExactArticleRedirects,
       ...sprint11oExactArticleRedirects,
       ...sprint11uExactArticleRedirects,
+      ...sprint11vExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",

@@ -1,0 +1,2 @@
+old URL,final URL,content type,final URL status,canonical safe,sitemap included,redirect action,redirect type,homepage dump,hidden draft target,404 target,notes
+https://chamanlawfirm.com/list-of-government-agencies-of-nigeria/,https://chamanlawfirm.com/resources/blog/list-of-government-agencies-of-nigeria,blog post,200,yes,yes,exact redirect added in next.config.mjs pending Vercel deployment QA,one-hop 308,no,no,no,Target returned 200 and appeared in sitemap before redirect activation.
