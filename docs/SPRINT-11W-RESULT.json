@@ -1,0 +1,235 @@
+{
+  "sprint": "11W",
+  "mode": "apply",
+  "generatedAt": "2026-07-24T03:21:26.855Z",
+  "freshEvidenceFiles": 0,
+  "sprint11tServicePagesMonitored": 29,
+  "sprint11tRedirectsMonitored": 32,
+  "blogCandidatesReviewed": 142,
+  "approvalReadyCandidates": 4,
+  "selectedForApproval": 4,
+  "approvedInSanity": 4,
+  "liveApprovedPassed": 4,
+  "redirectRescueEligible": 4,
+  "lawzanaProfileStatus": 403,
+  "lawzanaBadgeStatus": 200,
+  "sitemapStatus": 200,
+  "robotsStatus": 200,
+  "publicAuthorRule": "Charles Chukwuma Nkwoka, Esq.",
+  "sanityChanges": [
+    {
+      "slug": "how-to-appoint-a-company-secretary-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/how-to-appoint-a-company-secretary-in-nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/how-to-appoint-a-company-secretary-in-nigeria",
+      "operations": [
+        "created/replaced chamanlawfirm-sprint11w-how-to-appoint-a-company-secretary-in-nigeria",
+        "patched chamanlawfirm.sprint10k.how-to-appoint-a-company-secretary-in-nigeria"
+      ]
+    },
+    {
+      "slug": "what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "operations": [
+        "created/replaced chamanlawfirm-sprint11w-what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+        "patched chamanlawfirm.sprint10k.what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria"
+      ]
+    },
+    {
+      "slug": "land-documentation-excision-vs-gazette",
+      "oldUrl": "https://chamanlawfirm.com/land-documentation-excision-vs-gazette",
+      "target": "https://chamanlawfirm.com/resources/blog/land-documentation-excision-vs-gazette",
+      "operations": [
+        "created/replaced chamanlawfirm-sprint11w-land-documentation-excision-vs-gazette",
+        "patched chamanlawfirm.sprint10q.land-documentation-excision-vs-gazette"
+      ]
+    },
+    {
+      "slug": "legally-terminate-shipping-contract-in-nigeria",
+      "oldUrl": "https://chamanlawfirm.com/legally-terminate-shipping-contract-in-nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/legally-terminate-shipping-contract-in-nigeria",
+      "operations": [
+        "created/replaced chamanlawfirm-sprint11w-legally-terminate-shipping-contract-in-nigeria",
+        "patched chamanlawfirm.sprint10q.legally-terminate-shipping-contract-in-nigeria"
+      ]
+    }
+  ],
+  "selected": [
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-appoint-a-company-secretary-in-nigeria",
+      "slug": "how-to-appoint-a-company-secretary-in-nigeria",
+      "title": "How to Appoint a Company Secretary in Nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/how-to-appoint-a-company-secretary-in-nigeria"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "slug": "what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "title": "What Are The Requirements For Compulsory Acquisition Of Land In Nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/land-documentation-excision-vs-gazette",
+      "slug": "land-documentation-excision-vs-gazette",
+      "title": "Land Documentation Excision Vs Gazette",
+      "target": "https://chamanlawfirm.com/resources/blog/land-documentation-excision-vs-gazette"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legally-terminate-shipping-contract-in-nigeria",
+      "slug": "legally-terminate-shipping-contract-in-nigeria",
+      "title": "Legally Terminate Shipping Contract In Nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/legally-terminate-shipping-contract-in-nigeria"
+    }
+  ],
+  "keptHiddenSample": [
+    {
+      "oldUrl": "https://chamanlawfirm.com/landlord-and-tenant-rights-in-nigeria/",
+      "slug": "landlord-and-tenant-rights-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/obtaining-a-certificate-of-occupancy-c-of-o/",
+      "slug": "obtaining-a-certificate-of-occupancy-c-of-o",
+      "reason": "body block count below gate; source body too short for approval; featured image missing; alt text missing or weak; author reference needs correction; legacy URL already redirects to /resources/blog/how-do-i-obtain-a-certificate-of-occupancy; not selected for Sprint 11W controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/cac-public-search-guide-nigeria/",
+      "slug": "cac-public-search-guide-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/the-jurisdiction-of-courts-in-nigeria/",
+      "slug": "the-jurisdiction-of-courts-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-rule-of-law-in-nigeria/",
+      "slug": "the-concept-of-rule-of-law-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/types-of-tenant-in-nigeria/",
+      "slug": "types-of-tenant-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-change-car-ownership-in-nigeria/",
+      "slug": "how-to-change-car-ownership-in-nigeria",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; not selected for Sprint 11W controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/proper-steps-to-eviction-of-tenants/",
+      "slug": "proper-steps-to-eviction-of-tenants",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-track-a-stolen-phone-in-nigeria/",
+      "slug": "how-to-track-a-stolen-phone-in-nigeria",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; unsupported outcome claim; not selected for Sprint 11W controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/the-ogun-state-tenancy-law-chaman-law-firm/",
+      "slug": "the-ogun-state-tenancy-law-chaman-law-firm",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/building-permit-approval-in-ogun-state/",
+      "slug": "building-permit-approval-in-ogun-state",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/list-of-government-agencies-of-nigeria/",
+      "slug": "list-of-government-agencies-of-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/4-steps-on-how-to-deal-with-a-bad-landlordin/",
+      "slug": "4-steps-on-how-to-deal-with-a-bad-landlordin",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/joinder-of-parties-misjoinder-of-parties/",
+      "slug": "joinder-of-parties-misjoinder-of-parties",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-change-name-with-deed-poll/",
+      "slug": "how-to-change-name-with-deed-poll",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/statutory-right-of-occupancy-vs-customary-right/",
+      "slug": "statutory-right-of-occupancy-vs-customary-right",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/ways-to-prove-ownership-of-land/",
+      "slug": "ways-to-prove-ownership-of-land",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/5-steps-on-how-to-obtain-restraining-order/",
+      "slug": "5-steps-on-how-to-obtain-restraining-order",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/steps-on-how-to-confidently-report-acrimelaw/",
+      "slug": "steps-on-how-to-confidently-report-acrimelaw",
+      "reason": "current-law or procedure-sensitive topic; not selected for Sprint 11W controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/what-are-elements-of-tax-law/",
+      "slug": "what-are-elements-of-tax-law",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/apply-for-drivers-licence-in-nigeria/",
+      "slug": "apply-for-drivers-licence-in-nigeria",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; not selected for Sprint 11W controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/tax-administration-in-nigeria/",
+      "slug": "tax-administration-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/difference-between-ownership-and-possession/",
+      "slug": "difference-between-ownership-and-possession",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/community-development-associations-law/",
+      "slug": "community-development-associations-law",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/child-support-and-maintenance-payment/",
+      "slug": "child-support-and-maintenance-payment",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-notarize-a-document-in-nigeria/",
+      "slug": "how-to-notarize-a-document-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-replace-a-lost-a-marriage-certificate/",
+      "slug": "how-to-replace-a-lost-a-marriage-certificate",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/the-statutory-right-of-occupancy-in-nigeria/",
+      "slug": "the-statutory-right-of-occupancy-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legal-steps-to-take-when-our-land-has-been/",
+      "slug": "legal-steps-to-take-when-our-land-has-been",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/transfer-of-company-shares-in-nigeria/",
+      "slug": "transfer-of-company-shares-in-nigeria",
+      "reason": "already public"
+    }
+  ]
+}
