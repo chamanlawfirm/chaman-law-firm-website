@@ -611,6 +611,15 @@ const sprint11vExactArticleRedirects = [...sprint11vExactArticleRedirectSources]
   { source, destination: `/resources/blog${source}`, permanent: true }
 ]);
 
+const sprint11xExactArticleRedirectSources = new Set([
+  "/court-procedures-and-efficient-case"
+]);
+
+const sprint11xExactArticleRedirects = [...sprint11xExactArticleRedirectSources].flatMap((source) => [
+  { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
+  { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
@@ -736,6 +745,7 @@ const nextConfig = {
       ...sprint11oExactArticleRedirects,
       ...sprint11uExactArticleRedirects,
       ...sprint11vExactArticleRedirects,
+      ...sprint11xExactArticleRedirects,
       {
         source: "/landlord-and-tenant-rights-in-nigeria/",
         destination: "/resources/blog/landlord-and-tenant-rights-in-nigeria",

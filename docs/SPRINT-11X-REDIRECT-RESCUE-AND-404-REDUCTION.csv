@@ -1,0 +1,2 @@
+old URL,final URL,content type,final URL status,canonical safe,sitemap included,redirect action,redirect type,homepage dump,hidden draft target,404 target,notes
+https://chamanlawfirm.com/court-procedures-and-efficient-case,https://chamanlawfirm.com/resources/blog/court-procedures-and-efficient-case,blog post,200,yes,yes,eligible for exact one-hop redirect in next.config.mjs,one-hop 308,no,no,no,Approve then add config redirect only when live and sitemap gates pass.

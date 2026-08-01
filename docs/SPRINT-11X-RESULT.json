@@ -1,0 +1,195 @@
+{
+  "sprint": "11X",
+  "mode": "apply",
+  "generatedAt": "2026-08-01T23:13:30.087Z",
+  "freshEvidenceFiles": 0,
+  "sprint11tServicePagesMonitored": 29,
+  "sprint11tRedirectsMonitored": 32,
+  "blogCandidatesReviewed": 436,
+  "approvalReadyCandidates": 0,
+  "selectedForApproval": 1,
+  "approvedInSanity": 1,
+  "liveApprovedPassed": 1,
+  "redirectRescueEligible": 1,
+  "redirectsActivatedInConfig": 1,
+  "activatedRedirectSources": [
+    "https://chamanlawfirm.com/court-procedures-and-efficient-case",
+    "https://chamanlawfirm.com/court-procedures-and-efficient-case/"
+  ],
+  "lawzanaProfileStatus": 403,
+  "lawzanaBadgeStatus": 200,
+  "sitemapStatus": 200,
+  "robotsStatus": 200,
+  "publicAuthorRule": "Charles Chukwuma Nkwoka, Esq.",
+  "sanityChanges": [
+    {
+      "slug": "court-procedures-and-efficient-case",
+      "oldUrl": "https://chamanlawfirm.com/court-procedures-and-efficient-case",
+      "target": "https://chamanlawfirm.com/resources/blog/court-procedures-and-efficient-case",
+      "operations": [
+        "refreshed public chamanlawfirm-sprint11x-court-procedures-and-efficient-case",
+        "patched hidden source drafts.chamanlawfirm.sprint10k.court-procedures-and-efficient-case"
+      ]
+    }
+  ],
+  "selected": [
+    {
+      "oldUrl": "https://chamanlawfirm.com/court-procedures-and-efficient-case",
+      "slug": "court-procedures-and-efficient-case",
+      "title": "Court Procedures and Efficient Case Management in Nigeria",
+      "target": "https://chamanlawfirm.com/resources/blog/court-procedures-and-efficient-case"
+    }
+  ],
+  "keptHiddenSample": [
+    {
+      "oldUrl": "https://chamanlawfirm.com/legally-terminate-shipping-contract-in-nigeria",
+      "slug": "legally-terminate-shipping-contract-in-nigeria",
+      "reason": "canonical missing or mismatched; practice/category relationship missing; misleading free-service wording; possible unsafe self-help wording; current-law or procedure-sensitive topic; unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/what-is-stamping-and-up-stamping-of-a-mortgage-document",
+      "slug": "what-is-stamping-and-up-stamping-of-a-mortgage-document",
+      "reason": "canonical missing or mismatched; misleading free-service wording; current-law or procedure-sensitive topic; dispute-resolution wording requires lawyer review; unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/land-documentation-excision-vs-gazette",
+      "slug": "land-documentation-excision-vs-gazette",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "slug": "what-are-the-requirements-for-compulsory-acquisition-of-land-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-appoint-a-company-secretary-in-nigeria",
+      "slug": "how-to-appoint-a-company-secretary-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-who-is-mercantile-agent",
+      "slug": "powerful-steps-who-is-mercantile-agent",
+      "reason": "featured image missing; alt text missing or weak; off-brand/property-sales wording; unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/enforcing-fundamental-human-right",
+      "slug": "enforcing-fundamental-human-right",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/litigation-dispute-resolution/fundamental-rights-enforcement; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legal-implications-of-joint-property",
+      "slug": "legal-implications-of-joint-property",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/property-real-estate-law/legal-implications-of-joint-property; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/limitation-of-action-in-nigeria",
+      "slug": "limitation-of-action-in-nigeria",
+      "reason": "current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-resolve-land-disputes-in-nigeria-with",
+      "slug": "how-to-resolve-land-disputes-in-nigeria-with",
+      "reason": "dispute-resolution wording requires lawyer review; not selected for Sprint 11X controlled editorial approval; title appears truncated or incomplete"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/clauses-for-drafting-a-tenancy-agreement",
+      "slug": "clauses-for-drafting-a-tenancy-agreement",
+      "reason": "unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/basic-elements-of-defamatory-statement",
+      "slug": "basic-elements-of-defamatory-statement",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/proven-steps-onoverview-of-the-child-right-act",
+      "slug": "proven-steps-onoverview-of-the-child-right-act",
+      "reason": "current-law or procedure-sensitive topic; dispute-resolution wording requires lawyer review; unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "slug": "laspppa-what-it-is-and-why-it-matters-in-lagos",
+      "reason": "current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/property-real-estate-law/lagos-physical-planning-compliance; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
+      "slug": "7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit",
+      "reason": "current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/individual-tax-clearance-certificate",
+      "slug": "individual-tax-clearance-certificate",
+      "reason": "current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/breach-of-promise-to-marriage-in-nigeria",
+      "slug": "breach-of-promise-to-marriage-in-nigeria",
+      "reason": "current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/the-concept-of-restitution-of-conjugal-rights",
+      "slug": "the-concept-of-restitution-of-conjugal-rights",
+      "reason": "featured image missing; alt text missing or weak; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/taxes-on-real-estate-transactions-in-nigeria",
+      "slug": "taxes-on-real-estate-transactions-in-nigeria",
+      "reason": "featured image missing; alt text missing or weak; off-brand/property-sales wording; current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/right-of-an-illegitimate-child",
+      "slug": "right-of-an-illegitimate-child",
+      "reason": "family-status topic requires lawyer review; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/rights-of-parties-to-a-mortgage",
+      "slug": "rights-of-parties-to-a-mortgage",
+      "reason": "legacy URL already redirects to /practice-areas/property-real-estate-law/mortgage-document-review; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/selling-a-family-land-without-everyones-consent",
+      "slug": "selling-a-family-land-without-everyones-consent",
+      "reason": "off-brand/property-sales wording; current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/property-real-estate-law/selling-a-family-land-without-everyones-consent; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/establishing-paternity-and-maternity-under",
+      "slug": "establishing-paternity-and-maternity-under",
+      "reason": "family-status topic requires lawyer review; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legal-restrictions-to-sale-of-land",
+      "slug": "legal-restrictions-to-sale-of-land",
+      "reason": "off-brand/property-sales wording; legacy URL already redirects to /practice-areas/property-real-estate-law/legal-restrictions-to-sale-of-land; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legally-combat-police-harassment-in-nigeria",
+      "slug": "legally-combat-police-harassment-in-nigeria",
+      "reason": "current-law or procedure-sensitive topic; unsupported outcome claim; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-calculate-and-pay-land-use-charge",
+      "slug": "how-to-calculate-and-pay-land-use-charge",
+      "reason": "current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/property-real-estate-law/land-use-charge; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/expert-witnesses-in-nigeria-court-proceeding",
+      "slug": "expert-witnesses-in-nigeria-court-proceeding",
+      "reason": "current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/litigation-dispute-resolution/expert-witnesses; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/challenges-of-implementing-the-land-use-act",
+      "slug": "challenges-of-implementing-the-land-use-act",
+      "reason": "current-law or procedure-sensitive topic; dispute-resolution wording requires lawyer review; legacy URL already redirects to /practice-areas/property-real-estate-law/land-use-act-advisory; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/of-the-securities-and-exchange-commission",
+      "slug": "of-the-securities-and-exchange-commission",
+      "reason": "legacy URL already redirects to /practice-areas/corporate-commercial-law/securities-regulatory-compliance; not selected for Sprint 11X controlled editorial approval"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-legally-evict-a-tenant-in-lagos-state",
+      "slug": "how-to-legally-evict-a-tenant-in-lagos-state",
+      "reason": "possible unsafe self-help wording; current-law or procedure-sensitive topic; not selected for Sprint 11X controlled editorial approval"
+    }
+  ]
+}
