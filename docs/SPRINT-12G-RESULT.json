@@ -1,0 +1,12 @@
+{
+  "sprint": "12G",
+  "generatedAt": "2026-08-02T22:15:39.081Z",
+  "historicalGscRowsImported": 250,
+  "freshGscFound": false,
+  "freshBingFound": false,
+  "blogPublished": 0,
+  "staticPagesPublished": 0,
+  "redirectsActivated": 0,
+  "sanityApplyStatus": "not applied - local Sanity DNS/read validation timed out",
+  "nextAction": "Rerun Sanity connectivity, then approve only image-ready hidden articles from the search priority queue."
+}
