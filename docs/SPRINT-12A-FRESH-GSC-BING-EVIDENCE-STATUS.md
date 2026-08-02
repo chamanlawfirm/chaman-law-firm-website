@@ -1,4 +1,4 @@
-# Sprint 11Z Fresh GSC/Bing Evidence Status
+# Sprint 12A Fresh GSC/Bing Evidence Status
 
 - Checked at: 2026-08-02T07:40:39.844Z
 - Fresh post-launch GSC/Bing/backlink/SERP export files found locally: 0
