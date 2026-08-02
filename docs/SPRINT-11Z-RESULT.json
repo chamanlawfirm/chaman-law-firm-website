@@ -1,0 +1,184 @@
+{
+  "sprint": "11Z",
+  "mode": "dry-run",
+  "generatedAt": "2026-08-02T06:47:15.845Z",
+  "freshEvidenceFiles": 0,
+  "sprint11tServicePagesMonitored": 29,
+  "sprint11tRedirectsMonitored": 32,
+  "blogCandidatesReviewed": 120,
+  "hiddenSourceRecordsScanned": 120,
+  "hiddenSourceRepairTargets": 80,
+  "hiddenSourceRepairBatchOffset": 80,
+  "hiddenSourceRepairBatchSize": 25,
+  "hiddenSourceRepairBatchAttempted": 0,
+  "hiddenSourceRepairNextOffset": 80,
+  "hiddenSourceRepairCheckpointBatches": 4,
+  "hiddenSourceRepairCheckpointSucceeded": 80,
+  "hiddenSourceRepairCheckpointFailed": 0,
+  "hiddenSourceRepaired": 0,
+  "approvalReadyCandidates": 0,
+  "selectedForApproval": 0,
+  "approvedInSanity": 0,
+  "liveApprovedPassed": 0,
+  "redirectRescueEligible": 0,
+  "lawzanaProfileStatus": 403,
+  "lawzanaBadgeStatus": 200,
+  "sitemapStatus": 200,
+  "robotsStatus": 200,
+  "publicAuthorRule": "Charles Chukwuma Nkwoka, Esq.",
+  "hiddenRepairChanges": [],
+  "sanityChanges": [],
+  "selected": [],
+  "keptHiddenSample": [
+    {
+      "oldUrl": "https://chamanlawfirm.com/7-steps-on-how-to-use-small-claims-court",
+      "slug": "7-steps-on-how-to-use-small-claims-court",
+      "reason": "featured image missing; alt text missing or weak"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/legal-requirementsfor-registering-a-property",
+      "slug": "legal-requirementsfor-registering-a-property",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; dispute-resolution wording requires lawyer review; unsupported outcome claim"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/cyber-crime-awareness-campaigns-10-powerful",
+      "slug": "cyber-crime-awareness-campaigns-10-powerful",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/inheritance-rights-under-ogun-customary-law",
+      "slug": "inheritance-rights-under-ogun-customary-law",
+      "reason": "source body too short for approval; featured image missing; alt text missing or weak"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/family-property-disputes-in-lagos",
+      "slug": "family-property-disputes-in-lagos",
+      "reason": "featured image missing; alt text missing or weak; dispute-resolution wording requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/defenses-and-bars-to-a-petition-for-divorce",
+      "slug": "defenses-and-bars-to-a-petition-for-divorce",
+      "reason": "featured image missing; alt text missing or weak; family-status topic requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/challenges-in-debt-recovery-and-solutions",
+      "slug": "challenges-in-debt-recovery-and-solutions",
+      "reason": "featured image missing; alt text missing or weak"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/land-use-act-impact-land-ownership-and-titles",
+      "slug": "land-use-act-impact-land-ownership-and-titles",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/filing-for-divorce-in-nigeria-a-comprehen",
+      "slug": "filing-for-divorce-in-nigeria-a-comprehen",
+      "reason": "featured image missing; alt text missing or weak; family-status topic requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/registering-a-private-security-company",
+      "slug": "registering-a-private-security-company",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; legacy URL already redirects to /practice-areas/corporate-commercial-law"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/powerful-steps-grant-of-probate-in-lagos-state",
+      "slug": "powerful-steps-grant-of-probate-in-lagos-state",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/family-disputes-with-international-dimension",
+      "slug": "family-disputes-with-international-dimension",
+      "reason": "featured image missing; alt text missing or weak; family-status topic requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/navigating-the-probate-registry-in-ogun-state",
+      "slug": "navigating-the-probate-registry-in-ogun-state",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-verify-property-titles-in-nigeria",
+      "slug": "how-to-verify-property-titles-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/division-in-divorce-proceedings",
+      "slug": "division-in-divorce-proceedings",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-verify-a-propertys-survey-plan-in-lagos",
+      "slug": "how-to-verify-a-propertys-survey-plan-in-lagos",
+      "reason": "featured image missing; alt text missing or weak"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/calculate-land-use-charge-chaman-law-firm",
+      "slug": "calculate-land-use-charge-chaman-law-firm",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-does-the-land-use-act-involve-the-surveyor-generals-office",
+      "slug": "how-does-the-land-use-act-involve-the-surveyor-generals-office",
+      "reason": "featured image missing; alt text missing or weak; dispute-resolution wording requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/strategies-to-handle-a-bad-tenant-legally",
+      "slug": "strategies-to-handle-a-bad-tenant-legally",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/verify-land-titles-before-buying-property",
+      "slug": "verify-land-titles-before-buying-property",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/business-registration-process-in-lagosa-com",
+      "slug": "business-registration-process-in-lagosa-com",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/difference-between-excision-gazette-c-of-o",
+      "slug": "difference-between-excision-gazette-c-of-o",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/family-courts-and-specialized-tribunals",
+      "slug": "family-courts-and-specialized-tribunals",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; family-status topic requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/9-cyber-crime-prosecution-breakthrough-ch",
+      "slug": "9-cyber-crime-prosecution-breakthrough-ch",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/regarding-the-custody-of-a-child",
+      "slug": "regarding-the-custody-of-a-child",
+      "reason": "featured image missing; alt text missing or weak; current-law or procedure-sensitive topic; family-status topic requires lawyer review"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/real-estate-title-frauds-in-nigeria",
+      "slug": "real-estate-title-frauds-in-nigeria",
+      "reason": "source body too short for approval; featured image missing; alt text missing or weak"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/dealing-with-abadtenantinlagos-for-landlords",
+      "slug": "dealing-with-abadtenantinlagos-for-landlords",
+      "reason": "featured image missing; alt text missing or weak; possible unsafe self-help wording; current-law or procedure-sensitive topic"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/how-to-perfect-a-property-title-in-nigeria",
+      "slug": "how-to-perfect-a-property-title-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/criteria-for-patent-in-nigeria",
+      "slug": "criteria-for-patent-in-nigeria",
+      "reason": "already public"
+    },
+    {
+      "oldUrl": "https://chamanlawfirm.com/what-are-the-penalties-for-fake-land-documents",
+      "slug": "what-are-the-penalties-for-fake-land-documents",
+      "reason": "already public"
+    }
+  ]
+}

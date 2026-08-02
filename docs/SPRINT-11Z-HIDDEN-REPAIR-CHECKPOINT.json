@@ -1,0 +1,455 @@
+{
+  "sprint": "11Z",
+  "createdAt": "2026-08-02T06:39:38.408Z",
+  "updatedAt": "2026-08-02T06:45:08.284Z",
+  "nextOffset": 80,
+  "completedBatches": [
+    {
+      "batchNumber": 1,
+      "startOffset": 0,
+      "batchSize": 25,
+      "attempted": 25,
+      "succeeded": 25,
+      "skippedOrIdempotent": 0,
+      "failed": 0,
+      "startedAt": "2026-08-02T06:39:38.411Z",
+      "completedAt": "2026-08-02T06:40:11.343Z"
+    },
+    {
+      "batchNumber": 2,
+      "startOffset": 25,
+      "batchSize": 25,
+      "attempted": 25,
+      "succeeded": 25,
+      "skippedOrIdempotent": 0,
+      "failed": 0,
+      "startedAt": "2026-08-02T06:41:30.556Z",
+      "completedAt": "2026-08-02T06:42:04.054Z"
+    },
+    {
+      "batchNumber": 3,
+      "startOffset": 50,
+      "batchSize": 25,
+      "attempted": 25,
+      "succeeded": 25,
+      "skippedOrIdempotent": 0,
+      "failed": 0,
+      "startedAt": "2026-08-02T06:43:25.842Z",
+      "completedAt": "2026-08-02T06:43:58.198Z"
+    },
+    {
+      "batchNumber": 4,
+      "startOffset": 75,
+      "batchSize": 25,
+      "attempted": 5,
+      "succeeded": 5,
+      "skippedOrIdempotent": 0,
+      "failed": 0,
+      "startedAt": "2026-08-02T06:45:01.370Z",
+      "completedAt": "2026-08-02T06:45:08.284Z"
+    }
+  ],
+  "successfulIds": [
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.7-steps-on-how-to-use-small-claims-court",
+      "slug": "7-steps-on-how-to-use-small-claims-court",
+      "at": "2026-08-02T06:39:39.836Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.legal-requirementsfor-registering-a-property",
+      "slug": "legal-requirementsfor-registering-a-property",
+      "at": "2026-08-02T06:39:41.087Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.cyber-crime-awareness-campaigns-10-powerful",
+      "slug": "cyber-crime-awareness-campaigns-10-powerful",
+      "at": "2026-08-02T06:39:42.328Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.inheritance-rights-under-ogun-customary-law",
+      "slug": "inheritance-rights-under-ogun-customary-law",
+      "at": "2026-08-02T06:39:43.505Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.family-property-disputes-in-lagos",
+      "slug": "family-property-disputes-in-lagos",
+      "at": "2026-08-02T06:39:44.616Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.defenses-and-bars-to-a-petition-for-divorce",
+      "slug": "defenses-and-bars-to-a-petition-for-divorce",
+      "at": "2026-08-02T06:39:45.933Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.challenges-in-debt-recovery-and-solutions",
+      "slug": "challenges-in-debt-recovery-and-solutions",
+      "at": "2026-08-02T06:39:47.205Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.land-use-act-impact-land-ownership-and-titles",
+      "slug": "land-use-act-impact-land-ownership-and-titles",
+      "at": "2026-08-02T06:39:48.610Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.filing-for-divorce-in-nigeria-a-comprehen",
+      "slug": "filing-for-divorce-in-nigeria-a-comprehen",
+      "at": "2026-08-02T06:39:49.940Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.registering-a-private-security-company",
+      "slug": "registering-a-private-security-company",
+      "at": "2026-08-02T06:39:51.361Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.powerful-steps-grant-of-probate-in-lagos-state",
+      "slug": "powerful-steps-grant-of-probate-in-lagos-state",
+      "at": "2026-08-02T06:39:52.768Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10l.family-disputes-with-international-dimension",
+      "slug": "family-disputes-with-international-dimension",
+      "at": "2026-08-02T06:39:54.036Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.navigating-the-probate-registry-in-ogun-state",
+      "slug": "navigating-the-probate-registry-in-ogun-state",
+      "at": "2026-08-02T06:39:55.284Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-verify-property-titles-in-nigeria",
+      "slug": "how-to-verify-property-titles-in-nigeria",
+      "at": "2026-08-02T06:39:56.515Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.division-in-divorce-proceedings",
+      "slug": "division-in-divorce-proceedings",
+      "at": "2026-08-02T06:39:57.996Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-verify-a-propertys-survey-plan-in-lagos",
+      "slug": "how-to-verify-a-propertys-survey-plan-in-lagos",
+      "at": "2026-08-02T06:39:59.314Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.calculate-land-use-charge-chaman-law-firm",
+      "slug": "calculate-land-use-charge-chaman-law-firm",
+      "at": "2026-08-02T06:40:01.009Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-does-the-land-use-act-involve-the-surveyor-generals-office",
+      "slug": "how-does-the-land-use-act-involve-the-surveyor-generals-office",
+      "at": "2026-08-02T06:40:02.297Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.strategies-to-handle-a-bad-tenant-legally",
+      "slug": "strategies-to-handle-a-bad-tenant-legally",
+      "at": "2026-08-02T06:40:03.665Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.verify-land-titles-before-buying-property",
+      "slug": "verify-land-titles-before-buying-property",
+      "at": "2026-08-02T06:40:04.801Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.business-registration-process-in-lagosa-com",
+      "slug": "business-registration-process-in-lagosa-com",
+      "at": "2026-08-02T06:40:05.856Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.difference-between-excision-gazette-c-of-o",
+      "slug": "difference-between-excision-gazette-c-of-o",
+      "at": "2026-08-02T06:40:07.192Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.family-courts-and-specialized-tribunals",
+      "slug": "family-courts-and-specialized-tribunals",
+      "at": "2026-08-02T06:40:08.535Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.9-cyber-crime-prosecution-breakthrough-ch",
+      "slug": "9-cyber-crime-prosecution-breakthrough-ch",
+      "at": "2026-08-02T06:40:09.916Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.regarding-the-custody-of-a-child",
+      "slug": "regarding-the-custody-of-a-child",
+      "at": "2026-08-02T06:40:11.343Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.real-estate-title-frauds-in-nigeria",
+      "slug": "real-estate-title-frauds-in-nigeria",
+      "at": "2026-08-02T06:41:31.935Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.dealing-with-abadtenantinlagos-for-landlords",
+      "slug": "dealing-with-abadtenantinlagos-for-landlords",
+      "at": "2026-08-02T06:41:33.045Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-perfect-a-property-title-in-nigeria",
+      "slug": "how-to-perfect-a-property-title-in-nigeria",
+      "at": "2026-08-02T06:41:34.478Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.criteria-for-patent-in-nigeria",
+      "slug": "criteria-for-patent-in-nigeria",
+      "at": "2026-08-02T06:41:35.841Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.what-are-the-penalties-for-fake-land-documents",
+      "slug": "what-are-the-penalties-for-fake-land-documents",
+      "at": "2026-08-02T06:41:37.022Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.estate-administration-in-lagos-state",
+      "slug": "estate-administration-in-lagos-state",
+      "at": "2026-08-02T06:41:38.374Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.mechanisms-for-the-childs-rights-act",
+      "slug": "mechanisms-for-the-childs-rights-act",
+      "at": "2026-08-02T06:41:39.799Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.drafting-company-bylaws-in-nigeria-a-compre",
+      "slug": "drafting-company-bylaws-in-nigeria-a-compre",
+      "at": "2026-08-02T06:41:41.075Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.the-essential-ethics-of-debt-recovery",
+      "slug": "the-essential-ethics-of-debt-recovery",
+      "at": "2026-08-02T06:41:42.232Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.4-proven-features-of-customary-marriage-and-the-bill-of-rights-conflicting-interests",
+      "slug": "4-proven-features-of-customary-marriage-and-the-bill-of-rights-conflicting-interests",
+      "at": "2026-08-02T06:41:43.551Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.financing-real-estate-investments-in-nigeria",
+      "slug": "financing-real-estate-investments-in-nigeria",
+      "at": "2026-08-02T06:41:44.927Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-register-a-tech-company-in-nigeria",
+      "slug": "how-to-register-a-tech-company-in-nigeria",
+      "at": "2026-08-02T06:41:46.191Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.understanding-the-land-use-act-in-nigeria",
+      "slug": "understanding-the-land-use-act-in-nigeria",
+      "at": "2026-08-02T06:41:47.584Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.modernizing-customary-marriage",
+      "slug": "modernizing-customary-marriage",
+      "at": "2026-08-02T06:41:48.899Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.priority-in-entitlement",
+      "slug": "priority-in-entitlement",
+      "at": "2026-08-02T06:41:50.367Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.understanding-the-certificate-of-occupancy-c",
+      "slug": "understanding-the-certificate-of-occupancy-c",
+      "at": "2026-08-02T06:41:51.721Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.corporate-governance-principles-in-nigeria",
+      "slug": "corporate-governance-principles-in-nigeria",
+      "at": "2026-08-02T06:41:53.041Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-fix-mistakes-in-your-property-documents",
+      "slug": "how-to-fix-mistakes-in-your-property-documents",
+      "at": "2026-08-02T06:41:54.466Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-does-the-land-use-act-interact-with-the-petroleum-industry",
+      "slug": "how-does-the-land-use-act-interact-with-the-petroleum-industry",
+      "at": "2026-08-02T06:41:55.995Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.legal-bonds-of-marriage-in-nigeria",
+      "slug": "legal-bonds-of-marriage-in-nigeria",
+      "at": "2026-08-02T06:41:57.436Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.is-a-woman-a-property-to-be-inherited",
+      "slug": "is-a-woman-a-property-to-be-inherited",
+      "at": "2026-08-02T06:41:58.831Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-alter-a-will",
+      "slug": "how-to-alter-a-will",
+      "at": "2026-08-02T06:42:00.279Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.why-a-certificate-of-occupancy-c-of-o-is",
+      "slug": "why-a-certificate-of-occupancy-c-of-o-is",
+      "at": "2026-08-02T06:42:01.422Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.corporate-restructuring-in-nigeria",
+      "slug": "corporate-restructuring-in-nigeria",
+      "at": "2026-08-02T06:42:02.770Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.legal-research-for-nigerian-litigation-cases",
+      "slug": "legal-research-for-nigerian-litigation-cases",
+      "at": "2026-08-02T06:42:04.054Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-is-land-registry-practice-in-nigeria",
+      "slug": "how-is-land-registry-practice-in-nigeria",
+      "at": "2026-08-02T06:43:27.177Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.hidden-costs-of-buying-property-in-ogun-state",
+      "slug": "hidden-costs-of-buying-property-in-ogun-state",
+      "at": "2026-08-02T06:43:28.476Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.effect-of-not-paying-child-support",
+      "slug": "effect-of-not-paying-child-support",
+      "at": "2026-08-02T06:43:29.940Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.role-of-community-leaders-in-land-allocation",
+      "slug": "role-of-community-leaders-in-land-allocation",
+      "at": "2026-08-02T06:43:31.137Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-does-the-land-use-act-address-the-issue-of-abandoned-properties-in-nigeria",
+      "slug": "how-does-the-land-use-act-address-the-issue-of-abandoned-properties-in-nigeria",
+      "at": "2026-08-02T06:43:32.347Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.lagos-property-succession-without-a-will",
+      "slug": "lagos-property-succession-without-a-will",
+      "at": "2026-08-02T06:43:33.561Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.foreign-wills-and-lagos-property-what-to-know",
+      "slug": "foreign-wills-and-lagos-property-what-to-know",
+      "at": "2026-08-02T06:43:34.913Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.where-is-the-proper-custody-of-a-will",
+      "slug": "where-is-the-proper-custody-of-a-will",
+      "at": "2026-08-02T06:43:36.205Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.police-prosecution-in-nigerian-courts",
+      "slug": "police-prosecution-in-nigerian-courts",
+      "at": "2026-08-02T06:43:37.629Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.what-are-the-legal-rights-of-private-property-owners",
+      "slug": "what-are-the-legal-rights-of-private-property-owners",
+      "at": "2026-08-02T06:43:38.907Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.use-arbitration-for-property-disputes-lagos",
+      "slug": "use-arbitration-for-property-disputes-lagos",
+      "at": "2026-08-02T06:43:40.223Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-acquire-citizenship-in-nigeria",
+      "slug": "how-to-acquire-citizenship-in-nigeria",
+      "at": "2026-08-02T06:43:41.483Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.understanding-the-land-use-act-6-proven",
+      "slug": "understanding-the-land-use-act-6-proven",
+      "at": "2026-08-02T06:43:42.676Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.who-are-the-type-of-people-that-can-write-a-will",
+      "slug": "who-are-the-type-of-people-that-can-write-a-will",
+      "at": "2026-08-02T06:43:44.025Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.types-of-wills",
+      "slug": "types-of-wills",
+      "at": "2026-08-02T06:43:45.346Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.what-is-trespass-to-land2",
+      "slug": "what-is-trespass-to-land2",
+      "at": "2026-08-02T06:43:46.564Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.bordersecurityin-nigerian-immigration-policy",
+      "slug": "bordersecurityin-nigerian-immigration-policy",
+      "at": "2026-08-02T06:43:47.765Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.learn-how-to-draft-tenancy-agreement-in-ogun",
+      "slug": "learn-how-to-draft-tenancy-agreement-in-ogun",
+      "at": "2026-08-02T06:43:49.139Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.challenging-a-fraudulent-probate-application",
+      "slug": "challenging-a-fraudulent-probate-application",
+      "at": "2026-08-02T06:43:50.476Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.lawful-methods-to-recover-debt-in-nigeria",
+      "slug": "lawful-methods-to-recover-debt-in-nigeria",
+      "at": "2026-08-02T06:43:51.874Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.how-to-handle-land-grabbers-in-lagos",
+      "slug": "how-to-handle-land-grabbers-in-lagos",
+      "at": "2026-08-02T06:43:53.233Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.land-dispute-resolution-in-nigeria-court-system",
+      "slug": "land-dispute-resolution-in-nigeria-court-system",
+      "at": "2026-08-02T06:43:54.521Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.taxes-exemptions-and-incentives-in-nigeria",
+      "slug": "taxes-exemptions-and-incentives-in-nigeria",
+      "at": "2026-08-02T06:43:55.839Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.the-legal-implications-of-breach-of-contract",
+      "slug": "the-legal-implications-of-breach-of-contract",
+      "at": "2026-08-02T06:43:56.869Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.deed-of-assignment-from-a-property",
+      "slug": "deed-of-assignment-from-a-property",
+      "at": "2026-08-02T06:43:58.198Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.legal-processes-of-transferring-property",
+      "slug": "legal-processes-of-transferring-property",
+      "at": "2026-08-02T06:45:02.743Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.tax-planning-and-avoidance-in-nigeria",
+      "slug": "tax-planning-and-avoidance-in-nigeria",
+      "at": "2026-08-02T06:45:03.931Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.verify-land-ownership-with-the-lagos-state",
+      "slug": "verify-land-ownership-with-the-lagos-state",
+      "at": "2026-08-02T06:45:05.317Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.probate-for-a-deceased-estate-in-nigeria",
+      "slug": "probate-for-a-deceased-estate-in-nigeria",
+      "at": "2026-08-02T06:45:06.601Z"
+    },
+    {
+      "id": "drafts.chamanlawfirm.sprint10n.legally-challenge-forged-land-documents-in-ogun",
+      "slug": "legally-challenge-forged-land-documents-in-ogun",
+      "at": "2026-08-02T06:45:08.284Z"
+    }
+  ],
+  "failed": []
+}
