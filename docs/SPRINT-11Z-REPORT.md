@@ -2,14 +2,14 @@
 
 ## Summary
 
-- Mode: dry-run
+- Mode: repair-apply
 - Fresh evidence files found locally: 0
 - Sprint 11T service pages monitored: 29
 - Sprint 11T redirect sources monitored: 32
-- Blog candidates reviewed: 341
-- Hidden/source records scanned: 360
-- Hidden/source repair targets: 280
-- Hidden/source records repaired: 0
+- Blog candidates reviewed: 511
+- Hidden/source records scanned: 623
+- Hidden/source repair targets: 600
+- Hidden/source records repaired: 20
 - Approval-ready hidden blog candidates: 0
 - Selected for controlled approval: 0
 - Approved in Sanity: 0
