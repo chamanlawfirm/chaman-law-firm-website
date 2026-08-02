@@ -621,6 +621,36 @@ const sprint11xExactArticleRedirects = [...sprint11xExactArticleRedirectSources]
 ]);
 
 /** @type {import('next').NextConfig} */
+const sprint12fLegacyRedirects = [
+  { source: "/individual-tax-clearance-certificate", destination: "/practice-areas/corporate-commercial-law/tax-clearance-certificate" },
+  { source: "/steps-on-how-to-confidently-report-acrimelaw", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/how-to-legally-evict-a-tenant-in-lagos-state", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/7-effective-steps-to-take-when-a-landlord-refuses-to-return-your-rent-deposit", destination: "/practice-areas/property-real-estate-law/landlords-and-tenants-in-nigeria" },
+  { source: "/how-to-resolve-land-disputes-in-nigeria-with", destination: "/practice-areas/adr-mediation" },
+  { source: "/breach-of-promise-to-marriage-in-nigeria", destination: "/practice-areas/family-law" },
+  { source: "/proven-steps-onoverview-of-the-child-right-act", destination: "/practice-areas/family-law" },
+  { source: "/clauses-for-drafting-a-tenancy-agreement", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/right-of-an-illegitimate-child", destination: "/practice-areas/family-law" },
+  { source: "/limitation-of-action-in-nigeria", destination: "/practice-areas/litigation-dispute-resolution" },
+  { source: "/tenancy-dispute-resolution-in-ogun-state", destination: "/practice-areas/property-real-estate-law/landlords-and-tenants-in-nigeria" },
+  { source: "/how-long-does-it-take-to-get-c-of-o-in-ogun-sta", destination: "/practice-areas/property-real-estate-law/certificate-of-occupancy" },
+  { source: "/survey-plans-and-certificates-of-occupancy", destination: "/practice-areas/property-real-estate-law/certificate-of-occupancy" },
+  { source: "/powerful-steps-what-is-trespass-to-land", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/issues-land-grabbing-and-encroachment-in-nigeria", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/guardianship-and-custody-rights-of-minors", destination: "/practice-areas/family-law" },
+  { source: "/what-makes-a-valid-employment-contract-in-nigeria", destination: "/practice-areas/employment-law" },
+  { source: "/accountability-in-corporate-governance-in-nigeria", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/ultimate-legal-guide-to-buying-land-in-nigeria", destination: "/practice-areas/property-real-estate-law/property-due-diligence" },
+  { source: "/registering-property-titles-in-nigeria", destination: "/practice-areas/property-real-estate-law/land-registration" },
+  { source: "/real-estate-and-property-law", destination: "/practice-areas/property-real-estate-law" },
+  { source: "/nigerian-shipping-contracts", destination: "/practice-areas/corporate-commercial-law" },
+  { source: "/debt-recovery-and-consumer-protection-laws", destination: "/practice-areas/debt-recovery" },
+  { source: "/lagos-tenancy-fixed-and-periodic-tenancies", destination: "/practice-areas/property-real-estate-law/landlords-and-tenants-in-nigeria" },
+].flatMap(({ source, destination }) => [
+  { source, destination, permanent: true },
+  { source: source + "/", destination, permanent: true },
+]);
+
 const nextConfig = {
   skipTrailingSlashRedirect: true,
   images: {
@@ -644,6 +674,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      ...sprint12fLegacyRedirects,
       {
         source: "/about-us",
         destination: "/about",
