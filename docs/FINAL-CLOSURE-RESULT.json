@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-03T00:55:14.899Z",
+  "sitemapStatus": 200,
+  "robotsStatus": 200,
+  "sitemapUrls": 404,
+  "redirectsAudited": 180,
+  "redirectPass": 172,
+  "redirectReview": 8,
+  "masterLegacyUrls": 2642,
+  "highValue404Candidates": 100,
+  "hiddenRows": 511,
+  "sanityStatus": "GREEN",
+  "finalDecision": "CONDITIONAL GO"
+}
