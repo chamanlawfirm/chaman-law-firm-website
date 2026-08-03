@@ -1,6 +1,6 @@
 # Final GA4 Certification
 
-Generated: 2026-08-03T00:55:14.899Z
+Generated: 2026-08-03T06:41:59.129Z
 
 - App code supports GA4 through `NEXT_PUBLIC_GA_MEASUREMENT_ID`: GREEN
 - Consent-gated loading in CookieConsent: GREEN

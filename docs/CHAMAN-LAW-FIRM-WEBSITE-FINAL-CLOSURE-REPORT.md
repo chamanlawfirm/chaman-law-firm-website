@@ -1,6 +1,6 @@
 # Chaman Law Firm Website Final Closure Report
 
-Generated: 2026-08-03T00:55:14.899Z
+Generated: 2026-08-03T06:41:59.129Z
 
 ## 1. Executive Summary
 
@@ -52,7 +52,7 @@ See `FINAL-MASTER-LEGACY-URL-RECONCILIATION.csv`.
 
 ## 13. Redirect Certification
 
-172/180 sampled redirects passed. See `FINAL-REDIRECT-CERTIFICATION.csv`.
+180/180 sampled redirects passed. See `FINAL-REDIRECT-CERTIFICATION.csv`.
 
 ## 14. Sitemap Certification
 

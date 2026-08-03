@@ -1,6 +1,6 @@
 # Final Closure Production Baseline
 
-Generated: 2026-08-03T00:55:14.899Z
+Generated: 2026-08-03T06:41:59.129Z
 
 | Check | Result |
 |---|---|
@@ -13,6 +13,6 @@ Generated: 2026-08-03T00:55:14.899Z
 | Public sitemap URLs | 404 |
 | Preview/Vercel URLs in sitemap | 0 |
 | Redirect sample size | 180 |
-| Redirect PASS | 172 |
-| Redirect REVIEW | 8 |
+| Redirect PASS | 180 |
+| Redirect REVIEW | 0 |
 | Hidden hold sample | 404 |

@@ -1,6 +1,6 @@
 # Final Robots / Indexability Certification
 
-Generated: 2026-08-03T00:55:14.899Z
+Generated: 2026-08-03T06:41:59.129Z
 
 - robots.txt HTTP status: 200
 - Sitemap directive: GREEN
