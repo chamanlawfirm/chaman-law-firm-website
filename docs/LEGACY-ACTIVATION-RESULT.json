@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-08-03T22:09:08.706Z",
+  "applyMode": false,
+  "before": {
+    "publicBlogs": 298,
+    "publicStaticService": 106,
+    "hiddenSourceRecords": 743,
+    "missingUrls": 409,
+    "highValue404s": 362,
+    "lowValue404s": 22,
+    "meaningfulLegacyUrls": 1693,
+    "legacyBlogs": 540,
+    "legacyStaticService": 1153
+  },
+  "after": {
+    "publicBlogs": 478,
+    "publicStaticService": 103,
+    "totalPublicUrls": 584,
+    "hiddenSourceRecords": 743,
+    "sitemap404Count": 0,
+    "sitemapTransportErrorCount": 45,
+    "sitemapTotalCanonicalUrls": 478,
+    "remainingHighValue404s": 358,
+    "remainingLowValue404s": 3,
+    "substantiveLegalHolds": 112,
+    "duplicateMergedCount": 13
+  },
+  "hiddenUniqueCandidates": 159,
+  "finalActions": {
+    "SUBSTANTIVE_LEGAL_HOLD": 112,
+    "PUBLISH_AFTER_ROUTINE_FIX": 17,
+    "ARCHIVE_LOW_VALUE": 17,
+    "MERGE_AND_REDIRECT": 13
+  },
+  "publishResult": {
+    "selected": 1,
+    "published": 0,
+    "mode": "dry-run",
+    "slugs": [
+      "how-to-start-a-private-lending-company"
+    ]
+  },
+  "sitemapBefore404Count": 0,
+  "sitemapBeforeTransportErrorCount": 45,
+  "sitemapAfter404Count": 0,
+  "sitemapAfterTransportErrorCount": 45,
+  "outputFiles": {
+    "sitemap404Audit": "docs\\LEGACY-ACTIVATION-SITEMAP-404-AUDIT.csv",
+    "hiddenRecords": "docs\\LEGACY-ACTIVATION-743-HIDDEN-RECORDS.csv",
+    "legalHolds": "docs\\LEGACY-ACTIVATION-SUBSTANTIVE-LEGAL-HOLDS.csv",
+    "duplicates": "docs\\LEGACY-ACTIVATION-DUPLICATE-MERGE.csv",
+    "missingRecovery": "docs\\LEGACY-ACTIVATION-384-MISSING-URL-RECOVERY.csv",
+    "highValueClosure": "docs\\LEGACY-ACTIVATION-362-HIGH-VALUE-404-CLOSURE.csv",
+    "finalLiveStatus": "docs\\LEGACY-ACTIVATION-FINAL-LIVE-STATUS.csv",
+    "gscPack": "docs\\LEGACY-ACTIVATION-GSC-INDEXING-PACK.md",
+    "bingPack": "docs\\LEGACY-ACTIVATION-BING-INDEXING-PACK.md",
+    "result": "docs\\LEGACY-ACTIVATION-RESULT.json"
+  }
+}

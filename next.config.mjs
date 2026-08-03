@@ -1,3 +1,5 @@
+import { legacyActivationBlogRedirectSlugs } from "./src/data/legacy-blog-redirect-slugs.mjs";
+
 const contentSecurityPolicy = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -103,6 +105,11 @@ const sprint10lExactArticleRedirectSources = new Set([
 const sprint10lExactArticleRedirects = [...sprint10lExactArticleRedirectSources].flatMap((source) => [
   { source: `${source}/`, destination: `/resources/blog${source}`, permanent: true },
   { source, destination: `/resources/blog${source}`, permanent: true }
+]);
+
+const legacyActivationBlogRedirects = legacyActivationBlogRedirectSlugs.flatMap((slug) => [
+  { source: `/${slug}/`, destination: `/resources/blog/${slug}`, permanent: true },
+  { source: `/${slug}`, destination: `/resources/blog/${slug}`, permanent: true }
 ]);
 
 const sprint10nExactArticleRedirectSources = new Set([
@@ -674,6 +681,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      ...legacyActivationBlogRedirects,
       ...sprint12fLegacyRedirects,
       {
         source: "/about-us",
