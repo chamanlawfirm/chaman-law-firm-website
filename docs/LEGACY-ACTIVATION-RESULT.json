@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T22:09:08.706Z",
-  "applyMode": false,
+  "generatedAt": "2026-08-04T06:27:25.877Z",
+  "applyMode": true,
   "before": {
     "publicBlogs": 298,
     "publicStaticService": 106,
@@ -13,13 +13,13 @@
     "legacyStaticService": 1153
   },
   "after": {
-    "publicBlogs": 478,
-    "publicStaticService": 103,
-    "totalPublicUrls": 584,
+    "publicBlogs": 495,
+    "publicStaticService": 106,
+    "totalPublicUrls": 601,
     "hiddenSourceRecords": 743,
-    "sitemap404Count": 0,
-    "sitemapTransportErrorCount": 45,
-    "sitemapTotalCanonicalUrls": 478,
+    "sitemap404Count": "not audited in fast apply",
+    "sitemapTransportErrorCount": "not audited in fast apply",
+    "sitemapTotalCanonicalUrls": "not audited in fast apply",
     "remainingHighValue404s": 358,
     "remainingLowValue404s": 3,
     "substantiveLegalHolds": 112,
@@ -33,17 +33,33 @@
     "MERGE_AND_REDIRECT": 13
   },
   "publishResult": {
-    "selected": 1,
-    "published": 0,
-    "mode": "dry-run",
+    "selected": 17,
+    "published": 17,
+    "mode": "apply",
     "slugs": [
-      "how-to-start-a-private-lending-company"
+      "how-to-start-a-private-lending-company",
+      "how-does-the-land-ucapital-territory-federal",
+      "how-does-the-land-use-act-address-the-issue-of-abandoned-properties-in-nigeria",
+      "how-to-obtain-standard-organisat-certificate",
+      "how-does-the-land-use-act-affect-forest-reserves",
+      "how-has-the-land-use-act-in-nigeria-e",
+      "real-estate-and-property-law",
+      "what-is-the-relationship-between-mining-activities-and-the-land-use-act",
+      "why-do-i-need-a-family-lawyer-in-nigeria",
+      "the-5-proven-protection-of-nigerian-wildlife",
+      "how-to-increase-a-company-share",
+      "what-are-the-implications-of-land-use-conversion-on-land-ownership-in-nigeria",
+      "understanding-the-certificate-of-occupancy-c",
+      "setting-up-a-fintech-company-in-nigeria",
+      "matrimonial-reliefs-in-nigeria",
+      "individual-tax-clearance-certificate",
+      "of-the-securities-and-exchange-commission"
     ]
   },
-  "sitemapBefore404Count": 0,
-  "sitemapBeforeTransportErrorCount": 45,
-  "sitemapAfter404Count": 0,
-  "sitemapAfterTransportErrorCount": 45,
+  "sitemapBefore404Count": "not audited in fast apply",
+  "sitemapBeforeTransportErrorCount": "not audited in fast apply",
+  "sitemapAfter404Count": "not audited in fast apply",
+  "sitemapAfterTransportErrorCount": "not audited in fast apply",
   "outputFiles": {
     "sitemap404Audit": "docs\\LEGACY-ACTIVATION-SITEMAP-404-AUDIT.csv",
     "hiddenRecords": "docs\\LEGACY-ACTIVATION-743-HIDDEN-RECORDS.csv",

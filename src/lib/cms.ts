@@ -350,7 +350,15 @@ function normalizeBlogPost(post: SanityBlogPost): BlogPost | null {
 }
 
 function normalizeBlogPosts(posts: SanityBlogPost[] = []) {
-  return posts.map(normalizeBlogPost).filter((post): post is BlogPost => Boolean(post));
+  const seen = new Set<string>();
+  return posts
+    .map(normalizeBlogPost)
+    .filter((post): post is BlogPost => Boolean(post))
+    .filter((post) => {
+      if (seen.has(post.slug)) return false;
+      seen.add(post.slug);
+      return true;
+    });
 }
 
 function normalizeBlogCategory(category: SanityBlogCategory): BlogCategory | null {
@@ -537,7 +545,14 @@ export async function getBlogPostSlugs() {
       { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
     );
 
-    return slugs.filter((post) => Boolean(post.slug));
+    const seen = new Set<string>();
+    return slugs
+      .filter((post) => Boolean(post.slug))
+      .filter((post) => {
+        if (seen.has(post.slug)) return false;
+        seen.add(post.slug);
+        return true;
+      });
   } catch (error) {
     console.error("Failed to fetch Sanity blog slugs", error);
     return [];

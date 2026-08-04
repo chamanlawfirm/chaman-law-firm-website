@@ -28,7 +28,7 @@ const slugs = await client.fetch(
   `array::unique(*[_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current)].slug.current) | order(@ asc)`
 );
 
-const body = `export const legacyActivationBlogRedirectSlugs = ${JSON.stringify(slugs, null, 2)};\n`;
+const body = `export const legacyActivationBlogRedirectSlugs = ${JSON.stringify(slugs, null, 2)} as const;\n`;
 fs.mkdirSync("src/data", { recursive: true });
-fs.writeFileSync("src/data/legacy-blog-redirect-slugs.mjs", body, "utf8");
-console.log(JSON.stringify({ exported: slugs.length, file: "src/data/legacy-blog-redirect-slugs.mjs" }, null, 2));
+fs.writeFileSync("src/data/legacy-blog-redirect-slugs.ts", body, "utf8");
+console.log(JSON.stringify({ exported: slugs.length, file: "src/data/legacy-blog-redirect-slugs.ts" }, null, 2));
