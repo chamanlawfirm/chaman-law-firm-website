@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-08-11T10:52:08.436Z",
+  "applyMode": true,
+  "beforeCounts": {
+    "actuallyRecoverableHiddenSlugs": 57,
+    "approvedPublicRecords": 501,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 42,
+    "hiddenUnapprovedRecords": 736,
+    "hiddenWithPublicEquivalent": 454,
+    "hiddenWithoutPublicEquivalent": 138,
+    "totalPostRecords": 1237,
+    "uniqueApprovedPublicSlugs": 459,
+    "uniqueHiddenSlugs": 592
+  },
+  "afterCounts": {
+    "actuallyRecoverableHiddenSlugs": 49,
+    "approvedPublicRecords": 467,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 0,
+    "hiddenUnapprovedRecords": 770,
+    "hiddenWithPublicEquivalent": 456,
+    "hiddenWithoutPublicEquivalent": 130,
+    "totalPostRecords": 1237,
+    "uniqueApprovedPublicSlugs": 467,
+    "uniqueHiddenSlugs": 586
+  },
+  "hiddenBefore": {
+    "actuallyRecoverableHiddenSlugs": 57,
+    "approvedPublicRecords": 501,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 42,
+    "hiddenUnapprovedRecords": 736,
+    "hiddenWithPublicEquivalent": 454,
+    "hiddenWithoutPublicEquivalent": 138,
+    "totalPostRecords": 1237,
+    "uniqueApprovedPublicSlugs": 459,
+    "uniqueHiddenSlugs": 592
+  },
+  "hiddenAfter": {
+    "actuallyRecoverableHiddenSlugs": 49,
+    "approvedPublicRecords": 467,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 0,
+    "hiddenUnapprovedRecords": 770,
+    "hiddenWithPublicEquivalent": 456,
+    "hiddenWithoutPublicEquivalent": 130,
+    "totalPostRecords": 1237,
+    "uniqueApprovedPublicSlugs": 467,
+    "uniqueHiddenSlugs": 586
+  },
+  "duplicates": {
+    "before": 42,
+    "cleaned": 42,
+    "remaining": 0,
+    "groupsBefore": 42
+  },
+  "publication": {
+    "wave3CandidateQueue": 55,
+    "immediatePublicationBatch": 8,
+    "published": 8,
+    "slugs": [
+      "how-to-calculate-land-use-charge-in-nigeria",
+      "consumer-protection-lawyer-in-nigeria-safeg",
+      "void-and-voidable-marriages-in-nigeria",
+      "how-to-change-car-ownership-in-nigeria",
+      "taxes-on-real-estate-transactions-in-nigeria",
+      "legal-implications-of-joint-property",
+      "enforcing-fundamental-human-right",
+      "can-a-member-be-expelled-from-a-trade-union"
+    ]
+  },
+  "legal": {
+    "reviewed": 38,
+    "resolved": 38,
+    "lawyerHolds": 0,
+    "sourceUnrecoverable": 38,
+    "irrelevantRetired": 0
+  },
+  "ledger": {
+    "totalLegacyUrls": 1693,
+    "classificationCounts": {
+      "308_TO_RELEVANT_200": 131,
+      "HIDDEN_RECOVERABLE": 102,
+      "LIVE_BLOG_CANONICAL": 473,
+      "LOW_VALUE_RETIRED": 523,
+      "UNRESOLVED_HIGH_VALUE": 364,
+      "UNRESOLVED_LOW_VALUE": 100
+    },
+    "trueHighValueUnresolvedBefore": 361,
+    "trueHighValueClosedToDate": 505,
+    "trueHighValueUnresolvedNow": 422,
+    "wave4Candidates": 566
+  },
+  "sitemap": {
+    "status": 200,
+    "blogUrls": 465,
+    "staticServiceUrls": 76,
+    "totalCanonicalUrls": 571,
+    "confirmed200": 571,
+    "confirmed404": 0,
+    "transportErrors": 0,
+    "previewUrls": 0
+  },
+  "redirectQa": {
+    "tested": 16,
+    "pass": 6,
+    "pendingOrReview": 10
+  }
+}

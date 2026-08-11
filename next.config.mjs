@@ -57,6 +57,18 @@ const emergencyLegacyRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const wave3StaticAuthorityRedirects = [
+  { source: "/property-document-review-in-nigeria", destination: "/practice-areas/property-real-estate-law/property-document-review" },
+  { source: "/company-compliance-and-records-advisory", destination: "/practice-areas/corporate-commercial-law/company-compliance-and-records" },
+  { source: "/commercial-debt-recovery-lawyer", destination: "/practice-areas/debt-recovery/commercial-debt-settlement" },
+  { source: "/probate-and-estate-administration-lawyer", destination: "/practice-areas/probate-estate-administration/estate-administration-strategy" },
+  { source: "/employment-contract-review-lawyer", destination: "/practice-areas/employment-law/workplace-documentation-review" },
+  { source: "/notary-and-document-authentication", destination: "/practice-areas/notary-public-services/document-authentication-advisory" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 const sprint10lExactArticleRedirectSources = new Set([
   "/abandonment-and-withdrew-of-court-action",
   "/certificate-of-occupancy-in-rivers-state",
@@ -756,6 +768,7 @@ const nextConfig = {
         permanent: true
       },
       ...emergencyLegacyRedirects,
+      ...wave3StaticAuthorityRedirects,
       ...sprint10lExactArticleRedirects,
       ...sprint10nExactArticleRedirects,
       ...sprint10oExactArticleRedirects,
