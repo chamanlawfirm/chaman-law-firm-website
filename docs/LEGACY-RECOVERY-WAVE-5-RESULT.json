@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-08-11T21:43:52.419Z",
+  "applyMode": true,
+  "before": {
+    "actuallyRecoverableHiddenSlugs": 18,
+    "approvedPublicRecords": 498,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 0,
+    "hiddenUnapprovedRecords": 738,
+    "hiddenWithPublicEquivalent": 465,
+    "totalPostRecords": 1236,
+    "uniqueApprovedPublicSlugs": 498,
+    "uniqueHiddenSlugs": 564
+  },
+  "after": {
+    "actuallyRecoverableHiddenSlugs": 0,
+    "approvedPublicRecords": 499,
+    "dottedOrSourceRecords": 607,
+    "duplicatePublicSlugs": 0,
+    "hiddenUnapprovedRecords": 737,
+    "hiddenWithPublicEquivalent": 465,
+    "totalPostRecords": 1236,
+    "uniqueApprovedPublicSlugs": 499,
+    "uniqueHiddenSlugs": 563
+  },
+  "wave4Deployment": {
+    "tested": 32,
+    "live200": 24,
+    "persistent404": 7
+  },
+  "hidden": {
+    "before": 18,
+    "published": 1,
+    "reconstructed": 0,
+    "mergedRedirected": 0,
+    "retired": 17,
+    "genuineHolds": 0,
+    "after": 0
+  },
+  "highValue": {
+    "before": 364,
+    "selected": 125,
+    "closed": 125,
+    "after": 239
+  },
+  "staticService": {
+    "candidatesReviewed": 40,
+    "restoredSamePath": 0,
+    "reconstructed": 12,
+    "enhanced": 12
+  },
+  "redirects": {
+    "newRedirects": 137,
+    "corrections": 499
+  },
+  "sitemap": {
+    "status": 200,
+    "blogUrls": 488,
+    "staticServiceUrls": 94,
+    "totalCanonicalUrls": 612,
+    "confirmed200": 612,
+    "confirmed404": 0,
+    "transportErrors": 0,
+    "previewUrls": 0,
+    "duplicateCanonicals": 0
+  },
+  "ledger": {
+    "total": 1693,
+    "strictHighAfter": 239,
+    "wave6": 423
+  }
+}
