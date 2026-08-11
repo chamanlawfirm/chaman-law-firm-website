@@ -2,7 +2,7 @@ import { jobOpenings } from "@/data/jobs";
 import { services } from "@/data/services";
 import { defaultOgImage } from "@/lib/constants";
 import type { BlogAuthor, BlogCategory, BlogPost, BlogPostPage, BlogTag } from "@/lib/types";
-import { client } from "@/sanity/lib/client";
+import { client, publicClient } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
@@ -535,9 +535,9 @@ export async function getBlogPostsPage({
   }
 }
 
-export async function getBlogPostSlugs() {
+export async function getBlogPostSlugs({ publicOnly = false }: { publicOnly?: boolean } = {}) {
   try {
-    const slugs = await client.fetch<Array<{ slug: string }>>(
+    const slugs = await (publicOnly ? publicClient : client).fetch<Array<{ slug: string }>>(
       `*[${publishedBlogFilter}] | order(publishedAt desc, _createdAt desc) {
         "slug": slug.current
       }`,

@@ -2353,6 +2353,267 @@ const wave5PrivateClientServicePages: ServicePage[] = [
   })
 ];
 
+const wave6PropertyServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "title-perfection-advisory",
+    title: "Title Perfection Advisory",
+    summary: "Legal guidance on title perfection steps, consent risk, stamping, registration, and post-acquisition documentation for Nigerian property transactions.",
+    description: "Chaman Law Firm advises buyers, owners, lenders, and investors on title perfection strategy, document gaps, consent issues, stamping questions, and registration readiness.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Title perfection advisory for Nigerian property transactions",
+    keyPoints: ["Title perfection and registration-readiness review", "Consent, stamping, and documentation-risk guidance", "Buyer, owner, investor, and lender support", "Advice before completion or post-acquisition regularization"],
+    process: ["Collect title, transaction, payment, consent, and registration documents", "Review perfection status, authority, document gaps, and visible risk", "Identify clarifications and supporting records needed", "Advise on regularization, completion, dispute prevention, or professional coordination"],
+    faqTopic: "title perfection advisory",
+    faqAnswer: "Yes. The firm can review property documents and advise on title perfection, consent, stamping, and registration-readiness issues."
+  }),
+  createSprint11tServicePage({
+    slug: "survey-plan-and-boundary-review",
+    title: "Survey Plan and Boundary Review",
+    summary: "Review of survey plans, boundaries, location risk, acquisition concerns, and document consistency before purchase, development, or dispute escalation.",
+    description: "The firm helps clients review survey-plan and boundary documents alongside title records, transaction documents, and dispute facts before taking legal or commercial steps.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Survey plan and boundary review for property matters",
+    keyPoints: ["Survey-plan and boundary-document review", "Location, excision, acquisition, and overlap-risk guidance", "Transaction and dispute support", "Advice before payment, development, or litigation"],
+    process: ["Collect survey, title, location, transaction, and dispute documents", "Review consistency, boundary issues, acquisition concerns, and document gaps", "Identify verification and professional follow-up needs", "Advise on purchase, development, negotiation, or dispute strategy"],
+    faqTopic: "survey plan and boundary review",
+    faqAnswer: "Yes. Chaman Law Firm can review survey and boundary documents and advise on legal-risk issues before purchase or dispute steps."
+  }),
+  createSprint11tServicePage({
+    slug: "lease-documentation-advisory",
+    title: "Lease Documentation Advisory",
+    summary: "Legal review of leases, rent terms, renewal clauses, repair obligations, termination rights, and possession-risk issues for landlords and tenants.",
+    description: "Chaman Law Firm advises landlords, tenants, businesses, and property managers on lease documentation, negotiation, renewal, termination, and dispute-prevention issues.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Lease documentation advisory for landlords and tenants",
+    keyPoints: ["Lease and tenancy-document review", "Rent, renewal, repair, and termination guidance", "Landlord, tenant, and business-occupier support", "Advice before signing, renewal, or dispute escalation"],
+    process: ["Review lease drafts, rent records, correspondence, and property-use facts", "Assess obligations, termination rights, repair terms, and dispute exposure", "Identify unclear or risky clauses", "Advise on negotiation, amendment, renewal, termination, or dispute steps"],
+    faqTopic: "lease documentation advisory",
+    faqAnswer: "Yes. The firm can review leases and tenancy documents before signing, renewal, termination, or dispute escalation."
+  }),
+  createSprint11tServicePage({
+    slug: "real-estate-joint-venture-advisory",
+    title: "Real Estate Joint Venture Advisory",
+    summary: "Legal support for property development joint ventures, landowner-developer arrangements, contribution terms, allocation, exit rights, and dispute prevention.",
+    description: "The firm helps landowners, developers, investors, and families review real estate joint venture documents and structure practical safeguards before execution.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Real estate joint venture advisory in Nigeria",
+    keyPoints: ["Landowner-developer and investor arrangement review", "Contribution, allocation, exit, and control-right guidance", "Development-risk and dispute-prevention advice", "Support before signing or restructuring"],
+    process: ["Confirm parties, land documents, development objective, and draft terms", "Review title, contribution, allocation, timelines, control, and exit provisions", "Identify gaps, unrealistic obligations, and dispute triggers", "Advise on negotiation, documentation, completion, or restructuring"],
+    faqTopic: "real estate joint venture advisory",
+    faqAnswer: "Yes. Chaman Law Firm can review property development joint venture documents and advise on legal-risk allocation."
+  }),
+  createSprint11tServicePage({
+    slug: "land-fraud-risk-review",
+    title: "Land Fraud Risk Review",
+    summary: "Focused legal review for suspected land fraud, conflicting sellers, forged documents, double allocation, family-land disputes, and payment-risk concerns.",
+    description: "Chaman Law Firm assists buyers, families, investors, and property owners with early legal review of suspected land fraud and documentation inconsistencies.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Land fraud risk review and property dispute advisory",
+    keyPoints: ["Fraud-risk and document inconsistency review", "Seller authority, family land, and allocation concerns", "Payment-trail and transaction-history guidance", "Advice before escalation, settlement, or court action"],
+    process: ["Collect title documents, seller details, payment records, and correspondence", "Review inconsistencies, authority gaps, competing claims, and fraud indicators", "Identify urgent protective steps and evidence needs", "Advise on negotiation, reporting, dispute resolution, or litigation strategy"],
+    faqTopic: "land fraud risk review",
+    faqAnswer: "Yes. The firm can review suspected land fraud documents and advise on protective legal options."
+  })
+];
+
+const wave6CorporateServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "director-duties-and-board-advisory",
+    title: "Director Duties and Board Advisory",
+    summary: "Advisory for directors, founders, and companies on board decisions, duties, conflicts, resolutions, governance records, and corporate-risk management.",
+    description: "Chaman Law Firm helps companies and directors review board documents, governance decisions, conflicts, corporate records, and legal-risk issues before action.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Director duties and board governance advisory",
+    keyPoints: ["Board decision and director-duty review", "Conflict, resolution, and governance-record guidance", "Founder, director, and company support", "Advice before signing, filing, or dispute escalation"],
+    process: ["Review company records, board documents, resolutions, and decision context", "Assess authority, conflicts, duties, voting, and filing implications", "Identify gaps or governance risks", "Advise on documentation, compliance, negotiation, or dispute strategy"],
+    faqTopic: "director duties and board advisory",
+    faqAnswer: "Yes. The firm can review board and governance documents and advise directors or companies on legal-risk issues."
+  }),
+  createSprint11tServicePage({
+    slug: "investment-agreement-review",
+    title: "Investment Agreement Review",
+    summary: "Review of investment agreements, founder terms, subscription documents, convertible instruments, investor rights, exit provisions, and dispute risks.",
+    description: "The firm advises founders, investors, directors, and businesses on investment documentation and risk allocation before signing or restructuring.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Investment agreement review and corporate transaction advisory",
+    keyPoints: ["Investment and subscription-document review", "Investor rights, founder obligations, exit, and control guidance", "Business and investor advisory", "Negotiation and execution support"],
+    process: ["Confirm transaction structure, parties, documents, cap table, and objectives", "Review rights, obligations, conditions, warranties, exits, and dispute terms", "Identify gaps and negotiation points", "Advise on revision, execution, compliance, or restructuring"],
+    faqTopic: "investment agreement review",
+    faqAnswer: "Yes. Chaman Law Firm can review investment agreements and advise on rights, obligations, and transaction risk."
+  }),
+  createSprint11tServicePage({
+    slug: "business-contract-dispute-review",
+    title: "Business Contract Dispute Review",
+    summary: "Pre-action review of business contract disputes, correspondence, performance records, payment issues, breach allegations, and settlement options.",
+    description: "Chaman Law Firm helps businesses assess contract disputes, claim strength, settlement options, and next steps before escalation or litigation.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Business contract dispute review by Chaman Law Firm",
+    keyPoints: ["Contract, correspondence, and performance-record review", "Breach, payment, termination, and remedy guidance", "Business and counterparty dispute strategy", "Advice before demand, negotiation, or court action"],
+    process: ["Collect contracts, invoices, correspondence, performance records, and timeline", "Review obligations, breach allegations, evidence, and remedies", "Identify settlement leverage and procedural risks", "Advise on demand, negotiation, ADR, or litigation strategy"],
+    faqTopic: "business contract dispute review",
+    faqAnswer: "Yes. The firm can review contract-dispute documents and advise on negotiation, settlement, or litigation options."
+  }),
+  createSprint11tServicePage({
+    slug: "data-protection-compliance-advisory",
+    title: "Data Protection Compliance Advisory",
+    summary: "Business legal review of data protection documents, privacy policies, consent processes, vendor risk, employee records, and compliance gaps.",
+    description: "The firm advises businesses on practical data protection documentation and compliance-risk review connected with operations, contracts, vendors, and customer records.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Data protection compliance advisory for Nigerian businesses",
+    keyPoints: ["Privacy and data-document review", "Vendor, employee, customer, and consent-risk guidance", "Business compliance support", "Advice before policy rollout or contract execution"],
+    process: ["Review business activity, policies, contracts, data flows, and compliance questions", "Assess documentation, consent, vendor, employee, and customer-record risks", "Identify gaps and practical remediation steps", "Advise on policy, contract, and compliance-readiness"],
+    faqTopic: "data protection compliance advisory",
+    faqAnswer: "Yes. Chaman Law Firm can review data protection documents and advise on practical compliance-risk issues."
+  })
+];
+
+const wave6DisputeServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "appeal-record-and-judgment-review",
+    title: "Appeal Record and Judgment Review",
+    summary: "Review of judgments, rulings, orders, appeal records, deadlines, procedural history, and practical options after an adverse court decision.",
+    description: "Chaman Law Firm helps clients review judgments and court records to understand available post-judgment, appeal, enforcement, or settlement options.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Appeal record and judgment review in Nigeria",
+    keyPoints: ["Judgment, ruling, and court-record review", "Appeal, enforcement, settlement, and response guidance", "Claimant and respondent support", "Strategy after court decisions"],
+    process: ["Collect judgment, orders, processes, record history, and timeline", "Review findings, deadlines, procedural posture, and available options", "Identify risks, evidence needs, and next-step constraints", "Advise on appeal, settlement, enforcement, or response strategy"],
+    faqTopic: "appeal record and judgment review",
+    faqAnswer: "Yes. The firm can review court records and advise on practical options after a judgment or ruling."
+  }),
+  createSprint11tServicePage({
+    slug: "fundamental-rights-pre-action-review",
+    title: "Fundamental Rights Pre-Action Review",
+    summary: "Early review of rights-related complaints, detention concerns, police correspondence, evidence, urgency, and possible legal response options.",
+    description: "The firm assists clients with early legal review of fundamental-rights complaints and related documents before correspondence, negotiation, or proceedings.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Fundamental rights pre-action review and litigation advisory",
+    keyPoints: ["Rights complaint and evidence review", "Police, detention, and correspondence guidance", "Urgent-response and pre-action strategy", "Advice before escalation or proceedings"],
+    process: ["Confirm facts, urgency, parties, documents, and evidence", "Review legal issues, chronology, correspondence, and available records", "Identify immediate protective steps and response options", "Advise on correspondence, settlement, complaint, or court strategy"],
+    faqTopic: "fundamental rights pre-action review",
+    faqAnswer: "Yes. Chaman Law Firm can review rights-related documents and advise on lawful next steps."
+  })
+];
+
+const wave6DebtServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "loan-default-and-security-review",
+    title: "Loan Default and Security Review",
+    summary: "Legal review of loan defaults, repayment agreements, guarantees, security documents, settlement proposals, and enforcement-risk issues.",
+    description: "Chaman Law Firm advises lenders, borrowers, guarantors, businesses, and individuals on loan default documents and practical recovery or settlement strategy.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Loan default and security document review",
+    keyPoints: ["Loan, guarantee, and security-document review", "Creditor, debtor, borrower, and guarantor guidance", "Settlement, restructuring, and enforcement-risk advice", "Support before demand, negotiation, or litigation"],
+    process: ["Collect loan, security, guarantee, repayment, and correspondence records", "Review obligations, default, security, enforcement, and settlement issues", "Identify gaps and negotiation or litigation risks", "Advise on demand, restructuring, settlement, enforcement, or defence strategy"],
+    faqTopic: "loan default and security review",
+    faqAnswer: "Yes. The firm can review loan-default and security documents and advise creditors, borrowers, or guarantors."
+  }),
+  createSprint11tServicePage({
+    slug: "invoice-debt-settlement-advisory",
+    title: "Invoice Debt Settlement Advisory",
+    summary: "Legal support for unpaid invoices, business receivables, settlement proposals, admissions, payment plans, and escalation strategy.",
+    description: "The firm helps businesses and creditors review invoice-debt documents and prepare practical settlement or recovery options before escalation.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Invoice debt settlement advisory for businesses",
+    keyPoints: ["Invoice, delivery, and payment-record review", "Settlement, admission, and repayment-plan guidance", "Business creditor and debtor advisory", "Advice before demand, negotiation, or proceedings"],
+    process: ["Review invoices, delivery records, correspondence, admissions, and payment history", "Assess claim strength, limitation, settlement options, and debtor position", "Identify documentation gaps and negotiation leverage", "Advise on demand, settlement, repayment plan, or escalation"],
+    faqTopic: "invoice debt settlement advisory",
+    faqAnswer: "Yes. Chaman Law Firm can review invoice debts and advise on settlement, demand, or recovery strategy."
+  })
+];
+
+const wave6PrivateClientServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "will-dispute-pre-action-review",
+    title: "Will Dispute Pre-Action Review",
+    summary: "Review of wills, probate records, beneficiary concerns, capacity questions, family correspondence, and settlement options before dispute escalation.",
+    description: "The firm assists families, beneficiaries, executors, and administrators with early legal review of will disputes and estate-conflict documents.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Will dispute pre-action review and probate advisory",
+    keyPoints: ["Will, probate, and estate-document review", "Beneficiary, executor, administrator, and family guidance", "Capacity, consent, and dispute-risk advice", "Pre-action settlement and litigation strategy"],
+    process: ["Collect wills, probate records, family facts, asset documents, and correspondence", "Review beneficiary issues, authority, capacity concerns, and dispute triggers", "Identify evidence and settlement options", "Advise on negotiation, representation, filing, or litigation strategy"],
+    faqTopic: "will dispute pre-action review",
+    faqAnswer: "Yes. The firm can review will-dispute documents and advise on settlement or legal action options."
+  }),
+  createSprint11tServicePage({
+    slug: "estate-property-transfer-advisory",
+    title: "Estate Property Transfer Advisory",
+    summary: "Guidance on inherited-property transfer, estate title documents, administrator authority, beneficiary consent, and transaction-readiness.",
+    description: "Chaman Law Firm helps families, administrators, executors, beneficiaries, and diaspora relatives review inherited-property documents before transfer, sale, or settlement.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Estate property transfer advisory in Nigeria",
+    keyPoints: ["Inherited-property and estate-title review", "Administrator, executor, and beneficiary authority guidance", "Consent, sale, and transfer-risk advice", "Support before transaction or settlement"],
+    process: ["Collect estate, probate, title, consent, and transaction documents", "Review authority, beneficiary interests, title history, and transfer readiness", "Identify missing records and dispute risks", "Advise on transfer, sale, settlement, or representation steps"],
+    faqTopic: "estate property transfer advisory",
+    faqAnswer: "Yes. Chaman Law Firm can review inherited-property records and advise on transfer or sale readiness."
+  }),
+  createSprint11tServicePage({
+    slug: "child-custody-document-review",
+    title: "Child Custody Document Review",
+    summary: "Sensitive review of custody documents, parenting arrangements, school records, correspondence, settlement proposals, and family-court readiness.",
+    description: "The firm advises parents and guardians on custody documentation, child-focused settlement issues, and practical legal options before escalation.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Child custody document review and family law advisory",
+    keyPoints: ["Custody and parenting-document review", "Parent, guardian, and family guidance", "Settlement, school, welfare, and correspondence review", "Advice before negotiation or proceedings"],
+    process: ["Confirm family facts, child-related documents, correspondence, and urgency", "Review custody, welfare, settlement, and procedural issues", "Identify documentation gaps and protective considerations", "Advise on negotiation, settlement, or court strategy"],
+    faqTopic: "child custody document review",
+    faqAnswer: "Yes. The firm can review custody-related documents and advise on child-focused legal options."
+  }),
+  createSprint11tServicePage({
+    slug: "termination-and-severance-review",
+    title: "Termination and Severance Review",
+    summary: "Review of termination letters, severance terms, employment contracts, disciplinary records, settlement offers, and workplace dispute strategy.",
+    description: "Chaman Law Firm advises employers, employees, and executives on termination and severance documents before signing, negotiation, settlement, or dispute steps.",
+    image: serviceHeroImages.firmTeam,
+    imageAlt: "Termination and severance review by Chaman Law Firm",
+    keyPoints: ["Termination, severance, and employment-document review", "Employer, employee, and executive guidance", "Settlement and dispute-risk advice", "Support before signing or escalation"],
+    process: ["Collect contracts, termination records, policies, correspondence, and settlement terms", "Review obligations, procedure, payments, releases, and dispute exposure", "Identify risks and negotiation points", "Advise on response, settlement, compliance, or litigation strategy"],
+    faqTopic: "termination and severance review",
+    faqAnswer: "Yes. The firm can review termination and severance documents before signing or dispute escalation."
+  })
+];
+
+const wave6MobilityAndDocumentServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "expatriate-quota-document-review",
+    title: "Expatriate Quota Document Review",
+    summary: "Legal review of expatriate quota, business immigration records, corporate documents, employment details, and compliance-readiness questions.",
+    description: "The firm advises businesses and foreign personnel on expatriate quota document readiness and Nigerian business-immigration compliance-risk issues.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Expatriate quota document review for Nigerian business immigration",
+    keyPoints: ["Expatriate quota and immigration-document review", "Company, employment, and compliance guidance", "Business and foreign-personnel advisory", "Advice before filing or regulatory follow-up"],
+    process: ["Review company records, role details, immigration documents, and compliance questions", "Assess document readiness, consistency, and visible risk", "Identify gaps and supporting records needed", "Advise on filing readiness, compliance, or professional coordination"],
+    faqTopic: "expatriate quota document review",
+    faqAnswer: "Yes. Chaman Law Firm can review expatriate quota documents and advise on readiness and compliance-risk issues."
+  }),
+  createSprint11tServicePage({
+    slug: "diaspora-document-execution-advisory",
+    title: "Diaspora Document Execution Advisory",
+    summary: "Guidance for diaspora clients executing powers of attorney, affidavits, property documents, corporate papers, and cross-border legal documents.",
+    description: "Chaman Law Firm helps diaspora clients review document execution, notarization, authentication, and Nigerian-use requirements before signing or submission.",
+    image: serviceHeroImages.managingPartnerOffice,
+    imageAlt: "Diaspora document execution advisory",
+    keyPoints: ["Cross-border document execution review", "Power of attorney, affidavit, property, and corporate-document guidance", "Diaspora and family support", "Advice before notarization, authentication, or submission"],
+    process: ["Confirm document purpose, destination, parties, and signing location", "Review execution, notarization, authentication, and authority issues", "Identify missing supporting records and readiness concerns", "Advise on signing, certification, submission, or Nigerian-use steps"],
+    faqTopic: "diaspora document execution advisory",
+    faqAnswer: "Yes. The firm can review diaspora documents before execution, notarization, authentication, or use in Nigeria."
+  })
+];
+
+const wave6AdrServicePages: ServicePage[] = [
+  createSprint11tServicePage({
+    slug: "settlement-agreement-enforcement-review",
+    title: "Settlement Agreement Enforcement Review",
+    summary: "Review of settlement agreements, payment obligations, confidentiality clauses, default terms, enforcement options, and dispute-prevention strategy.",
+    description: "Chaman Law Firm advises parties on settlement-agreement terms and enforcement-risk issues before signing, breach response, or escalation.",
+    image: serviceHeroImages.legalService,
+    imageAlt: "Settlement agreement enforcement review",
+    keyPoints: ["Settlement and consent-term review", "Payment, default, confidentiality, and release guidance", "Family, commercial, property, and debt dispute support", "Advice before signing or enforcement"],
+    process: ["Review settlement documents, dispute history, payment terms, and obligations", "Assess clarity, enforceability, default risk, and release issues", "Identify amendments or protective terms needed", "Advise on execution, compliance, enforcement, or renegotiation"],
+    faqTopic: "settlement agreement enforcement review",
+    faqAnswer: "Yes. The firm can review settlement terms and advise on compliance, enforcement, or renegotiation risks."
+  })
+];
+
 export const practiceAreas: PracticeArea[] = [
   {
     slug: "property-real-estate-law",
@@ -2393,7 +2654,7 @@ export const practiceAreas: PracticeArea[] = [
       "Property dispute resolution",
       "Diaspora property services"
     ],
-    servicePages: [...propertyServicePages, ...sprint11sPropertyServicePages, ...sprint11tPropertyServicePages, ...wave3PropertyServicePages, ...wave4PropertyServicePages, ...wave5PropertyServicePages],
+    servicePages: [...propertyServicePages, ...sprint11sPropertyServicePages, ...sprint11tPropertyServicePages, ...wave3PropertyServicePages, ...wave4PropertyServicePages, ...wave5PropertyServicePages, ...wave6PropertyServicePages],
     commonIssues: [
       "Unverified title documents",
       "Family land and seller-authority disputes",
@@ -2481,6 +2742,7 @@ export const practiceAreas: PracticeArea[] = [
       ...wave3CorporateServicePages,
       ...wave4CorporateServicePages,
       ...wave5CorporateServicePages,
+      ...wave6CorporateServicePages,
       {
         slug: "contract-drafting-review",
         title: "Contract Drafting & Review",
@@ -2712,6 +2974,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11tLitigationServicePages,
       ...wave4LitigationServicePages,
       ...wave5LitigationServicePages,
+      ...wave6DisputeServicePages,
       {
         slug: "commercial-litigation",
         title: "Commercial Litigation",
@@ -2872,6 +3135,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11tDebtServicePages,
       ...wave3DebtServicePages,
       ...wave4DebtServicePages,
+      ...wave6DebtServicePages,
       {
         slug: "commercial-debt-recovery",
         title: "Commercial Debt Recovery",
@@ -2934,6 +3198,7 @@ export const practiceAreas: PracticeArea[] = [
       ...wave3ProbateServicePages,
       ...wave4ProbateServicePages,
       wave5PrivateClientServicePages[0],
+      ...wave6PrivateClientServicePages.slice(0, 2),
       {
         slug: "letters-of-administration",
         title: "Letters of Administration",
@@ -3030,6 +3295,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11tNotaryServicePages,
       ...wave3NotaryServicePages,
       ...wave4NotaryServicePages,
+      wave6MobilityAndDocumentServicePages[1],
       {
         slug: "power-of-attorney",
         title: "Power of Attorney",
@@ -3088,6 +3354,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11sImmigrationServicePages,
       ...sprint11tImmigrationServicePages,
       ...wave4ImmigrationServicePages,
+      wave6MobilityAndDocumentServicePages[0],
       {
         slug: "business-immigration",
         title: "Business Immigration",
@@ -3148,6 +3415,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11sFamilyServicePages,
       ...sprint11tFamilyServicePages,
       ...wave4FamilyServicePages,
+      wave6PrivateClientServicePages[2],
       {
         slug: "matrimonial-advisory",
         title: "Matrimonial Advisory",
@@ -3211,6 +3479,7 @@ export const practiceAreas: PracticeArea[] = [
       ...sprint11tEmploymentServicePages,
       ...wave3EmploymentServicePages,
       wave5PrivateClientServicePages[1],
+      wave6PrivateClientServicePages[3],
       {
         slug: "trade-union-membership-disputes",
         title: "Trade Union Membership Disputes",
@@ -3314,7 +3583,7 @@ export const practiceAreas: PracticeArea[] = [
       "Mediator selection and quality advisory",
       "Arbitral award enforcement advisory"
     ],
-    servicePages: [...sprint11tAdrServicePages, ...wave4AdrServicePages, wave5PrivateClientServicePages[2]],
+    servicePages: [...sprint11tAdrServicePages, ...wave4AdrServicePages, wave5PrivateClientServicePages[2], ...wave6AdrServicePages],
     commonIssues: [
       "Disputes that may be resolved before trial",
       "Property and family settlement pressure",
