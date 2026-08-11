@@ -69,6 +69,24 @@ const wave3StaticAuthorityRedirects = [
   { source, destination, permanent: true }
 ]);
 
+const wave4StaticAuthorityRedirects = [
+  { source: "/land-document-verification-lawyer", destination: "/practice-areas/property-real-estate-law/land-document-verification" },
+  { source: "/tenancy-document-review-lawyer", destination: "/practice-areas/property-real-estate-law/tenancy-document-review" },
+  { source: "/property-dispute-pre-action-advisory", destination: "/practice-areas/property-real-estate-law/property-dispute-pre-action-advisory" },
+  { source: "/company-secretarial-record-review", destination: "/practice-areas/corporate-commercial-law/company-secretarial-record-review" },
+  { source: "/contract-risk-review-nigeria", destination: "/practice-areas/corporate-commercial-law/contract-risk-review" },
+  { source: "/pre-action-litigation-advisory", destination: "/practice-areas/litigation-dispute-resolution/pre-action-litigation-advisory" },
+  { source: "/debt-settlement-documentation", destination: "/practice-areas/debt-recovery/debt-settlement-documentation" },
+  { source: "/probate-family-settlement-advisory", destination: "/practice-areas/probate-estate-administration/probate-family-settlement-advisory" },
+  { source: "/family-agreement-review-lawyer", destination: "/practice-areas/family-law/family-agreement-review" },
+  { source: "/immigration-document-review-nigeria", destination: "/practice-areas/immigration-services/immigration-document-review" },
+  { source: "/mediation-settlement-document-review", destination: "/practice-areas/adr-mediation/mediation-settlement-document-review" },
+  { source: "/notarial-document-readiness", destination: "/practice-areas/notary-public-services/notarial-document-readiness" }
+].flatMap(({ source, destination }) => [
+  { source: `${source}/`, destination, permanent: true },
+  { source, destination, permanent: true }
+]);
+
 const sprint10lExactArticleRedirectSources = new Set([
   "/abandonment-and-withdrew-of-court-action",
   "/certificate-of-occupancy-in-rivers-state",
@@ -769,6 +787,7 @@ const nextConfig = {
       },
       ...emergencyLegacyRedirects,
       ...wave3StaticAuthorityRedirects,
+      ...wave4StaticAuthorityRedirects,
       ...sprint10lExactArticleRedirects,
       ...sprint10nExactArticleRedirects,
       ...sprint10oExactArticleRedirects,

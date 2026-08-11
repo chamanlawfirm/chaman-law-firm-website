@@ -1,0 +1,13 @@
+source_url,expected_target,local_status,live_status,result
+https://chamanlawfirm.com/land-document-verification-lawyer,https://chamanlawfirm.com/practice-areas/property-real-estate-law/land-document-verification,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/tenancy-document-review-lawyer,https://chamanlawfirm.com/practice-areas/property-real-estate-law/tenancy-document-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/property-dispute-pre-action-advisory,https://chamanlawfirm.com/practice-areas/property-real-estate-law/property-dispute-pre-action-advisory,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/company-secretarial-record-review,https://chamanlawfirm.com/practice-areas/corporate-commercial-law/company-secretarial-record-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/contract-risk-review-nigeria,https://chamanlawfirm.com/practice-areas/corporate-commercial-law/contract-risk-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/pre-action-litigation-advisory,https://chamanlawfirm.com/practice-areas/litigation-dispute-resolution/pre-action-litigation-advisory,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/debt-settlement-documentation,https://chamanlawfirm.com/practice-areas/debt-recovery/debt-settlement-documentation,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/probate-family-settlement-advisory,https://chamanlawfirm.com/practice-areas/probate-estate-administration/probate-family-settlement-advisory,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/family-agreement-review-lawyer,https://chamanlawfirm.com/practice-areas/family-law/family-agreement-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/immigration-document-review-nigeria,https://chamanlawfirm.com/practice-areas/immigration-services/immigration-document-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/mediation-settlement-document-review,https://chamanlawfirm.com/practice-areas/adr-mediation/mediation-settlement-document-review,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
+https://chamanlawfirm.com/notarial-document-readiness,https://chamanlawfirm.com/practice-areas/notary-public-services/notarial-document-readiness,configured_308,DEPLOYMENT_PENDING,LOCAL_BUILD_PASS
