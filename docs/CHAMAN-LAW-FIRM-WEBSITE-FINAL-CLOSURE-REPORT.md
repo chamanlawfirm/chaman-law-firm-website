@@ -1,6 +1,6 @@
 # Chaman Law Firm Website Final Closure Report
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
 ## 1. Executive Summary
 
@@ -16,7 +16,7 @@ Run separately in this sprint. See command output.
 
 ## 4. Total Public Pages
 
-404 URLs in production sitemap.
+0 URLs in production sitemap.
 
 ## 5. Total Published Blog Posts
 
@@ -52,15 +52,15 @@ See `FINAL-MASTER-LEGACY-URL-RECONCILIATION.csv`.
 
 ## 13. Redirect Certification
 
-180/180 sampled redirects passed. See `FINAL-REDIRECT-CERTIFICATION.csv`.
+7/180 sampled redirects passed. See `FINAL-REDIRECT-CERTIFICATION.csv`.
 
 ## 14. Sitemap Certification
 
-GREEN.
+RED.
 
 ## 15. Robots Certification
 
-GREEN.
+RED.
 
 ## 16. GSC Status
 

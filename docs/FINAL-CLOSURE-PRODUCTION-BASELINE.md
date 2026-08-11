@@ -1,18 +1,18 @@
 # Final Closure Production Baseline
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
 | Check | Result |
 |---|---|
 | Branch | preview/chaman-law-firm-mvp |
-| Homepage | 200 |
+| Homepage | ERR |
 | www redirect | 308 -> https://chamanlawfirm.com/ |
-| Blog index | 200 |
-| Sitemap | 200 |
-| Robots | 200 |
-| Public sitemap URLs | 404 |
+| Blog index | ERR |
+| Sitemap | ERR |
+| Robots | ERR |
+| Public sitemap URLs | 0 |
 | Preview/Vercel URLs in sitemap | 0 |
 | Redirect sample size | 180 |
-| Redirect PASS | 180 |
-| Redirect REVIEW | 0 |
-| Hidden hold sample | 404 |
+| Redirect PASS | 7 |
+| Redirect REVIEW | 173 |
+| Hidden hold sample | ERR |

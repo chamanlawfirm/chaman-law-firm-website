@@ -1,6 +1,6 @@
 # Final Bing Webmaster Certification
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
 Fresh Bing dashboard export was not found locally.
 

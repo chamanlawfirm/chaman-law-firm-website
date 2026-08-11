@@ -1,6 +1,6 @@
 # Final Accessibility Certification
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
 Automated source/live crawl checked representative metadata, images, alt presence, CTAs, and schema. Full keyboard/screen-reader audit still requires browser tooling.
 

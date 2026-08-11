@@ -1,11 +1,11 @@
 # Final Sitemap Certification
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
-- Sitemap HTTP status: 200
-- Total URLs found: 404
+- Sitemap HTTP status: ERR
+- Total URLs found: 0
 - Preview/Vercel URL contamination: GREEN
 - Duplicate sitemap entries: GREEN
 - Production apex hostname: GREEN
 
-Decision: GREEN.
+Decision: RED.

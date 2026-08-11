@@ -1,10 +1,10 @@
 # Final Vercel / Domain / DNS Certification
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
-- Apex HTTPS: GREEN
+- Apex HTTPS: RED
 - www behavior: 308 -> https://chamanlawfirm.com/
-- SSL check: GREEN
+- SSL check: REVIEW
 - Sitemap hostname: GREEN
 - DNS changes made: none.
 

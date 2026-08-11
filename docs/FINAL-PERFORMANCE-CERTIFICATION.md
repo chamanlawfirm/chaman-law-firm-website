@@ -1,6 +1,6 @@
 # Final Performance / Core Web Vitals Certification
 
-Generated: 2026-08-03T06:41:59.129Z
+Generated: 2026-08-05T22:16:54.233Z
 
 Lighthouse CLI was not run by this script. Production HTTP checks passed for representative pages.
 

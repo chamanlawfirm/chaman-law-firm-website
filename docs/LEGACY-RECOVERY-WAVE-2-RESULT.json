@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-08-11T10:07:54.888Z",
+  "published": 9,
+  "articlesReconstructed": 9,
+  "beforeCounts": {
+    "totalPostRecords": 1238,
+    "approvedPublicRecords": 494,
+    "uniqueApprovedPublicSlugs": 452,
+    "hiddenUnapprovedRecords": 744,
+    "uniqueHiddenSlugs": 593,
+    "duplicatePublicSlugs": 42
+  },
+  "afterCounts": {
+    "approvedPublicRecords": 501,
+    "duplicatePublicSlugs": 42,
+    "hiddenUnapprovedRecords": 736,
+    "totalPostRecords": 1237,
+    "uniqueApprovedPublicSlugs": 459,
+    "uniqueHiddenSlugs": 592,
+    "dottedOrSourceRecords": 607
+  },
+  "duplicateCleanupRows": 253,
+  "gscPack": "docs/LEGACY-RECOVERY-WAVE-2-GSC-ACTION-PACK.md",
+  "bingPack": "docs/LEGACY-RECOVERY-WAVE-2-BING-ACTION-PACK.md",
+  "publishedSlugs": [
+    "what-makes-a-valid-employment-contract-in-nigeria",
+    "accountability-in-corporate-governance-in-nigeria",
+    "probate-vs-letters-of-administration-in-nigeria",
+    "landlords-and-tenants-in-nigeria",
+    "land-registration-system-in-nigeria",
+    "how-to-legally-evict-a-tenant-in-lagos-state",
+    "how-to-calculate-and-pay-land-use-charge",
+    "right-of-an-illegitimate-child",
+    "limitation-of-action-in-nigeria"
+  ],
+  "liveQa": "docs/LEGACY-RECOVERY-WAVE-2-LIVE-QA.json",
+  "sitemap": {
+    "blogUrls": 459,
+    "staticServiceUrls": 106,
+    "totalCanonicalUrls": 565,
+    "confirmed404": 0,
+    "transportErrors": 0
+  },
+  "redirectExportSlugs": 459,
+  "strictPublicSanitySlugs": 459
+}
