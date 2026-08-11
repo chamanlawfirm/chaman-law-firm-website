@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { legacyBlogFallbackRedirects } from "@/data/legacy-blog-fallback-redirects";
 import { legacyActivationBlogRedirectSlugs } from "@/data/legacy-blog-redirect-slugs";
 import { legacyStaticRedirects } from "@/data/legacy-static-redirects";
 
@@ -15,6 +16,13 @@ export function proxy(request: NextRequest) {
   if (parts.length !== 1) return NextResponse.next();
 
   const slug = parts[0];
+  const blogFallbackTarget = legacyBlogFallbackRedirects[slug];
+  if (blogFallbackTarget) {
+    const target = request.nextUrl.clone();
+    target.pathname = blogFallbackTarget;
+    return NextResponse.redirect(target, 308);
+  }
+
   const staticTarget = legacyStaticRedirects[`/${slug}`];
   if (staticTarget) {
     const target = request.nextUrl.clone();
