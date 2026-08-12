@@ -1,10 +1,10 @@
-url,source_wave,classification,action
-https://chamanlawfirm.com/resources/blog/rights-of-an-illegitimate-child-in-nigeria,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/how-to-verify-a-property-title-in-lagos,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/legal-aspects-of-employment-contracts,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/obtaining-a-certificate-of-occupancy-in-ogun-state,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/ultimate-legal-guide-to-buying-land-in-nigeria,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/debt-recovery-and-consumer-protection-laws,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/how-do-i-legally-evict-a-tenant-in-ogun-state,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/what-is-stamping-and-up-stamping-of-a-mortgage-document,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
-https://chamanlawfirm.com/resources/blog/landlords-and-tenants-in-nigeria,Wave 5,SANITY_PUBLIC_ROUTE_MISSING,server_token_route_fix_pending_deploy
+url,source_wave,classification,action,final_production_status,final_url
+https://chamanlawfirm.com/resources/blog/rights-of-an-illegitimate-child-in-nigeria,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/family-law/child-custody-document-review
+https://chamanlawfirm.com/resources/blog/how-to-verify-a-property-title-in-lagos,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/title-perfection-advisory
+https://chamanlawfirm.com/resources/blog/legal-aspects-of-employment-contracts,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/employment-law/termination-and-severance-review
+https://chamanlawfirm.com/resources/blog/obtaining-a-certificate-of-occupancy-in-ogun-state,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/certificate-of-occupancy-advisory
+https://chamanlawfirm.com/resources/blog/ultimate-legal-guide-to-buying-land-in-nigeria,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/land-fraud-risk-review
+https://chamanlawfirm.com/resources/blog/debt-recovery-and-consumer-protection-laws,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/debt-recovery/loan-default-and-security-review
+https://chamanlawfirm.com/resources/blog/how-do-i-legally-evict-a-tenant-in-ogun-state,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/lease-documentation-advisory
+https://chamanlawfirm.com/resources/blog/what-is-stamping-and-up-stamping-of-a-mortgage-document,Wave 4,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/mortgage-and-security-document-advisory
+https://chamanlawfirm.com/resources/blog/landlords-and-tenants-in-nigeria,Wave 5,SANITY_PUBLIC_ROUTE_MISSING,relevant_fallback_redirect_deployed,200,https://chamanlawfirm.com/practice-areas/property-real-estate-law/lease-documentation-advisory
