@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-08-13T20:33:52.141Z",
+  "applyMode": true,
+  "startingCommit": "a7b7b22",
+  "publicBlogsSanityBefore": 494,
+  "publicBlogsSanityAfter": 483,
+  "publicBlogsPublicApiAfter": 483,
+  "sitemapBlogUrlsBefore": 483,
+  "sitemapBlogUrlsAfter": 483,
+  "gapBefore": 11,
+  "gapAfter": 0,
+  "highValueBefore": 114,
+  "highValueSelected": 114,
+  "relevantRedirects": 107,
+  "retired": 7,
+  "holds": 0,
+  "blogCertification": {
+    "tested": 483,
+    "publicBlog404s": 0,
+    "reviews": 0
+  },
+  "finalLegacyTest": {
+    "tested": 1693,
+    "legacy200": 3,
+    "legacy308To200": 197,
+    "legitimatelyRetired": 577,
+    "genuineHolds": 0,
+    "review": 0,
+    "transportNote": "Bulk command-line live checks became unreliable after Vercel challenge mitigation; final ledger has zero unresolved rows and post-deploy URL spot checks are required from a non-challenged client."
+  },
+  "sitemap": {
+    "status": 200,
+    "blogUrls": 483,
+    "serviceUrls": 126,
+    "totalCanonicalUrls": 639,
+    "confirmed404": 0,
+    "transportErrors": 0,
+    "previewUrls": 0,
+    "duplicateCanonicals": 0,
+    "redirectSourceCanonicals": 0
+  },
+  "finalFiles": {
+    "retired": 577,
+    "holds": 0,
+    "unresolved": 0
+  }
+}
