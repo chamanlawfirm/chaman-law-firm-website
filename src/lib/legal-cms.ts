@@ -24,6 +24,22 @@ import type { SanityImageSource } from "@sanity/image-url";
 
 const SANITY_REVALIDATE_SECONDS = 60;
 
+function formatSanityFetchError(error: unknown) {
+  if (!(error instanceof Error)) {
+    return { message: String(error) };
+  }
+
+  const errorWithCode = error as Error & { code?: unknown };
+  const cause = error.cause instanceof Error ? { causeName: error.cause.name, causeMessage: error.cause.message } : undefined;
+
+  return {
+    name: error.name,
+    message: error.message,
+    code: typeof errorWithCode.code === "string" ? errorWithCode.code : undefined,
+    cause
+  };
+}
+
 type SanitySeo = {
   keywords?: string[];
   aeoKeywords?: string[];
@@ -116,7 +132,7 @@ async function safeFetch<T>(query: string, params: Record<string, string> = {}) 
   try {
     return await client.fetch<T>(query, params, { next: { revalidate: SANITY_REVALIDATE_SECONDS } });
   } catch (error) {
-    console.error("Sanity content fetch failed; using approved fallback content.", error);
+    console.error("Sanity content fetch failed; using approved fallback content.", formatSanityFetchError(error));
     return null;
   }
 }

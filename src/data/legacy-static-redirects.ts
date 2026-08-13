@@ -33,7 +33,6 @@ export const legacyStaticRedirects: Record<string, string> = {
   "/building-demolition-key-steps-to-compliance": "/consultation",
   "/business-contract-dispute-review": "/practice-areas/corporate-commercial-law/business-contract-dispute-review",
   "/calculate-land-use-charge-chaman-law-firm": "/practice-areas/property-real-estate-law/title-perfection-advisory",
-  "/careers": "/consultation",
   "/cargo-insurance-policies": "/consultation",
   "/certificate-of-occupancy-advisory": "/practice-areas/property-real-estate-law/certificate-of-occupancy-advisory",
   "/challenges-and-opportunities-in-real-estate-investment-financing-in-nigeria": "/practice-areas/property-real-estate-law/title-perfection-advisory",

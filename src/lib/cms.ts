@@ -11,6 +11,22 @@ const SANITY_REVALIDATE_SECONDS = 60;
 
 const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
 
+function formatSanityFetchError(error: unknown) {
+  if (!(error instanceof Error)) {
+    return { message: String(error) };
+  }
+
+  const errorWithCode = error as Error & { code?: unknown };
+  const cause = error.cause instanceof Error ? { causeName: error.cause.name, causeMessage: error.cause.message } : undefined;
+
+  return {
+    name: error.name,
+    message: error.message,
+    code: typeof errorWithCode.code === "string" ? errorWithCode.code : undefined,
+    cause
+  };
+}
+
 const blogPostFields = `
   _id,
   _updatedAt,
@@ -436,7 +452,7 @@ export async function getBlogPosts({
 
     return normalizeBlogPosts(posts);
   } catch (error) {
-    console.error("Failed to fetch Sanity blog posts", error);
+    console.error("Failed to fetch Sanity blog posts", formatSanityFetchError(error));
     return [];
   }
 }
@@ -469,7 +485,7 @@ async function getFlaggedBlogPosts(flag: "isFeatured" | "isTrending" | "isMostRe
 
     return [...normalizedPosts, ...fallback.filter((post) => !seen.has(post.slug))].slice(0, limit);
   } catch (error) {
-    console.error(`Failed to fetch Sanity ${flag} blog posts`, error);
+    console.error(`Failed to fetch Sanity ${flag} blog posts`, formatSanityFetchError(error));
     return getBlogPosts({ limit });
   }
 }
@@ -522,7 +538,7 @@ export async function getBlogPostsPage({
       hasPreviousPage: safePage > 1
     };
   } catch (error) {
-    console.error("Failed to fetch paginated Sanity blog posts", error);
+    console.error("Failed to fetch paginated Sanity blog posts", formatSanityFetchError(error));
     return {
       posts: [],
       total: 0,
@@ -554,7 +570,7 @@ export async function getBlogPostSlugs({ publicOnly = false }: { publicOnly?: bo
         return true;
       });
   } catch (error) {
-    console.error("Failed to fetch Sanity blog slugs", error);
+    console.error("Failed to fetch Sanity blog slugs", formatSanityFetchError(error));
     return [];
   }
 }
@@ -575,7 +591,7 @@ export async function getBlogCategories() {
 
     return normalizeBlogCategories(categories).filter((category) => category.postCount > 0);
   } catch (error) {
-    console.error("Failed to fetch Sanity blog categories", error);
+    console.error("Failed to fetch Sanity blog categories", formatSanityFetchError(error));
     return [];
   }
 }
@@ -596,7 +612,7 @@ export async function getBlogCategoryBySlug(slug: string) {
 
     return category ? normalizeBlogCategory(category) : null;
   } catch (error) {
-    console.error(`Failed to fetch Sanity blog category: ${slug}`, error);
+    console.error(`Failed to fetch Sanity blog category: ${slug}`, formatSanityFetchError(error));
     return null;
   }
 }
@@ -613,7 +629,7 @@ export async function getBlogCategorySlugs() {
 
     return categories.filter((category) => Boolean(category.slug));
   } catch (error) {
-    console.error("Failed to fetch Sanity blog category slugs", error);
+    console.error("Failed to fetch Sanity blog category slugs", formatSanityFetchError(error));
     return [];
   }
 }
@@ -635,7 +651,7 @@ export async function getBlogAuthors() {
 
     return normalizeBlogAuthors(authors).filter((author) => author.postCount > 0);
   } catch (error) {
-    console.error("Failed to fetch Sanity blog authors", error);
+    console.error("Failed to fetch Sanity blog authors", formatSanityFetchError(error));
     return [];
   }
 }
@@ -657,7 +673,7 @@ export async function getBlogAuthorBySlug(slug: string) {
 
     return author ? normalizeBlogAuthor(author) : null;
   } catch (error) {
-    console.error(`Failed to fetch Sanity blog author: ${slug}`, error);
+    console.error(`Failed to fetch Sanity blog author: ${slug}`, formatSanityFetchError(error));
     return null;
   }
 }
@@ -674,7 +690,7 @@ export async function getBlogAuthorSlugs() {
 
     return authors.filter((author) => Boolean(author.slug));
   } catch (error) {
-    console.error("Failed to fetch Sanity blog author slugs", error);
+    console.error("Failed to fetch Sanity blog author slugs", formatSanityFetchError(error));
     return [];
   }
 }
@@ -754,7 +770,7 @@ export async function getBlogPostBySlug(slug: string) {
 
     return post ? normalizeBlogPost(post) : null;
   } catch (error) {
-    console.error(`Failed to fetch Sanity blog post: ${slug}`, error);
+    console.error(`Failed to fetch Sanity blog post: ${slug}`, formatSanityFetchError(error));
     return null;
   }
 }

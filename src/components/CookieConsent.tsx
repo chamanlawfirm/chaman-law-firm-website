@@ -1,12 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 const consentKey = "chaman-cookie-consent";
 const consentEvent = "chaman-cookie-consent-change";
 type ConsentValue = "accepted" | "rejected" | "unset" | "unknown";
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 function subscribe(callback: () => void) {
   window.addEventListener("storage", callback);
@@ -29,6 +37,17 @@ function saveConsent(value: "accepted" | "rejected") {
 
 export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string }) {
   const consent = useSyncExternalStore(subscribe, getSnapshot, () => "unknown");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (consent !== "accepted" || !gaMeasurementId || !window.gtag) return;
+
+    window.gtag("event", "page_view", {
+      page_path: pathname,
+      page_location: window.location.href,
+      page_title: document.title
+    });
+  }, [consent, gaMeasurementId, pathname]);
 
   return (
     <>
@@ -40,7 +59,7 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${gaMeasurementId}', { anonymize_ip: true });
+              gtag('config', '${gaMeasurementId}', { anonymize_ip: true, send_page_view: false });
             `}
           </Script>
         </>
