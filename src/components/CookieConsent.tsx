@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 const consentKey = "chaman-cookie-consent";
 const consentEvent = "chaman-cookie-consent-change";
@@ -35,33 +35,46 @@ function saveConsent(value: "accepted" | "rejected") {
   window.dispatchEvent(new Event(consentEvent));
 }
 
+function isProductionAnalyticsHost() {
+  if (typeof window === "undefined") return false;
+
+  return ["chamanlawfirm.com", "www.chamanlawfirm.com"].includes(window.location.hostname);
+}
+
 export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string }) {
   const consent = useSyncExternalStore(subscribe, getSnapshot, () => "unknown");
   const pathname = usePathname();
+  const [analyticsReady, setAnalyticsReady] = useState(false);
+  const shouldLoadAnalytics = consent === "accepted" && Boolean(gaMeasurementId) && isProductionAnalyticsHost();
 
   useEffect(() => {
-    if (consent !== "accepted" || !gaMeasurementId || !window.gtag) return;
+    if (!shouldLoadAnalytics || !analyticsReady || !window.gtag) return;
 
     window.gtag("event", "page_view", {
       page_path: pathname,
       page_location: window.location.href,
       page_title: document.title
     });
-  }, [consent, gaMeasurementId, pathname]);
+  }, [analyticsReady, pathname, shouldLoadAnalytics]);
 
   return (
     <>
-      {consent === "accepted" && gaMeasurementId ? (
+      {shouldLoadAnalytics ? (
         <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} strategy="afterInteractive" />
-          <Script id="google-analytics" strategy="afterInteractive">
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            onReady={() => setAnalyticsReady(true)}
+          >
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
               gtag('js', new Date());
               gtag('config', '${gaMeasurementId}', { anonymize_ip: true, send_page_view: false });
             `}
           </Script>
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} strategy="afterInteractive" />
         </>
       ) : null}
       {consent === "unset" ? (
