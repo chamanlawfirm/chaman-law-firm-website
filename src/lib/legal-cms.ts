@@ -22,7 +22,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
-const SANITY_REVALIDATE_SECONDS = 60;
+const SANITY_REVALIDATE_SECONDS = 3600;
 
 function formatSanityFetchError(error: unknown) {
   if (!(error instanceof Error)) {

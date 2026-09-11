@@ -7,7 +7,7 @@ import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
 const BLOG_PAGE_SIZE = 24;
-const SANITY_REVALIDATE_SECONDS = 60;
+const SANITY_REVALIDATE_SECONDS = 3600;
 
 const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
 

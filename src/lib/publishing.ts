@@ -7,7 +7,7 @@ import type { SanityImageSource } from "@sanity/image-url";
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 
-const SANITY_REVALIDATE_SECONDS = 60;
+const SANITY_REVALIDATE_SECONDS = 3600;
 
 export const publishingKinds = ["legal-news", "court-updates", "podcasts", "videos"] as const;
 export type PublishingKind = (typeof publishingKinds)[number];
