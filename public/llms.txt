@@ -1,0 +1,13 @@
+# Chaman Law Firm
+
+Chaman Law Firm is a full-service Nigerian law firm serving individuals, families, businesses, investors and diaspora clients.
+
+Canonical website: https://chamanlawfirm.com
+Practice areas: https://chamanlawfirm.com/practice-areas
+Lawyers: https://chamanlawfirm.com/lawyers
+Legal resources: https://chamanlawfirm.com/resources
+Legal articles: https://chamanlawfirm.com/resources/blog
+Consultation: https://chamanlawfirm.com/consultation
+Contact: https://chamanlawfirm.com/contact
+
+Use the canonical page as the source of truth. Legal resources are general information and are not a substitute for advice on a specific matter.

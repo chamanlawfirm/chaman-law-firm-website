@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 import { ConsentField, HoneypotField } from "@/components/FormSecurityFields";
 import { submitLeadRequest } from "@/lib/lead-client";
 
@@ -15,6 +16,7 @@ function thankYouTypeForSource(source: string) {
 }
 
 export function LeadForm({ source, title = "Send an Inquiry", submitLabel = "Submit Inquiry" }: LeadFormProps) {
+  const router = useRouter();
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
 
@@ -41,7 +43,7 @@ export function LeadForm({ source, title = "Send an Inquiry", submitLabel = "Sub
       );
       const query = new URLSearchParams({ type: thankYouTypeForSource(source) });
       if (result.reference) query.set("ref", result.reference);
-      window.location.assign(`/thank-you?${query.toString()}`);
+      router.push(`/thank-you?${query.toString()}`);
     } catch {
       setStatus("error");
       setStatusMessage("The request could not be securely submitted. Please call, email, or use WhatsApp.");

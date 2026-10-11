@@ -7,7 +7,7 @@ import type { SanityImageSource } from "@sanity/image-url";
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 
-const SANITY_REVALIDATE_SECONDS = 3600;
+const SANITY_REVALIDATE_SECONDS = 2592000;
 
 export const publishingKinds = ["legal-news", "court-updates", "podcasts", "videos"] as const;
 export type PublishingKind = (typeof publishingKinds)[number];
@@ -303,7 +303,7 @@ export async function getPublishedContent(kind: PublishingKind, limit = 24) {
         ${publishedContentFields}
       }`,
       { documentType: config.documentType, mediaType: config.mediaType, limit },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity"] } }
     );
     const normalized = data.map((item) => normalizePublishedContent(item, kind)).filter((item): item is PublishedContent => Boolean(item));
     return normalized.length ? normalized : fallbackPublishedContent(kind);
@@ -321,7 +321,7 @@ export async function getPublishedContentBySlug(kind: PublishingKind, slug: stri
         ${publishedContentFields}
       }`,
       { documentType: config.documentType, mediaType: config.mediaType, slug },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity"] } }
     );
     const normalized = item ? normalizePublishedContent(item, kind) : null;
     return normalized || fallbackPublishedContent(kind).find((entry) => entry.slug === slug) || null;
@@ -331,7 +331,7 @@ export async function getPublishedContentBySlug(kind: PublishingKind, slug: stri
 }
 
 export async function getPublishedContentSlugs(kind: PublishingKind) {
-  const items = await getPublishedContent(kind, 500);
+  const items = await getPublishedContent(kind, 40);
   return items.map((item) => ({ slug: item.slug }));
 }
 

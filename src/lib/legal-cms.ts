@@ -22,7 +22,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
-const SANITY_REVALIDATE_SECONDS = 3600;
+const SANITY_REVALIDATE_SECONDS = 2592000;
 
 function formatSanityFetchError(error: unknown) {
   if (!(error instanceof Error)) {
@@ -130,7 +130,7 @@ type SanityCareerPath = {
 
 async function safeFetch<T>(query: string, params: Record<string, string> = {}) {
   try {
-    return await client.fetch<T>(query, params, { next: { revalidate: SANITY_REVALIDATE_SECONDS } });
+    return await client.fetch<T>(query, params, { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity"] } });
   } catch (error) {
     console.error("Sanity content fetch failed; using approved fallback content.", formatSanityFetchError(error));
     return null;

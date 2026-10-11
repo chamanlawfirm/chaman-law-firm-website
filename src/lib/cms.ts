@@ -7,7 +7,7 @@ import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
 const BLOG_PAGE_SIZE = 24;
-const SANITY_REVALIDATE_SECONDS = 3600;
+export const SANITY_REVALIDATE_SECONDS = 2592000;
 
 const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
 
@@ -447,7 +447,7 @@ export async function getBlogPosts({
         ${blogPostListFields}
       }`,
       { ...params, offset, end: offset + limit },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "posts"] } }
     );
 
     return normalizeBlogPosts(posts);
@@ -472,7 +472,7 @@ async function getFlaggedBlogPosts(flag: "isFeatured" | "isTrending" | "isMostRe
         ${blogPostListFields}
       }`,
       { limit },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "posts"] } }
     );
     const normalizedPosts = normalizeBlogPosts(posts);
 
@@ -523,7 +523,7 @@ export async function getBlogPostsPage({
         "total": count(*[${filter}])
       }`,
       { ...params, offset, end: offset + safePageSize },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "posts"] } }
     );
     const total = data.total || 0;
     const totalPages = Math.max(1, Math.ceil(total / safePageSize));
@@ -558,7 +558,7 @@ export async function getBlogPostSlugs({ publicOnly = false }: { publicOnly?: bo
         "slug": slug.current
       }`,
       {},
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "posts"] } }
     );
 
     const seen = new Set<string>();
@@ -586,7 +586,7 @@ export async function getBlogCategories() {
         "postCount": count(*[${publishedBlogFilter} && references(^._id)])
       }`,
       {},
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "categories"] } }
     );
 
     return normalizeBlogCategories(categories).filter((category) => category.postCount > 0);
@@ -607,7 +607,7 @@ export async function getBlogCategoryBySlug(slug: string) {
         "postCount": count(*[${publishedBlogFilter} && references(^._id)])
       }`,
       { slug },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "categories"] } }
     );
 
     return category ? normalizeBlogCategory(category) : null;
@@ -624,7 +624,7 @@ export async function getBlogCategorySlugs() {
         "slug": slug.current
       }`,
       {},
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "categories"] } }
     );
 
     return categories.filter((category) => Boolean(category.slug));
@@ -646,7 +646,7 @@ export async function getBlogAuthors() {
         "postCount": count(*[${publishedBlogFilter} && author._ref == ^._id])
       }`,
       {},
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "authors"] } }
     );
 
     return normalizeBlogAuthors(authors).filter((author) => author.postCount > 0);
@@ -668,7 +668,7 @@ export async function getBlogAuthorBySlug(slug: string) {
         "postCount": count(*[${publishedBlogFilter} && author._ref == ^._id])
       }`,
       { slug },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "authors"] } }
     );
 
     return author ? normalizeBlogAuthor(author) : null;
@@ -685,7 +685,7 @@ export async function getBlogAuthorSlugs() {
         "slug": slug.current
       }`,
       {},
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "authors"] } }
     );
 
     return authors.filter((author) => Boolean(author.slug));
@@ -765,20 +765,20 @@ export async function getBlogPostBySlug(slug: string) {
         ${blogPostFields}
       }`,
       { slug },
-      { next: { revalidate: SANITY_REVALIDATE_SECONDS } }
+      { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity", "posts", `post:${slug}`] } }
     );
 
     return post ? normalizeBlogPost(post) : null;
   } catch (error) {
     console.error(`Failed to fetch Sanity blog post: ${slug}`, formatSanityFetchError(error));
-    return null;
+    throw new Error("CMS_TEMPORARILY_UNAVAILABLE", { cause: error });
   }
 }
 
 export async function getRelatedBlogPosts(post: BlogPost, limit = 3) {
   const categorySlugs = new Set(post.categories.map((category) => category.slug).filter(Boolean));
   const tagSlugs = new Set(post.tags.map((tag) => tag.slug));
-  const candidates = await getBlogPosts({ limit: 500, excludeSlug: post.slug });
+  const candidates = await getBlogPosts({ limit: 24, excludeSlug: post.slug });
   const scored = candidates
     .map((candidate) => {
       const tagScore = candidate.tags.reduce((score, tag) => score + (tagSlugs.has(tag.slug) ? 3 : 0), 0);

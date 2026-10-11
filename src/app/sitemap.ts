@@ -4,11 +4,10 @@ import { getBlogPostSlugs } from "@/lib/cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 2592000;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const lastModified = new Date();
+  const lastModified = new Date("2026-08-14T00:00:00.000Z");
   const staticRoutes = [
     "",
     "/about",

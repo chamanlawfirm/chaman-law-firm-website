@@ -8,7 +8,7 @@ import { asArticleContent, getPublishedContentMetadata } from "@/lib/publishing"
 type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return getBlogPostSlugs({ publicOnly: true });
+  return (await getBlogPostSlugs({ publicOnly: true })).slice(0, 40);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
