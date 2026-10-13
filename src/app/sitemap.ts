@@ -3,6 +3,7 @@ import { getAllServicePages, practiceAreas } from "@/data/practice-areas";
 import { getBlogPostSlugs } from "@/lib/cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
+import { adCampaigns } from "@/data/ad-campaigns";
 
 export const revalidate = 2592000;
 
@@ -68,6 +69,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.9
+    })),
+    ...adCampaigns.map((campaign) => ({
+      url: `${siteConfig.url}/${campaign.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.92
     })),
     ...serviceRoutes,
     ...articleRoutes,

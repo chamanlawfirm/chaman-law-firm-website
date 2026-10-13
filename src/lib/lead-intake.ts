@@ -14,6 +14,18 @@ export type ValidatedLead = {
   interest: string;
   message?: string;
   downloadSlug?: string;
+  campaign?: string;
+  country?: string;
+  preferredContact?: string;
+  urgency?: string;
+  landingPage?: string;
+  referrer?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmContent?: string;
+  utmTerm?: string;
+  gclid?: string;
   consent: true;
   receivedAt: string;
 };
@@ -37,6 +49,18 @@ const allowedKeys = new Set([
   "interest",
   "message",
   "downloadSlug",
+  "campaign",
+  "country",
+  "preferredContact",
+  "urgency",
+  "landingPage",
+  "referrer",
+  "utmSource",
+  "utmMedium",
+  "utmCampaign",
+  "utmContent",
+  "utmTerm",
+  "gclid",
   "consent",
   "website"
 ]);
@@ -99,6 +123,18 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
   const interest = cleanSingleLine(payload.interest, 160);
   const message = cleanMessage(payload.message, 4000);
   const downloadSlug = cleanSingleLine(payload.downloadSlug, 120);
+  const campaign = cleanSingleLine(payload.campaign, 120);
+  const country = cleanSingleLine(payload.country, 100);
+  const preferredContact = cleanSingleLine(payload.preferredContact, 40);
+  const urgency = cleanSingleLine(payload.urgency, 60);
+  const landingPage = cleanSingleLine(payload.landingPage, 500);
+  const referrer = cleanSingleLine(payload.referrer, 500);
+  const utmSource = cleanSingleLine(payload.utmSource, 160);
+  const utmMedium = cleanSingleLine(payload.utmMedium, 160);
+  const utmCampaign = cleanSingleLine(payload.utmCampaign, 200);
+  const utmContent = cleanSingleLine(payload.utmContent, 200);
+  const utmTerm = cleanSingleLine(payload.utmTerm, 200);
+  const gclid = cleanSingleLine(payload.gclid, 200);
   const consent = payload.consent === true || payload.consent === "true" || payload.consent === "on";
   const fields: string[] = [];
 
@@ -134,6 +170,18 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
       interest,
       message: message || undefined,
       downloadSlug: downloadSlug || undefined,
+      campaign: campaign || undefined,
+      country: country || undefined,
+      preferredContact: preferredContact || undefined,
+      urgency: urgency || undefined,
+      landingPage: landingPage || undefined,
+      referrer: referrer || undefined,
+      utmSource: utmSource || undefined,
+      utmMedium: utmMedium || undefined,
+      utmCampaign: utmCampaign || undefined,
+      utmContent: utmContent || undefined,
+      utmTerm: utmTerm || undefined,
+      gclid: gclid || undefined,
       consent: true
     }
   };
