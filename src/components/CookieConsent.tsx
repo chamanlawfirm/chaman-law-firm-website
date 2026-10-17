@@ -61,11 +61,7 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
     <>
       {shouldLoadAnalytics ? (
         <>
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive"
-            onReady={() => setAnalyticsReady(true)}
-          >
+          <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -74,7 +70,12 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
               gtag('config', '${gaMeasurementId}', { anonymize_ip: true, send_page_view: false });
             `}
           </Script>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} strategy="afterInteractive" />
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+            strategy="afterInteractive"
+            onLoad={() => setAnalyticsReady(true)}
+            onReady={() => setAnalyticsReady(true)}
+          />
         </>
       ) : null}
       {consent === "unset" ? (
