@@ -48,6 +48,27 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
   const shouldLoadAnalytics = consent === "accepted" && Boolean(gaMeasurementId) && isProductionAnalyticsHost();
 
   useEffect(() => {
+    if (!shouldLoadAnalytics || !gaMeasurementId) {
+      setAnalyticsReady(false);
+      return;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag =
+      window.gtag ||
+      ((...args: unknown[]) => {
+        window.dataLayer?.push(args);
+      });
+
+    window.gtag("js", new Date());
+    window.gtag("config", gaMeasurementId, {
+      anonymize_ip: true,
+      send_page_view: false
+    });
+    setAnalyticsReady(true);
+  }, [gaMeasurementId, shouldLoadAnalytics]);
+
+  useEffect(() => {
     if (!shouldLoadAnalytics || !analyticsReady || !window.gtag) return;
 
     window.gtag("event", "page_view", {
@@ -60,23 +81,10 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
   return (
     <>
       {shouldLoadAnalytics ? (
-        <>
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              window.gtag = gtag;
-              gtag('js', new Date());
-              gtag('config', '${gaMeasurementId}', { anonymize_ip: true, send_page_view: false });
-            `}
-          </Script>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-            strategy="afterInteractive"
-            onLoad={() => setAnalyticsReady(true)}
-            onReady={() => setAnalyticsReady(true)}
-          />
-        </>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+          strategy="afterInteractive"
+        />
       ) : null}
       {consent === "unset" ? (
         <section
