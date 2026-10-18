@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { ContentDetailPage } from "@/components/ContentDetailPage";
+import { duplicateBlogRedirects } from "@/data/duplicate-blog-redirects";
 import { legacyBlogFallbackRedirects } from "@/data/legacy-blog-fallback-redirects";
 import { getBlogPostBySlug, getBlogPostSlugs, getRelatedBlogPosts } from "@/lib/cms";
 import { asArticleContent, getPublishedContentMetadata } from "@/lib/publishing";
@@ -13,6 +14,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const duplicateTarget = duplicateBlogRedirects[slug];
+  if (duplicateTarget) {
+    return {
+      alternates: {
+        canonical: duplicateTarget
+      },
+      robots: {
+        index: false,
+        follow: true
+      }
+    };
+  }
   const post = await getBlogPostBySlug(slug);
   if (!post && legacyBlogFallbackRedirects[slug]) {
     return {
@@ -26,6 +39,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function LegalArticlePage({ params }: PageProps) {
   const { slug } = await params;
+  const duplicateTarget = duplicateBlogRedirects[slug];
+  if (duplicateTarget) permanentRedirect(duplicateTarget);
   const post = await getBlogPostBySlug(slug);
   if (!post && legacyBlogFallbackRedirects[slug]) permanentRedirect(legacyBlogFallbackRedirects[slug]);
   if (!post) notFound();

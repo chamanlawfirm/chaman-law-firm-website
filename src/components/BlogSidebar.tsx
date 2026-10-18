@@ -75,13 +75,12 @@ export function BlogSidebar({ categories, tags = [], authors = [], recentPosts, 
           <h2 className="font-heading text-lg font-semibold text-ivory">Topic Tags</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.slice(0, 14).map((tag) => (
-              <Link
+              <span
                 key={tag.slug}
-                href={`/tags/${tag.slug}`}
-                className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
+                className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58"
               >
                 {tag.title}
-              </Link>
+              </span>
             ))}
           </div>
         </section>
@@ -92,14 +91,13 @@ export function BlogSidebar({ categories, tags = [], authors = [], recentPosts, 
           <h2 className="font-heading text-lg font-semibold text-ivory">Authors</h2>
           <div className="mt-4 space-y-2">
             {authors.slice(0, 6).map((author) => (
-              <Link
+              <div
                 key={author.slug}
-                href={`/authors/${author.slug}`}
-                className="flex items-center justify-between gap-3 rounded-md border border-royalGold/10 px-3 py-2 text-sm text-ivory/72 transition hover:border-royalGold/35 hover:text-royalGold"
+                className="flex items-center justify-between gap-3 rounded-md border border-royalGold/10 px-3 py-2 text-sm text-ivory/72"
               >
                 <span>{author.name}</span>
                 <span className="text-xs text-ivory/48">{author.postCount}</span>
-              </Link>
+              </div>
             ))}
           </div>
         </section>

@@ -1,5 +1,6 @@
 import { jobOpenings } from "@/data/jobs";
 import { services } from "@/data/services";
+import { duplicateBlogSlugs } from "@/data/duplicate-blog-redirects";
 import { defaultOgImage } from "@/lib/constants";
 import type { BlogAuthor, BlogCategory, BlogPost, BlogPostPage, BlogTag } from "@/lib/types";
 import { client, publicClient } from "@/sanity/lib/client";
@@ -9,7 +10,8 @@ import type { SanityImageSource } from "@sanity/image-url";
 const BLOG_PAGE_SIZE = 24;
 export const SANITY_REVALIDATE_SECONDS = 2592000;
 
-const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && defined(publishedAt) && publishedAt <= now()`;
+const duplicateBlogSlugList = JSON.stringify(Array.from(duplicateBlogSlugs));
+const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && !(slug.current in ${duplicateBlogSlugList}) && defined(publishedAt) && publishedAt <= now()`;
 
 function formatSanityFetchError(error: unknown) {
   if (!(error instanceof Error)) {

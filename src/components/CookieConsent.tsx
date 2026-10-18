@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 const consentKey = "chaman-cookie-consent";
 const consentEvent = "chaman-cookie-consent-change";
@@ -44,14 +44,10 @@ function isProductionAnalyticsHost() {
 export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string }) {
   const consent = useSyncExternalStore(subscribe, getSnapshot, () => "unknown");
   const pathname = usePathname();
-  const [analyticsReady, setAnalyticsReady] = useState(false);
   const shouldLoadAnalytics = consent === "accepted" && Boolean(gaMeasurementId) && isProductionAnalyticsHost();
 
   useEffect(() => {
-    if (!shouldLoadAnalytics || !gaMeasurementId) {
-      setAnalyticsReady(false);
-      return;
-    }
+    if (!shouldLoadAnalytics || !gaMeasurementId) return;
 
     window.dataLayer = window.dataLayer || [];
     window.gtag =
@@ -65,18 +61,17 @@ export function CookieConsent({ gaMeasurementId }: { gaMeasurementId?: string })
       anonymize_ip: true,
       send_page_view: false
     });
-    setAnalyticsReady(true);
   }, [gaMeasurementId, shouldLoadAnalytics]);
 
   useEffect(() => {
-    if (!shouldLoadAnalytics || !analyticsReady || !window.gtag) return;
+    if (!shouldLoadAnalytics || !window.gtag) return;
 
     window.gtag("event", "page_view", {
       page_path: pathname,
       page_location: window.location.href,
       page_title: document.title
     });
-  }, [analyticsReady, pathname, shouldLoadAnalytics]);
+  }, [pathname, shouldLoadAnalytics]);
 
   return (
     <>

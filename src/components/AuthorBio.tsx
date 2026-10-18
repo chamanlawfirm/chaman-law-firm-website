@@ -49,7 +49,7 @@ export function AuthorBio({ post }: AuthorBioProps) {
                 category.slug ? (
                   <Link
                     key={category.slug}
-                    href={`/category/${category.slug}`}
+                    href={`/resources/blog?category=${category.slug}`}
                     className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
                   >
                     {category.title}
@@ -57,13 +57,12 @@ export function AuthorBio({ post }: AuthorBioProps) {
                 ) : null
               )}
               {post.tags.slice(0, 4).map((tag) => (
-                <Link
+                <span
                   key={tag.slug}
-                  href={`/tags/${tag.slug}`}
-                  className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58 transition hover:border-royalGold/40 hover:text-royalGold"
+                  className="rounded-full border border-royalGold/16 px-3 py-1 text-xs font-semibold text-ivory/58"
                 >
                   {tag.title}
-                </Link>
+                </span>
               ))}
             </div>
           </div>

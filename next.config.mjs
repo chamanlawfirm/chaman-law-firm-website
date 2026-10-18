@@ -27,6 +27,8 @@ const securityHeaders = [
 ];
 
 const emergencyLegacyRedirects = [
+  { source: "/practice-areas/notary-public", destination: "/practice-areas/notary-public-services" },
+  { source: "/legal-process-for-tenant-eviction-in-lagos", destination: "/resources/blog/how-to-legally-evict-a-tenant-in-lagos-state" },
   { source: "/family-law-lawyer-near-me", destination: "/practice-areas/family-law" },
   { source: "/get-the-top-legal-advice-from-experts-for-free", destination: "/consultation" },
   { source: "/top-legal-services", destination: "/consultation" },

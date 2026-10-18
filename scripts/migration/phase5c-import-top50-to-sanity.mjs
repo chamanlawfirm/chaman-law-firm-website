@@ -724,7 +724,7 @@ function buildDocs(registerRows, extracted) {
   };
 }
 
-async function ensureReferences(client, docs, typeName, keyField = "slug") {
+async function ensureReferences(client, docs, typeName) {
   if (!docs.length) return { created: 0, existing: 0 };
 
   const slugs = docs.map((doc) => doc.slug.current);

@@ -11,8 +11,34 @@ type PortableTextRendererProps = {
   value: Array<Record<string, unknown>>;
 };
 
+const legacyArticleLinks: Record<string, string> = {
+  "/about-us": "/about",
+  "/about-chaman-law-firm": "/about",
+  "/practice-areas/notary-public": "/practice-areas/notary-public-services",
+  "/legal-process-for-tenant-eviction-in-lagos": "/resources/blog/how-to-legally-evict-a-tenant-in-lagos-state",
+  "/tenancy-law-of-lagos-state-2011": "/resources/blog/tenancy-law-of-lagos-state-2011",
+  "/landlords-and-tenants-in-nigeria": "/practice-areas/property-real-estate-law/lease-documentation-advisory"
+};
+
+function normalizeArticleLink(href: string) {
+  try {
+    const url = new URL(href, "https://chamanlawfirm.com");
+    if (url.hostname.replace(/^www\./, "") !== "chamanlawfirm.com") return href;
+
+    const normalizedPath = url.pathname.replace(/\/$/, "") || "/";
+    return `${legacyArticleLinks[normalizedPath] || normalizedPath}${url.search}${url.hash}`;
+  } catch {
+    return href;
+  }
+}
+
 const components: PortableTextComponents = {
   block: {
+    h1: ({ children, value }) => (
+      <h2 id={slugifyHeading(blockText(value))} className="scroll-mt-28 pt-4 font-heading text-3xl font-semibold leading-tight text-ivory">
+        {children}
+      </h2>
+    ),
     h2: ({ children, value }) => (
       <h2 id={slugifyHeading(blockText(value))} className="scroll-mt-28 pt-4 font-heading text-3xl font-semibold leading-tight text-ivory">
         {children}
@@ -38,18 +64,19 @@ const components: PortableTextComponents = {
   marks: {
     link: ({ children, value }) => {
       const href = typeof value?.href === "string" ? value.href : "#";
-      const isExternal = href.startsWith("http");
+      const normalizedHref = normalizeArticleLink(href);
+      const isExternal = normalizedHref.startsWith("http");
 
       if (isExternal) {
         return (
-          <a href={href} target="_blank" rel="noreferrer" className="font-semibold text-royalGold hover:text-champagne">
+          <a href={normalizedHref} target="_blank" rel="noreferrer" className="font-semibold text-royalGold hover:text-champagne">
             {children}
           </a>
         );
       }
 
       return (
-        <Link href={href} className="font-semibold text-royalGold hover:text-champagne">
+        <Link href={normalizedHref} className="font-semibold text-royalGold hover:text-champagne">
           {children}
         </Link>
       );

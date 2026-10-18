@@ -26,10 +26,22 @@ export function resolveCanonicalUrl(path = "", candidate?: string) {
 
     url.hostname = approvedHost;
     url.protocol = "https:";
+    if (url.pathname === "/blog" || url.pathname.startsWith("/blog/")) {
+      url.pathname = `/resources${url.pathname}`;
+    }
     return url.toString();
   } catch {
     return fallback;
   }
+}
+
+function shortenMetadata(value: string, maxLength: number) {
+  if (value.length <= maxLength) return value;
+
+  const candidate = value.slice(0, maxLength - 1);
+  const lastSpace = candidate.lastIndexOf(" ");
+  const shortened = lastSpace >= Math.floor(maxLength * 0.7) ? candidate.slice(0, lastSpace) : candidate;
+  return `${shortened.trimEnd()}…`;
 }
 
 export function createMetadata({
@@ -42,12 +54,14 @@ export function createMetadata({
   noIndex = false,
   type = "website"
 }: SeoInput): Metadata {
-  const fullTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
+  const brandedTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
+  const fullTitle = brandedTitle.length <= 65 ? brandedTitle : shortenMetadata(title, 65);
+  const metaDescription = shortenMetadata(description, 165);
   const url = resolveCanonicalUrl(path, canonicalUrl);
 
   return {
     title: fullTitle,
-    description,
+    description: metaDescription,
     keywords: [
       "Chaman Law Firm",
       "law firm in Nigeria",
@@ -74,7 +88,7 @@ export function createMetadata({
       : undefined,
     openGraph: {
       title: fullTitle,
-      description,
+      description: metaDescription,
       url,
       siteName: siteConfig.name,
       images: [
@@ -91,7 +105,7 @@ export function createMetadata({
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
-      description,
+      description: metaDescription,
       images: [image]
     }
   };
