@@ -27,6 +27,7 @@ const securityHeaders = [
 ];
 
 const emergencyLegacyRedirects = [
+  { source: "/resources/blog/how-to-use-cac-public-search-for-your-business", destination: "/resources/blog/cac-public-search-guide-nigeria" },
   { source: "/practice-areas/notary-public", destination: "/practice-areas/notary-public-services" },
   { source: "/legal-process-for-tenant-eviction-in-lagos", destination: "/resources/blog/how-to-legally-evict-a-tenant-in-lagos-state" },
   { source: "/family-law-lawyer-near-me", destination: "/practice-areas/family-law" },
@@ -401,7 +402,7 @@ const deepLegacy404Redirects = [
   { source: "/family-law-disputes-and-child-abduction", destination: "/resources/blog/family-law-disputes-and-child-abduction" },
   { source: "/government-acquired-lands-in-nigeria", destination: "/resources/blog/government-acquired-lands-in-nigeria" },
   { source: "/overview-of-citizenship-in-nigeria", destination: "/resources/blog/overview-of-citizenship-in-nigeria" },
-  { source: "/how-to-use-cac-public-search-for-your-business", destination: "/resources/blog/how-to-use-cac-public-search-for-your-business" },
+  { source: "/how-to-use-cac-public-search-for-your-business", destination: "/resources/blog/cac-public-search-guide-nigeria" },
   { source: "/basic-procedure-for-dissolution-of-marriage", destination: "/resources/blog/basic-procedure-for-dissolution-of-marriage" },
   { source: "/effect-of-witness-as-beneficiary-in-will", destination: "/resources/blog/effect-of-witness-as-beneficiary-in-will" },
   { source: "/what-are-the-implications-of-unregistered-land-titles-in-nigeria", destination: "/resources/blog/what-are-the-implications-of-unregistered-land-titles-in-nigeria" },

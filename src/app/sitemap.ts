@@ -7,6 +7,10 @@ import { adCampaigns } from "@/data/ad-campaigns";
 
 export const revalidate = 2592000;
 
+const consolidatedBlogSlugs = new Set([
+  "how-to-use-cac-public-search-for-your-business"
+]);
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date("2026-08-14T00:00:00.000Z");
   const staticRoutes = [
@@ -42,7 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly" as const,
     priority: 0.82
   }));
-  const articleRoutes = blogSlugs.map(({ slug }) => ({
+  const articleRoutes = blogSlugs.filter(({ slug }) => !consolidatedBlogSlugs.has(slug)).map(({ slug }) => ({
     url: `${siteConfig.url}/resources/blog/${slug}`,
     lastModified,
     changeFrequency: "weekly" as const,
