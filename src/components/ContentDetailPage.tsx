@@ -66,7 +66,17 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
                 </div>
               </div>
               <div className="overflow-hidden rounded-lg border border-royalGold/18">
-                <Image src={content.image} alt={content.imageAlt} width={1200} height={760} priority className="h-auto w-full object-cover" />
+                <Image
+                  src={content.image}
+                  alt={content.imageAlt}
+                  width={1200}
+                  height={760}
+                  sizes="(min-width: 1280px) 552px, (min-width: 1024px) 44vw, 100vw"
+                  priority
+                  fetchPriority="high"
+                  quality={72}
+                  className="h-auto w-full object-cover"
+                />
               </div>
             </div>
           </div>

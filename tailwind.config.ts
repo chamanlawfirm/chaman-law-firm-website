@@ -23,9 +23,9 @@ const config: Config = {
         info: "#1D4ED8"
       },
       fontFamily: {
-        heading: ["Playfair Display", "Georgia", "serif"],
-        display: ["Playfair Display", "Georgia", "serif"],
-        body: ["Inter", "Arial", "sans-serif"]
+        heading: ["var(--font-playfair-display)", "Georgia", "serif"],
+        display: ["var(--font-playfair-display)", "Georgia", "serif"],
+        body: ["var(--font-inter)", "Arial", "sans-serif"]
       },
       boxShadow: {
         gold: "0 18px 60px rgba(200, 165, 75, 0.16)"

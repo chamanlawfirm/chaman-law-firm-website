@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +19,7 @@ html {
 body {
   background: var(--luxury-black);
   color: var(--ivory);
-  font-family: Inter, Arial, sans-serif;
+  font-family: var(--font-inter), Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -57,7 +55,7 @@ textarea {
 
 .legal-document h2 {
   margin-top: 2.5rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: var(--font-playfair-display), Georgia, serif;
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 1.25;

@@ -19,6 +19,8 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: 
           alt={imageAlt || ""}
           fill
           sizes="100vw"
+          priority
+          fetchPriority="high"
           className="object-cover opacity-28"
           aria-hidden={imageAlt ? undefined : true}
         />

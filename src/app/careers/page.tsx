@@ -6,7 +6,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { LeadForm } from "@/components/LeadForm";
 import { getCareerPaths } from "@/lib/legal-cms";
 import { createMetadata } from "@/lib/seo";
-import { breadcrumbSchema, jobPostingSchema } from "@/lib/schema";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = createMetadata({
   title: "Careers",
@@ -21,13 +21,10 @@ export default async function CareersPage() {
   return (
     <main>
       <JsonLd
-        data={[
-          breadcrumbSchema([
-            { name: "Home", path: "/" },
-            { name: "Careers", path: "/careers" }
-          ]),
-          ...roles.map(jobPostingSchema)
-        ]}
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Careers", path: "/careers" }
+        ])}
       />
       <PageHero
         eyebrow="Careers"
