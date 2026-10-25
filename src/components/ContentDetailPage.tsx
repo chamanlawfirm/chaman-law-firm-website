@@ -1,6 +1,7 @@
 import { CalendarDays, Clock3, ExternalLink, Scale } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { CacPublicSearchVisualGuide } from "@/components/CacPublicSearchVisualGuide";
 import { ArticleEngagementStats } from "@/components/ArticleEngagementStats";
 import { AuthorBio } from "@/components/AuthorBio";
 import { ConsultationCTA } from "@/components/ConsultationCTA";
@@ -116,6 +117,8 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
               <section aria-label={`${content.contentLabel} content`} className="rounded-lg border border-royalGold/14 bg-charcoal p-6 sm:p-8">
                 <PortableTextRenderer value={content.body} />
               </section>
+
+              {content.slug === "cac-public-search-guide-nigeria" ? <CacPublicSearchVisualGuide /> : null}
 
               {content.transcript ? (
                 <section className="rounded-lg border border-royalGold/16 bg-charcoal p-6 sm:p-8">

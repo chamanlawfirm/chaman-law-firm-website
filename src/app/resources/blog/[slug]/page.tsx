@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { ContentDetailPage } from "@/components/ContentDetailPage";
+import { enhanceBlogPost } from "@/data/blog-enhancements";
 import { duplicateBlogRedirects } from "@/data/duplicate-blog-redirects";
 import { legacyBlogFallbackRedirects } from "@/data/legacy-blog-fallback-redirects";
 import { getBlogPostBySlug, getBlogPostSlugs, getRelatedBlogPosts } from "@/lib/cms";
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }
     };
   }
-  return post ? getPublishedContentMetadata(asArticleContent(post)) : {};
+  return post ? getPublishedContentMetadata(asArticleContent(enhanceBlogPost(post))) : {};
 }
 
 export default async function LegalArticlePage({ params }: PageProps) {
@@ -46,5 +47,5 @@ export default async function LegalArticlePage({ params }: PageProps) {
   if (!post) notFound();
 
   const related = await getRelatedBlogPosts(post, 3);
-  return <ContentDetailPage content={asArticleContent(post)} related={related.map(asArticleContent)} />;
+  return <ContentDetailPage content={asArticleContent(enhanceBlogPost(post))} related={related.map(asArticleContent)} />;
 }

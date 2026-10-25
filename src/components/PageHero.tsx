@@ -16,13 +16,12 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: 
       {image ? (
         <Image
           src={image}
-          alt={imageAlt || ""}
+          alt={imageAlt || `${title} — Chaman Law Firm`}
           fill
           sizes="100vw"
           priority
           fetchPriority="high"
           className="object-cover opacity-28"
-          aria-hidden={imageAlt ? undefined : true}
         />
       ) : null}
       <div className="absolute inset-0 bg-gradient-to-r from-luxuryBlack via-luxuryBlack/84 to-luxuryBlack/36" />
