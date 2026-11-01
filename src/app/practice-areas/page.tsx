@@ -82,7 +82,7 @@ export default async function PracticeAreasPage() {
           <SectionHeader
             eyebrow="Specific Legal Services"
             title="Focused assistance for your legal needs"
-            description="Priority services are available as dedicated pages with process guidance, FAQs, schema markup and consultation CTAs."
+            description="Explore individual legal services to understand how we can help, review common questions and arrange advice for your matter."
           />
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {practiceAreas.map((area) => (
