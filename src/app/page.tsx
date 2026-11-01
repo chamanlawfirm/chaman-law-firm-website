@@ -9,7 +9,6 @@ import {
   MessageCircle,
   Scale,
   ShieldCheck,
-  Users
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -139,7 +138,7 @@ export default async function HomePage() {
             <SectionHeader
               eyebrow="Core Practice Areas"
               title="Legal services built around high-value client decisions"
-              description="Every practice area is structured for overview, services, who we help, common issues, process, FAQs, lawyer attribution, related downloads, and consultation conversion."
+              description="Explore our legal services and find guidance on transactions, disputes, documentation and representation suited to your circumstances."
             />
             <Link href="/practice-areas" className="inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
               View all practice areas <ArrowRight size={16} />
@@ -197,7 +196,7 @@ export default async function HomePage() {
           <SectionHeader
             eyebrow="Client Journey"
             title="A clear path from first enquiry to legal action"
-            description="The website is designed to convert qualified visitors into consultation requests, WhatsApp enquiries, calls, and resource downloads."
+            description="Tell us about your legal concern and share relevant documents. We will discuss the consultation process and the assistance the firm may provide."
           />
           <div className="grid gap-4 md:grid-cols-2">
             {home.clientJourney.map((step, index) => (
@@ -216,8 +215,8 @@ export default async function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Who We Serve"
-            title="Built for the clients identified in the project blueprint"
-            description="The platform serves local clients, businesses, investors, developers, families, institutions, and diaspora communities seeking trusted Nigerian legal support."
+            title="Legal support for individuals, families and businesses"
+            description="We assist clients in Nigeria and abroad with property transactions, business matters, disputes and private-client legal concerns."
             tone="light"
           />
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -280,8 +279,8 @@ export default async function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Resources, Downloads, Media and News"
-            title="A legal knowledge platform for SEO, AEO and GEO authority"
-            description="The resource centre supports articles, guides, FAQs, legal news, court updates, downloadable resources, podcasts, videos, webinars, and internal linking to practice areas and lawyer profiles."
+            title="Legal insights and practical resources"
+            description="Explore Nigerian legal guidance, helpful checklists and developments affecting property, business and personal matters."
             tone="light"
           />
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -312,7 +311,7 @@ export default async function HomePage() {
             </div>
             <div className="rounded-lg border border-ink/10 bg-white p-6">
               <Award className="text-royalGold" />
-              <h3 className="mt-4 font-heading text-2xl font-semibold">Authority Signals</h3>
+              <h3 className="mt-4 font-heading text-2xl font-semibold">Professional Affiliations and Experience</h3>
               <div className="mt-5 space-y-3">
                 {[...professionalMemberships.slice(0, 4), ...keyDifferentiators.slice(0, 3)].map((item) => (
                   <p key={item} className="flex gap-2 text-sm leading-6 text-ink/70">
@@ -326,34 +325,22 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-charcoal py-16">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-          <SectionHeader
-            eyebrow="Testimonials"
-            title="Client trust will be published through the approval workflow"
-            description="The testimonial CMS is configured for approved written reviews, ratings, video testimonials, Google Reviews and practice-area relationships. No client quote is displayed until it is approved."
-          />
-          <div className="grid gap-4 sm:grid-cols-2">
-            {testimonials.length ? (
-              testimonials.slice(0, 4).map((testimonial) => (
+      {testimonials.length > 0 ? (
+        <section className="bg-charcoal py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeader eyebrow="Client Feedback" title="What our clients say" description="Feedback shared with permission by clients who have engaged the firm." />
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {testimonials.slice(0, 4).map((testimonial) => (
                 <article key={`${testimonial.clientName}-${testimonial.practiceArea}`} className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6">
                   <p className="text-sm leading-7 text-ivory/72">&ldquo;{testimonial.review}&rdquo;</p>
                   <p className="mt-5 font-semibold text-ivory">{testimonial.clientName}</p>
                   <p className="mt-1 text-xs uppercase tracking-[0.18em] text-royalGold">{testimonial.practiceArea}</p>
                 </article>
-              ))
-            ) : (
-              ["Google Reviews", "Client Testimonials", "Video Testimonials", "Practice-Area Reviews"].map((item) => (
-                <div key={item} className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6">
-                  <Users className="text-royalGold" />
-                  <h3 className="mt-5 font-heading text-xl font-semibold text-ivory">{item}</h3>
-                  <p className="mt-3 text-sm leading-7 text-ivory/66">Ready for publication after client approval and editorial review.</p>
-                </div>
-              ))
-            )}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <ConsultationCTA source="Homepage" />
 
