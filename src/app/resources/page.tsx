@@ -25,7 +25,7 @@ const hubs = [
   { icon: Landmark, title: "Court Updates", text: "Structured case notes covering courts, citations, decisions and legal consequences.", href: "/resources/court-updates" },
   { icon: Mic2, title: "Podcasts", text: "Legal insight episodes for clients, businesses, investors and diaspora communities.", href: "/resources/podcasts" },
   { icon: PlayCircle, title: "Videos", text: "Practical video explainers with summaries, transcripts and related legal pathways.", href: "/resources/videos" },
-  { icon: FileQuestion, title: "FAQs", text: "Direct answers built for client education, search visibility and AI-powered discovery.", href: "#faqs" }
+  { icon: FileQuestion, title: "FAQs", text: "Clear answers to common legal questions, with guidance on when to seek individual advice.", href: "#faqs" }
 ];
 
 export default async function ResourcesPage() {
@@ -45,7 +45,7 @@ export default async function ResourcesPage() {
       <PageHero
         eyebrow="Resources"
         title="A legal knowledge platform for clients, investors, businesses and diaspora communities"
-        description="The resource centre supports legal education, search visibility, generative discovery and conversion through articles, FAQs, downloads, media and internal links to legal services."
+        description="Explore practical articles, checklists, answers and legal updates to help you understand your options under Nigerian law."
         image="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1800&q=80"
         cta={{ label: "Download Resources", href: "/resources/downloads" }}
       />
@@ -95,9 +95,9 @@ export default async function ResourcesPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeader
-              eyebrow="Editorial Clusters"
+              eyebrow="Explore by Practice Area"
               title="Resource topics mapped to legal services"
-              description="Each practice area can support articles, FAQs, guides, media transcripts and internal links."
+              description="Browse legal information relating to property, business, disputes, estates and other matters we handle."
               tone="light"
             />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -138,7 +138,7 @@ export default async function ResourcesPage() {
           <SectionHeader
             eyebrow="FAQs"
             title="Resource centre questions"
-            description="Structured questions and direct answers are part of the firm's client education and GEO readiness framework."
+            description="Find useful answers to frequently raised legal questions. Advice on your specific situation requires a review of the relevant facts and documents."
             align="center"
           />
           <div className="mt-8">
