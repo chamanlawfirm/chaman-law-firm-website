@@ -95,7 +95,7 @@ export default async function PracticeAreaPage({ params }: PracticeAreaPageProps
             />
             <div className="mt-8 rounded-lg border border-royalGold/16 bg-charcoal p-6">
               <Scale className="text-royalGold" />
-              <p className="mt-4 text-sm leading-7 text-ivory/70">{area.description}</p>
+              <p className="mt-4 text-sm leading-7 text-ivory/70">We review the circumstances and available documents, explain the legal options, and advise on practical steps appropriate to your matter.</p>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -113,8 +113,8 @@ export default async function PracticeAreaPage({ params }: PracticeAreaPageProps
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeader
               eyebrow="Detailed Services"
-              title={`${area.shortTitle} service pages`}
-              description="High-intent legal services are structured with dedicated pages, FAQs, process guidance and direct consultation paths."
+              title={area.slug === "family-law" ? "Our Family Law Services" : `Our ${area.shortTitle} Services`}
+              description="Explore the legal assistance available for your circumstances. Select a service to understand the matters we handle, the documents we may review, and how to arrange advice."
             />
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {area.servicePages.map((service) => (
@@ -188,7 +188,7 @@ export default async function PracticeAreaPage({ params }: PracticeAreaPageProps
             <SectionHeader
               eyebrow="FAQs"
               title={`${area.shortTitle} questions answered`}
-              description="Direct answers support client education, search visibility and generative search readiness."
+              description="Find answers to common questions about this area of law. Your particular circumstances may require individual legal advice."
             />
             <div className="mt-8">
               <FaqList faqs={area.faqs} />
