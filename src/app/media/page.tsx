@@ -39,9 +39,9 @@ export default async function MediaPage() {
       <section className="bg-luxuryBlack py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="Publishing Channels"
+            eyebrow="Legal Insights and Media"
             title="Multimedia legal authority for modern clients"
-            description="Media content is organized around client education, lawyer authority, practice-area relevance and internal links to consultation paths."
+            description="Explore videos, podcasts and commentary addressing practical legal questions affecting individuals, families and businesses."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {channels.map((channel) => {
@@ -62,7 +62,7 @@ export default async function MediaPage() {
           <SectionHeader
             eyebrow="Media Library"
             title="Approved media content categories"
-            description="Each item can be expanded in Sanity with transcripts, related practice areas, SEO fields and schema markup."
+            description="Browse available legal discussions and contact the firm if you need advice on how a topic relates to your circumstances."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {mediaItems.map((item) => (
