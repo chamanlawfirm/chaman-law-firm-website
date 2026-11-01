@@ -106,6 +106,19 @@ export default async function PracticeAreasPage() {
           </div>
         </div>
       </section>
+      <section className="bg-lightGray py-14 text-ink">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader eyebrow="Our Offices" title="Consult a lawyer in Lagos or Ogun State" description="Contact our established offices to discuss legal support appropriate to your matter." tone="light" />
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <Link href="/lawyer-in-ikeja" className="rounded-xl border border-ink/10 bg-white p-6 transition hover:border-royalGold">
+              <h3 className="font-heading text-xl font-semibold">Ikeja, Lagos</h3><p className="mt-2 text-sm leading-7 text-ink/70">Property, corporate, dispute and private-client legal assistance at our Allen Junction office.</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-ink">Explore Ikeja office <ArrowRight size={16}/></span>
+            </Link>
+            <Link href="/law-firm-in-arepo" className="rounded-xl border border-ink/10 bg-white p-6 transition hover:border-royalGold">
+              <h3 className="font-heading text-xl font-semibold">Arepo, Ogun State</h3><p className="mt-2 text-sm leading-7 text-ink/70">Legal guidance on Ogun State property, tenancy, estate and business matters from our Arepo office.</p><span className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-ink">Explore Arepo office <ArrowRight size={16}/></span>
+            </Link>
+          </div>
+        </div>
+      </section>
       <ConsultationCTA source="Practice areas page" />
     </main>
   );
