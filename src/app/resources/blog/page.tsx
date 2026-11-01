@@ -68,7 +68,7 @@ export default async function LegalBlogPage({ searchParams }: PageProps) {
                 </div>
               ) : (
                 <div className="mt-10 rounded-lg border border-royalGold/18 bg-charcoal p-8 text-sm leading-7 text-ivory/68">
-                  No published articles match this view yet. The article route and CMS workflow are ready for editorial content.
+                  No articles match your current selection. Try another topic or browse our other legal resources.
                 </div>
               )}
               <BlogPagination
@@ -87,7 +87,7 @@ export default async function LegalBlogPage({ searchParams }: PageProps) {
       <section className="bg-charcoal py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="Editorial Clusters"
+            eyebrow="Legal Topics"
             title="Explore insight by legal service"
             description="Practice-area clusters create clear internal pathways between legal education, relevant services and consultation."
           />
