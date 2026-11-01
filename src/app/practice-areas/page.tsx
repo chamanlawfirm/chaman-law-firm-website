@@ -46,7 +46,7 @@ export default async function PracticeAreasPage() {
             <SectionHeader
               eyebrow="Core Services"
               title="Full-service legal capability with property law strength"
-              description="Each practice page includes service detail, common issues, client fit, process, FAQs, related downloads, lawyer attribution and conversion-focused calls to action."
+              description="Explore the legal issues we handle, the services available and how to arrange professional advice for your circumstances."
             />
             <Link href="/consultation" className="inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
               Speak with a lawyer <ArrowRight size={16} />
@@ -80,8 +80,8 @@ export default async function PracticeAreasPage() {
       <section className="bg-charcoal py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="Service Architecture"
-            title="Detailed service pages for high-intent legal enquiries"
+            eyebrow="Specific Legal Services"
+            title="Focused assistance for your legal needs"
             description="Priority services are available as dedicated pages with process guidance, FAQs, schema markup and consultation CTAs."
           />
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
