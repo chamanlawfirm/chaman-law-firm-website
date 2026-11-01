@@ -30,6 +30,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/careers",
     "/contact",
     "/consultation",
+    "/lawyer-in-ikeja",
+    "/law-firm-in-arepo",
     "/privacy-policy",
     "/cookie-policy",
     "/terms-of-use",
