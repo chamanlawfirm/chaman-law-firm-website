@@ -153,6 +153,34 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+      <section className="bg-lightGray py-14 text-ink" aria-labelledby="service-consultation-preparation">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Before your consultation</p>
+            <h2 id="service-consultation-preparation" className="mt-3 font-heading text-3xl font-semibold">Get practical guidance on {service.title.toLowerCase()}</h2>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-ink/75">
+              Briefly explain the issue, who is involved and any upcoming deadline. If available, identify the relevant documents and correspondence. Please do not send confidential documents through an unsecured channel; our team can explain the appropriate method of sharing them.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/consultation" className="inline-flex items-center gap-2 rounded-full bg-luxuryBlack px-6 py-3 text-sm font-bold text-ivory hover:bg-charcoal">
+                Request a consultation <ArrowRight size={16} />
+              </Link>
+              <Link href="/contact" className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3 text-sm font-bold text-ink hover:border-royalGold">
+                Contact the firm
+              </Link>
+            </div>
+          </div>
+          <aside className="rounded-xl border border-ink/10 bg-white p-6 shadow-sm">
+            <h3 className="font-heading text-xl font-semibold">What happens next?</h3>
+            <ol className="mt-4 space-y-3 text-sm leading-7 text-ink/75">
+              <li><strong>1. Outline the matter.</strong> Tell us what assistance you require and whether it is urgent.</li>
+              <li><strong>2. Discuss your documents.</strong> We can identify the relevant information needed to assess your instructions.</li>
+              <li><strong>3. Agree on the scope.</strong> The firm can explain suitable legal assistance, engagement terms and next steps.</li>
+            </ol>
+            <p className="mt-5 text-xs leading-6 text-ink/60">Submitting an enquiry does not by itself establish a solicitor-client relationship.</p>
+          </aside>
+        </div>
+      </section>
       <ConsultationCTA source={`Service page - ${service.title}`} />
     </main>
   );
