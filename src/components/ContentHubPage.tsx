@@ -36,9 +36,9 @@ export function ContentHubPage({ kind, items }: { kind: PublishingKind; items: P
             <span aria-current="page" className="text-royalGold">{config.label}</span>
           </nav>
           <SectionHeader
-            eyebrow="Publishing Desk"
+            eyebrow="Legal Updates"
             title={`Latest ${config.label.toLowerCase()}`}
-            description="Every publication supports structured metadata, author attribution, internal linking, related content and a clear consultation path."
+            description="Read developments and explanations that may help you assess legal issues affecting your rights, property or business."
           />
           {items.length ? (
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -48,7 +48,7 @@ export function ContentHubPage({ kind, items }: { kind: PublishingKind; items: P
             </div>
           ) : (
             <div className="mt-10 rounded-lg border border-royalGold/18 bg-charcoal p-8 text-sm leading-7 text-ivory/68">
-              This publishing channel is ready. New entries will appear here after editorial review and publication in the CMS.
+              No articles are available in this section at present. Please explore our other legal resources or contact the firm for assistance.
             </div>
           )}
         </div>
