@@ -63,7 +63,7 @@ export const homepageContent = {
   ],
   stats: [
     { value: "Full-Service", label: "Legal capability" },
-    { value: "2 Offices", label: "Lagos and Ogun" },
+    { value: "5 Locations", label: "Lagos, Ogun and Abuja" },
     { value: "8+", label: "Core practice areas" },
     { value: "Global", label: "Diaspora support" }
   ],
@@ -156,7 +156,7 @@ export const globalFaqs: Faq[] = [
   {
     question: "Where are Chaman Law Firm's offices?",
     answer:
-      "The head office is at 115 Obafemi Awolowo Way, Allen Junction, Ikeja, Lagos State, Nigeria. The branch office is at 5 Olalekan Ogunjobi Street, Havana Estate, Arepo, Ogun State, Nigeria."
+      "The firm has client-facing locations in Ikeja, Lekki (Ikota Villa), and Magodo GRA Phase 2 in Lagos, as well as Arepo in Ogun State and a partner-managed office at Wuse Zone 1, Abuja. See our contact page for addresses and consultation arrangements."
   }
 ];
 
