@@ -19,6 +19,10 @@ export default function PrivacyPolicyPage() {
       <h2>1. Who we are</h2>
       <p>Chaman Law Firm is a Nigerian law firm. For website privacy enquiries, contact <a href="mailto:info@chamanlawfirm.com">info@chamanlawfirm.com</a>.</p>
 
+      <h2>Confidential client feedback</h2>
+      <p>Where our confidential feedback submission service is available, we collect the service and location involved, ratings, the names or telephone numbers of representatives you identify, your comments and concerns, and optional contact details. We use this information to monitor client care, conduct fair internal reviews and investigations, and contact you where requested. Feedback is not automatically made public or used as a testimonial without separate permission.</p>
+      <p>Access to submitted feedback is intended to be restricted to authorised management and relevant service providers operating under appropriate safeguards. Complaint details should not be sent in marketing analytics. Security and technical logs may be processed to protect the service, so leaving your name blank does not guarantee complete anonymity. We retain feedback according to our approved operational and legal retention obligations, taking account of necessary investigations and appropriate deletion requests. For privacy questions, contact <a href="mailto:chamanlawfirm@gmail.com">chamanlawfirm@gmail.com</a>.</p>
+
       <h2>2. Information we collect</h2>
       <p>We may collect information you choose to provide, including your name, email address, telephone number, area of legal interest, enquiry details, newsletter preference and download request. We may also receive limited technical information needed to operate and protect the website, such as request timestamps, browser information and security signals.</p>
 
