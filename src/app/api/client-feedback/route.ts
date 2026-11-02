@@ -4,6 +4,7 @@ export const runtime="nodejs";
 const headers={"Cache-Control":"no-store, max-age=0","X-Robots-Tag":"noindex, nofollow"};
 const reply=(body:object,status:number)=>NextResponse.json(body,{status,headers});
 export async function POST(request:Request){
+ if(process.env.FEEDBACK_PUBLIC_ENABLED !== "true")return reply({message:"Confidential feedback intake is not yet activated."},503);
  const url=new URL(request.url);
  const origin=request.headers.get("origin");
  if(origin&&origin!==url.origin&&origin!=="https://chamanlawfirm.com"&&origin!=="https://www.chamanlawfirm.com")return reply({message:"Origin not permitted."},403);
