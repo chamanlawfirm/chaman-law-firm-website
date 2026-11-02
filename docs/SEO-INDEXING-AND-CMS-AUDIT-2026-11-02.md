@@ -68,3 +68,9 @@ No evidence that the location pages are blocked; unknown to Google is not the sa
 7. Inspect new location URLs after Google recrawls; verify if sitemap warnings clear.
 
 This report deliberately distinguishes completed verified actions from blocked or not-yet-verified work.
+## Additional completed legacy and search inventory investigation
+- Queried 1,000 top-page rows from connected GSC; **762 page rows returned, covering 100% of Search Console clicks and impressions in the period**. These are observed search-visible URLs, not a complete inventory of unpublished/unindexed CMS content.
+- Repository lists **499 legacy blog activation slugs** in src/data/legacy-blog-redirect-slugs.ts. This is an in-repository recovery set, not an independently verified original WordPress export.
+- Repository src/data/legacy-static-redirects.ts currently contains **388 explicit path rules**, of which **186 point to /consultation**. Flag these for careful manual semantic destination review; blanket redirection of informational articles to the consultation page can be inappropriate for users and harmful to search relevance. Do NOT replace them without determining original title/content and proper page matches.
+- Additional emergency redirects exist in next.config.mjs. Counts from separate sources may overlap, and no aggregate unique total is claimed.
+- GSC shows both /blog/functions-of-the-securities-and-exchange-commission-in-nigeria and /resources/blog/functions-of-the-securities-and-exchange-commission-in-nigeria receiving impressions and clicks (15 and 9 clicks respectively on the base URLs); check canonical/redirect implementation after CMS access. This is a verified dual-path visibility concern, not proven duplicate content.
