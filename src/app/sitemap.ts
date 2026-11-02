@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 import { adCampaigns } from "@/data/ad-campaigns";
 
-export const revalidate = 2592000;
+export const revalidate = 3600;
 
 const consolidatedBlogSlugs = new Set([
   "how-to-use-cac-public-search-for-your-business"
@@ -13,6 +13,7 @@ const consolidatedBlogSlugs = new Set([
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date("2026-08-14T00:00:00.000Z");
+  const officePageLastModified = new Date("2026-11-02T00:00:00.000Z");
   const staticRoutes = [
     "",
     "/about",
@@ -66,7 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticRoutes.map((route) => ({
       url: `${siteConfig.url}${route}`,
-      lastModified,
+      lastModified: route === "/lawyer-in-ikeja" || route === "/law-firm-in-arepo" ? officePageLastModified : lastModified,
       changeFrequency: "weekly" as const,
       priority: route === "" ? 1 : 0.8
     })),
