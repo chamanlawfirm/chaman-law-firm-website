@@ -1,5 +1,20 @@
+# Magodo office publication record — 2026-11-02
+
+The Managing Partner explicitly confirmed that Chaman Law Firm maintains a physical client-facing office in Magodo GRA Phase 2 (Shangisha), Lagos, including that the office is used in conjunction with the group's other businesses.
+
+The existing project record identified the street address as **9 Abayomi Owulade Avenue**. This spelling has been retained in the live page and should be checked against the firm's signage/official correspondence because the latest voice-transcribed confirmation rendered the street name differently.
+
+**Published canonical route:** /offices/magodo-gra
+
+The public page contains a dedicated client-facing introduction, relevant services, confirmed phase/district, appointment guidance, office address, central contact details, Google Maps search link, consultation CTAs, FAQs and relevant legal-practice links. It uses a firm-wide image, not a claimed photo of the Magodo premises.
+
+The Magodo route was added to the sitemap and contact directory. The existing Ikeja, Arepo and Abuja routes have been preserved.
+
+The pre-publication draft below is superseded by the published implementation. It is retained for change history only.
+
+---
 # Non-public office page draft — Magodo GRA, Lagos
-**Publication status: BLOCKED — not published, not in sitemap, not linked publicly.**
+**Historical draft status: superseded by the public office page.**
 **Source of status:** Managing Partner confirms office presence; precise physical street address and Phase 1/2 designation not independently established as a Chaman Law Firm office. The address appearing in correspondence (9 Abayomi Owulade Avenue, Magodo GRA) may be a delivery/contact address, not proven to be the firm's office. Do not publish it as such without confirmation.
 
 ## Planned metadata
