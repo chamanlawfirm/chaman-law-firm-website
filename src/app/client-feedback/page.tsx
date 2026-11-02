@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   robots:{index:false,follow:true}
 };
 export default function ClientFeedbackPage() {
- const ready=Boolean(process.env.FEEDBACK_SUPABASE_URL && process.env.FEEDBACK_SUPABASE_SERVICE_KEY);
+ const ready=Boolean(process.env.FEEDBACK_PUBLIC_ENABLED === "true" && process.env.FEEDBACK_SUPABASE_URL && process.env.FEEDBACK_SUPABASE_SERVICE_KEY);
  return <main className="bg-luxuryBlack min-h-screen text-ivory">
   <section className="mx-auto max-w-4xl px-4 pb-10 pt-28 sm:px-6">
    <p className="text-xs font-bold uppercase tracking-[.2em] text-royalGold">Confidential management review</p>
