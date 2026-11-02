@@ -24,7 +24,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: 
           className="object-cover opacity-28"
         />
       ) : null}
-      <div className="absolute inset-0 bg-gradient-to-r from-luxuryBlack via-luxuryBlack/84 to-luxuryBlack/36" />
+      <div className="absolute inset-0 bg-gradient-to-r from-luxuryBlack via-luxuryBlack/90 to-luxuryBlack/40" />\n      <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-20 hidden h-80 w-80 rounded-full border border-royalGold/15 lg:block" />
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <div className="max-w-3xl">
           {eyebrow ? (
@@ -37,7 +37,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: 
           {cta ? (
             <Link
               href={cta.href}
-              className="mt-8 inline-flex rounded-full bg-royalGold px-6 py-3 text-sm font-bold text-luxuryBlack transition hover:bg-champagne"
+              className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-royalGold px-6 py-3 text-sm font-bold text-luxuryBlack transition-colors hover:bg-champagne focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-royalGold"
             >
               {cta.label}
             </Link>
