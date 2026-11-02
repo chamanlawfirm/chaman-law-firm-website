@@ -35,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/law-firm-in-arepo",
     "/offices/abuja-wuse-zone-1",
     "/offices/magodo-gra",
+    "/offices/lekki",
     "/privacy-policy",
     "/cookie-policy",
     "/terms-of-use",
@@ -69,7 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticRoutes.map((route) => ({
       url: `${siteConfig.url}${route}`,
-      lastModified: route === "/lawyer-in-ikeja" || route === "/law-firm-in-arepo" || route === "/offices/abuja-wuse-zone-1" || route === "/offices/magodo-gra" ? officePageLastModified : lastModified,
+      lastModified: route === "/lawyer-in-ikeja" || route === "/law-firm-in-arepo" || route === "/offices/abuja-wuse-zone-1" || route === "/offices/magodo-gra" || route === "/offices/lekki" ? officePageLastModified : lastModified,
       changeFrequency: "weekly" as const,
       priority: route === "" ? 1 : 0.8
     })),
