@@ -55,28 +55,14 @@ export function createMetadata({
   type = "website"
 }: SeoInput): Metadata {
   const brandedTitle = title.includes(siteConfig.name) ? title : `${title} | ${siteConfig.name}`;
-  const fullTitle = brandedTitle.length <= 65 ? brandedTitle : shortenMetadata(title, 65);
+  const fullTitle = brandedTitle.length <= 65 ? brandedTitle : shortenMetadata(brandedTitle, 65);
   const metaDescription = shortenMetadata(description, 165);
   const url = resolveCanonicalUrl(path, canonicalUrl);
 
   return {
     title: fullTitle,
     description: metaDescription,
-    keywords: [
-      "Chaman Law Firm",
-      "law firm in Nigeria",
-      "law firm in Lagos",
-      "property lawyer in Nigeria",
-      "real estate lawyer in Lagos",
-      "corporate lawyer Nigeria",
-      "commercial law firm Nigeria",
-      "litigation lawyer Lagos",
-      "debt recovery lawyer Nigeria",
-      "probate lawyer Nigeria",
-      "notary public Lagos",
-      "diaspora legal services Nigeria",
-      ...keywords
-    ],
+    ...(keywords.length ? { keywords: [...new Set(keywords)] } : {}),
     alternates: {
       canonical: url
     },
