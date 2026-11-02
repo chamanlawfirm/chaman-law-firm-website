@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/constants";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -18,7 +19,7 @@ export function GoogleMapSection() {
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-lg border border-royalGold/18 bg-luxuryBlack">
             <iframe
-              title="Chaman Law Firm office map"
+              title="Map of Chaman Law Firm Ikeja headquarters, Lagos"
               src={embedUrl}
               className="h-[420px] w-full"
               loading="lazy"
@@ -39,6 +40,15 @@ export function GoogleMapSection() {
                 </a>
               </div>
             ))}
+            <div className="rounded-lg border border-royalGold/18 bg-luxuryBlack p-6">
+              <h3 className="font-heading text-xl font-semibold text-ivory">Other client-facing offices</h3>
+              <p className="mt-3 text-sm leading-7 text-ivory/70">Arrange consultations in Lekki (Ikota Villa), Magodo GRA Phase 2 (Shangisha) or Wuse Zone 1, Abuja (partner-managed). Please confirm your appointment before visiting.</p>
+              <nav aria-label="Additional Chaman Law Firm office locations" className="mt-4 flex flex-col gap-3">
+                <Link href="/offices/lekki" className="text-sm font-bold text-royalGold hover:text-champagne">Lekki office details</Link>
+                <Link href="/offices/magodo-gra" className="text-sm font-bold text-royalGold hover:text-champagne">Magodo GRA Phase 2 office details</Link>
+                <Link href="/offices/abuja-wuse-zone-1" className="text-sm font-bold text-royalGold hover:text-champagne">Abuja Wuse Zone 1 office details</Link>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
