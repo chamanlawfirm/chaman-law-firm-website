@@ -12,8 +12,8 @@ export function GoogleMapSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Visit Our Offices"
-          title="Ikeja, Lagos and Arepo, Ogun State"
-          description="Meet Chaman Law Firm for legal consultation, document review, property-law support, corporate advisory, dispute guidance, and notary public services."
+          title="Find our offices in Lagos, Ogun State and Abuja"
+          description="Our map highlights the Ikeja headquarters. For Lekki, Magodo GRA Phase 2, Arepo and partner-managed Abuja appointments, please use the individual office details on the contact page."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-lg border border-royalGold/18 bg-luxuryBlack">
