@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { GoogleMapSection } from "@/components/GoogleMapSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -72,6 +73,7 @@ export default async function ContactPage() {
                       <p className="mt-1 text-sm leading-7 text-ivory/66">{office.address}</p>
                     </div>
                   ))}
+                  <div className="mt-5 border-t border-royalGold/20 pt-5"><p className="text-sm font-semibold text-ivory">Abuja — Wuse Zone 1 (partner-managed)</p><p className="mt-2 text-sm leading-7 text-ivory/70">71 Nouakchott Street, Zone 1, Wuse, FCT, Abuja, Nigeria. Visits by prior appointment.</p><Link href="/offices/abuja-wuse-zone-1" className="mt-3 inline-flex text-sm font-semibold text-royalGold hover:text-champagne">Abuja office details</Link></div>
                 </div>
               </div>
             </div>
