@@ -86,6 +86,7 @@ export default async function ContactPage() {
           <LeadForm source="Contact page" title="Send a Legal Enquiry" />
         </div>
       </section>
+      <section className="bg-luxuryBlack py-10 text-ivory"><div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><h2 className="font-heading text-2xl font-semibold">Share your client experience</h2><p className="mt-3 max-w-2xl text-sm leading-7 text-ivory/75">We welcome positive feedback and concerns about our legal services, communication or a representative. Feedback is intended for confidential management review.</p><Link href="/client-feedback" className="mt-4 inline-flex text-sm font-semibold text-royalGold underline underline-offset-4">Client feedback and staff service review</Link></div></section>
       <GoogleMapSection />
     </main>
   );
