@@ -33,9 +33,9 @@ import { breadcrumbSchema, faqSchema, legalServiceSchema, organizationSchema } f
 import { globalFaqs } from "@/data/site-content";
 
 export const metadata: Metadata = createMetadata({
-  title: "Chaman Law Firm",
+  title: "Law Firm in Lagos, Nigeria | Chaman Law Firm",
   description:
-    "Chaman Law Firm is a premium full-service Nigerian law firm for property law, real estate transactions, corporate and commercial law, litigation, debt recovery, probate, immigration, family law, notary public services, and diaspora legal support.",
+    "Chaman Law Firm is a law firm in Ikeja, Lagos, advising on property and real estate law, corporate transactions, litigation, debt recovery, probate, family law and legal matters across Nigeria.",
   path: "/"
 });
 
@@ -341,6 +341,30 @@ export default async function HomePage() {
           </div>
         </section>
       ) : null}
+
+      <section className="bg-lightGray py-16 text-ink" aria-labelledby="lagos-law-firm-office-heading">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">Our Nigerian offices</p>
+              <h2 id="lagos-law-firm-office-heading" className="mt-3 font-heading text-3xl font-semibold leading-tight sm:text-4xl">Law firm in Lagos, with an office in Ogun State</h2>
+              <p className="mt-5 text-base leading-8 text-ink/75">Chaman Law Firm advises clients from its Ikeja office in Lagos and its Arepo office in Ogun State. Whether you need guidance on a property purchase, a commercial agreement, a dispute or an estate matter, our team can explain the legal steps appropriate to your circumstances.</p>
+              <p className="mt-4 text-sm leading-7 text-ink/70">Our Lagos office is at 115 Obafemi Awolowo Way, Allen Junction, Ikeja. Our Ogun State office is at 5 Olalekan Ogunjobi Street, Havana Estate, Arepo. Please arrange an appointment before visiting.</p>
+              <Link href="/consultation" className="mt-6 inline-flex items-center gap-2 rounded-full bg-luxuryBlack px-6 py-3 text-sm font-bold text-ivory transition hover:bg-charcoal">Arrange a legal consultation <ArrowRight size={16}/></Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link href="/lawyer-in-ikeja" className="group overflow-hidden rounded-xl border border-ink/10 bg-white shadow-sm transition hover:border-royalGold">
+                <div className="relative h-40"><Image src="/images/firm/firm-office-team.jpg" alt="Chaman Law Firm team in a professional office setting" fill sizes="(min-width: 1024px) 230px, 50vw" className="object-cover transition-transform duration-300 motion-safe:group-hover:scale-105" /></div>
+                <div className="p-5"><h3 className="font-heading text-xl font-semibold">Ikeja, Lagos</h3><p className="mt-2 text-sm leading-6 text-ink/70">Legal advice and consultation at our Lagos office.</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-ink">View Ikeja office <ArrowRight size={15}/></span></div>
+              </Link>
+              <Link href="/law-firm-in-arepo" className="group overflow-hidden rounded-xl border border-ink/10 bg-white shadow-sm transition hover:border-royalGold">
+                <div className="relative h-40"><Image src="/images/firm/firm-team.jpg" alt="Chaman Law Firm legal team" fill sizes="(min-width: 1024px) 230px, 50vw" className="object-cover transition-transform duration-300 motion-safe:group-hover:scale-105" /></div>
+                <div className="p-5"><h3 className="font-heading text-xl font-semibold">Arepo, Ogun State</h3><p className="mt-2 text-sm leading-6 text-ink/70">Property, tenancy, business and estate-related legal assistance.</p><span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-ink">View Arepo office <ArrowRight size={15}/></span></div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <ConsultationCTA source="Homepage" />
 
