@@ -61,7 +61,7 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
                 <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold text-ivory/60">
                   <span>{content.author}</span>
                   {hasMeaningfulDate(content.date) ? (
-                    <span className="inline-flex items-center gap-2"><CalendarDays size={16} className="text-royalGold" />{formatDate(content.date)}</span>
+                    <time dateTime={content.date} className="inline-flex items-center gap-2"><CalendarDays size={16} className="text-royalGold" />{content.contentKind === "legal-news" ? `Published ${new Intl.DateTimeFormat("en-NG", {dateStyle: "medium", timeStyle: "short", timeZone: "Africa/Lagos"}).format(new Date(content.date))} WAT` : formatDate(content.date)}</time>
                   ) : null}
                   <span className="inline-flex items-center gap-2"><Clock3 size={16} className="text-royalGold" />{content.readingTime}</span>
                 </div>
