@@ -24,29 +24,7 @@ export const legalNewsType = defineType({
       ]},
       validation: (Rule) => Rule.required(),
     }),
-    defineField({
-      name: 'newsCategory',
-      title: 'News desk / category',
-      type: 'string',
-      options: {list: [
-        {title: 'Nigeria: Governance & Public Affairs', value: 'governance'},
-        {title: 'Business & Economy', value: 'business-economy'},
-        {title: 'Courts & Justice', value: 'courts-justice'},
-        {title: 'Property & Infrastructure', value: 'property-infrastructure'},
-        {title: 'Policy & Regulation', value: 'policy-regulation'},
-        {title: 'Security & Public Safety', value: 'security'},
-        {title: 'Education & Health', value: 'education-health'},
-        {title: 'Technology & Innovation', value: 'technology'},
-        {title: 'Diaspora & International', value: 'diaspora'},
-        {title: 'Community & Human Interest', value: 'community'},
-      ]},
-    }),
     defineField({name: 'reportedAt', title: 'Event date / reported at', type: 'datetime', description: 'When the event occurred; distinct from the original publication date.'}),
-    defineField({
-      name: 'primarySourceUrl', type: 'url',
-      description: 'Link to the primary official document, statement, judgment or first-hand record where available.',
-      validation: (Rule) => Rule.uri({scheme: ['https']}),
-    }),
     defineField({
       name: 'additionalSources', type: 'array',
       of: [defineArrayMember({type: 'object', fields: [
