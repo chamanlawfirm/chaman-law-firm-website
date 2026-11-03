@@ -315,10 +315,11 @@ function fallbackPublishedContent(kind: PublishingKind) {
     .filter((item): item is PublishedContent => Boolean(item));
 }
 
-function publishedFilter() {
-  // A published Sanity document with a future display date is not yet public.
-  // This is a publication guard, not a replacement for editorial approval and Sanity scheduling.
-  return `!(_id in path("drafts.**")) && defined(slug.current) && coalesce(publishedAt, decisionDate, _createdAt) <= now() && (_type == $documentType || (_type == "mediaItem" && type == $mediaType))`;
+function publishedFilter(kind: PublishingKind) {
+  // Preserve legacy published stories without status while requiring approval for new legalNews items.
+  // This gate is not an authorization system: newsroom roles must still be configured in Sanity.
+  const base = `!(_id in path("drafts.**")) && defined(slug.current) && coalesce(publishedAt, decisionDate, _createdAt) <= now() && (_type == $documentType || (_type == "mediaItem" && type == $mediaType))`;
+  return kind === "legal-news" ? `${base} && (!defined(editorialStatus) || editorialStatus == "approved")` : base;
 }
 
 export async function getPublishedContent(kind: PublishingKind, limit = 24) {
@@ -326,16 +327,16 @@ export async function getPublishedContent(kind: PublishingKind, limit = 24) {
 
   try {
     const data = await client.fetch<SanityPublishedContent[]>(
-      `*[${publishedFilter()}] | order(coalesce(publishedAt, decisionDate, _createdAt) desc) [0...$limit] {
+      `*[${publishedFilter(kind)}] | order(coalesce(publishedAt, decisionDate, _createdAt) desc) [0...$limit] {
         ${publishedContentFields}
       }`,
       { documentType: config.documentType, mediaType: config.mediaType, limit },
       { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity"] } }
     );
     const normalized = data.map((item) => normalizePublishedContent(item, kind)).filter((item): item is PublishedContent => Boolean(item));
-    return normalized.length ? normalized : fallbackPublishedContent(kind);
+    return normalized.length ? normalized : kind === "legal-news" ? [] : fallbackPublishedContent(kind);
   } catch {
-    return fallbackPublishedContent(kind);
+    return kind === "legal-news" ? [] : fallbackPublishedContent(kind);
   }
 }
 
@@ -344,16 +345,16 @@ export async function getPublishedContentBySlug(kind: PublishingKind, slug: stri
 
   try {
     const item = await client.fetch<SanityPublishedContent | null>(
-      `*[${publishedFilter()} && slug.current == $slug][0] {
+      `*[${publishedFilter(kind)} && slug.current == $slug][0] {
         ${publishedContentFields}
       }`,
       { documentType: config.documentType, mediaType: config.mediaType, slug },
       { next: { revalidate: SANITY_REVALIDATE_SECONDS, tags: ["sanity"] } }
     );
     const normalized = item ? normalizePublishedContent(item, kind) : null;
-    return normalized || fallbackPublishedContent(kind).find((entry) => entry.slug === slug) || null;
+    return normalized || (kind === "legal-news" ? null : fallbackPublishedContent(kind).find((entry) => entry.slug === slug)) || null;
   } catch {
-    return fallbackPublishedContent(kind).find((entry) => entry.slug === slug) || null;
+    return (kind === "legal-news" ? null : fallbackPublishedContent(kind).find((entry) => entry.slug === slug)) || null;
   }
 }
 
