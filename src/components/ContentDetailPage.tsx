@@ -86,6 +86,19 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
         <div className="bg-luxuryBlack py-16">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
             <div className="min-w-0 space-y-10">
+              {content.contentKind === "legal-news" && (content.primarySourceName || content.primarySourceUrl || content.correctionNote || content.verifiedAt) ? (
+                <section className="rounded-lg border border-royalGold/22 bg-charcoal p-6">
+                  <h2 className="font-heading text-2xl font-semibold text-ivory">Sources and editorial transparency</h2>
+                  {content.reportingType ? <p className="mt-3 text-sm leading-7 text-ivory/75">Format: {content.reportingType.replace(/-/g, " ")}</p> : null}
+                  {content.primarySourceName ? <p className="mt-2 text-sm leading-7 text-ivory/75">Primary source: {content.primarySourceName}</p> : null}
+                  {content.primarySourceUrl && /^https:\/\//i.test(content.primarySourceUrl) ? (
+                    <a href={content.primarySourceUrl} rel="noopener noreferrer" target="_blank" className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-royalGold underline underline-offset-4">Read the originating source <ExternalLink size={15}/></a>
+                  ) : null}
+                  {content.verifiedAt && !Number.isNaN(Date.parse(content.verifiedAt)) ? <p className="mt-3 text-xs text-ivory/65">Information last verified: {formatDate(content.verifiedAt)}</p> : null}
+                  {content.correctionNote ? <div className="mt-4 rounded-lg border border-royalGold/30 p-4"><h3 className="font-semibold text-ivory">Correction or update</h3><p className="mt-2 whitespace-pre-line text-sm leading-7 text-ivory/80">{content.correctionNote}</p></div> : null}
+                </section>
+              ) : null}
+
               {content.mediaUrl ? (
                 <section className="rounded-lg border border-royalGold/22 bg-charcoal p-6">
                   <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">
