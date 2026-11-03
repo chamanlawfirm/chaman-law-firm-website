@@ -77,7 +77,7 @@ export function ContentHubPage({ kind, items }: { kind: PublishingKind; items: P
             </div>
           ) : (
             <div className="mt-10 rounded-lg border border-royalGold/18 bg-charcoal p-8 text-sm leading-7 text-ivory/68">
-              {kind === "legal-news" ? "Our editorial team has not published any approved news reports yet. Verified reports will appear here after editorial review." : "{kind === "legal-news" ? "No verified news reports have been published yet. Our editors are preparing sourced Nigerian current affairs coverage." : "No articles are available in this section at present. Please explore our other legal resources or contact the firm for assistance."}"}
+              {kind === "legal-news" ? "Our editorial team has not published any approved news reports yet. Verified reports will appear here after editorial review." : "No articles are available in this section at present. Please explore our other legal resources or contact the firm for assistance."}
             </div>
           )}
         </div>
