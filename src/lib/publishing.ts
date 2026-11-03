@@ -7,7 +7,8 @@ import type { SanityImageSource } from "@sanity/image-url";
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 
-const SANITY_REVALIDATE_SECONDS = 2592000;
+// News must not remain stale for weeks; the shorter interval also updates newsroom listings.
+const SANITY_REVALIDATE_SECONDS = 300;
 
 export const publishingKinds = ["legal-news", "court-updates", "podcasts", "videos"] as const;
 export type PublishingKind = (typeof publishingKinds)[number];
@@ -24,6 +25,12 @@ export type PublishedContent = BlogPost & {
   citation?: string;
   jurisdiction?: string;
   decisionDate?: string;
+  newsCategory?: string;
+  reportingType?: string;
+  primarySourceName?: string;
+  primarySourceUrl?: string;
+  verifiedAt?: string;
+  correctionNote?: string;
 };
 
 type PublishingConfig = {
@@ -111,6 +118,12 @@ type SanityPublishedContent = {
   citation?: string;
   jurisdiction?: string;
   decisionDate?: string;
+  newsCategory?: string;
+  reportingType?: string;
+  primarySourceName?: string;
+  primarySourceUrl?: string;
+  verifiedAt?: string;
+  correctionNote?: string;
   tags?: string[];
   relatedPracticeAreas?: Array<{ title?: string; slug?: string } | null>;
   faqs?: Array<{ question?: string; answer?: string }>;
@@ -150,6 +163,12 @@ const publishedContentFields = `
   citation,
   jurisdiction,
   decisionDate,
+  newsCategory,
+  reportingType,
+  primarySourceName,
+  primarySourceUrl,
+  verifiedAt,
+  correctionNote,
   tags,
   relatedPracticeAreas[]->{title, "slug": slug.current},
   faqs[]{question, answer},
@@ -263,7 +282,13 @@ function normalizePublishedContent(item: SanityPublishedContent, kind: Publishin
     courtName: item.courtName,
     citation: item.citation,
     jurisdiction: item.jurisdiction,
-    decisionDate: item.decisionDate
+    decisionDate: item.decisionDate,
+    newsCategory: item.newsCategory,
+    reportingType: item.reportingType,
+    primarySourceName: item.primarySourceName,
+    primarySourceUrl: item.primarySourceUrl,
+    verifiedAt: item.verifiedAt,
+    correctionNote: item.correctionNote
   };
 }
 
@@ -271,7 +296,7 @@ function fallbackPublishedContent(kind: PublishingKind) {
   const config = publishingConfig[kind];
 
   return mediaItems
-    .filter((item) => item.type === config.mediaType)
+    .filter((item) => item.type === config.mediaType && item.status !== "placeholder")
     .map((item) =>
       normalizePublishedContent(
         {
@@ -291,7 +316,9 @@ function fallbackPublishedContent(kind: PublishingKind) {
 }
 
 function publishedFilter() {
-  return `!(_id in path("drafts.**")) && defined(slug.current) && (_type == $documentType || (_type == "mediaItem" && type == $mediaType))`;
+  // A published Sanity document with a future display date is not yet public.
+  // This is a publication guard, not a replacement for editorial approval and Sanity scheduling.
+  return `!(_id in path("drafts.**")) && defined(slug.current) && coalesce(publishedAt, decisionDate, _createdAt) <= now() && (_type == $documentType || (_type == "mediaItem" && type == $mediaType))`;
 }
 
 export async function getPublishedContent(kind: PublishingKind, limit = 24) {
