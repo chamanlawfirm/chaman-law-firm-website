@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 
 const config = publishingConfig["legal-news"];
 
-export const metadata: Metadata = createMetadata({ title: "Legal News", description: config.description, path: config.hubPath });
+export const metadata: Metadata = createMetadata({ title: "Nigeria News & Current Affairs | Chaman Law Firm", description: config.description, path: config.hubPath });
 
 export default async function LegalNewsPage() {
   return <ContentHubPage kind="legal-news" items={await getPublishedContent("legal-news")} />;
