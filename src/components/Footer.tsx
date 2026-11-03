@@ -37,6 +37,7 @@ const footerColumns = [
     title: "Resources",
     links: [
       { label: "Blog", href: "/resources/blog" },
+      { label: "Nigeria News", href: "/resources/legal-news" },
       { label: "Downloads", href: "/resources/downloads" },
       { label: "Media", href: "/media" },
       { label: "FAQs", href: "/resources#faqs" },
