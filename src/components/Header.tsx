@@ -20,7 +20,7 @@ const navigation = [
 
 const resourceLinks = [
   { label: "Blog", href: "/resources/blog" },
-  { label: "Legal News", href: "/resources/legal-news" },
+  { label: "Nigeria News", href: "/resources/legal-news" },
   { label: "Court Updates", href: "/resources/court-updates" },
   { label: "Podcasts", href: "/resources/podcasts" },
   { label: "Videos", href: "/resources/videos" },
