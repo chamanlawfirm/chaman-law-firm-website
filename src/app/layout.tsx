@@ -55,6 +55,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
     types: { "application/rss+xml": `${siteConfig.url}/feed.xml` }
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.svg?v=20261103", type: "image/svg+xml", sizes: "any" },
+      { url: "/favicon.ico?v=20261103", type: "image/x-icon", sizes: "16x16 32x32" }
+    ],
+    shortcut: "/favicon.ico?v=20261103",
+    apple: [
+      { url: "/apple-touch-icon.png?v=20261103", type: "image/png", sizes: "180x180" }
+    ]
   }
 };
 
