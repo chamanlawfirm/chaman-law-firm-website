@@ -53,8 +53,8 @@ export const publishingConfig: Record<PublishingKind, PublishingConfig> = {
     label: "Legal News",
     singular: "Legal News",
     hubPath: "/resources/legal-news",
-    title: "Legal news with practical implications",
-    description: "Timely legal and regulatory developments explained for clients, businesses, investors and the wider public.",
+    title: "Nigeria News, Current Affairs and Legal Developments",
+    description: "Verified Nigeria news, public policy, economy, housing, business, courts and national current affairs, with original reporting, clear attribution and legal context.",
     heroImage: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1800&q=80"
   },
   "court-updates": {
