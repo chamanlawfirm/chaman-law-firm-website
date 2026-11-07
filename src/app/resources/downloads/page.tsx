@@ -32,7 +32,7 @@ export default async function DownloadsPage() {
         eyebrow="Downloads"
         title="Legal checklists, guides and client preparation resources"
         description="Use these resources to organize facts and documents before speaking with Chaman Law Firm about property, diaspora, business, debt recovery and estate matters."
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/managing-partner-office.png"
         cta={{ label: "Book Consultation", href: "/consultation" }}
       />
       <section className="bg-luxuryBlack py-16">
