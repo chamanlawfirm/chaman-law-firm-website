@@ -82,7 +82,7 @@ export default async function PracticeAreaPage({ params }: PracticeAreaPageProps
         eyebrow={area.eyebrow}
         title={area.title}
         description={area.description}
-        image="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-office-team.jpg"
         cta={{ label: consultationLabel, href: "/consultation" }}
       />
       <section className="bg-luxuryBlack py-16">
