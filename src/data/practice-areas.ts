@@ -31,7 +31,7 @@ export type PracticeArea = {
 };
 
 const serviceHeroImages = {
-  legalService: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80",
+  legalService: "/images/firm/firm-office-team.jpg",
   firmTeam: "/images/firm/firm-team.jpg",
   managingPartnerOffice: "/images/firm/managing-partner-office.png"
 };
