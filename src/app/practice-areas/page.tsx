@@ -37,7 +37,7 @@ export default async function PracticeAreasPage() {
         eyebrow="Practice Areas"
         title="Legal services for property, business, disputes, estates and documentation"
         description="Chaman Law Firm supports individuals, businesses, investors, developers, families and diaspora clients through focused legal practice areas connected to clear consultation pathways."
-        image="https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-office-team.jpg"
         cta={{ label: "Book Consultation", href: "/consultation" }}
       />
       <section className="bg-luxuryBlack py-16">
