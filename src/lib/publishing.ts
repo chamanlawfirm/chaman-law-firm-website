@@ -55,7 +55,7 @@ export const publishingConfig: Record<PublishingKind, PublishingConfig> = {
     hubPath: "/resources/legal-news",
     title: "Nigeria News, Current Affairs and Legal Developments",
     description: "Verified Nigeria news, public policy, economy, housing, business, courts and national current affairs, with original reporting, clear attribution and legal context.",
-    heroImage: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1800&q=80"
+    heroImage: "/images/firm/firm-office-team.jpg"
   },
   "court-updates": {
     kind: "court-updates",
@@ -66,7 +66,7 @@ export const publishingConfig: Record<PublishingKind, PublishingConfig> = {
     hubPath: "/resources/court-updates",
     title: "Court decisions and legal developments",
     description: "Structured court updates highlighting decisions, legal principles, jurisdiction and practical consequences.",
-    heroImage: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&w=1800&q=80"
+    heroImage: "/images/firm/firm-team.jpg"
   },
   podcasts: {
     kind: "podcasts",
@@ -77,7 +77,7 @@ export const publishingConfig: Record<PublishingKind, PublishingConfig> = {
     hubPath: "/resources/podcasts",
     title: "Chaman Legal Insights Podcast",
     description: "Practical conversations on Nigerian law, property, business, disputes, estates and diaspora legal needs.",
-    heroImage: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1800&q=80"
+    heroImage: "/images/firm/managing-partner-office.png"
   },
   videos: {
     kind: "videos",
@@ -88,7 +88,7 @@ export const publishingConfig: Record<PublishingKind, PublishingConfig> = {
     hubPath: "/resources/videos",
     title: "Legal video explainers",
     description: "Clear video guidance on property verification, contracts, disputes, probate, notary and diaspora matters.",
-    heroImage: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1800&q=80"
+    heroImage: "/images/firm/firm-office-team.jpg"
   }
 };
 
