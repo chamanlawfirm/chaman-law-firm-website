@@ -30,7 +30,7 @@ export default async function CareersPage() {
         eyebrow="Careers"
         title="Build a legal career with Chaman Law Firm"
         description="Chaman Law Firm welcomes career interest from lawyers, interns, NYSC associates, legal researchers, administrative talent and professionals who value excellence, integrity and client service."
-        image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-team.jpg"
         cta={{ label: "Submit Career Interest", href: "#career-form" }}
       />
       <section className="bg-luxuryBlack py-16">
