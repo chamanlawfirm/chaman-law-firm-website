@@ -33,7 +33,7 @@ export default async function MediaPage() {
         eyebrow="Media Centre"
         title="Legal media, commentary, podcasts, videos and news"
         description="The media centre supports Chaman Law Firm's legal education strategy through podcasts, video explainers, webinars, legal news, court updates and professional commentary."
-        image="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-office-team.jpg"
         cta={{ label: "Speak With a Lawyer", href: "/consultation" }}
       />
       <section className="bg-luxuryBlack py-16">
