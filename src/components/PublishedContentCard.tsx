@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { PublishedContent } from "@/lib/publishing";
 import { formatDate } from "@/lib/utils";
+import { localizeGenericStockImage } from "@/lib/localized-images";
 
 function hasMeaningfulDate(value: string) {
   const date = new Date(value);
@@ -16,7 +17,7 @@ export function PublishedContentCard({ item, priority = false }: { item: Publish
     <article className="group overflow-hidden rounded-lg border border-royalGold/18 bg-charcoal transition hover:-translate-y-1 hover:border-royalGold/45">
       <Link href={href} className="block overflow-hidden">
         <Image
-          src={item.image}
+          src={localizeGenericStockImage(item.image) || "/images/firm/firm-team.jpg"}
           alt={item.imageAlt}
           width={720}
           height={450}
