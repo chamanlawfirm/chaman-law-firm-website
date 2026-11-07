@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { localizeGenericStockImage } from "@/lib/localized-images";
 
 type PageHeroProps = {
   eyebrow?: string;
@@ -15,7 +16,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, cta }: 
     <section className="relative overflow-hidden border-b border-royalGold/15 bg-charcoal">
       {image ? (
         <Image
-          src={image}
+          src={localizeGenericStockImage(image) || "/images/firm/firm-office-team.jpg"}
           alt={imageAlt || `${title} — Chaman Law Firm`}
           fill
           sizes="100vw"
