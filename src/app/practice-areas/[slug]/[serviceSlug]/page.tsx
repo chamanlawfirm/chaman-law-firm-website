@@ -78,7 +78,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         eyebrow={area.title}
         title={service.title}
         description={service.description}
-        image={service.image || "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80"}
+        image={service.image || "/images/firm/firm-team.jpg"}
         imageAlt={service.imageAlt || `${service.title} legal service by Chaman Law Firm`}
         cta={{ label: "Book Consultation", href: "/consultation" }}
       />
