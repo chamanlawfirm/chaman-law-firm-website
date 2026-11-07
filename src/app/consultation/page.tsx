@@ -28,7 +28,7 @@ export default async function ConsultationPage() {
         eyebrow="Book Consultation"
         title={consultationContent.title}
         description={consultationContent.copy}
-        image="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/managing-partner-office.png"
         cta={{ label: "Request Consultation", href: "#consultation-form" }}
       />
       <section className="bg-luxuryBlack py-16">
