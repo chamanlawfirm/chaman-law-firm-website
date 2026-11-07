@@ -16,6 +16,7 @@ import { getArticleHeadings } from "@/lib/article";
 import type { PublishedContent } from "@/lib/publishing";
 import { breadcrumbSchema, faqSchema, publishedContentSchema } from "@/lib/schema";
 import { formatDate } from "@/lib/utils";
+import { localizeGenericStockImage } from "@/lib/localized-images";
 
 function hasMeaningfulDate(value: string) {
   const date = new Date(value);
@@ -68,7 +69,7 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
               </div>
               <div className="overflow-hidden rounded-lg border border-royalGold/18">
                 <Image
-                  src={content.image}
+                  src={localizeGenericStockImage(content.image) || "/images/firm/firm-office-team.jpg"}
                   alt={content.imageAlt}
                   width={1200}
                   height={760}
