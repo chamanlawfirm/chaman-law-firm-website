@@ -49,7 +49,7 @@ export default async function LegalBlogPage({ searchParams }: PageProps) {
         eyebrow="Legal Blog"
         title="Practical legal insight for safer decisions"
         description="Explore legal articles on property, business, disputes, estates, documentation, immigration, family law and diaspora client needs."
-        image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-team.jpg"
         cta={{ label: "Book Consultation", href: "/consultation" }}
       />
 
