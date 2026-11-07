@@ -30,7 +30,7 @@ export default async function ContactPage() {
         eyebrow="Contact"
         title="Speak with Chaman Law Firm"
         description="Reach the firm by phone, WhatsApp, email, office visit, or enquiry form for legal support and consultation scheduling."
-        image="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-office-team.jpg"
       />
       <section className="bg-luxuryBlack py-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
