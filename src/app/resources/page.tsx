@@ -46,7 +46,7 @@ export default async function ResourcesPage() {
         eyebrow="Resources"
         title="A legal knowledge platform for clients, investors, businesses and diaspora communities"
         description="Explore practical articles, checklists, answers and legal updates to help you understand your options under Nigerian law."
-        image="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1800&q=80"
+        image="/images/firm/firm-team.jpg"
         cta={{ label: "Download Resources", href: "/resources/downloads" }}
       />
       <section className="bg-luxuryBlack py-16">
