@@ -160,6 +160,11 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
     if (name.length < 2) fields.push("name");
     if (!hasValidPhone(phone)) fields.push("phone");
     if (message.length < 10) fields.push("message");
+    if (source.startsWith("Campaign landing page:")) {
+      if (nigeriaState.length < 2) fields.push("nigeriaState");
+      if (!["Ready to instruct", "Documents received", "Transaction in progress", "Researching options"].includes(matterStage)) fields.push("matterStage");
+      if (!["Buyer or investor", "Owner or seller", "Director or founder", "Executor or beneficiary", "Other"].includes(instructingRole)) fields.push("instructingRole");
+    }
   }
 
   if (phone && !hasValidPhone(phone)) fields.push("phone");
