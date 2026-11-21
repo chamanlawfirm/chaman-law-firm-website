@@ -12,6 +12,7 @@ const footerColumns = [
       { label: "Lawyers", href: "/lawyers" },
       { label: "Careers", href: "/careers" },
       { label: "Book Consultation", href: "/consultation" },
+      { label: "Secure Client Payments", href: "/payments" },
       { label: "Contact", href: "/contact" },
       { label: "Client Feedback", href: "/client-feedback" }
     ]

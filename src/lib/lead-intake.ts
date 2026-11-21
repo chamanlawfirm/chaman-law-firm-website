@@ -18,6 +18,10 @@ export type ValidatedLead = {
   country?: string;
   preferredContact?: string;
   urgency?: string;
+  nigeriaState?: string;
+  matterStage?: string;
+  transactionBand?: string;
+  instructingRole?: string;
   landingPage?: string;
   referrer?: string;
   utmSource?: string;
@@ -53,6 +57,10 @@ const allowedKeys = new Set([
   "country",
   "preferredContact",
   "urgency",
+  "nigeriaState",
+  "matterStage",
+  "transactionBand",
+  "instructingRole",
   "landingPage",
   "referrer",
   "utmSource",
@@ -127,6 +135,10 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
   const country = cleanSingleLine(payload.country, 100);
   const preferredContact = cleanSingleLine(payload.preferredContact, 40);
   const urgency = cleanSingleLine(payload.urgency, 60);
+  const nigeriaState = cleanSingleLine(payload.nigeriaState, 100);
+  const matterStage = cleanSingleLine(payload.matterStage, 100);
+  const transactionBand = cleanSingleLine(payload.transactionBand, 60);
+  const instructingRole = cleanSingleLine(payload.instructingRole, 100);
   const landingPage = cleanSingleLine(payload.landingPage, 500);
   const referrer = cleanSingleLine(payload.referrer, 500);
   const utmSource = cleanSingleLine(payload.utmSource, 160);
@@ -148,6 +160,11 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
     if (name.length < 2) fields.push("name");
     if (!hasValidPhone(phone)) fields.push("phone");
     if (message.length < 10) fields.push("message");
+    if (source.startsWith("Campaign landing page:")) {
+      if (nigeriaState.length < 2) fields.push("nigeriaState");
+      if (!["Ready to instruct", "Documents received", "Transaction in progress", "Researching options"].includes(matterStage)) fields.push("matterStage");
+      if (!["Buyer or investor", "Owner or seller", "Director or founder", "Executor or beneficiary", "Other"].includes(instructingRole)) fields.push("instructingRole");
+    }
   }
 
   if (phone && !hasValidPhone(phone)) fields.push("phone");
@@ -174,6 +191,10 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
       country: country || undefined,
       preferredContact: preferredContact || undefined,
       urgency: urgency || undefined,
+      nigeriaState: nigeriaState || undefined,
+      matterStage: matterStage || undefined,
+      transactionBand: transactionBand || undefined,
+      instructingRole: instructingRole || undefined,
       landingPage: landingPage || undefined,
       referrer: referrer || undefined,
       utmSource: utmSource || undefined,

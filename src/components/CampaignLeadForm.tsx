@@ -113,6 +113,42 @@ export function CampaignLeadForm({ campaign, serviceName, prompt }: CampaignLead
             <option value="Immediate deadline">Immediate deadline</option>
           </select>
         </label>
+        <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+          Nigerian state involved
+          <input required name="nigeriaState" minLength={2} maxLength={100} placeholder="e.g. Lagos, Ogun, Abuja FCT" className="rounded-md border border-royalGold/20 bg-luxuryBlack px-4 py-3 font-normal text-ivory" />
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+          Current stage
+          <select required name="matterStage" defaultValue="" className="rounded-md border border-royalGold/20 bg-luxuryBlack px-4 py-3 font-normal text-ivory">
+            <option value="" disabled>Select a stage</option>
+            <option value="Ready to instruct">Ready to instruct counsel</option>
+            <option value="Documents received">Documents or offer received</option>
+            <option value="Transaction in progress">Transaction or estate in progress</option>
+            <option value="Researching options">Researching options</option>
+          </select>
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+          Your role
+          <select required name="instructingRole" defaultValue="" className="rounded-md border border-royalGold/20 bg-luxuryBlack px-4 py-3 font-normal text-ivory">
+            <option value="" disabled>Select your role</option>
+            <option value="Buyer or investor">Buyer or investor</option>
+            <option value="Owner or seller">Owner or seller</option>
+            <option value="Director or founder">Director or founder</option>
+            <option value="Executor or beneficiary">Executor or beneficiary</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+          Transaction or estate value (optional)
+          <select name="transactionBand" defaultValue="" className="rounded-md border border-royalGold/20 bg-luxuryBlack px-4 py-3 font-normal text-ivory">
+            <option value="">Prefer to discuss privately</option>
+            <option value="Below NGN 50m">Below ₦50m</option>
+            <option value="NGN 50m-150m">₦50m–₦150m</option>
+            <option value="NGN 150m-500m">₦150m–₦500m</option>
+            <option value="Above NGN 500m">Above ₦500m</option>
+            <option value="Not applicable">Not applicable</option>
+          </select>
+        </label>
       </div>
       <input type="hidden" name="interest" value={serviceName} />
       <label className="mt-4 grid gap-2 text-sm font-semibold text-ivory/82">

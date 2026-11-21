@@ -22,6 +22,29 @@ export type AdCampaign = {
 
 export const adCampaigns: AdCampaign[] = [
   {
+    slug: "buy-property-nigeria-from-abroad",
+    eyebrow: "Nigerian Property Counsel for Buyers Abroad",
+    title: "Buy Property in Nigeria with Independent Legal Counsel",
+    shortTitle: "Property Purchase",
+    description: "Instruct Nigerian counsel before you commit funds. We review the seller's authority, title, survey, contract and completion steps, and report clearly while you remain abroad.",
+    metaTitle: "Buy Property in Nigeria from Abroad | Chaman Law Firm",
+    metaDescription: "Independent Nigerian property lawyers for diaspora buyers. Review title, seller authority, contracts and completion before paying for property in Nigeria.",
+    keywords: ["property lawyer Nigeria diaspora", "buy property in Nigeria from abroad lawyer", "conveyancing lawyer Lagos", "Nigerian property purchase legal advice"],
+    audience: ["Nigerians in the US, UK and Canada buying at home", "Buyers assessing a named property or seller", "Families purchasing a home or investment property", "Investors who require documented remote representation"],
+    services: ["Seller capacity and authority checks", "Title, survey and encumbrance review", "Purchase contract and payment milestone advice", "Deed preparation and completion oversight", "Perfection and post-completion advice", "Written updates for buyers based abroad"],
+    risks: ["Paying a deposit before independent title review", "Relying only on an agent or the seller's documents", "Missing consent, registration or survey issues", "Signing terms that do not protect the buyer"],
+    process: ["Describe the property, location and transaction stage", "Complete conflict checks and agree the legal scope", "Review title, authority, survey and contract evidence", "Receive written findings and a clear completion plan"],
+    documents: ["Property address and survey plan", "Seller's title and identity documents", "Offer letter or draft sale agreement", "Any deposit request and payment timetable"],
+    faqs: [
+      { question: "Can I instruct you while living outside Nigeria?", answer: "Yes. We can begin remotely, review available documents and agree how identity checks, execution and local representation will work for your transaction." },
+      { question: "When should a lawyer review the property?", answer: "Before paying a material deposit or signing binding purchase terms. The scope of registry and survey searches depends on the location and title." },
+      { question: "Can you guarantee a clean title?", answer: "No. We assess the available evidence and relevant searches, identify risks and recommend appropriate safeguards before completion." }
+    ],
+    formPrompt: "Tell us the state, property type, purchase stage and documents you have. Please do not send sensitive documents through this form.",
+    whatsappMessage: "Hello Chaman Law Firm, I am abroad and need independent legal help buying property in Nigeria.",
+    heroImage: "/images/firm/firm-office-team.jpg"
+  },
+  {
     slug: "diaspora-legal-services-nigeria",
     eyebrow: "Legal Representation for Nigerians Abroad",
     title: "Trusted Nigerian Legal Support for Diaspora Clients",
