@@ -16,6 +16,7 @@ function thankYouTypeForSource(source: string) {
 }
 
 export function LeadForm({ source, title = "Send an Inquiry", submitLabel = "Submit Inquiry" }: LeadFormProps) {
+  const isConsultation = source === "Consultation page";
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
@@ -106,6 +107,31 @@ export function LeadForm({ source, title = "Send an Inquiry", submitLabel = "Sub
             <option>Career or internship</option>
           </select>
         </label>
+        {isConsultation ? (
+          <>
+            <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+              Where are you based?
+              <select name="country" required defaultValue="" className="rounded-md border border-royalGold/15 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory">
+                <option value="" disabled>Select your location</option>
+                <option>Nigeria</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Other</option>
+              </select>
+            </label>
+            <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+              Stage of your matter
+              <select name="matterStage" required defaultValue="" className="rounded-md border border-royalGold/15 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory">
+                <option value="" disabled>Select current stage</option>
+                <option>Ready to instruct</option><option>Documents received</option><option>Transaction in progress</option><option>Researching options</option>
+              </select>
+            </label>
+            <label className="grid gap-2 text-sm font-semibold text-ivory/82">
+              Timing
+              <select name="urgency" required defaultValue="" className="rounded-md border border-royalGold/15 bg-luxuryBlack px-4 py-3 text-sm font-normal text-ivory">
+                <option value="" disabled>When do you need assistance?</option>
+                <option>Within 48 hours</option><option>Within one week</option><option>Within one month</option><option>Planning ahead</option>
+              </select>
+            </label>
+          </>
+        ) : null}
         <label className="grid gap-2 text-sm font-semibold text-ivory/82">
           Brief description of your request
           <textarea
