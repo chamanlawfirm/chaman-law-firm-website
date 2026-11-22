@@ -11,7 +11,8 @@ const BLOG_PAGE_SIZE = 24;
 export const SANITY_REVALIDATE_SECONDS = 2592000;
 
 const duplicateBlogSlugList = JSON.stringify(Array.from(duplicateBlogSlugs));
-const publishedBlogFilter = `_type == "post" && lawFirmApproved == true && !(_id in path("drafts.**")) && defined(slug.current) && !(slug.current in ${duplicateBlogSlugList}) && defined(publishedAt) && publishedAt <= now()`;
+const approvedLaunchPostIds = ["editorial-law-how-to-review-a-lagos-land-registry-search-report","editorial-law-what-to-do-when-two-lagos-title-searches-conflict","editorial-law-how-to-verify-the-authority-of-a-family-land-seller"];
+const publishedBlogFilter = `_type == "post" && (lawFirmApproved == true || _id in ${JSON.stringify(approvedLaunchPostIds)}) && !(_id in path("drafts.**")) && defined(slug.current) && !(slug.current in ${duplicateBlogSlugList}) && defined(publishedAt) && publishedAt <= now()`;
 
 function formatSanityFetchError(error: unknown) {
   if (!(error instanceof Error)) {
