@@ -14,6 +14,7 @@ export type Lawyer = {
   awards: string[];
   philosophy: string;
   image: string;
+  preservePortraitFraming?: boolean;
 };
 
 export const lawyers: Lawyer[] = [
@@ -137,31 +138,32 @@ export const lawyers: Lawyer[] = [
   {
     slug: "ibraheem-akewusola",
     name: "Ibraheem Akewusola",
-    position: "Associate",
+    position: "Legal Associate",
     credentials: ["LL.B", "B.L"],
     summary:
-      "Ibraheem Akewusola, Esq. is an Associate supporting corporate advisory, property transactions, legal drafting, dispute resolution, research and regulatory compliance.",
+      "Ibraheem Akewusola, Esq. advises and supports individuals and businesses on property transactions, commercial agreements, regulatory compliance and civil disputes.",
     biography: [
-      "Ibraheem Akewusola, Esq. is a dedicated legal practitioner and Associate at Chaman Law Firm. He supports clients through careful research, legal drafting, transaction support and practical advisory work.",
-      "His areas of interest include corporate and commercial law, contracts, property documentation, due diligence, conveyancing, civil litigation support, negotiation and regulatory compliance.",
-      "He remains committed to continuous professional development and to delivering responsive, reliable and value-driven legal support."
+      "Ibraheem Akewusola, Esq. is a Legal Associate at Chaman Law Firm and a Barrister and Solicitor of the Supreme Court of Nigeria. He earned his LL.B from Al-Hikmah University, Ilorin, in 2023 and his B.L from the Nigerian Law School, Abuja Campus, in 2025.",
+      "His work spans corporate and commercial advisory, property transactions and civil litigation support. He researches legal issues, drafts and reviews agreements and other instruments, and assists with contract negotiations, property due diligence and conveyancing. He also supports clients and the firm's legal team on regulatory compliance and dispute resolution.",
+      "Ibraheem brings a commercially minded approach to his work, helping clients understand the legal consequences of a proposed transaction or course of action. He keeps abreast of developments in his areas of practice. Outside work, he enjoys reading, listening to music and exercising."
     ],
     practiceAreas: ["Corporate & Commercial Law", "Property & Real Estate Law", "Litigation & Dispute Resolution"],
     memberships: [],
     admissions: ["Barrister and Solicitor of the Supreme Court of Nigeria"],
     experience: [
       "Legal research, case analysis and preparation of legal opinions",
-      "Contract drafting, review and corporate-compliance support",
-      "Property documentation, due diligence and conveyancing support",
-      "Civil litigation and alternative dispute-resolution support",
-      "Client advisory, regulatory research and transaction support"
+      "Contract drafting, review and negotiation support",
+      "Property documentation, due diligence and conveyancing",
+      "Corporate advisory and regulatory compliance",
+      "Civil litigation and dispute resolution support"
     ],
     publications: [],
     mediaFeatures: [],
     awards: [],
     philosophy:
       "Professional legal service should be grounded in integrity, accountability, continuous learning and practical problem-solving.",
-    image: "/images/lawyers/ibraheem-akewusola.jpg"
+    image: "/images/lawyers/ibraheem-akewusola.png",
+    preservePortraitFraming: true
   },
   {
     slug: "martha-elendu",
@@ -220,6 +222,79 @@ export const lawyers: Lawyer[] = [
     philosophy:
       "Effective legal service is built on professionalism, integrity, diligence, attention to detail and genuine commitment to the client's interests.",
     image: "/images/lawyers/victoria-nwofia.jpg"
+  },
+  {
+    slug: "stephen-chukwudi",
+    name: "Stephen Chukwudi",
+    position: "Legal Associate",
+    credentials: [],
+    summary:
+      "Stephen Chukwudi, Esq. is a Legal Associate with a focus on property documentation, title verification, legal due diligence and conveyancing.",
+    biography: [
+      "Stephen Chukwudi, Esq. is a Legal Associate at Chaman Law Firm. His principal interest is Nigerian real estate law, particularly the work that helps clients assess property before committing to a purchase. His interests include reviewing title documents, verifying ownership and preparing the documents needed to transfer an interest in land.",
+      "Stephen also takes an interest in corporate and commercial law, contract drafting and intellectual property. He is committed to developing his practice through careful legal analysis, clear communication and attention to the practical questions clients bring to the firm."
+    ],
+    practiceAreas: ["Property & Real Estate Law", "Corporate & Commercial Law"],
+    memberships: [],
+    admissions: [],
+    experience: [],
+    publications: [],
+    mediaFeatures: [],
+    awards: [],
+    philosophy: "",
+    image: "/images/lawyers/stephen-chukwudi.png",
+    preservePortraitFraming: true
+  },
+  {
+    slug: "elijah-adomeh",
+    name: "Elijah Adomeh",
+    position: "Associate",
+    credentials: [],
+    summary:
+      "Elijah Adomeh is an Associate whose practice interests include corporate finance, commercial transactions, real estate and dispute resolution.",
+    biography: [
+      "Elijah Adomeh is an Associate at Chaman Law Firm with a particular interest in corporate advisory and commercial transactions. His practice interests centre on how legal and financial considerations shape the terms of a deal and the obligations each party assumes.",
+      "His interests extend to real estate and dispute resolution. Across these areas, he is interested in how the terms agreed at the outset affect the parties' options when a transaction changes course or a dispute arises."
+    ],
+    practiceAreas: ["Corporate & Commercial Law", "Property & Real Estate Law", "Litigation & Dispute Resolution"],
+    memberships: [],
+    admissions: [],
+    experience: [],
+    publications: [],
+    mediaFeatures: [],
+    awards: [],
+    philosophy: "",
+    image: "/images/lawyers/elijah-adomeh.png",
+    preservePortraitFraming: true
+  },
+  {
+    slug: "omolola-m-adeshina",
+    name: "Omolola M. Adeshina",
+    position: "Associate",
+    credentials: ["LL.B", "B.L"],
+    summary:
+      "Omolola M. Adeshina, Esq. works on civil disputes, property transactions and client advisory matters and supports project coordination for the Chaman Dispute Resolution Centre.",
+    biography: [
+      "Omolola M. Adeshina, Esq. is an Associate at Chaman Law Firm. She earned her LL.B from Lagos State University and was called to the Nigerian Bar in July 2025 after completing her professional training at the Nigerian Law School, Bwari.",
+      "Her experience includes court representation, litigation support, client consultations, legal research, and drafting and reviewing legal documents. She works on contentious and non-contentious matters, with particular interests in property documentation, dispute management, corporate and commercial law, and regulatory compliance.",
+      "Omolola also supports project coordination for the Chaman Dispute Resolution Centre (CDRC), where she contributes to the development and implementation of the Centre's operating framework and dispute resolution initiatives. Her experience in organisational operations, human resource support and stakeholder engagement informs how she coordinates matters and communicates with the people involved."
+    ],
+    practiceAreas: ["Litigation & Dispute Resolution", "Property & Real Estate Law", "Corporate & Commercial Law", "ADR / Mediation"],
+    memberships: [],
+    admissions: ["Called to the Nigerian Bar, July 2025"],
+    experience: [
+      "Court representation, legal research and litigation support",
+      "Client consultation, legal advisory and matter coordination",
+      "Property transactions and drafting and review of legal documents",
+      "Project coordination for the Chaman Dispute Resolution Centre"
+    ],
+    publications: [],
+    mediaFeatures: [],
+    awards: [],
+    philosophy:
+      "Omolola approaches client matters with diligence, clear communication and a commitment to ethical practice.",
+    image: "/images/lawyers/omolola-m-adeshina.png",
+    preservePortraitFraming: true
   }
 ];
 

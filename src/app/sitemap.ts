@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllServicePages, practiceAreas } from "@/data/practice-areas";
 import { getBlogPostSlugs } from "@/lib/cms";
+import { getLawyers } from "@/lib/legal-cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 import { adCampaigns } from "@/data/ad-campaigns";
@@ -19,7 +20,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/practice-areas",
     "/lawyers",
-    "/lawyers/charles-chukwuma-nkwoka",
     "/resources",
     "/resources/blog",
     "/resources/legal-news",
@@ -41,7 +41,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/terms-of-use",
     "/legal-disclaimer"
   ];
-  const [blogSlugs, publishedGroups] = await Promise.all([
+  const [lawyers, blogSlugs, publishedGroups] = await Promise.all([
+    getLawyers(),
     getBlogPostSlugs(),
     Promise.all(publishingKinds.map((kind) => getPublishedContent(kind, 500)))
   ]);
@@ -73,6 +74,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: route === "/lawyer-in-ikeja" || route === "/law-firm-in-arepo" || route === "/offices/abuja-wuse-zone-1" || route === "/offices/magodo-gra" || route === "/offices/lekki" ? officePageLastModified : lastModified,
       changeFrequency: "weekly" as const,
       priority: route === "" ? 1 : 0.8
+    })),
+    ...lawyers.map(({ slug }) => ({
+      url: `${siteConfig.url}/lawyers/${slug}`
     })),
     ...practiceAreas.map((area) => ({
       url: `${siteConfig.url}/practice-areas/${area.slug}`,
