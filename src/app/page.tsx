@@ -158,6 +158,7 @@ export default async function HomePage() {
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-royalGold">Signature Expertise</p>
             <h2 className="mt-3 font-heading text-4xl font-semibold leading-tight">{home.signatureExpertise.title}</h2>
             <p className="mt-5 text-base leading-8 text-ink/72">{home.signatureExpertise.copy}</p>
+            <Link href="/property-lawyers-nigeria" className="mt-5 inline-flex items-center gap-2 font-bold text-ink underline decoration-royalGold underline-offset-4">Find a property lawyer by location <ArrowRight size={17}/></Link>
             <div className="mt-8">
               <WhatsAppCTA message="Hello Chaman Law Firm, I need legal support for a property, business, or diaspora matter." />
             </div>

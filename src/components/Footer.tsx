@@ -27,6 +27,7 @@ const footerColumns = [
   {
     title: "Client Needs",
     links: [
+      { label: "Property Lawyers Across Nigeria", href: "/property-lawyers-nigeria" },
       { label: "Speak With a Lawyer", href: "/consultation" },
       { label: "Diaspora Legal Support", href: "/practice-areas/property-real-estate-law" },
       { label: "Notary Public", href: "/practice-areas/notary-public-services" },

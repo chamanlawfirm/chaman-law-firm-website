@@ -5,6 +5,7 @@ import { getLawyers } from "@/lib/legal-cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 import { adCampaigns } from "@/data/ad-campaigns";
+import { propertyLocations } from "@/data/property-locations";
 
 export const revalidate = 3600;
 
@@ -31,6 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/careers",
     "/contact",
     "/consultation",
+    "/property-lawyers-nigeria",
     "/lawyer-in-ikeja",
     "/law-firm-in-arepo",
     "/offices/abuja-wuse-zone-1",
@@ -89,6 +91,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.92
+    })),
+    ...propertyLocations.map((item) => ({
+      url: `${siteConfig.url}/property-lawyers/${item.slug}`,
+      lastModified: new Date("2026-11-22T00:00:00.000Z"),
+      changeFrequency: "monthly" as const,
+      priority: 0.84
     })),
     ...serviceRoutes,
     ...articleRoutes,

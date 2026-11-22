@@ -85,6 +85,14 @@ export default async function PracticeAreaPage({ params }: PracticeAreaPageProps
         image="/images/firm/firm-office-team.jpg"
         cta={{ label: consultationLabel, href: "/consultation" }}
       />
+      {area.slug === "property-real-estate-law" && (
+        <section className="border-y border-royalGold/20 bg-charcoal py-7 text-ivory">
+          <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
+            <div><p className="text-xs font-bold uppercase tracking-widest text-royalGold">Local property-law guidance</p><p className="mt-2 font-heading text-xl">Buying, selling or resolving a title issue in Nigeria?</p></div>
+            <Link href="/property-lawyers-nigeria" className="inline-flex items-center gap-2 rounded-full bg-royalGold px-6 py-3 text-sm font-bold text-luxuryBlack hover:bg-champagne">Explore property lawyers by location <ArrowRight size={17}/></Link>
+          </div>
+        </section>
+      )}
       <section className="bg-luxuryBlack py-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
