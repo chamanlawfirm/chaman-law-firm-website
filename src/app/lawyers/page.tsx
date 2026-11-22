@@ -84,17 +84,19 @@ export default async function LawyersPage() {
             {legalTeam.map((lawyer) => (
               <article key={lawyer.slug} className="overflow-hidden rounded-lg border border-royalGold/16 bg-luxuryBlack">
                 <div className="relative h-80">
-                  <Image src={lawyer.image} alt={`${lawyer.name}, Esq.`} fill sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover object-top" />
+                  <Image src={lawyer.image} alt={`${lawyer.name}, Esq.`} fill sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw" className={lawyer.preservePortraitFraming ? "object-contain" : "object-cover object-top"} />
                 </div>
                 <div className="p-6">
                   <p className="text-xs font-bold uppercase tracking-[0.22em] text-royalGold">{lawyer.position}</p>
                   <h2 className="mt-3 font-heading text-2xl font-semibold text-ivory">{lawyer.name}, Esq.</h2>
                   <p className="mt-4 text-sm leading-7 text-ivory/68">{lawyer.summary}</p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {lawyer.credentials.map((credential) => (
-                      <span key={credential} className="rounded-full border border-royalGold/18 px-3 py-1 text-xs text-royalGold">{credential}</span>
-                    ))}
-                  </div>
+                  {lawyer.credentials.length > 0 && (
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {lawyer.credentials.map((credential) => (
+                        <span key={credential} className="rounded-full border border-royalGold/18 px-3 py-1 text-xs text-royalGold">{credential}</span>
+                      ))}
+                    </div>
+                  )}
                   <Link href={`/lawyers/${lawyer.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-royalGold hover:text-champagne">
                     View lawyer profile <ArrowRight size={16} />
                   </Link>

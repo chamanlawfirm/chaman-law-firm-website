@@ -66,7 +66,7 @@ export default async function LawyerPage({ params }: LawyerPageProps) {
       <section className="bg-luxuryBlack">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:py-24">
           <div className="relative min-h-[520px] overflow-hidden rounded-lg border border-royalGold/16">
-            <Image src={lawyer.image} alt={lawyer.name} fill priority sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+            <Image src={lawyer.image} alt={lawyer.name} fill priority sizes="(min-width: 1024px) 45vw, 100vw" className={lawyer.preservePortraitFraming ? "object-contain" : "object-cover"} />
           </div>
           <div className="flex flex-col justify-center">
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-royalGold">{lawyer.position}</p>
@@ -74,14 +74,18 @@ export default async function LawyerPage({ params }: LawyerPageProps) {
               {lawyer.name}, Esq.
             </h1>
             <p className="mt-5 text-lg leading-8 text-ivory/72">{lawyer.summary}</p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {lawyer.credentials.map((credential) => (
-                <span key={credential} className="rounded-full border border-royalGold/22 px-3 py-1 text-xs font-semibold text-royalGold">
-                  {credential}
-                </span>
-              ))}
-            </div>
-            <p className="mt-6 text-sm leading-7 text-ivory/68">{lawyer.philosophy}</p>
+            {lawyer.credentials.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {lawyer.credentials.map((credential) => (
+                  <span key={credential} className="rounded-full border border-royalGold/22 px-3 py-1 text-xs font-semibold text-royalGold">
+                    {credential}
+                  </span>
+                ))}
+              </div>
+            )}
+            {lawyer.philosophy && (
+              <p className="mt-6 text-sm leading-7 text-ivory/68">{lawyer.philosophy}</p>
+            )}
             <Link
               href="/consultation"
               className="mt-8 inline-flex w-fit items-center justify-center rounded-full bg-royalGold px-6 py-3 text-sm font-bold text-luxuryBlack transition hover:bg-champagne"
@@ -102,17 +106,19 @@ export default async function LawyerPage({ params }: LawyerPageProps) {
                 ))}
               </div>
             </section>
-            <section className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6 sm:p-8">
-              <h2 className="font-heading text-3xl font-semibold text-ivory">Professional Experience</h2>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {lawyer.experience.map((item) => (
-                  <div key={item} className="flex gap-3 rounded-md border border-royalGold/14 p-4 text-sm font-semibold leading-6 text-ivory/76">
-                    <CheckCircle2 className="mt-0.5 shrink-0 text-royalGold" size={17} />
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </section>
+            {lawyer.experience.length > 0 && (
+              <section className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6 sm:p-8">
+                <h2 className="font-heading text-3xl font-semibold text-ivory">Professional Experience</h2>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {lawyer.experience.map((item) => (
+                    <div key={item} className="flex gap-3 rounded-md border border-royalGold/14 p-4 text-sm font-semibold leading-6 text-ivory/76">
+                      <CheckCircle2 className="mt-0.5 shrink-0 text-royalGold" size={17} />
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
             <section className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6 sm:p-8">
               <h2 className="font-heading text-3xl font-semibold text-ivory">Practice Areas</h2>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -148,24 +154,26 @@ export default async function LawyerPage({ params }: LawyerPageProps) {
             ) : null}
           </div>
           <aside className="space-y-5">
-            <div className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6">
-              <GraduationCap className="text-royalGold" />
-              <h2 className="mt-4 font-heading text-2xl font-semibold text-ivory">Credentials</h2>
-              <ul className="mt-4 space-y-2 text-sm text-ivory/70">
-                {lawyer.credentials.map((credential) => (
-                  <li key={credential} className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 shrink-0 text-royalGold" size={15} />
-                    {credential}
-                  </li>
-                ))}
-              </ul>
-              {lawyer.admissions.length ? (
-                <div className="mt-5 border-t border-royalGold/12 pt-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-royalGold">Admission</p>
-                  {lawyer.admissions.map((admission) => <p key={admission} className="mt-2 text-sm leading-6 text-ivory/70">{admission}</p>)}
-                </div>
-              ) : null}
-            </div>
+            {(lawyer.credentials.length > 0 || lawyer.admissions.length > 0) && (
+              <div className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6">
+                <GraduationCap className="text-royalGold" />
+                <h2 className="mt-4 font-heading text-2xl font-semibold text-ivory">Credentials</h2>
+                <ul className="mt-4 space-y-2 text-sm text-ivory/70">
+                  {lawyer.credentials.map((credential) => (
+                    <li key={credential} className="flex gap-2">
+                      <CheckCircle2 className="mt-0.5 shrink-0 text-royalGold" size={15} />
+                      {credential}
+                    </li>
+                  ))}
+                </ul>
+                {lawyer.admissions.length ? (
+                  <div className="mt-5 border-t border-royalGold/12 pt-4">
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-royalGold">Admission</p>
+                    {lawyer.admissions.map((admission) => <p key={admission} className="mt-2 text-sm leading-6 text-ivory/70">{admission}</p>)}
+                  </div>
+                ) : null}
+              </div>
+            )}
             {lawyer.memberships.length ? (
               <div className="rounded-lg border border-royalGold/16 bg-luxuryBlack p-6">
                 <Award className="text-royalGold" />

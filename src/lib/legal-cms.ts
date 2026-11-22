@@ -187,6 +187,8 @@ function normalizeLawyer(lawyer: SanityLawyer): Lawyer | null {
 
   const fallback = fallbackLawyers.find((item) => item.slug === lawyer.slug);
 
+  const photo = imageUrl(lawyer.photo);
+
   return {
     slug: lawyer.slug,
     name: lawyer.name,
@@ -202,7 +204,8 @@ function normalizeLawyer(lawyer: SanityLawyer): Lawyer | null {
     mediaFeatures: lawyer.mediaAppearances?.length ? lawyer.mediaAppearances : fallback?.mediaFeatures || [],
     awards: lawyer.awards?.length ? lawyer.awards : fallback?.awards || [],
     philosophy: lawyer.philosophy || fallback?.philosophy || "",
-    image: imageUrl(lawyer.photo) || fallback?.image || ""
+    image: photo || fallback?.image || "",
+    preservePortraitFraming: !photo && fallback?.preservePortraitFraming
   };
 }
 
