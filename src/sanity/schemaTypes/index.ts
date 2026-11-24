@@ -23,6 +23,8 @@ import {courtUpdateType} from './courtUpdateType'
 import {podcastType} from './podcastType'
 import {videoType} from './videoType'
 
+import {researchAuthorType, researchPublicationType} from './researchType'
+
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     blockContentType,
@@ -47,5 +49,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     categoryType,
     authorType,
     postType,
+    researchAuthorType,
+    researchPublicationType,
   ],
 }

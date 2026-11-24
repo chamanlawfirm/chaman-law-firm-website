@@ -3,6 +3,7 @@
 import { ChevronDown, Menu, Phone, Search, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { researchName, researchPath } from "@/data/research";
 import { Logo } from "@/components/Logo";
 import { practiceAreas } from "@/data/practice-areas";
 import { siteConfig } from "@/lib/constants";
@@ -19,6 +20,7 @@ const navigation = [
 ];
 
 const resourceLinks = [
+  { label: researchName, href: researchPath },
   { label: "Blog", href: "/resources/blog" },
   { label: "Nigeria News", href: "/resources/legal-news" },
   { label: "Court Updates", href: "/resources/court-updates" },
@@ -69,7 +71,18 @@ export function Header() {
               </div>
             </div>
           </div>
-          {navigation.slice(2).map((item) => (
+          {navigation.slice(2).map((item) => item.href === "/resources" ? (
+            <div key={item.href} className="group relative">
+              <Link href={item.href} className="inline-flex items-center gap-1 text-sm font-semibold text-ivory/78 transition hover:text-royalGold">
+                {item.label}<ChevronDown size={15} />
+              </Link>
+              <div className="invisible absolute left-0 top-full w-72 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="rounded-lg border border-royalGold/18 bg-charcoal p-2 shadow-gold">
+                  {resourceLinks.map((resource) => <Link key={resource.href} href={resource.href} className="block rounded-md px-3 py-2 text-sm text-ivory hover:bg-luxuryBlack hover:text-royalGold">{resource.label}</Link>)}
+                </div>
+              </div>
+            </div>
+          ) : (
             <Link key={item.href} href={item.href} className="text-sm font-semibold text-ivory/78 transition hover:text-royalGold">
               {item.label}
             </Link>
@@ -108,7 +121,7 @@ export function Header() {
         </button>
       </div>
       {open ? (
-        <div className="border-t border-royalGold/15 bg-charcoal px-4 py-5 xl:hidden">
+        <div className="max-h-[calc(100dvh-5rem)] overflow-y-auto border-t border-royalGold/15 bg-charcoal px-4 py-5 xl:hidden">
           <nav className="mx-auto grid max-w-7xl gap-2" aria-label="Mobile navigation">
             {navigation.map((item) => (
               <Link

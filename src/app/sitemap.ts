@@ -5,6 +5,8 @@ import { getLawyers } from "@/lib/legal-cms";
 import { siteConfig } from "@/lib/constants";
 import { getPublishedContent, publishingKinds } from "@/lib/publishing";
 import { adCampaigns } from "@/data/ad-campaigns";
+import { disciplines, researchPath } from "@/data/research";
+import { getResearchIndex, paperPath } from "@/lib/research";
 import { propertyLocations } from "@/data/property-locations";
 
 export const revalidate = 3600;
@@ -43,10 +45,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/terms-of-use",
     "/legal-disclaimer"
   ];
-  const [lawyers, blogSlugs, publishedGroups] = await Promise.all([
+  const [lawyers, blogSlugs, publishedGroups, research] = await Promise.all([
     getLawyers(),
     getBlogPostSlugs(),
-    Promise.all(publishingKinds.map((kind) => getPublishedContent(kind, 500)))
+    Promise.all(publishingKinds.map((kind) => getPublishedContent(kind, 500))),
+    getResearchIndex().catch(() => [])
   ]);
 
   const serviceRoutes = getAllServicePages().map(({ area, service }) => ({
@@ -100,6 +103,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...serviceRoutes,
     ...articleRoutes,
-    ...publishingRoutes
+    ...publishingRoutes,
+    { url: `${siteConfig.url}${researchPath}` },
+    { url: `${siteConfig.url}${researchPath}/editorial` },
+    ...disciplines.map(({ id }) => ({ url: `${siteConfig.url}${researchPath}/categories/${id}` })),
+    ...research.map((paper) => ({ url: `${siteConfig.url}${paperPath(paper.slug)}`, lastModified: new Date(paper.updatedAt) })),
+    ...[...new Set(research.flatMap((paper) => paper.authors.map((author) => author.slug)))].map((slug) => ({ url: `${siteConfig.url}${researchPath}/authors/${slug}` }))
   ];
 }
