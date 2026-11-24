@@ -121,7 +121,7 @@ export function Header() {
         </button>
       </div>
       {open ? (
-        <div className="border-t border-royalGold/15 bg-charcoal px-4 py-5 xl:hidden">
+        <div className="max-h-[calc(100dvh-5rem)] overflow-y-auto border-t border-royalGold/15 bg-charcoal px-4 py-5 xl:hidden">
           <nav className="mx-auto grid max-w-7xl gap-2" aria-label="Mobile navigation">
             {navigation.map((item) => (
               <Link

@@ -15,6 +15,10 @@ async function paperFor(params: Props["params"]) {
   return await getResearchPaper((await params).slug) ?? notFound();
 }
 
+function pdfPath(slug: string) {
+  return `${paperPath(slug)}/paper.pdf`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const paper = await paperFor(params);
   return {
@@ -27,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       citation_title: paper.title,
       citation_author: paper.authors.map((item) => item.name),
       citation_publication_date: paper.publishedAt.slice(0, 10).replaceAll("-", "/"),
-      citation_pdf_url: paper.pdf,
+      citation_pdf_url: resolveCanonicalUrl(pdfPath(paper.slug)),
       citation_language: "en",
     },
   };
@@ -35,8 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function Paragraphs({ text, footnoteCount, section }: { text: string; footnoteCount: number; section: string }) {
   return text.split(/\n\s*\n/).map((paragraph, paragraphIndex) =>
-    <p key={paragraphIndex}>{paragraph.split(/(\[\d+\])/).map((part, partIndex) => {
+    <p key={paragraphIndex}>{paragraph.split(/(\[\d+\]|\*[^*]+\*)/).map((part, partIndex) => {
       const number = /^\[(\d+)\]$/.exec(part)?.[1];
+      if (part.startsWith("*") && part.endsWith("*")) return <em key={partIndex}>{part.slice(1, -1)}</em>;
       if (!number || Number(number) < 1 || Number(number) > footnoteCount) return part;
       return <sup key={partIndex}><a id={`ref-${section}-${paragraphIndex}-${partIndex}`} href={`#note-${number}`} aria-label={`Footnote ${number}`}>{part}</a></sup>;
     })}</p>,
@@ -69,7 +74,7 @@ export default async function Paper({ params }: Props) {
         keywords: paper.keywords, articleSection: discipline?.title, wordCount: paper.wordCount, image: paper.featuredImage,
         author: paper.authors.map((item) => ({ "@type": item.institutional ? "Organization" : "Person", name: item.name, url: resolveCanonicalUrl(`${researchPath}/authors/${item.slug}`) })),
         publisher: { "@type": "Organization", name: researchInstitution, url: resolveCanonicalUrl(researchPath) },
-        encoding: { "@type": "MediaObject", contentUrl: paper.pdf, encodingFormat: "application/pdf" },
+        encoding: { "@type": "MediaObject", contentUrl: resolveCanonicalUrl(pdfPath(paper.slug)), encodingFormat: "application/pdf" },
       }} />
       <article id="research-paper" className={`${styles.article} ${styles.section}`}>
         <p>{paper.authors.map((item, index) => <span key={item.slug}>{index > 0 && ", "}<Link href={`${researchPath}/authors/${item.slug}`}>{item.name}</Link></span>)}</p>
@@ -77,7 +82,7 @@ export default async function Paper({ params }: Props) {
         <p>{paper.researchId} · Published <time dateTime={paper.publishedAt}>{researchDate(paper.publishedAt)}</time>
           {paper.reviewedAt && <> · Reviewed <time dateTime={paper.reviewedAt}>{researchDate(paper.reviewedAt)}</time></>}
           {paper.readingMinutes && <> · {paper.readingMinutes} min read</>}</p>
-        <PaperTools citations={citations(paper, canonical)} url={canonical} pdf={paper.pdf} />
+        <PaperTools citations={citations(paper, canonical)} url={canonical} pdf={pdfPath(paper.slug)} />
         <h2 id="abstract">Abstract</h2>
         <Paragraphs text={paper.abstract} footnoteCount={footnoteCount} section="abstract" />
         {!!paper.keywords.length && <p><strong>Keywords</strong> {paper.keywords.join(" · ")}</p>}
