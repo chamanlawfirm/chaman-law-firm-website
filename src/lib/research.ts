@@ -1,6 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { publicClient } from "@/sanity/lib/client";
+import inauguralResearch from "@/data/research/CLRIP-A03.json";
 import { researchPath } from "@/data/research";
 
 type ResearchLink = { _key: string; label: string; url: string };
@@ -39,18 +40,41 @@ const summary = `"slug": slug.current, title, abstract, discipline, publicationT
  publishedAt, "updatedAt": _updatedAt, "keywords": coalesce(keywords, []), readingMinutes,
  "authors": [author->${authorProjection}] + coalesce(coAuthors[]->${authorProjection}, [])`;
 
-export const getResearchIndex = cache(async () =>
-  researchClient.fetch<ResearchSummary[]>(`*[${visible}] | order(publishedAt desc, _id asc) {${summary}}`, {}, options));
+// The inaugural paper was released with the platform. Remove this edition when
+// the same slug is migrated to the registered Sanity research schema.
+const inauguralPaper: ResearchPublication = inauguralResearch;
+const {
+  slug, title, abstract, discipline, publicationType, researchId, publishedAt, updatedAt,
+  keywords, authors, readingMinutes,
+} = inauguralPaper;
+const inauguralSummary: ResearchSummary = {
+  slug, title, abstract, discipline, publicationType, researchId, publishedAt, updatedAt,
+  keywords, authors, readingMinutes,
+};
 
-export const getResearchPaper = cache(async (slug: string) =>
-  researchClient.fetch<ResearchPublication | null>(
+export const getResearchIndex = cache(async () => {
+  try {
+    const publications = await researchClient.fetch<ResearchSummary[]>(
+      `*[${visible} && slug.current != $inauguralSlug] | order(publishedAt desc, _id asc) {${summary}}`,
+      { inauguralSlug: slug }, options);
+    return [...publications, inauguralSummary].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+  } catch (error) {
+    console.error("Research index unavailable in Sanity", error);
+    return [inauguralSummary];
+  }
+});
+
+export const getResearchPaper = cache(async (paperSlug: string) => {
+  if (paperSlug === slug) return inauguralPaper;
+  return researchClient.fetch<ResearchPublication | null>(
     `*[${visible} && slug.current == $slug][0] {
       ${summary}, subtitle, affiliation, methodology, rights, reviewedAt, sections, footnotes, revisions,
       judicialAuthorities, legislation, academicReferences, externalPublications, bibliography, jurisdictions,
       findings, recommendations, wordCount, "pdf": pdf.asset->url, seoTitle, seoDescription, canonicalUrl,
       "featuredImage": featuredImage.asset->url, suggestedCitation,
       "related": relatedPublications[]->[${visible}] { "slug": slug.current, title }
-    }`, { slug }, options));
+    }`, { slug: paperSlug }, options);
+});
 
 export function researchDate(value: string) {
   return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "Africa/Lagos" }).format(new Date(value));

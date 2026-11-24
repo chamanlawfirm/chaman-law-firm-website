@@ -1,0 +1,196 @@
+{
+  "title": "Land Acquisition in Nigeria: Legal Due Diligence, Risks and Investor Protection",
+  "subtitle": "A doctrinal study of title, consent and transaction risk, with a Lagos State case study",
+  "researchId": "CLRIP-A03",
+  "abstract": "A Nigerian acquisition can fail even where the seller supplies a certificate of occupancy, a survey and a clean registry response. Each item answers a different question, and the transaction may still fail because the seller cannot convey the identified interest, an earlier right subsists, the intended use is legally constrained or a statutory condition of alienation remains unmet. This paper examines how the Land Use Act, Lagos State registration law and selected Supreme Court judgments distribute risk between the investigation of title and the completion of a disposition. It asks what the buyer must establish before committing funds, how an executed instrument awaiting consent differs from a completed alienation and which risks can realistically be allocated by contract. It proposes a four-part test addressing the physical parcel, the seller’s right and authority, public-law controls and completion evidence. The analysis distinguishes a register’s evidence from the legal consequences of registration and compares the Nigerian framework with specific priority rules applicable to registered land in England and Wales. The principal finding is that transaction protections work best when matched to the type of uncertainty they address. A title warranty can support a damages claim against a solvent warrantor. It cannot confer authority to sell, remove an earlier right or discharge a statutory condition. The paper proposes a due-diligence record tied to payment milestones and a defined process for escalating unresolved evidence.",
+  "keywords": [
+    "Land Use Act",
+    "land acquisition",
+    "title due diligence",
+    "Governor’s consent",
+    "land registration",
+    "Lagos State",
+    "conveyancing",
+    "investor protection"
+  ],
+  "discipline": "property-and-real-estate",
+  "publicationType": "flagship",
+  "affiliation": "Chaman Law Firm",
+  "methodology": "This is a doctrinal study of the Land Use Act, the gazetted Lagos State Lands Registration Law, reported Nigerian Supreme Court decisions and specified England and Wales legislation. Cases are read in the context of the pleaded transaction, its procedural posture and the relief sought. A comparison is used to isolate how registration and priority allocate risk, without treating foreign rules as applicable in Nigeria. The practical examples are hypothetical and do not estimate the frequency of title defects. The scope excludes compulsory-acquisition valuation, foreign ownership restrictions, tax rates, state-by-state procedural requirements and a comprehensive review of customary law. For a live transaction, parties must verify amendments, the current registry practice and the full terms of any grant, consent or court order.",
+  "sections": [
+    {
+      "_key": "part-1",
+      "heading": "Introduction and research problem",
+      "text": "Title due diligence is often organised around a collection of documents. The working assumption may be that assembling a certificate, prior deed, survey, receipts and a search response will make an acquisition sufficiently secure. That approach describes what the buyer received. A legal opinion must explain what the material establishes, where its probative value ends and what happens if an apparently regular document relates to the wrong parcel or originates from a person with no right to dispose of it. A separate commercial decision is whether, and at what point, a buyer can release money while a remaining question is being settled.\n\nThis study asks three questions. First, what must be established about the parcel and seller independently of a registry result? Secondly, how do the consent provisions of the Land Use Act interact with the execution and completion of the transaction? Thirdly, what kinds of contractual protection remain valuable after the public-law and evidential limits are identified? The objectives are to construct a reproducible method for testing a proposed acquisition and to identify the points at which counsel should stop the transaction, seek evidence, renegotiate or proceed subject to documented conditions. The intended audience includes researchers comparing land administration systems, practitioners preparing title opinions and investors designing acquisition approval processes.\n\nThe analysis distinguishes four legal objects: the land on the ground, the interest the parties intend to transfer, the ability of the seller to transfer that interest and the instrument that gives effect to the transfer. The four may be described together in a conveyance, but they can fail independently. Where a survey shows a ten-metre strip outside the vendor’s perimeter, the issue concerns the subject matter. Where the strip is correctly located but is held by a third party, the issue concerns entitlement. Where the company holds it but the signatory lacks authority, the issue concerns power. Where everything else is established but a consent condition remains outstanding, the issue concerns effectiveness."
+    },
+    {
+      "_key": "part-2",
+      "heading": "Background and analytical framework",
+      "text": "The Land Use Act reorganises land administration around rights of occupancy. Section 1 vests land comprised in the territory of a state in the Governor, subject to the Act’s terms. Sections 5 and 6 assign grant functions to the Governor and local governments in the circumstances described there. Sections 34 and 36 make transitional provision for specified existing interests. In consequence, a lawyer cannot safely reason backwards from the date of the latest instrument and assume that every valid interest begins with a post-1978 allocation. The factual and statutory basis for an earlier right may matter even where later paperwork presents a straightforward government grant. [1]\n\nThree bodies of authority inform the resulting framework. The first is the statutory text, which identifies the character of the right and the constraints on alienation. The second is the case law on proof of title, which explains why the manner of proving the root matters when competing interests are asserted. The third is the registration and priority framework, which determines legal consequences for particular instruments and interests. These bodies of law address associated problems, but their analytical functions differ. A persuasive account of title by customary derivation may still leave a registration question, while a record of registration may leave a dispute about how the uploader or instrument holder acquired the underlying land.\n\nDue diligence here functions as a process of evidence evaluation. A conclusion should be traceable to the source that supports it. Documentary authenticity, identifying correspondence and legal consequence are separate inquiries. A confirmed official copy answers the first inquiry for that record. Matching its description and plan to independent field evidence answers part of the second. Establishing whether the instrument could create, transfer or bind others in relation to the identified right requires interpretation of the governing law and the chronology.\n\nOne implication is that counsel should describe the search coverage with precision. A result may be responsive to one registration number and still say little about a competing grant under a different identifier. A litigation search may be limited by the spelling of names, the courts searched and access to the records. The advocate should state what was searched, when it was searched and which reasonably foreseeable cases or claims fall outside that coverage. A carefully reasoned limitation is part of the legal product. It is especially important where a lender, investment committee or overseas purchaser may otherwise treat the opinion as if every material factual issue had been exhaustively settled."
+    },
+    {
+      "_key": "part-3",
+      "heading": "Literature and policy context",
+      "text": "The World Bank–hosted Nigerian Land Governance Assessment Framework synthesis distinguishes the legal recognition of a range of land rights from the public provision of land information. Its treatment of the completeness, reliability and accessibility of records is useful to conveyancers because it separates weaknesses in record coverage from problems detecting or interpreting what has been recorded. The assessment is historical and reflects its own diagnostic method. It does not establish the present state of Lagos digitisation, the current quality of any particular search product or the existence of a defect in a particular parcel. [2]\n\nThe present paper approaches the same problem from the standpoint of a buyer deciding when to commit funds. Reliance on an accessible register may be efficient where its coverage and legal consequences are understood. An apparently simple search result can produce misplaced confidence where the underlying claim, physical occupation or geographic coverage is unresolved. A policy programme should therefore evaluate transaction certainty across the entire route from identification of land to legally effective completion, including the availability and cost of correcting inconsistent records."
+    },
+    {
+      "_key": "part-4",
+      "heading": "The parcel, occupancy and proposed development",
+      "text": "Verification begins with an unambiguous account of the asset. The contractual description, plan, registered records and seller’s physical identification should refer to the same land. For a subdivision, the buyer should obtain the title and plan from which the new parcel is derived and evidence of how the subdivision relates to both. Where possible, a qualified surveyor should reconcile coordinates, boundaries and improvements and expressly record any discrepancies. An explanation based only on street names or a marketing plan rarely gives the legal team enough information to assess a discrepancy or prepare a precise completion schedule.\n\nAn inspection has an evidential function. Existing dwellings, farm use, fenced access, signs of occupation and structures crossing a boundary can point to a lease, licence, competing right or unresolved delivery-of-possession issue. Physical facts require legal classification. A site representative’s assurance that occupants will leave should lead to questions about their legal basis for remaining, the steps required to obtain possession and the negotiated due date. Where vacant possession is essential, the contract should establish what must be delivered, permit reinspection and identify the consequence of failure.\n\nA development acquisition requires an independent assessment of the proposed use. Counsel and the technical team should ask who controls development approval, whether the grant or lease contains user restrictions, whether easements or access rights support the project and which constraints can be resolved before completion. A buyer can obtain satisfactory evidence of ownership and discover that the parcel does not support the density, access arrangements or permitted use in the investment model. The decision record should therefore show the relevant planning assumptions separately from the title opinion. A contractual condition dealing with intended use should specify whether approval, a formal planning response or another identified item of evidence must be produced.\n\nIn a staged development the need for an enduring access right can be particularly important. A road visible on a brochure may lie outside the vendor’s land or remain under the developer’s control. An existing route can be physically usable and legally insecure. A validly documented right of access must be tested against the plan, the identity of the grantor and the nature of the development. Finance and construction teams may also need confirmation that utilities can follow the same route or have separate access arrangements. Establishing the parcel alone leaves these dependency questions open."
+    },
+    {
+      "_key": "part-5",
+      "heading": "The root of title and the seller’s authority",
+      "text": "The Supreme Court in *Idundun v Okumagba* identified recognised ways of proving ownership, including traditional evidence, authenticated title instruments, acts of ownership over time, long possession and evidence concerning connected or adjacent land. The Court reaffirmed the framework in *Faleye v Dada*. This reinforces the need to read documentation in context. A buyer that traces a grant through a family or community should identify the source of the claimed authority and investigate the competing lines of derivation that the available evidence reveals. The treatment of a particular family transaction depends on the applicable law and evidence. It cannot safely be reduced to a nationwide checklist of required signatories. [3]\n\nIn *Ogunleye v Oni*, competing claims included a statutory certificate and assertions of earlier title. The decision illustrates why a government-issued certificate cannot be read as conclusive in isolation from prior interests and the basis of the holder’s entitlement. Sections 9 and 34 of the Land Use Act also support an inquiry that distinguishes a certificate from the circumstances under which the right arose. The analytical question is how the vendor, or its predecessor, came to hold a right over this parcel and whether an inconsistent prior right had been lawfully determined. [4]\n\nEach link in the chain has to be indexed to an identified person, interest, parcel and transaction. If a previous conveyance purports to cover a larger tract, the link must also support the vendor’s authority over the smaller part now offered. Where there is unexplained overlap with a prior transfer, a clean search on the current record is circumstantial evidence only. Conversely, the absence of a document in a registry response may have a different significance for older customary derivation than for a recent registered disposition. The appropriate response is a focused investigation of the missing link and the governing law, with an explicit conclusion about what can be established.\n\nThe registered or customary right holder must also have the legal capacity and power to enter the sale. A company transaction calls for examination of the entity and the evidence of its internal and external authority, including the signatories and any relevant security or insolvency issues. An estate transaction calls for proof of representative capacity, the scope of the applicable grant or order and any restrictions on the proposed dealings. An agent acting under a power of attorney must demonstrate the scope, the identity of the principal and the continuing validity of the authority. The power of attorney is evidence of authority to act within its terms. Its existence does not resolve the principal’s entitlement or identify the exact subject matter it covers.\n\nA commercially useful report often divides defects by what can cure them. A discrepancy between spellings may be resolved by authoritative identification and the appropriate corrective evidence. A genuine conflict over which legal person owns the share of a parcel that is being sold may require a different conveyance, adjudication or a refusal to proceed. The same checklist item such as “vendor documents incomplete” is too broad to distinguish an administrative correction from a foundational problem."
+    },
+    {
+      "_key": "part-6",
+      "heading": "Consent and the legal structure of completion",
+      "text": "Section 21 of the Land Use Act requires the specified approval or consent for alienation of customary rights of occupancy. In particular, the section distinguishes the cases of a court-ordered sale under the applicable Sheriffs and Civil Process Law from other cases. Section 22 addresses alienation of a statutory right of occupancy and subsection (2) expressly contemplates submission of an executed instrument for endorsement when required. Section 26 gives serious consequences to a transaction or instrument that purports to confer or vest an interest otherwise than in accordance with the Act. The parties must therefore classify the interest and the legal act they intend to perform before choosing their completion sequence. [5]\n\nIn *Savannah Bank of Nigeria Ltd v Ajilo*, the Supreme Court addressed a mortgage of a deemed statutory right and an attempted exercise of mortgage powers. The decision is important both for the treatment of a deemed grant and for the consequences of a mortgage transaction carried into effect without the necessary consent. In *Awojugbagbe Light Industries Ltd v Chinukwe*, the Supreme Court examined an executed mortgage arrangement whose operative effect depended upon consent. It distinguished prior execution in contemplation of consent from the actual alienation, which could not take effect lawfully before consent. Reading the cases together directs attention to the document and what the parties did with it. Mere labels such as “escrow”, “agreement” or “deed” cannot determine the inquiry if the surrounding acts are inconsistent with the intended conditional effect. [6]\n\n*Union Bank of Nigeria Plc v Ayodare & Sons (Nig) Ltd* illustrates a further problem. The existence of a supposed consent does not end the inquiry where its authority or validity is defective. A completion file should preserve the actual consent and its connection to the relevant parties, property and instrument. The officer or source of approval should be verified where there is a material issue. Submitting papers, paying fees or obtaining a receipt may evidence parts of an administrative process. They do not, merely by being produced, establish that the substantive statutory condition has been met. [7]\n\nCommercial drafting should consequently identify which obligations can be undertaken before effective alienation. These may include supplying documents, permitting investigations, signing an instrument conditional upon the necessary approval or cooperating with an application. Money, possession and documents can be controlled through negotiated milestones, provided the agreed steps and actual conduct comply with the applicable law. An instrument held to order should not be released against a condition that remains unsatisfied. If a vendor demands possession transfer, unconditional release of the deed or full non-refundable payment ahead of the verified statutory milestone, counsel should reassess the transaction as structured rather than assume the missing step can later be treated as clerical."
+    },
+    {
+      "_key": "part-7",
+      "heading": "Lagos registration, search coverage and the priority problem",
+      "text": "The Lagos State Lands Registration Law establishes a local statutory framework for registered land. Its provisions on registration and priority should be read with the federal requirements applicable to the kind of interest involved. Section 29 provides a priority rule for documents creating interests in the register, subject to the provisions of that section. Any opinion about rival interests should identify the relevant dates, the instruments, the registry records searched and any qualification that could affect how the priority rule applies. The conclusion should also make clear whether the lawyer is addressing the relative ranking of established interests or the anterior question of whether an instrument created the interest claimed. [8]\n\nIn practice, the registration search should be matched to the survey and acquisition record. A purchaser might be offered a portion of a parent title that appears regular. If a prior charge or restriction affects the parent, the buyer should obtain affirmative evidence of whether or how the deal permits the relevant part to be released. A promise to obtain the release after completion creates a credit risk and a risk that the seller cannot compel release. Those risks should be separated in the legal opinion, even where the purchase agreement includes warranties.\n\nTransaction searches become stale if circumstances change. The buyer should consider a refreshed search before a material release of funds or completion. If a new entry appears, the completion process should stop long enough to classify it and test its effect. A timing rule in the contract may require a refresh immediately before closing. Where access or response times make a fresh search difficult, the response should be a reasoned decision on risk allocation and recorded evidence, not an assertion that the earlier result remains current indefinitely."
+    },
+    {
+      "_key": "part-8",
+      "heading": "Comparison with England and Wales",
+      "text": "The Land Registration Act 2002 offers a useful comparator because it addresses the relationship between completion by registration and priority in relatively explicit terms. Section 27 makes completion by registration necessary for the legal operation of specified dispositions. Section 28 sets out the general priority rule. Section 29 gives a particular priority consequence upon registration of a registrable disposition of a registered estate for value, subject to the statutory protection of earlier interests. Schedule 3 identifies interests that can override in relevant circumstances and includes qualifying interests of persons in actual occupation, subject to the statutory conditions and exceptions. [9]\n\nThe comparison helps isolate two questions that recur in investment decisions. The first is whether an act has created or transferred a legal right. The second is the circumstances in which that right prevails over an earlier competing interest. A practitioner familiar with transactions in England and Wales will recognise why registration and inspection both matter. The doctrinal route in Lagos differs, including the need to account for the Land Use Act consent regime and the relevant terms of local registration law. Neither the English statutory priority rule nor its exceptions should be read across as if the Lagos statute were drafted in the same terms.\n\nThis comparison also illustrates the value of reporting on register design. An accessible record that connects parcel, dealing, court restrictions and priority data can shrink uncertainty in routine transactions. It still has to account for rights or facts that the system does not display and for lawful correction where entries are wrong. Improvements in search usability should be evaluated alongside administrative review procedures, protection against impersonation and practical assistance for groups whose land interests are poorly documented."
+    },
+    {
+      "_key": "part-9",
+      "heading": "Commercial implementation and a worked example",
+      "text": "Consider a purchaser seeking two adjoining lots for a residential project in Lagos. The seller supplies a certificate for a parent parcel and an executed deed from a previous owner. The on-site survey indicates that the second lot intersects ground used by an adjoining household. The registry search identifies a charge on the parent parcel. The seller says that the lender will release the lots after the purchase price is paid and that the occupier has used the area informally. These facts present distinct obstacles and should be recorded separately.\n\nThe survey issue calls for reconciliation of the offered plot with the parent title and an independent account of the boundary. The occupancy issue calls for inquiry into legal entitlement, duration, any agreement and available evidence. The lender’s charge calls for a reliable release mechanism addressed to the particular lots and supported by the necessary parties. Finally, the buyer requires an instrument and process capable of satisfying consent and registration requirements. Resolving the charge will not establish vacant possession. A satisfactory survey will not release the lender’s security. A consent endorsement will not retrospectively cure an agreement made by a seller that did not hold the relevant interest.\n\nA properly documented agreement might require a reconciled plan, an agreed lender release mechanism and verified authority before the bulk of the consideration becomes payable. It may distinguish a refundable deposit, funds that can be applied directly at completion and a retention pending delivery of defined post-completion documents where legitimate. The parties should address who bears the cost of failure, what forms of evidence satisfy each condition, what cooperation is required and when either party can terminate. A long-stop date has limited utility if refund rights cannot in practice be enforced or if the agreement lacks a clear mechanism for funds to remain controlled until closing.\n\nWarranties should be written against known diligence gaps. A declaration that no prior subsisting charge, competing sale or material adverse claim exists can help preserve a claim and allocate the burden of undisclosed risk between the parties. Its commercial value depends on the quality of the counterparty, the language of the remedy, limitations on liability and the available method of enforcement. A seller without meaningful assets offers weak recourse even under a well-drafted warranty. An investor may rationally refuse to rely on damages for a known defect that would block funding, possession, licensing or resale."
+    },
+    {
+      "_key": "part-10",
+      "heading": "Conclusion",
+      "text": "A sound Nigerian land acquisition is built by testing a legal proposition against evidence from several sources. The vendor must have a transferable interest in the land offered, the asset must support the intended use, public-law controls must be satisfied and the documents and conduct must bring about a lawful disposition. The order matters because the buyer bears the greatest risk when funds are irrevocably committed before the remaining uncertainty is understood or assigned to a credible cure. A dated opinion tied to a tested completion sequence helps the parties identify which propositions have been established, which still depend on evidence and which ought to end the purchase."
+    }
+  ],
+  "footnotes": [
+    {
+      "_key": "note-1",
+      "citation": "Land Use Act, Cap L5, Laws of the Federation of Nigeria 2004, ss 1, 5–6, 34 and 36.",
+      "url": "https://login.nipc.gov.ng/assets/resources/land-use-act/land-use-act.pdf"
+    },
+    {
+      "_key": "note-2",
+      "citation": "Peter Adeniyi, Improving Land Sector Governance in Nigeria: Implementation of the Land Governance Assessment Framework (2013) 11–15, 22–24.",
+      "url": "https://thedocs.worldbank.org/en/doc/a91b90185037e5f11e9f99a989ac11dd-0050062013/related/Nigeria-Synthesis.pdf"
+    },
+    {
+      "_key": "note-3",
+      "citation": "Idundun v Okumagba (1976) 9–10 SC 227 (SC); Faleye v Dada [2016] NGSC 25 (SC), discussion of the five methods of proof.",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/2016/25/eng@2016-04-21"
+    },
+    {
+      "_key": "note-4",
+      "citation": "Ogunleye v Oni [1990] NGSC 40 (SC), judgment of Belgore JSC; Land Use Act, ss 9 and 34.",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/1990/40/eng@1990-04-26"
+    },
+    {
+      "_key": "note-5",
+      "citation": "Land Use Act, ss 21, 22 and 26.",
+      "url": "https://login.nipc.gov.ng/assets/resources/land-use-act/land-use-act.pdf"
+    },
+    {
+      "_key": "note-6",
+      "citation": "Savannah Bank of Nigeria Ltd v Ajilo (1989) 1 NWLR (Pt 97) 305 (SC); Awojugbagbe Light Industries Ltd v Chinukwe (1995) 4 NWLR (Pt 390) 379 (SC), discussion of conditional execution.",
+      "url": "https://lawcarenigeria.com/awojugbagbe-light-industries-limited-v-p-n-chinukwe-anor1995/"
+    },
+    {
+      "_key": "note-7",
+      "citation": "Union Bank of Nigeria Plc v Ayodare & Sons (Nig) Ltd [2007] NGSC 82 (SC), issue (ii).",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/2007/82/eng@2007-04-26"
+    },
+    {
+      "_key": "note-8",
+      "citation": "Lagos State Lands Registration Law 2015, s 29, Lagos State Official Gazette, Extraordinary No 8, vol 48, 2 February 2015.",
+      "url": "https://archive.gazettes.africa/archive/ng-la/2015/ng-la-official-gazette-supplement-dated-2015-02-02-no-8.pdf"
+    },
+    {
+      "_key": "note-9",
+      "citation": "Land Registration Act 2002, ss 27–29 and sch 3 para 2 (England and Wales).",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/9/contents"
+    }
+  ],
+  "judicialAuthorities": [
+    {
+      "_key": "source3",
+      "label": "Idundun v Okumagba (1976) 9–10 SC 227 (SC); Faleye v Dada [2016] NGSC 25 (SC), discussion of the five methods of proof.",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/2016/25/eng@2016-04-21"
+    },
+    {
+      "_key": "source4",
+      "label": "Ogunleye v Oni [1990] NGSC 40 (SC), judgment of Belgore JSC; Land Use Act, ss 9 and 34.",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/1990/40/eng@1990-04-26"
+    },
+    {
+      "_key": "source6",
+      "label": "Savannah Bank of Nigeria Ltd v Ajilo (1989) 1 NWLR (Pt 97) 305 (SC); Awojugbagbe Light Industries Ltd v Chinukwe (1995) 4 NWLR (Pt 390) 379 (SC), discussion of conditional execution.",
+      "url": "https://lawcarenigeria.com/awojugbagbe-light-industries-limited-v-p-n-chinukwe-anor1995/"
+    },
+    {
+      "_key": "source7",
+      "label": "Union Bank of Nigeria Plc v Ayodare & Sons (Nig) Ltd [2007] NGSC 82 (SC), issue (ii).",
+      "url": "https://nigerialii.org/akn/ng/judgment/ngsc/2007/82/eng@2007-04-26"
+    }
+  ],
+  "legislation": [
+    {
+      "_key": "source5",
+      "label": "Land Use Act, ss 21, 22 and 26.",
+      "url": "https://login.nipc.gov.ng/assets/resources/land-use-act/land-use-act.pdf"
+    },
+    {
+      "_key": "source8",
+      "label": "Lagos State Lands Registration Law 2015, s 29, Lagos State Official Gazette, Extraordinary No 8, vol 48, 2 February 2015.",
+      "url": "https://archive.gazettes.africa/archive/ng-la/2015/ng-la-official-gazette-supplement-dated-2015-02-02-no-8.pdf"
+    },
+    {
+      "_key": "source9",
+      "label": "Land Registration Act 2002, ss 27–29 and sch 3 para 2 (England and Wales).",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/9/contents"
+    }
+  ],
+  "academicReferences": [
+    {
+      "_key": "source2",
+      "label": "Peter Adeniyi, Improving Land Sector Governance in Nigeria: Implementation of the Land Governance Assessment Framework (2013) 11–15, 22–24.",
+      "url": "https://thedocs.worldbank.org/en/doc/a91b90185037e5f11e9f99a989ac11dd-0050062013/related/Nigeria-Synthesis.pdf"
+    }
+  ],
+  "bibliography": [
+    "Legislation Land Use Act, Cap L5, Laws of the Federation of Nigeria 2004; Lagos State Lands Registration Law 2015; Land Registration Act 2002 (England and Wales).",
+    "Cases Awojugbagbe Light Industries Ltd v Chinukwe (1995) 4 NWLR (Pt 390) 379; Faleye v Dada [2016] NGSC 25; Idundun v Okumagba (1976) 9–10 SC 227; Ogunleye v Oni [1990] NGSC 40; Savannah Bank of Nigeria Ltd v Ajilo (1989) 1 NWLR (Pt 97) 305; Union Bank of Nigeria Plc v Ayodare & Sons (Nig) Ltd [2007] NGSC 82.",
+    "Institutional literature Peter Adeniyi, Improving Land Sector Governance in Nigeria: Implementation of the Land Governance Assessment Framework (2013)."
+  ],
+  "jurisdictions": [
+    "Nigeria",
+    "Lagos State",
+    "England and Wales"
+  ],
+  "findings": "First, satisfactory acquisition evidence is cumulative. No single document necessarily answers all four questions of parcel identity, vendor entitlement and authority, public-law compliance and completion effectiveness. A diligence record should connect each conclusion to its evidence and distinguish a factual gap from legal uncertainty. It should also indicate whether the evidence can be used for the client’s likely next transaction, such as refinancing or resale, when counterparties may request originals or independently verifiable records.\n\nSecondly, the law’s treatment of conditional instruments makes completion design substantive legal work. *Ajilo*, *Awojugbagbe* and *Ayodare* demonstrate the need to examine the facts and timing of the transaction and the validity of consent. They do not supply a universal delivery protocol independent of the interest being transacted, the instrument or other parties’ conduct. A conclusion about whether an agreement is capable of being performed should be kept separate from a conclusion that alienation has been completed.\n\nThirdly, private allocations and public-law rules solve different problems. Contract conditions and payment controls can prevent avoidable loss. Warranties, indemnities and diligence disclosure can allocate residual responsibility. Their use cannot extinguish third-party rights or supply statutory assent. A sound risk decision should classify whether a defect must be cured before commitment, before completion or by a monitored post-completion action. In some cases the proper classification is that the deal is commercially unacceptable on the available evidence.\n\nFor public institutions the evidence points to specific design improvements. Search results should identify the exact parcel or record queried, record the time of the response and state any material exclusions. Where land identifiers change or titles are subdivided, a reliable history should connect earlier and successor records. Interoperability between survey and title records would support earlier detection of overlaps. Appropriate safeguards should allow correction and challenge while preserving a record of who made a legally significant change and under what authority. These proposals are institutional design recommendations; the paper does not estimate implementation costs or infer a rate of administrative error.",
+  "recommendations": "Investment committees should require a dated opinion, an evidence checklist and a documented decision on unresolved risks before the seller receives funds that are effectively at risk. The closing file should identify the survey, evidence of root and capacity, searches, priority concerns, applicable consents, releases and contractual proof of satisfaction, followed by the responsible person and deadline for each remaining action. Where a defect may affect an investment assumption, circulate the finding to the appropriate commercial, technical and funding teams before they commit.\n\nAdvisers should distinguish “confirmed”, “supported subject to a stated limitation”, “contradicted” and “unverified” in the actual file. A general statement that title is satisfactory should specify whose interest is satisfactory, what land it covers, what rights remain capable of interference and what final evidence supports the conclusion. Arrange the record so successor advisers can identify exactly what was established if there is a subsequent refinancing, dispute or resale.\n\nPublic institutions considering reforms should prioritise timely access to legible records, dated and scoped search responses, a documented correction process and auditable linkage of old and new parcel identifiers. The benefit of easier public access should be assessed alongside legitimate limits on the disclosure of personal information and the need to preserve the integrity of records supporting high-value transactions.",
+  "suggestedCitation": "Chaman Legal Research & International Publications, ‘Land Acquisition in Nigeria: Legal Due Diligence, Risks and Investor Protection’ (CLRIP-A03, Chaman Law Firm 2026) <https://chamanlawfirm.com/resources/legal-research/papers/land-acquisition-in-nigeria>.",
+  "seoTitle": "Land Acquisition in Nigeria: Legal Due Diligence",
+  "seoDescription": "A legal research paper on land acquisition in Nigeria, tracing title, Governor’s consent, Lagos registration, statutory priority and buyer protections.",
+  "wordCount": 4241,
+  "readingMinutes": 20,
+  "rights": "© 2026 Chaman Law Firm. All rights reserved.",
+  "slug": "land-acquisition-in-nigeria",
+  "publishedAt": "2026-11-24",
+  "updatedAt": "2026-11-24",
+  "authors": [
+    {
+      "name": "Chaman Legal Research & International Publications",
+      "affiliation": "Chaman Law Firm",
+      "bio": "Chaman Legal Research & International Publications is the institutional research imprint of Chaman Law Firm. This profile credits outputs issued under the firm’s institutional identity.",
+      "institutional": true,
+      "slug": "chaman-law-firm"
+    }
+  ],
+  "pdf": "https://cdn.sanity.io/files/eeuefmhu/production/59479d57ab96cd1754fcc3cd6a53962f44a418ca.pdf"
+}
