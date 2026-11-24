@@ -1,14 +1,1 @@
-/**
-* This configuration file lets you run `$ sanity [command]` in this folder
-* Go to https://www.sanity.io/docs/cli to learn more.
-**/
-import { defineCliConfig } from 'sanity/cli'
-
-const projectId = 'eeuefmhu'
-const dataset = 'production'
-const appId = 'ut35nzr86hplimqdq9ai4kzw'
-
-export default defineCliConfig({
-  api: {projectId, dataset},
-  deployment: {appId},
-})
+LyoqCiogVGhpcyBjb25maWd1cmF0aW9uIGZpbGUgbGV0cyB5b3UgcnVuIGAkIHNhbml0eSBbY29tbWFuZF1gIGluIHRoaXMgZm9sZGVyCiogR28gdG8gaHR0cHM6Ly93d3cuc2FuaXR5LmlvL2RvY3MvY2xpIHRvIGxlYXJuIG1vcmUuCioqLwppbXBvcnQgeyBkZWZpbmVDbGlDb25maWcgfSBmcm9tICdzYW5pdHkvY2xpJwoKY29uc3QgcHJvamVjdElkID0gJ2VldWVmbWh1Jwpjb25zdCBkYXRhc2V0ID0gJ3Byb2R1Y3Rpb24nCmNvbnN0IGFwcElkID0gJ2M0NDV6bGI0ZXkxajI4bXVpeGp4ZTYyMScKCmV4cG9ydCBkZWZhdWx0IGRlZmluZUNsaUNvbmZpZyh7CiAgYXBpOiB7cHJvamVjdElkLCBkYXRhc2V0fSwKICBkZXBsb3ltZW50OiB7YXBwSWR9LAp9KQo=
