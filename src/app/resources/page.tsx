@@ -6,6 +6,7 @@ import { FaqList } from "@/components/FaqList";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
+import { researchName, researchPath } from "@/data/research";
 import { globalFaqs } from "@/data/site-content";
 import { getDownloads, getMediaItems, getPracticeAreas } from "@/lib/legal-cms";
 import { createMetadata } from "@/lib/seo";
@@ -19,6 +20,7 @@ export const metadata: Metadata = createMetadata({
 });
 
 const hubs = [
+  { icon: BookOpen, title: researchName, text: "Research papers, comparative legal analysis, case law and legal policy.", href: researchPath },
   { icon: BookOpen, title: "Legal Blog", text: "Practical articles for property law, corporate law, disputes, probate, notary, immigration, family and diaspora topics.", href: "/resources/blog" },
   { icon: Download, title: "Downloads", text: "Client preparation resources, checklists, guides and intake briefs for high-intent legal matters.", href: "/resources/downloads" },
   { icon: Newspaper, title: "Legal News", text: "Timely legal and regulatory developments with clear practical implications.", href: "/resources/legal-news" },

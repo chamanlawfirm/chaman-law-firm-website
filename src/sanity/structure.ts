@@ -1,6 +1,8 @@
 import type {StructureResolver} from 'sanity/structure'
 
 const primaryTypes = [
+  'researchPublication',
+  'researchAuthor',
   'siteSettings',
   'homepage',
   'page',
@@ -43,6 +45,21 @@ export const structure: StructureResolver = (S) =>
       S.documentTypeListItem('mediaItem').title('Media Items'),
       S.documentTypeListItem('careerPath').title('Career Paths'),
       S.documentTypeListItem('officeLocation').title('Office Locations'),
+      S.divider(),
+      S.listItem().id('legalResearch').title('Legal Research & International Publications').child(
+        S.list().title('Research Desk').items([
+          S.documentTypeListItem('researchPublication').title('All Research Papers'),
+          ...[
+            { id: 'draft', title: 'Drafts' },
+            { id: 'inReview', title: 'In Review' },
+            { id: 'approved', title: 'Approved' },
+          ].map(({ id, title }) => S.listItem().id(id).title(title).child(
+            S.documentList().title(title).schemaType('researchPublication')
+              .filter('_type == "researchPublication" && editorialStatus == $status').params({ status: id }),
+          )),
+          S.documentTypeListItem('researchAuthor').title('Research Authors'),
+        ]),
+      ),
       S.divider(),
       S.documentTypeListItem('post').title('Legacy Posts'),
       S.documentTypeListItem('category').title('Categories'),
