@@ -38,7 +38,7 @@
   .hero { padding-block: 1rem; color: #161616; background: white; border: 0; }
   .hero p, .eyebrow { color: #222 !important; }
   .shell, .card { background: white; color: black; }
-  .nav, .actions, .progress, .crumb, :global(body > header), :global(body > footer) { display: none !important; }
+  .nav, .actions, .progress, .crumb { display: none !important; }
   .article { max-width: none; }
   .article h2 { break-after: avoid; }
 }
