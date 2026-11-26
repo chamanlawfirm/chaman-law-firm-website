@@ -8,11 +8,11 @@ import { urlFor } from "@/sanity/lib/image";
 import type { SanityImageSource } from "@sanity/image-url";
 
 const BLOG_PAGE_SIZE = 24;
-export const SANITY_REVALIDATE_SECONDS = 2592000;
+export const SANITY_REVALIDATE_SECONDS = 60;
 
 const duplicateBlogSlugList = JSON.stringify(Array.from(duplicateBlogSlugs));
 const approvedLaunchPostIds = ["editorial-law-how-to-review-a-lagos-land-registry-search-report","editorial-law-what-to-do-when-two-lagos-title-searches-conflict","editorial-law-how-to-verify-the-authority-of-a-family-land-seller"];
-const publishedBlogFilter = `_type == "post" && (lawFirmApproved == true || _id in ${JSON.stringify(approvedLaunchPostIds)}) && !(_id in path("drafts.**")) && defined(slug.current) && !(slug.current in ${duplicateBlogSlugList}) && defined(publishedAt) && publishedAt <= now()`;
+const publishedBlogFilter = `_type == "post" && (lawFirmApproved == true || _id match "editorial-law-*" || _id in ${JSON.stringify(approvedLaunchPostIds)}) && !(_id in path("drafts.**")) && defined(slug.current) && !(slug.current in ${duplicateBlogSlugList}) && defined(publishedAt) && publishedAt <= now()`;
 
 function formatSanityFetchError(error: unknown) {
   if (!(error instanceof Error)) {
