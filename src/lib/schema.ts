@@ -264,6 +264,7 @@ export function publishedContentSchema(content: PublishedContent) {
     ...common,
     "@type": "NewsArticle",
     articleSection: content.contentLabel,
+    ...(content.contentKind === "legal-news" && content.reportedAt ? { temporalCoverage: content.reportedAt } : {}),
     ...(content.contentKind === "court-updates"
       ? {
           about: [content.courtName, content.citation, content.jurisdiction].filter(Boolean),
