@@ -14,6 +14,8 @@ import {schema} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
 
 export default defineConfig({
+  name: 'chaman-law-firm',
+  title: 'Chaman Law Firm CMS',
   basePath: '/studio',
   projectId,
   dataset,
