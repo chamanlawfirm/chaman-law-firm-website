@@ -27,6 +27,8 @@ export type PublishedContent = BlogPost & {
   decisionDate?: string;
   newsCategory?: string;
   reportingType?: string;
+  reportedAt?: string;
+  additionalSources?: Array<{ label?: string; url?: string }>;
   primarySourceName?: string;
   primarySourceUrl?: string;
   verifiedAt?: string;
@@ -120,6 +122,8 @@ type SanityPublishedContent = {
   decisionDate?: string;
   newsCategory?: string;
   reportingType?: string;
+  reportedAt?: string;
+  additionalSources?: Array<{ label?: string; url?: string }>;
   primarySourceName?: string;
   primarySourceUrl?: string;
   verifiedAt?: string;
@@ -165,6 +169,8 @@ const publishedContentFields = `
   decisionDate,
   newsCategory,
   reportingType,
+  reportedAt,
+  additionalSources[]{label, url},
   primarySourceName,
   primarySourceUrl,
   verifiedAt,
@@ -285,6 +291,8 @@ function normalizePublishedContent(item: SanityPublishedContent, kind: Publishin
     decisionDate: item.decisionDate,
     newsCategory: item.newsCategory,
     reportingType: item.reportingType,
+    reportedAt: item.reportedAt,
+    additionalSources: item.additionalSources?.filter((source) => source.label && source.url && /^https:\/\//i.test(source.url)),
     primarySourceName: item.primarySourceName,
     primarySourceUrl: item.primarySourceUrl,
     verifiedAt: item.verifiedAt,
