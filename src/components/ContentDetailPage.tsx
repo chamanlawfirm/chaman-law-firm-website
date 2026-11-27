@@ -90,7 +90,7 @@ export function ContentDetailPage({ content, related }: { content: PublishedCont
               {content.contentKind === "legal-news" && (content.reportedAt || content.primarySourceName || content.primarySourceUrl || content.additionalSources?.length || content.correctionNote || content.verifiedAt) ? (
                 <section className="rounded-lg border border-royalGold/22 bg-charcoal p-6">
                   <h2 className="font-heading text-2xl font-semibold text-ivory">Sources and editorial transparency</h2>
-                  {content.reportedAt && !Number.isNaN(Date.parse(content.reportedAt)) ? <p className="mt-3 text-sm leading-7 text-ivory/75">Event date: <time dateTime={content.reportedAt}>{formatDate(content.reportedAt)}</time></p> : null}
+                  {content.reportedAt && !Number.isNaN(Date.parse(content.reportedAt)) ? <p className="mt-3 text-sm leading-7 text-ivory/75">Event date: <time dateTime={content.reportedAt}>{new Intl.DateTimeFormat("en-NG", {dateStyle: "long", timeZone: "Africa/Lagos"}).format(new Date(content.reportedAt))}</time></p> : null}
                   {content.reportingType ? <p className="mt-3 text-sm leading-7 text-ivory/75">Format: {content.reportingType.replace(/-/g, " ")}</p> : null}
                   {content.primarySourceName ? <p className="mt-2 text-sm leading-7 text-ivory/75">Primary source: {content.primarySourceName}</p> : null}
                   {content.primarySourceUrl && /^https:\/\//i.test(content.primarySourceUrl) ? (
